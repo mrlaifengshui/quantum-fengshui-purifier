@@ -1,15 +1,24 @@
+import { useState } from 'react';
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
+import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
 import Home from "./pages/Home";
+import Services from "./pages/Services";
+import Cases from "./pages/Cases";
+import Contact from "./pages/Contact";
 
-function Router() {
+function Router({ language }: { language: 'zh' | 'en' }) {
   return (
     <Switch>
-      <Route path={"/"} component={Home} />
+      <Route path={"/"} component={() => <Home language={language} />} />
+      <Route path={"/services"} component={() => <Services language={language} />} />
+      <Route path={"/cases"} component={() => <Cases language={language} />} />
+      <Route path={"/contact"} component={() => <Contact language={language} />} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
@@ -17,21 +26,17 @@ function Router() {
   );
 }
 
-// NOTE: About Theme
-// - First choose a default theme according to your design style (dark or light bg), than change color palette in index.css
-//   to keep consistent foreground/background color across components
-// - If you want to make theme switchable, pass `switchable` ThemeProvider and use `useTheme` hook
-
 function App() {
+  const [language, setLanguage] = useState<'zh' | 'en'>('zh');
+
   return (
     <ErrorBoundary>
-      <ThemeProvider
-        defaultTheme="light"
-        // switchable
-      >
+      <ThemeProvider defaultTheme="dark">
         <TooltipProvider>
           <Toaster />
-          <Router />
+          <Navigation language={language} onLanguageChange={setLanguage} />
+          <Router language={language} />
+          <Footer language={language} />
         </TooltipProvider>
       </ThemeProvider>
     </ErrorBoundary>
