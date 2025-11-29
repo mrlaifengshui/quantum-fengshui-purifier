@@ -335,8 +335,101 @@ export default function Services({ language }: ServicesProps) {
         </div>
       </section>
 
-      {/* FAQ */}
+      {/* Featured Videos Section */}
       <section className="py-16 md:py-24">
+        <div className="container max-w-7xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-4">
+              {language === 'zh' ? '教育視頻 - 深入了解量子風水' : 'Educational Videos - Learn More'}
+            </h2>
+            <p className="text-lg text-foreground max-w-2xl mx-auto">
+              {language === 'zh'
+                ? '購看黎Sir的量子風水講座，深入了解空氣淨化與量子能量的完整原理'
+                : 'Watch Master Lai\'s lectures to understand the complete principles of air purification and quantum energy'}
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Video 3 */}
+            <div className="rounded-lg overflow-hidden border border-border hover:border-secondary transition-colors">
+              <div className="aspect-video bg-black">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/qU5N5gjRS1k"
+                  title="淨化空間氣場能量與過濾空氣懸浮粒子"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full"
+                />
+              </div>
+              <div className="p-4 bg-background">
+                <h3 className="text-lg font-semibold text-secondary mb-2">
+                  {language === 'zh'
+                    ? '淨化空間氣場能量與過濾空氣懸浮粒子'
+                    : 'Purifying Space Energy and Filtering Air Particles'}
+                </h3>
+              </div>
+            </div>
+
+            {/* Video 4 */}
+            <div className="rounded-lg overflow-hidden border border-border hover:border-secondary transition-colors">
+              <div className="aspect-video bg-black">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/B5BMYjmIN-Q"
+                  title="空氣淨化器與量子能量調頻儀（上）"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full"
+                />
+              </div>
+              <div className="p-4 bg-background">
+                <h3 className="text-lg font-semibold text-secondary mb-2">
+                  {language === 'zh'
+                    ? '空氣淨化器與量子能量調頻儀（上）'
+                    : 'Air Purifiers & Quantum Energy Tuning (Part 1)'}
+                </h3>
+                <p className="text-xs text-foreground/70 mt-2">
+                  {language === 'zh' ? '實際應用提升室內空間風水氣場' : 'Practical applications for improving indoor feng shui'}
+                </p>
+              </div>
+            </div>
+
+            {/* Video 5 */}
+            <div className="rounded-lg overflow-hidden border border-border hover:border-secondary transition-colors">
+              <div className="aspect-video bg-black">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/C7oqpToh1GY"
+                  title="空氣淨化器與量子能量調頻儀（下）"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full"
+                />
+              </div>
+              <div className="p-4 bg-background">
+                <h3 className="text-lg font-semibold text-secondary mb-2">
+                  {language === 'zh'
+                    ? '空氣淨化器與量子能量調頻儀（下）'
+                    : 'Air Purifiers & Quantum Energy Tuning (Part 2)'}
+                </h3>
+                <p className="text-xs text-foreground/70 mt-2">
+                  {language === 'zh' ? '顧覆身心靈及風水的思維模式' : 'Transforming mind-body-spirit and feng shui perspectives'}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-16 md:py-24 bg-card">
         <div className="container max-w-4xl mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-secondary text-center mb-12">
             {content.faqTitle}

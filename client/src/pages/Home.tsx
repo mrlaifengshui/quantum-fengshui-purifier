@@ -258,6 +258,80 @@ export default function Home({ language }: HomeProps) {
         </div>
       </section>
 
+      {/* Featured Videos Section */}
+      <section className="py-16 md:py-24 bg-card">
+        <div className="container max-w-7xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-4">
+              {language === 'zh' ? '黎Sir 量子風水講座' : 'Master Lai\'s Quantum Feng Shui Lectures'}
+            </h2>
+            <p className="text-lg text-foreground max-w-2xl mx-auto">
+              {language === 'zh'
+                ? '深入了解空氣淨化與量子風水的完整原理'
+                : 'Learn the complete principles of air purification and quantum feng shui'}
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Video 1 */}
+            <div className="rounded-lg overflow-hidden border border-border hover:border-secondary transition-colors">
+              <div className="aspect-video bg-black">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/eaVCJCSrqC0"
+                  title="怎樣的空氣淨化機才有風水功能？"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full"
+                />
+              </div>
+              <div className="p-4 bg-background">
+                <h3 className="text-lg font-semibold text-secondary mb-2">
+                  {language === 'zh'
+                    ? '怎樣的空氣淨化機才有風水功能？'
+                    : 'What Air Purifiers Have Feng Shui Functions?'}
+                </h3>
+                <p className="text-sm text-foreground/80">
+                  {language === 'zh'
+                    ? '轉化負能量、增強氣場、助人健康精神有活力、提升頻率運氣、生意增長財源廣進'
+                    : 'Transform negative energy, enhance aura, promote health and vitality'}
+                </p>
+              </div>
+            </div>
+
+            {/* Video 2 */}
+            <div className="rounded-lg overflow-hidden border border-border hover:border-secondary transition-colors">
+              <div className="aspect-video bg-black">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/kqsD2lVRyek"
+                  title="量子風水師黎Sir大談電器與健康關係"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full"
+                />
+              </div>
+              <div className="p-4 bg-background">
+                <h3 className="text-lg font-semibold text-secondary mb-2">
+                  {language === 'zh'
+                    ? '量子風水師黎Sir大談電器與健康關係'
+                    : 'Master Lai Discusses Electronics and Health Relationship'}
+                </h3>
+                <p className="text-sm text-foreground/80">
+                  {language === 'zh'
+                    ? '深入探討電器產品與人體健康、運勢的關係'
+                    : 'In-depth discussion on electronics and human health and fortune'}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-16 md:py-24 bg-gradient-to-r from-primary/20 to-accent/20">
         <div className="container max-w-3xl mx-auto px-4 text-center">
