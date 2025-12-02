@@ -7,19 +7,23 @@ export default function Services() {
 
   const packages = [
     {
-      name: t('基礎套餐', 'Basic Package'),
-      price: 'HK$2,888',
+      name: t('基本套餐', 'Basic Package'),
+      price: 'HK$8,800',
       features: [
-        t('空氣淨化機選購建議', 'Air Purifier Consultation'),
+        t('空氣淨化', 'Air Purification'),
         t('基礎量子調頻', 'Basic Quantum Tuning'),
         t('簡單風水擺位', 'Basic Feng Shui Positioning'),
+        t('空氣淨化機選購建議', 'Air Purifier Consultation'),
         t('1次現場服務', '1 On-site Service'),
       ],
     },
     {
       name: t('標準套餐', 'Standard Package'),
-      price: 'HK$4,888',
+      price: 'HK$13,800',
       features: [
+        t('空氣淨化', 'Air Purification'),
+        t('量子調頻', 'Quantum Tuning'),
+        t('風水擺位', 'Feng Shui Positioning'),
         t('全面空間評估', 'Complete Space Assessment'),
         t('進階量子調頻', 'Advanced Quantum Tuning'),
         t('專業風水擺位', 'Professional Feng Shui Positioning'),
@@ -30,8 +34,11 @@ export default function Services() {
     },
     {
       name: t('尊貴套餐', 'Premium Package'),
-      price: 'HK$8,888',
+      price: 'HK$19,800',
       features: [
+        t('空氣淨化', 'Air Purification'),
+        t('量子調頻', 'Quantum Tuning'),
+        t('風水擺位', 'Feng Shui Positioning'),
         t('深度空間能量分析', 'Deep Energy Analysis'),
         t('頂級量子調頻', 'Premium Quantum Tuning'),
         t('大師級風水設計', 'Master Feng Shui Design'),

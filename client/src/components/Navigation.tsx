@@ -29,10 +29,7 @@ export default function Navigation() {
               </div>
               <div className="hidden md:block">
                 <div className="text-foreground font-bold text-lg">
-                  {t('量子風水', 'Quantum Feng Shui')}
-                </div>
-                <div className="text-xs text-muted-foreground">
-                  {t('空氣淨化服務', 'Air Purification')}
+                  {t('量子空氣淨化風水', 'Quantum Air Purification Feng Shui')}
                 </div>
               </div>
             </div>

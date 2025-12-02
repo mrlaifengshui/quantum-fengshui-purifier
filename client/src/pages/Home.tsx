@@ -46,43 +46,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Supported Brands Section - 淺色背景 */}
+      {/* Three-in-One Service Section - 淺色背景 */}
       <section className="py-20 bg-section-light">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="text-center mb-16">
-            <div className="inline-block mb-4 px-4 py-1 bg-primary/10 border border-primary/30 rounded-full">
-              <span className="text-primary font-medium text-sm">
-                {t('多品牌支持', 'Multi-Brand Support')}
-              </span>
-            </div>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-              {t('支持的優質品牌', 'Supported Premium Brands')}
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              {t(
-                '無論您選擇哪個品牌，我們都提供完整的量子調頻和風水擺位服務',
-                'We provide complete quantum tuning and feng shui positioning for all brands'
-              )}
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {brands.map((brand) => (
-              <BrandCard key={brand.id} brand={brand} />
-            ))}
-          </div>
-          <div className="text-center mt-12">
-            <Link href="/brands">
-              <a className="inline-flex items-center text-accent hover:text-secondary font-semibold text-lg transition-colors duration-300">
-                {t('查看所有品牌詳情', 'View All Brand Details')}
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </a>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Three-in-One Service Section - 深色背景 */}
-      <section className="py-20 bg-section-dark">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center mb-16">
             <div className="inline-block mb-4 px-4 py-1 bg-secondary/10 border border-secondary/30 rounded-full">
@@ -93,7 +58,7 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
               {t('三合一服務模式', 'Three-in-One Service Model')}
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed text-center md:text-center">
               {t(
                 '從物質、能量、風水三個層面全方位提升您的生活品質',
                 'Enhance your quality of life from material, energy, and feng shui perspectives'
@@ -211,8 +176,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Customer Testimonials - 淺色背景 */}
-      <section className="py-20 bg-section-light">
+      {/* Customer Testimonials - 深色背景 */}
+      <section className="py-20 bg-section-dark">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center mb-16">
             <div className="inline-block mb-4 px-4 py-1 bg-accent/10 border border-accent/30 rounded-full">
@@ -223,7 +188,7 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
               {t('真實客戶體驗分享', 'Real Customer Experiences')}
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed text-center md:text-center">
               {t(
                 '超過100位客戶見證了量子風水的神奇力量',
                 'Over 100 customers have experienced the power of quantum feng shui'
@@ -293,10 +258,45 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Supported Brands Section - 淺色背景 */}
+      <section className="py-20 bg-section-light">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+          <div className="text-center mb-16">
+            <div className="inline-block mb-4 px-4 py-1 bg-primary/10 border border-primary/30 rounded-full">
+              <span className="text-primary font-medium text-sm">
+                {t('多品牌支持', 'Multi-Brand Support')}
+              </span>
+            </div>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
+              {t('支持的優質品牌', 'Supported Premium Brands')}
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed text-center md:text-center">
+              {t(
+                '無論您選擇哪個品牌，我們都提供完整的量子調頻和風水擺位服務',
+                'We provide complete quantum tuning and feng shui positioning for all brands'
+              )}
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {brands.map((brand) => (
+              <BrandCard key={brand.id} brand={brand} />
+            ))}
+          </div>
+          <div className="text-center mt-12">
+            <Link href="/brands">
+              <a className="inline-flex items-center text-accent hover:text-secondary font-semibold text-lg transition-colors duration-300">
+                {t('查看所有品牌詳情', 'View All Brand Details')}
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </a>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section - 深色背景與漸層 */}
       <section className="py-20 bg-gradient-to-br from-primary/10 via-section-dark to-secondary/10">
         <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 text-center">
             {t('準備好開始您的量子風水之旅了嗎？', 'Ready to Start Your Quantum Feng Shui Journey?')}
           </h2>
           <p className="text-lg text-muted-foreground mb-10 leading-relaxed">
