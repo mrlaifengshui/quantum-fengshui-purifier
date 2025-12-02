@@ -1,5 +1,5 @@
 import { Link } from 'wouter';
-import { ArrowRight, Sparkles, Wind, Compass, CheckCircle2, Quote } from 'lucide-react';
+import { ArrowRight, Sparkles, Wind, Compass, CheckCircle2, Quote, Star } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import BrandCard from '../components/BrandCard';
 import { brands } from '../lib/brands';

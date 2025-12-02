@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Filter } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import BrandCard from '../components/BrandCard';
-import { brands, Brand } from '../lib/brands';
+import { brands } from '../lib/brands';
 
 export default function Brands() {
   const { t } = useLanguage();
