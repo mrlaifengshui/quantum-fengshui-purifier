@@ -1,1 +1,0 @@
-# quantum-fengshui-purifier
