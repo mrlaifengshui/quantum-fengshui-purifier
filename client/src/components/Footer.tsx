@@ -9,9 +9,9 @@ export default function Footer() {
   return (
     <footer className="bg-muted border-t border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 justify-items-center text-center md:text-left md:justify-items-start">
           {/* About */}
-          <div>
+          <div className="flex flex-col items-center md:items-start">
             <h3 className="text-accent font-bold text-lg mb-4">
               {t('量子風水', 'Quantum Feng Shui')}
             </h3>
@@ -24,7 +24,7 @@ export default function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div>
+          <div className="flex flex-col items-center md:items-start">
             <h3 className="text-foreground font-semibold mb-4">
               {t('快速導航', 'Quick Links')}
             </h3>
@@ -73,11 +73,11 @@ export default function Footer() {
           </div>
 
           {/* Contact Info */}
-          <div>
+          <div className="flex flex-col items-center md:items-start">
             <h3 className="text-foreground font-semibold mb-4">
               {t('聯繫方式', 'Contact Info')}
             </h3>
-            <ul className="space-y-3">
+            <ul className="space-y-3 flex flex-col items-center md:items-start">
               <li className="flex items-center space-x-3">
                 <div className="w-8 h-8 bg-primary/20 rounded-lg flex items-center justify-center flex-shrink-0">
                   <Phone className="w-4 h-4 text-primary" />
@@ -106,7 +106,7 @@ export default function Footer() {
           </div>
 
           {/* Social Media */}
-          <div>
+          <div className="flex flex-col items-center md:items-start">
             <h3 className="text-foreground font-semibold mb-4">
               {t('關注我們', 'Follow Us')}
             </h3>
