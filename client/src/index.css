@@ -1,23 +1,34 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: oklch(0.54 0.28 262);
-  --color-primary-foreground: oklch(0.92 0.01 65);
-  --color-secondary: oklch(0.62 0.22 142);
-  --color-secondary-foreground: oklch(0.08 0.01 262);
-  --color-accent: oklch(0.78 0.32 65);
-  --color-accent-foreground: oklch(0.08 0.01 262);
-  --color-background: oklch(0.08 0.01 262);
-  --color-foreground: oklch(0.92 0.01 65);
-  --color-border: oklch(0.2 0.02 262);
-  --color-muted: oklch(0.15 0.02 262);
-  --color-muted-foreground: oklch(0.6 0.01 262);
-  --color-success: oklch(0.62 0.22 142);
-  --color-warning: oklch(0.68 0.18 65);
-  --color-error: oklch(0.58 0.22 25);
-  --color-info: oklch(0.58 0.22 262);
+  /* 療癒量子色調 - 柔和紫藍到淺金漸變 */
+  --color-primary: oklch(0.65 0.15 280);        /* 柔和紫藍色 - 量子能量 */
+  --color-primary-foreground: oklch(0.98 0.01 280);
+  --color-secondary: oklch(0.72 0.12 200);      /* 柔和藍綠色 - 療癒平靜 */
+  --color-secondary-foreground: oklch(0.98 0.01 200);
+  --color-accent: oklch(0.85 0.08 80);          /* 淺金色 - 豐盛溫暖 */
+  --color-accent-foreground: oklch(0.20 0.02 280);
   
-  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Noto Sans TC', sans-serif;
+  /* 背景色系 - 更柔和的深色 */
+  --color-background: oklch(0.15 0.02 280);     /* 深紫藍背景 */
+  --color-foreground: oklch(0.95 0.01 280);     /* 柔和白色文字 */
+  
+  /* Section背景色 - 清晰區分 */
+  --color-section-light: oklch(0.20 0.03 280);  /* 淺一點的section */
+  --color-section-dark: oklch(0.12 0.02 280);   /* 深一點的section */
+  
+  /* 邊框和間隔 */
+  --color-border: oklch(0.35 0.05 280);         /* 更明顯的邊框 */
+  --color-muted: oklch(0.25 0.03 280);
+  --color-muted-foreground: oklch(0.70 0.02 280);
+  
+  /* 功能色 - 柔和版本 */
+  --color-success: oklch(0.72 0.12 150);
+  --color-warning: oklch(0.80 0.10 70);
+  --color-error: oklch(0.65 0.15 30);
+  --color-info: oklch(0.70 0.12 250);
+  
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;
 }
 
 * {

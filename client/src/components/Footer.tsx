@@ -1,7 +1,7 @@
 import { Link } from 'wouter';
-import { Facebook, Instagram, Phone, Mail, MapPin } from 'lucide-react';
+import { Facebook, Instagram, Phone, Mail, Globe } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
-import { CONTACT_PHONE, CONTACT_EMAIL, CONTACT_ADDRESS, CONTACT_ADDRESS_EN, SOCIAL_LINKS } from '../const';
+import { CONTACT_PHONE, CONTACT_EMAIL, CONTACT_WEBSITE, SOCIAL_LINKS } from '../const';
 
 export default function Footer() {
   const { t } = useLanguage();
@@ -28,39 +28,44 @@ export default function Footer() {
             <h3 className="text-foreground font-semibold mb-4">
               {t('快速導航', 'Quick Links')}
             </h3>
-            <ul className="space-y-2">
+            <ul className="space-y-3">
               <li>
                 <Link href="/">
-                  <a className="text-muted-foreground hover:text-accent transition-colors text-sm">
-                    {t('首頁', 'Home')}
+                  <a className="flex items-center space-x-2 text-muted-foreground hover:text-accent transition-colors text-sm group">
+                    <div className="w-1 h-1 rounded-full bg-accent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <span>{t('首頁', 'Home')}</span>
                   </a>
                 </Link>
               </li>
               <li>
                 <Link href="/brands">
-                  <a className="text-muted-foreground hover:text-accent transition-colors text-sm">
-                    {t('品牌', 'Brands')}
+                  <a className="flex items-center space-x-2 text-muted-foreground hover:text-accent transition-colors text-sm group">
+                    <div className="w-1 h-1 rounded-full bg-accent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <span>{t('品牌介紹', 'Brands')}</span>
                   </a>
                 </Link>
               </li>
               <li>
                 <Link href="/services">
-                  <a className="text-muted-foreground hover:text-accent transition-colors text-sm">
-                    {t('服務', 'Services')}
+                  <a className="flex items-center space-x-2 text-muted-foreground hover:text-accent transition-colors text-sm group">
+                    <div className="w-1 h-1 rounded-full bg-accent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <span>{t('服務方案', 'Services')}  </span>
                   </a>
                 </Link>
               </li>
               <li>
                 <Link href="/cases">
-                  <a className="text-muted-foreground hover:text-accent transition-colors text-sm">
-                    {t('案例', 'Cases')}
+                  <a className="flex items-center space-x-2 text-muted-foreground hover:text-accent transition-colors text-sm group">
+                    <div className="w-1 h-1 rounded-full bg-accent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <span>{t('成功案例', 'Cases')}</span>
                   </a>
                 </Link>
               </li>
               <li>
                 <Link href="/contact">
-                  <a className="text-muted-foreground hover:text-accent transition-colors text-sm">
-                    {t('聯繫', 'Contact')}
+                  <a className="flex items-center space-x-2 text-muted-foreground hover:text-accent transition-colors text-sm group">
+                    <div className="w-1 h-1 rounded-full bg-accent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <span>{t('聯繫我們', 'Contact')}</span>
                   </a>
                 </Link>
               </li>
@@ -73,19 +78,29 @@ export default function Footer() {
               {t('聯繫方式', 'Contact Info')}
             </h3>
             <ul className="space-y-3">
-              <li className="flex items-start space-x-2 text-sm">
-                <Phone className="w-4 h-4 text-accent mt-0.5 flex-shrink-0" />
-                <span className="text-muted-foreground">{CONTACT_PHONE}</span>
+              <li className="flex items-center space-x-3">
+                <div className="w-8 h-8 bg-primary/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Phone className="w-4 h-4 text-primary" />
+                </div>
+                <a href={`tel:${CONTACT_PHONE}`} className="text-muted-foreground hover:text-accent transition-colors text-sm">
+                  {CONTACT_PHONE}
+                </a>
               </li>
-              <li className="flex items-start space-x-2 text-sm">
-                <Mail className="w-4 h-4 text-accent mt-0.5 flex-shrink-0" />
-                <span className="text-muted-foreground">{CONTACT_EMAIL}</span>
+              <li className="flex items-center space-x-3">
+                <div className="w-8 h-8 bg-secondary/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Mail className="w-4 h-4 text-secondary" />
+                </div>
+                <a href={`mailto:${CONTACT_EMAIL}`} className="text-muted-foreground hover:text-accent transition-colors text-sm">
+                  {CONTACT_EMAIL}
+                </a>
               </li>
-              <li className="flex items-start space-x-2 text-sm">
-                <MapPin className="w-4 h-4 text-accent mt-0.5 flex-shrink-0" />
-                <span className="text-muted-foreground">
-                  {t(CONTACT_ADDRESS, CONTACT_ADDRESS_EN)}
-                </span>
+              <li className="flex items-center space-x-3">
+                <div className="w-8 h-8 bg-accent/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Globe className="w-4 h-4 text-accent" />
+                </div>
+                <a href={`https://${CONTACT_WEBSITE}`} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors text-sm">
+                  {CONTACT_WEBSITE}
+                </a>
               </li>
             </ul>
           </div>
