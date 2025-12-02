@@ -1,0 +1,7 @@
+# GitHub Pages configuration
+include:
+  - .nojekyll
+  - .gitkeep
+
+# Disable Jekyll processing
+markdown: kramdown
