@@ -1,51 +1,63 @@
 import { useState } from 'react';
-import { Phone, Mail, MapPin, MessageCircle, Send } from 'lucide-react';
+import { Phone, Mail, MapPin, Send, CheckCircle2 } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
-import { CONTACT_PHONE, CONTACT_EMAIL, CONTACT_ADDRESS, CONTACT_ADDRESS_EN, SOCIAL_LINKS } from '../const';
+import { CONTACT_PHONE, CONTACT_EMAIL, CONTACT_ADDRESS, CONTACT_ADDRESS_EN } from '../const';
 
-export function Contact() {
-  const { t, language } = useLanguage();
+export default function Contact() {
+  const { t } = useLanguage();
+  const [submitted, setSubmitted] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
     email: '',
     brand: '',
-    service: '',
     message: '',
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
-    alert(t('感謝您的預約！我們會盡快聯繫您。', 'Thank you for your booking! We will contact you soon.'));
+    setSubmitted(true);
+    setTimeout(() => setSubmitted(false), 5000);
+  };
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   return (
-    <div className="min-h-screen pt-24 pb-16">
-      {/* Header */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-primary/20 to-secondary/20">
-        <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+    <div className="min-h-screen py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header */}
+        <div className="text-center mb-16">
+          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
             {t('聯繫我們', 'Contact Us')}
           </h1>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             {t(
-              '立即預約免費諮詢，我們的專家團隊將為您提供專業建議和定制方案。',
-              'Book a free consultation now, and our expert team will provide professional advice and customized solutions.'
+              '立即預約免費諮詢，體驗量子風水空氣淨化的神奇效果',
+              'Book a free consultation and experience the magic of quantum feng shui air purification'
             )}
           </p>
         </div>
-      </section>
 
-      {/* Contact Form & Info */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Contact Form */}
-            <div className="bg-muted border border-border rounded-lg p-8">
-              <h2 className="text-2xl font-bold text-foreground mb-6">
-                {t('預約表單', 'Booking Form')}
-              </h2>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          {/* Contact Form */}
+          <div className="bg-muted border border-border rounded-xl p-8">
+            <h2 className="text-2xl font-bold text-foreground mb-6">
+              {t('預約表單', 'Booking Form')}
+            </h2>
+
+            {submitted ? (
+              <div className="bg-secondary/20 border border-secondary rounded-lg p-6 text-center">
+                <CheckCircle2 className="w-16 h-16 text-secondary mx-auto mb-4" />
+                <h3 className="text-xl font-bold text-foreground mb-2">
+                  {t('提交成功！', 'Success!')}
+                </h3>
+                <p className="text-muted-foreground">
+                  {t('我們會盡快與您聯繫', 'We will contact you soon')}
+                </p>
+              </div>
+            ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-2">
@@ -53,46 +65,53 @@ export function Contact() {
                   </label>
                   <input
                     type="text"
+                    name="name"
                     required
                     value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full px-4 py-3 bg-background border border-border rounded-lg text-foreground focus:outline-none focus:border-accent"
-                    placeholder={t('請輸入您的姓名', 'Please enter your name')}
+                    onChange={handleChange}
+                    className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:border-accent text-foreground"
+                    placeholder={t('請輸入您的姓名', 'Enter your name')}
                   />
                 </div>
+
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-2">
                     {t('電話', 'Phone')} *
                   </label>
                   <input
                     type="tel"
+                    name="phone"
                     required
                     value={formData.phone}
-                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="w-full px-4 py-3 bg-background border border-border rounded-lg text-foreground focus:outline-none focus:border-accent"
-                    placeholder={t('請輸入您的電話號碼', 'Please enter your phone number')}
+                    onChange={handleChange}
+                    className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:border-accent text-foreground"
+                    placeholder={t('請輸入您的電話', 'Enter your phone')}
                   />
                 </div>
+
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-2">
                     {t('電郵', 'Email')}
                   </label>
                   <input
                     type="email"
+                    name="email"
                     value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full px-4 py-3 bg-background border border-border rounded-lg text-foreground focus:outline-none focus:border-accent"
-                    placeholder={t('請輸入您的電郵地址', 'Please enter your email address')}
+                    onChange={handleChange}
+                    className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:border-accent text-foreground"
+                    placeholder={t('請輸入您的電郵', 'Enter your email')}
                   />
                 </div>
+
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-2">
-                    {t('偏好品牌', 'Preferred Brand')}
+                    {t('品牌偏好', 'Brand Preference')}
                   </label>
                   <select
+                    name="brand"
                     value={formData.brand}
-                    onChange={(e) => setFormData({ ...formData, brand: e.target.value })}
-                    className="w-full px-4 py-3 bg-background border border-border rounded-lg text-foreground focus:outline-none focus:border-accent"
+                    onChange={handleChange}
+                    className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:border-accent text-foreground"
                   >
                     <option value="">{t('請選擇', 'Please select')}</option>
                     <option value="dyson">Dyson</option>
@@ -104,112 +123,122 @@ export function Contact() {
                     <option value="other">{t('其他', 'Other')}</option>
                   </select>
                 </div>
-                <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">
-                    {t('服務套餐', 'Service Package')}
-                  </label>
-                  <select
-                    value={formData.service}
-                    onChange={(e) => setFormData({ ...formData, service: e.target.value })}
-                    className="w-full px-4 py-3 bg-background border border-border rounded-lg text-foreground focus:outline-none focus:border-accent"
-                  >
-                    <option value="">{t('請選擇', 'Please select')}</option>
-                    <option value="basic">{t('基礎套餐', 'Basic Package')}</option>
-                    <option value="premium">{t('進階套餐', 'Premium Package')}</option>
-                    <option value="ultimate">{t('尊享套餐', 'Ultimate Package')}</option>
-                  </select>
-                </div>
+
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-2">
                     {t('留言', 'Message')}
                   </label>
                   <textarea
+                    name="message"
                     value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                    onChange={handleChange}
                     rows={4}
-                    className="w-full px-4 py-3 bg-background border border-border rounded-lg text-foreground focus:outline-none focus:border-accent resize-none"
-                    placeholder={t('請告訴我們您的需求...', 'Please tell us your needs...')}
+                    className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:border-accent text-foreground resize-none"
+                    placeholder={t('請告訴我們您的需求', 'Tell us your needs')}
                   />
                 </div>
+
                 <button
                   type="submit"
-                  className="w-full flex items-center justify-center px-6 py-4 bg-gradient-to-r from-accent to-secondary text-background font-semibold rounded-lg hover:shadow-lg hover:shadow-accent/50 transition-all"
+                  className="w-full bg-accent text-background font-semibold py-4 rounded-lg hover:bg-accent/90 transition-all duration-300 flex items-center justify-center shadow-lg"
                 >
-                  <Send className="mr-2" size={20} />
+                  <Send className="w-5 h-5 mr-2" />
                   {t('提交預約', 'Submit Booking')}
                 </button>
               </form>
+            )}
+          </div>
+
+          {/* Contact Info */}
+          <div className="space-y-8">
+            {/* Contact Details */}
+            <div className="bg-muted border border-border rounded-xl p-8">
+              <h2 className="text-2xl font-bold text-foreground mb-6">
+                {t('聯繫方式', 'Contact Information')}
+              </h2>
+              <div className="space-y-6">
+                <div className="flex items-start space-x-4">
+                  <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center flex-shrink-0">
+                    <Phone className="w-6 h-6 text-background" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-foreground mb-1">{t('電話', 'Phone')}</h3>
+                    <p className="text-muted-foreground">{CONTACT_PHONE}</p>
+                    <p className="text-sm text-muted-foreground mt-1">
+                      {t('週一至週六 9:00-18:00', 'Mon-Sat 9:00-18:00')}
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-4">
+                  <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center flex-shrink-0">
+                    <Mail className="w-6 h-6 text-background" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-foreground mb-1">{t('電郵', 'Email')}</h3>
+                    <p className="text-muted-foreground">{CONTACT_EMAIL}</p>
+                    <p className="text-sm text-muted-foreground mt-1">
+                      {t('24小時內回覆', '24-hour response time')}
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-4">
+                  <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center flex-shrink-0">
+                    <MapPin className="w-6 h-6 text-background" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-foreground mb-1">{t('地址', 'Address')}</h3>
+                    <p className="text-muted-foreground">
+                      {t(CONTACT_ADDRESS, CONTACT_ADDRESS_EN)}
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            {/* Contact Info */}
-            <div className="space-y-8">
-              <div className="bg-muted border border-border rounded-lg p-8">
-                <h2 className="text-2xl font-bold text-foreground mb-6">
-                  {t('聯繫方式', 'Contact Information')}
-                </h2>
-                <div className="space-y-6">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-accent/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Phone className="text-accent" size={24} />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-foreground mb-1">{t('電話', 'Phone')}</h3>
-                      <p className="text-muted-foreground">{CONTACT_PHONE}</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-accent/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Mail className="text-accent" size={24} />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-foreground mb-1">{t('電郵', 'Email')}</h3>
-                      <p className="text-muted-foreground">{CONTACT_EMAIL}</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-accent/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <MapPin className="text-accent" size={24} />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-foreground mb-1">{t('地址', 'Address')}</h3>
-                      <p className="text-muted-foreground">
-                        {language === 'zh' ? CONTACT_ADDRESS : CONTACT_ADDRESS_EN}
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-accent/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <MessageCircle className="text-accent" size={24} />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-foreground mb-1">WhatsApp</h3>
-                      <a
-                        href={SOCIAL_LINKS.whatsapp}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-accent hover:text-secondary transition-colors"
-                      >
-                        {t('立即聯繫', 'Contact Now')}
-                      </a>
-                    </div>
-                  </div>
+            {/* Business Hours */}
+            <div className="bg-gradient-to-br from-primary to-secondary rounded-xl p-8 text-background">
+              <h2 className="text-2xl font-bold mb-4">{t('營業時間', 'Business Hours')}</h2>
+              <div className="space-y-3">
+                <div className="flex justify-between">
+                  <span>{t('週一至週五', 'Monday - Friday')}</span>
+                  <span className="font-semibold">9:00 - 18:00</span>
+                </div>
+                <div className="flex justify-between">
+                  <span>{t('週六', 'Saturday')}</span>
+                  <span className="font-semibold">10:00 - 17:00</span>
+                </div>
+                <div className="flex justify-between">
+                  <span>{t('週日及公眾假期', 'Sunday & Public Holidays')}</span>
+                  <span className="font-semibold">{t('休息', 'Closed')}</span>
                 </div>
               </div>
+            </div>
 
-              <div className="bg-muted border border-border rounded-lg p-8">
-                <h2 className="text-2xl font-bold text-foreground mb-4">
-                  {t('營業時間', 'Business Hours')}
-                </h2>
-                <div className="space-y-2 text-muted-foreground">
-                  <p>{t('星期一至五', 'Monday - Friday')}: 9:00 - 18:00</p>
-                  <p>{t('星期六', 'Saturday')}: 10:00 - 17:00</p>
-                  <p>{t('星期日及公眾假期', 'Sunday & Public Holidays')}: {t('休息', 'Closed')}</p>
-                </div>
-              </div>
+            {/* Why Contact Us */}
+            <div className="bg-muted border border-border rounded-xl p-8">
+              <h2 className="text-2xl font-bold text-foreground mb-4">
+                {t('為什麼選擇我們？', 'Why Choose Us?')}
+              </h2>
+              <ul className="space-y-3">
+                {[
+                  t('免費上門諮詢', 'Free On-site Consultation'),
+                  t('專業團隊服務', 'Professional Team Service'),
+                  t('多品牌支持', 'Multi-Brand Support'),
+                  t('效果保證', 'Results Guaranteed'),
+                  t('售後跟進', 'After-Sales Follow-up'),
+                ].map((item, i) => (
+                  <li key={i} className="flex items-center text-sm">
+                    <CheckCircle2 className="w-5 h-5 text-secondary mr-3 flex-shrink-0" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </div>
   );
 }

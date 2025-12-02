@@ -1,15 +1,19 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@theme {
-  --color-primary: oklch(0.54 0.28 262);
-  --color-primary-foreground: oklch(0.92 0.01 65);
-  --color-secondary: oklch(0.62 0.22 142);
-  --color-accent: oklch(0.78 0.32 65);
-  --color-background: oklch(0.08 0.01 262);
-  --color-foreground: oklch(0.92 0.01 65);
-  --color-border: oklch(0.2 0.02 262);
-  --color-muted: oklch(0.15 0.02 262);
-  --color-muted-foreground: oklch(0.6 0.01 262);
+@layer base {
+  :root {
+    --color-primary: oklch(0.54 0.28 262);
+    --color-primary-foreground: oklch(0.92 0.01 65);
+    --color-secondary: oklch(0.62 0.22 142);
+    --color-accent: oklch(0.78 0.32 65);
+    --color-background: oklch(0.08 0.01 262);
+    --color-foreground: oklch(0.92 0.01 65);
+    --color-border: oklch(0.2 0.02 262);
+    --color-muted: oklch(0.15 0.02 262);
+    --color-muted-foreground: oklch(0.6 0.01 262);
+  }
 }
 
 * {
