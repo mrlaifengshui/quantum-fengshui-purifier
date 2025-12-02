@@ -20,16 +20,13 @@ A modern quantum feng shui air purification service website combining premium ai
 
 **🌐 線上演示 | Live Demo:** 
 
-網站正在本地運行在 http://localhost:3000  
-The website is running locally at http://localhost:3000
+### https://mrlaifengshui.github.io/quantum-fengshui-purifier/
 
-如需訪問，請使用本地端口轉發或部署到生產環境。  
-To access externally, please use local port forwarding or deploy to production environment.
+**GitHub Repository | GitHub 倉庫:**
+https://github.com/mrlaifengshui/quantum-fengshui-purifier
 
-**推薦部署平台 | Recommended Deployment Platforms:**
-- Vercel: https://vercel.com
-- Netlify: https://netlify.com  
-- Cloudflare Pages: https://pages.cloudflare.com
+**本地運行 | Local Development:**
+http://localhost:3000
 
 ### 本地開發 | Local Development
 
@@ -259,6 +256,8 @@ npm run build
 
 **Website is complete and running!** 🚀
 
-**本地訪問 | Local Access**: http://localhost:3000
+**GitHub Pages URL**: https://mrlaifengshui.github.io/quantum-fengshui-purifier/
 
-**部署後訪問 | After Deployment**: 將顯示您的生產環境URL | Your production URL will be shown here
+**GitHub Repository**: https://github.com/mrlaifengshui/quantum-fengshui-purifier
+
+**本地開發 | Local Development**: http://localhost:3000
