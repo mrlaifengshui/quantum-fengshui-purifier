@@ -65,9 +65,9 @@ export default function Home() {
               )}
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center">
             {/* Service 1 */}
-            <div className="bg-section-light/50 border border-border rounded-2xl p-8 hover:border-primary hover:shadow-xl hover:shadow-primary/20 transition-all duration-300 transform hover:-translate-y-1">
+            <div className="bg-section-light/50 border border-border rounded-2xl p-8 hover:border-primary hover:shadow-xl hover:shadow-primary/20 transition-all duration-300 transform hover:-translate-y-1 text-center flex flex-col items-center">
               <div className="w-16 h-16 bg-gradient-to-br from-primary/30 to-secondary/30 rounded-2xl flex items-center justify-center mb-6 shadow-lg">
                 <Wind className="w-8 h-8 text-primary" />
               </div>
@@ -83,16 +83,16 @@ export default function Home() {
                   'Using premium HEPA filters and activated carbon technology to effectively remove harmful substances.'
                 )}
               </p>
-              <ul className="space-y-3">
-                <li className="flex items-start">
+              <ul className="space-y-3 text-left w-full">
+                <li className="flex items-start justify-center">
                   <CheckCircle2 className="w-5 h-5 text-success mr-2 flex-shrink-0 mt-0.5" />
                   <span className="text-sm text-muted-foreground">{t('99.97% 過濾效率', '99.97% Filtration')}</span>
                 </li>
-                <li className="flex items-start">
+                <li className="flex items-start justify-center">
                   <CheckCircle2 className="w-5 h-5 text-success mr-2 flex-shrink-0 mt-0.5" />
                   <span className="text-sm text-muted-foreground">{t('去除甲醛、異味', 'Remove Formaldehyde')}</span>
                 </li>
-                <li className="flex items-start">
+                <li className="flex items-start justify-center">
                   <CheckCircle2 className="w-5 h-5 text-success mr-2 flex-shrink-0 mt-0.5" />
                   <span className="text-sm text-muted-foreground">{t('抗菌防霉技術', 'Antibacterial Tech')}</span>
                 </li>
@@ -100,7 +100,7 @@ export default function Home() {
             </div>
 
             {/* Service 2 */}
-            <div className="bg-section-light/50 border border-border rounded-2xl p-8 hover:border-secondary hover:shadow-xl hover:shadow-secondary/20 transition-all duration-300 transform hover:-translate-y-1">
+            <div className="bg-section-light/50 border border-border rounded-2xl p-8 hover:border-secondary hover:shadow-xl hover:shadow-secondary/20 transition-all duration-300 transform hover:-translate-y-1 text-center flex flex-col items-center">
               <div className="w-16 h-16 bg-gradient-to-br from-secondary/30 to-accent/30 rounded-2xl flex items-center justify-center mb-6 shadow-lg">
                 <Sparkles className="w-8 h-8 text-secondary" />
               </div>
@@ -116,16 +116,16 @@ export default function Home() {
                   'Using quantum physics principles to adjust indoor energy fields through specific frequency resonance.'
                 )}
               </p>
-              <ul className="space-y-3">
-                <li className="flex items-start">
+              <ul className="space-y-3 text-left w-full">
+                <li className="flex items-start justify-center">
                   <CheckCircle2 className="w-5 h-5 text-success mr-2 flex-shrink-0 mt-0.5" />
                   <span className="text-sm text-muted-foreground">{t('負離子釋放', 'Negative Ions')}</span>
                 </li>
-                <li className="flex items-start">
+                <li className="flex items-start justify-center">
                   <CheckCircle2 className="w-5 h-5 text-success mr-2 flex-shrink-0 mt-0.5" />
                   <span className="text-sm text-muted-foreground">{t('能量場優化', 'Energy Field')}</span>
                 </li>
-                <li className="flex items-start">
+                <li className="flex items-start justify-center">
                   <CheckCircle2 className="w-5 h-5 text-success mr-2 flex-shrink-0 mt-0.5" />
                   <span className="text-sm text-muted-foreground">{t('改善睡眠品質', 'Better Sleep')}</span>
                 </li>
@@ -133,7 +133,7 @@ export default function Home() {
             </div>
 
             {/* Service 3 */}
-            <div className="bg-section-light/50 border border-border rounded-2xl p-8 hover:border-accent hover:shadow-xl hover:shadow-accent/20 transition-all duration-300 transform hover:-translate-y-1">
+            <div className="bg-section-light/50 border border-border rounded-2xl p-8 hover:border-accent hover:shadow-xl hover:shadow-accent/20 transition-all duration-300 transform hover:-translate-y-1 text-center flex flex-col items-center">
               <div className="w-16 h-16 bg-gradient-to-br from-accent/30 to-primary/30 rounded-2xl flex items-center justify-center mb-6 shadow-lg">
                 <Compass className="w-8 h-8 text-accent" />
               </div>
@@ -149,16 +149,16 @@ export default function Home() {
                   'Combining traditional feng shui wisdom with modern scientific measurement for optimal placement.'
                 )}
               </p>
-              <ul className="space-y-3">
-                <li className="flex items-start">
+              <ul className="space-y-3 text-left w-full">
+                <li className="flex items-start justify-center">
                   <CheckCircle2 className="w-5 h-5 text-success mr-2 flex-shrink-0 mt-0.5" />
                   <span className="text-sm text-muted-foreground">{t('專業風水分析', 'Professional Analysis')}</span>
                 </li>
-                <li className="flex items-start">
+                <li className="flex items-start justify-center">
                   <CheckCircle2 className="w-5 h-5 text-success mr-2 flex-shrink-0 mt-0.5" />
                   <span className="text-sm text-muted-foreground">{t('吉位精準定位', 'Precise Positioning')}</span>
                 </li>
-                <li className="flex items-start">
+                <li className="flex items-start justify-center">
                   <CheckCircle2 className="w-5 h-5 text-success mr-2 flex-shrink-0 mt-0.5" />
                   <span className="text-sm text-muted-foreground">{t('提升運勢磁場', 'Enhance Fortune')}</span>
                 </li>
@@ -228,7 +228,7 @@ export default function Home() {
               )}
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center">
             {[
               {
                 name: t('張女士', 'Ms. Zhang'),
@@ -260,16 +260,16 @@ export default function Home() {
             ].map((testimonial, index) => (
               <div
                 key={index}
-                className="bg-section-dark border border-border rounded-2xl p-8 hover:border-accent hover:shadow-xl hover:shadow-accent/10 transition-all duration-300"
+                className="bg-section-dark border border-border rounded-2xl p-8 hover:border-accent hover:shadow-xl hover:shadow-accent/10 transition-all duration-300 text-center flex flex-col items-center"
               >
                 <Quote className="w-10 h-10 text-accent/30 mb-4" />
                 <p className="text-muted-foreground leading-relaxed mb-6 italic">"{testimonial.content}"</p>
-                <div className="flex items-center justify-between pt-4 border-t border-border">
-                  <div>
+                <div className="flex flex-col items-center pt-4 border-t border-border w-full space-y-3">
+                  <div className="text-center">
                     <p className="font-semibold text-foreground">{testimonial.name}</p>
                     <p className="text-sm text-muted-foreground">{testimonial.title}</p>
                   </div>
-                  <div className="flex gap-1">
+                  <div className="flex gap-1 justify-center">
                     {[...Array(testimonial.rating)].map((_, i) => (
                       <svg key={i} className="w-5 h-5 text-accent fill-current" viewBox="0 0 20 20">
                         <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
@@ -310,7 +310,7 @@ export default function Home() {
               )}
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
             {brands.map((brand) => (
               <BrandCard key={brand.id} brand={brand} />
             ))}

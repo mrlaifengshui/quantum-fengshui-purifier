@@ -16,17 +16,17 @@ export default function BrandCard({ brand, onClick }: BrandCardProps) {
   return (
     <div
       onClick={onClick}
-      className="group bg-muted border border-border rounded-xl p-6 hover:border-accent transition-all duration-300 cursor-pointer hover:shadow-lg hover:shadow-accent/20"
+      className="group bg-muted border border-border rounded-xl p-6 hover:border-accent transition-all duration-300 cursor-pointer hover:shadow-lg hover:shadow-accent/20 text-center flex flex-col items-center"
     >
       {/* Brand Header */}
-      <div className="flex items-center justify-between mb-4">
-        <div>
+      <div className="flex flex-col items-center mb-4 w-full">
+        <div className="text-center mb-3">
           <h3 className="text-xl font-bold text-foreground group-hover:text-accent transition-colors">
             {name}
           </h3>
           <p className="text-sm text-muted-foreground mt-1">{category}</p>
         </div>
-        <div className="flex items-center space-x-1">
+        <div className="flex items-center space-x-1 justify-center">
           {Array.from({ length: brand.rating }).map((_, i) => (
             <Star key={i} className="w-4 h-4 fill-accent text-accent" />
           ))}
@@ -39,20 +39,20 @@ export default function BrandCard({ brand, onClick }: BrandCardProps) {
       </div>
 
       {/* Specs Grid */}
-      <div className="grid grid-cols-2 gap-3 text-sm">
-        <div>
+      <div className="grid grid-cols-2 gap-3 text-sm w-full">
+        <div className="text-center">
           <span className="text-muted-foreground">HEPA:</span>
           <span className="ml-2 text-foreground font-medium">{brand.specs.hepaLevel}</span>
         </div>
-        <div>
+        <div className="text-center">
           <span className="text-muted-foreground">{language === 'zh' ? '甲醛' : 'Formaldehyde'}:</span>
           <span className="ml-2 text-foreground font-medium">{brand.specs.formaldehydeRemoval}</span>
         </div>
-        <div>
+        <div className="text-center">
           <span className="text-muted-foreground">{language === 'zh' ? '負離子' : 'Ions'}:</span>
           <span className="ml-2 text-foreground font-medium">{brand.specs.negativeIons}</span>
         </div>
-        <div>
+        <div className="text-center">
           <span className="text-muted-foreground">{language === 'zh' ? '噪音' : 'Noise'}:</span>
           <span className="ml-2 text-foreground font-medium">{brand.specs.noiseLevel}</span>
         </div>
