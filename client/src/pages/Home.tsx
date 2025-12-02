@@ -20,7 +20,7 @@ export default function Home() {
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight tracking-tight">
             {t('量子風水空氣淨化服務', 'Quantum Feng Shui')}<br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent via-secondary to-primary">
+            <span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-accent via-secondary to-primary">
               {t('物質清淨 × 能量調頻 × 豐盛顯化', 'Air Purification Service')}
             </span>
           </h1>
@@ -176,8 +176,41 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Customer Testimonials - 深色背景 */}
+      {/* Video Section - Amway Sky - 深色背景 */}
       <section className="py-20 bg-section-dark">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+          <div className="text-center mb-12">
+            <div className="inline-block mb-4 px-4 py-1 bg-accent/10 border border-accent/30 rounded-full">
+              <span className="text-accent font-medium text-sm">
+                {t('頂級技術展示', 'Premium Technology Showcase')}
+              </span>
+            </div>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
+              {t('Amway Sky 量子風水空氣淨化機', 'Amway Sky Quantum Feng Shui Air Purifier')}
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed text-center md:text-center">
+              {t(
+                '了解 Amway Sky 如何結合量子調頻技術與頂級空氣淨化系統，為您創造完美的能量空間',
+                'Discover how Amway Sky combines quantum tuning technology with premium air purification for perfect energy spaces'
+              )}
+            </p>
+          </div>
+          <div className="max-w-4xl mx-auto">
+            <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl border border-border hover:shadow-accent/20 transition-all duration-300">
+              <iframe
+                className="w-full h-full"
+                src="https://www.youtube.com/embed/eaVCJCSrqC0?si=n1Bo_jNL2y5FBhQC"
+                title="Amway Sky 量子風水空氣淨化機"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Customer Testimonials - 淺色背景 */}
+      <section className="py-20 bg-section-light">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center mb-16">
             <div className="inline-block mb-4 px-4 py-1 bg-accent/10 border border-accent/30 rounded-full">
@@ -258,8 +291,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Supported Brands Section - 淺色背景 */}
-      <section className="py-20 bg-section-light">
+      {/* Supported Brands Section - 深色背景 */}
+      <section className="py-20 bg-section-dark">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center mb-16">
             <div className="inline-block mb-4 px-4 py-1 bg-primary/10 border border-primary/30 rounded-full">
@@ -299,7 +332,7 @@ export default function Home() {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 text-center">
             {t('準備好開始您的量子風水之旅了嗎？', 'Ready to Start Your Quantum Feng Shui Journey?')}
           </h2>
-          <p className="text-lg text-muted-foreground mb-10 leading-relaxed">
+          <p className="text-lg text-muted-foreground mb-10 leading-relaxed text-center max-w-3xl mx-auto">
             {t(
               '立即預約免費諮詢，讓我們的專業團隊為您打造專屬的能量提升方案',
               'Book a free consultation now and let our professional team create a customized energy enhancement plan for you'
