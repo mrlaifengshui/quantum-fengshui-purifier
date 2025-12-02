@@ -1,4 +1,4 @@
-import { Route, Switch } from 'wouter';
+import { Route, Switch, Router } from 'wouter';
 import { LanguageProvider } from './contexts/LanguageContext';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
@@ -9,23 +9,28 @@ import Cases from './pages/Cases';
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
 
+// Get base path from environment or use root
+const base = import.meta.env.BASE_URL || '/';
+
 export default function App() {
   return (
     <LanguageProvider>
-      <div className="flex flex-col min-h-screen bg-background text-foreground">
-        <Navigation />
-        <main className="flex-grow">
-          <Switch>
-            <Route path="/" component={Home} />
-            <Route path="/brands" component={Brands} />
-            <Route path="/services" component={Services} />
-            <Route path="/cases" component={Cases} />
-            <Route path="/contact" component={Contact} />
-            <Route component={NotFound} />
-          </Switch>
-        </main>
-        <Footer />
-      </div>
+      <Router base={base}>
+        <div className="flex flex-col min-h-screen bg-background text-foreground">
+          <Navigation />
+          <main className="flex-grow">
+            <Switch>
+              <Route path="/" component={Home} />
+              <Route path="/brands" component={Brands} />
+              <Route path="/services" component={Services} />
+              <Route path="/cases" component={Cases} />
+              <Route path="/contact" component={Contact} />
+              <Route component={NotFound} />
+            </Switch>
+          </main>
+          <Footer />
+        </div>
+      </Router>
     </LanguageProvider>
   );
 }
