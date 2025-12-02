@@ -22,6 +22,10 @@ A modern quantum feng shui air purification service website combining premium ai
 
 ### https://mrlaifengshui.github.io/quantum-fengshui-purifier/
 
+> ⚠️ **重要提示 | Important Note:**  
+> 如果看到 404 錯誤，請參考 [GitHub Pages 設置指南](#-github-pages-設置-github-pages-setup)  
+> If you see a 404 error, please refer to the [GitHub Pages Setup Guide](#-github-pages-設置-github-pages-setup)
+
 **GitHub Repository | GitHub 倉庫:**
 https://github.com/mrlaifengshui/quantum-fengshui-purifier
 
@@ -206,6 +210,88 @@ webapp/
 ## 📝 版權信息 | Copyright
 
 © 2024 量子風水空氣淨化服務. 版權所有 | All rights reserved.
+
+---
+
+## 🌐 GitHub Pages 設置 | GitHub Pages Setup
+
+### 當前狀態 | Current Status
+
+✅ **代碼已部署** - 所有文件已推送到 `gh-pages` 分支  
+✅ **倉庫已公開** - 可以訪問 GitHub 倉庫  
+❌ **需要啟用 GitHub Pages** - 需要手動在設置中啟用
+
+### 啟用步驟 | Setup Steps (2分鐘 | 2 minutes)
+
+#### 第1步：進入設置頁面 | Step 1: Go to Settings
+
+訪問 | Visit: https://github.com/mrlaifengshui/quantum-fengshui-purifier/settings/pages
+
+或者 | Or:
+1. 進入倉庫 | Go to repository
+2. 點擊 "Settings" 標籤 | Click "Settings" tab
+3. 點擊左側欄的 "Pages" | Click "Pages" in left sidebar
+
+#### 第2步：配置部署源 | Step 2: Configure Deployment
+
+在 "Build and deployment" 部分 | In "Build and deployment" section:
+
+1. **Source**: 選擇 **"Deploy from a branch"**  
+   Select **"Deploy from a branch"**
+
+2. **Branch**: 選擇 **"gh-pages"**  
+   Select **"gh-pages"** from dropdown
+
+3. **Folder**: 選擇 **"/ (root)"**  
+   Select **"/ (root)"**
+
+4. 點擊 **"Save"** | Click **"Save"**
+
+#### 第3步：等待部署 | Step 3: Wait for Deployment (1-2 minutes)
+
+保存後，GitHub 將：
+- 顯示藍色橫幅："GitHub Pages source saved"
+- 自動開始構建網站
+- 顯示："Your site is ready to be published at..."
+
+After saving, GitHub will:
+- Show blue banner: "GitHub Pages source saved"
+- Automatically start building your site
+- Display: "Your site is ready to be published at..."
+
+#### 第4步：驗證部署 | Step 4: Verify Deployment
+
+1-2分鐘後 | After 1-2 minutes:
+- 刷新設置頁面 | Refresh settings page
+- 應該看到 | You should see: ✅ "Your site is live at..."
+- 點擊鏈接查看網站 | Click link to view your website
+
+### 疑難解答 | Troubleshooting
+
+#### 仍然看到 404？ | Still seeing 404?
+
+1. **等待 2-5 分鐘** - GitHub Pages 部署需要時間  
+   **Wait 2-5 minutes** - GitHub Pages deployment takes time
+
+2. **清除瀏覽器緩存** - 使用 Ctrl+Shift+R (Mac: Cmd+Shift+R) 強制刷新  
+   **Clear browser cache** - Hard refresh with Ctrl+Shift+R (or Cmd+Shift+R on Mac)
+
+3. **檢查部署狀態** - 訪問 | Check deployment status - Visit:  
+   https://github.com/mrlaifengshui/quantum-fengshui-purifier/deployments
+
+4. **嘗試無痕模式** - 完全繞過緩存  
+   **Try incognito/private mode** - Bypass cache completely
+
+#### 本地測試 | Local Testing
+
+如果想在等待時本地驗證：
+
+```bash
+cd /home/user/webapp
+git checkout gh-pages
+python3 -m http.server 8000
+# 訪問 http://localhost:8000
+```
 
 ---
 
