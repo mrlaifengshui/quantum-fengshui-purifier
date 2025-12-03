@@ -208,9 +208,22 @@ export default function Technology() {
           </section>
         </div>
 
-        {/* Video Section 1 */}
+        {/* Video Sections with Title */}
         <section className="mt-20">
-          <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              {t('量子風水空氣淊化技術示範', 'Quantum Feng Shui Air Purification Technology Demonstration')}
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              {t(
+                '深入了解量子調頻技術與頂級空氣淊化系統的完美結合',
+                'Deep dive into the perfect combination of quantum tuning technology and premium air purification systems'
+              )}
+            </p>
+          </div>
+
+          {/* Video 1 */}
+          <div className="max-w-4xl mx-auto mb-12">
             <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl border border-border hover:shadow-accent/20 transition-all duration-300">
               <iframe
                 className="w-full h-full"
@@ -221,11 +234,9 @@ export default function Technology() {
               ></iframe>
             </div>
           </div>
-        </section>
 
-        {/* Video Section 2 */}
-        <section className="mt-12">
-          <div className="max-w-4xl mx-auto">
+          {/* Video 2 */}
+          <div className="max-w-4xl mx-auto mb-12">
             <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl border border-border hover:shadow-accent/20 transition-all duration-300">
               <iframe
                 className="w-full h-full"
@@ -236,10 +247,8 @@ export default function Technology() {
               ></iframe>
             </div>
           </div>
-        </section>
 
-        {/* Video Section 3 */}
-        <section className="mt-12">
+          {/* Video 3 */}
           <div className="max-w-4xl mx-auto">
             <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl border border-border hover:shadow-accent/20 transition-all duration-300">
               <iframe

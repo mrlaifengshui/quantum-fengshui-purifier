@@ -12,14 +12,15 @@ export default function Services() {
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             {t('服務介紹', 'Our Services')}
-            <br />
-            <span className="text-xl md:text-2xl font-normal text-muted-foreground mt-4 block">
-              {t(
-                '從物質、能量、風水三個層面全方位提升您的生活品質',
-                'Enhance your quality of life from material, energy, and feng shui perspectives'
-              )}
-            </span>
           </h1>
+          {/* Banner Image */}
+          <div className="max-w-4xl mx-auto">
+            <img 
+              src="/images/services-banner.jpg" 
+              alt={t('從物質、能量、風水三個層面全方位提升您的生活品質', 'Enhance your quality of life from material, energy, and feng shui perspectives')}
+              className="w-full rounded-2xl shadow-xl"
+            />
+          </div>
         </div>
 
         {/* Service Details */}
