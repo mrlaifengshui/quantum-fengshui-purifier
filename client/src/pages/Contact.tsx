@@ -165,9 +165,6 @@ export default function Contact() {
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">{t('電話', 'Phone')}</h3>
                     <p className="text-muted-foreground">{CONTACT_PHONE}</p>
-                    <p className="text-sm text-muted-foreground mt-1">
-                      {t('週一至週六 9:00-18:00', 'Mon-Sat 9:00-18:00')}
-                    </p>
                   </div>
                 </div>
 
@@ -178,9 +175,6 @@ export default function Contact() {
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">{t('電郵', 'Email')}</h3>
                     <p className="text-muted-foreground">{CONTACT_EMAIL}</p>
-                    <p className="text-sm text-muted-foreground mt-1">
-                      {t('24小時內回覆', '24-hour response time')}
-                    </p>
                   </div>
                 </div>
 

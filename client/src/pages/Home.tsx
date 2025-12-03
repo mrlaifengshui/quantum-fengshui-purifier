@@ -22,7 +22,7 @@ export default function Home() {
               {t('物質清淨 × 能量調頻 × 豐盛顯化', 'Material Purity × Energy Tuning × Abundance Manifestation')}
             </span>
             <br />
-            <span className="block text-sm md:text-base text-muted-foreground font-normal mt-2 max-w-3xl mx-auto">
+            <span className="block text-xl md:text-2xl text-muted-foreground font-normal mt-4">
               {t(
                 '結合頂級空氣淨化科技與量子調頻技術，精準擺設風水吉位，為您打造物質清淨、能量和諧、豐盛顯化的現代家居環境。',
                 'Combining premium air purification technology with quantum frequency tuning, precisely positioned for feng shui prosperity.'

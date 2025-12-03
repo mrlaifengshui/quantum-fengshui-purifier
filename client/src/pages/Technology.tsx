@@ -213,13 +213,14 @@ export default function Technology() {
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
               {t('量子風水空氣淊化技術示範', 'Quantum Feng Shui Air Purification Technology Demonstration')}
+              <br />
+              <span className="text-xl md:text-2xl font-normal text-muted-foreground mt-4 block">
+                {t(
+                  '深入了解量子調頻技術與頂級空氣淊化系統的完美結合',
+                  'Deep dive into the perfect combination of quantum tuning technology and premium air purification systems'
+                )}
+              </span>
             </h2>
-            <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto mt-4">
-              {t(
-                '深入了解量子調頻技術與頂級空氣淊化系統的完美結合',
-                'Deep dive into the perfect combination of quantum tuning technology and premium air purification systems'
-              )}
-            </p>
           </div>
 
           {/* Video 1 */}

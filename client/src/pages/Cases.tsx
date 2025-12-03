@@ -89,13 +89,14 @@ export default function Cases() {
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             {t('客戶見證案例', 'Client Testimonials')}
+            <br />
+            <span className="text-xl md:text-2xl font-normal text-muted-foreground mt-4 block">
+              {t(
+                '真實案例分享，見證物質清淨、能量調頻、豐盛顯化的神奇效果',
+                'Real case sharing, witnessing the amazing effects of material purification, energy tuning, and abundance manifestation'
+              )}
+            </span>
           </h1>
-          <p className="text-sm md:text-base text-muted-foreground max-w-3xl mx-auto text-center mb-6">
-            {t(
-              '真實案例分享，見證物質清淨、能量調頻、豐盛顯化的神奇效果',
-              'Real case sharing, witnessing the amazing effects of material purification, energy tuning, and abundance manifestation'
-            )}
-          </p>
           {/* Banner Image */}
           <div className="max-w-4xl mx-auto mb-6">
             <img 
