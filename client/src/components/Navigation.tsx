@@ -39,13 +39,13 @@ export default function Navigation() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-2">
+          <div className="hidden md:flex items-center space-x-1">
             {navItems.map((item, index) => (
               <div key={item.path} className="flex items-center">
                 <Link href={item.path}>
                   <a
                     className={cn(
-                      'px-4 py-2 text-base font-semibold transition-all duration-300 hover:text-accent hover:bg-accent/10 rounded-lg relative group',
+                      'px-5 py-2 text-base font-semibold transition-all duration-300 hover:text-accent hover:bg-accent/10 rounded-lg relative group',
                       location === item.path ? 'text-accent bg-accent/10' : 'text-foreground'
                     )}
                   >
@@ -57,11 +57,11 @@ export default function Navigation() {
                   </a>
                 </Link>
                 {index < navItems.length - 1 && (
-                  <div className="w-px h-6 bg-border/50 mx-2"></div>
+                  <div className="w-px h-5 bg-border/60 mx-3"></div>
                 )}
               </div>
             ))}
-            <div className="w-px h-6 bg-border/50 mx-2"></div>
+            <div className="w-px h-5 bg-border/60 mx-3"></div>
             <button
               onClick={toggleLanguage}
               className="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm font-medium text-muted-foreground hover:text-accent hover:bg-accent/10 transition-all duration-300 border border-border/30"
