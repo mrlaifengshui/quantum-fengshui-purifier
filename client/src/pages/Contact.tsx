@@ -32,7 +32,7 @@ export default function Contact() {
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
             {t('聯繫我們', 'Contact Us')}
           </h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-center text-muted-foreground max-w-3xl mx-auto">
             {t(
               '立即預約免費諮詢，體驗量子風水空氣淨化的神奇效果',
               'Book a free consultation and experience the magic of quantum feng shui air purification'
