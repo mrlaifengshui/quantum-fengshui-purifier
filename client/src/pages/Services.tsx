@@ -13,11 +13,17 @@ export default function Services() {
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             {t('服務介紹', 'Our Services')}
           </h1>
+          <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto text-center mb-6">
+            {t(
+              '從物質、能量、風水三個層面全方位提升您的生活品質',
+              'Enhance your quality of life from material, energy, and feng shui perspectives'
+            )}
+          </p>
           {/* Banner Image */}
           <div className="max-w-4xl mx-auto">
             <img 
-              src="/images/services-banner.jpg" 
-              alt={t('從物質、能量、風水三個層面全方位提升您的生活品質', 'Enhance your quality of life from material, energy, and feng shui perspectives')}
+              src="/quantum-fengshui-purifier/images/services-banner.jpg" 
+              alt={t('服務介紹圖片', 'Services Banner')}
               className="w-full rounded-2xl shadow-xl"
             />
           </div>

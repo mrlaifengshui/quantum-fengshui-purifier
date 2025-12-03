@@ -17,8 +17,7 @@ export default function Technology() {
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
             {t('技術原理', 'Technology Principles')}
           </h1>
-          <br />
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto text-center">
+          <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto text-center mt-4">
             {t(
               '從物質、能量、風水三個層面全方位提升您的生活品質',
               'Enhance your quality of life from material, energy, and feng shui perspectives'
@@ -215,8 +214,7 @@ export default function Technology() {
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
               {t('量子風水空氣淊化技術示範', 'Quantum Feng Shui Air Purification Technology Demonstration')}
             </h2>
-            <br />
-            <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto mt-4">
               {t(
                 '深入了解量子調頻技術與頂級空氣淊化系統的完美結合',
                 'Deep dive into the perfect combination of quantum tuning technology and premium air purification systems'
@@ -226,6 +224,9 @@ export default function Technology() {
 
           {/* Video 1 */}
           <div className="max-w-4xl mx-auto mb-12">
+            <h3 className="text-xl md:text-2xl font-semibold text-foreground text-center mb-4">
+              {t('量子風水基礎原理', 'Quantum Feng Shui Fundamental Principles')}
+            </h3>
             <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl border border-border hover:shadow-accent/20 transition-all duration-300">
               <iframe
                 className="w-full h-full"
@@ -239,6 +240,9 @@ export default function Technology() {
 
           {/* Video 2 */}
           <div className="max-w-4xl mx-auto mb-12">
+            <h3 className="text-xl md:text-2xl font-semibold text-foreground text-center mb-4">
+              {t('空氣淨化與量子調頻技術', 'Air Purification and Quantum Tuning Technology')}
+            </h3>
             <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl border border-border hover:shadow-accent/20 transition-all duration-300">
               <iframe
                 className="w-full h-full"
@@ -252,6 +256,9 @@ export default function Technology() {
 
           {/* Video 3 */}
           <div className="max-w-4xl mx-auto">
+            <h3 className="text-xl md:text-2xl font-semibold text-foreground text-center mb-4">
+              {t('風水擺位與能量場優化', 'Feng Shui Positioning and Energy Field Optimization')}
+            </h3>
             <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl border border-border hover:shadow-accent/20 transition-all duration-300">
               <iframe
                 className="w-full h-full"

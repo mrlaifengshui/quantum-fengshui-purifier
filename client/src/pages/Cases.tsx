@@ -90,11 +90,17 @@ export default function Cases() {
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             {t('客戶見證案例', 'Client Testimonials')}
           </h1>
+          <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto text-center mb-6">
+            {t(
+              '真實案例分享，見證物質清淨、能量調頻、豐盛顯化的神奇效果',
+              'Real case sharing, witnessing the amazing effects of material purification, energy tuning, and abundance manifestation'
+            )}
+          </p>
           {/* Banner Image */}
           <div className="max-w-4xl mx-auto mb-6">
             <img 
-              src="/images/cases-banner.jpg" 
-              alt={t('真實案例分享，見證物質清淨、能量調頻、豐盛顯化的神奇效果', 'Real case studies demonstrating the amazing effects')}
+              src="/quantum-fengshui-purifier/images/cases-banner.jpg" 
+              alt={t('客戶見證案例圖片', 'Cases Banner')}
               className="w-full rounded-2xl shadow-xl"
             />
           </div>
