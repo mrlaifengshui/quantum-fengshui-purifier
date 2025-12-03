@@ -49,7 +49,7 @@ export default function Navigation() {
                       location === item.path ? 'text-accent bg-accent/10' : 'text-foreground'
                     )}
                   >
-                    {item.label}
+                    | {item.label}
                     <span className={cn(
                       'absolute bottom-0 left-0 w-0 h-[3px] bg-gradient-to-r from-accent to-secondary rounded-full transition-all duration-300 group-hover:w-full',
                       location === item.path && 'w-full'

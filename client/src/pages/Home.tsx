@@ -21,13 +21,14 @@ export default function Home() {
             <span className="block text-lg sm:text-xl md:text-2xl lg:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-accent via-secondary to-primary mt-2">
               {t('物質清淨 × 能量調頻 × 豐盛顯化', 'Material Purity × Energy Tuning × Abundance Manifestation')}
             </span>
+            <br />
+            <span className="block text-lg md:text-xl text-muted-foreground font-normal mt-4 max-w-3xl mx-auto">
+              {t(
+                '結合頂級空氣淨化科技與量子調頻技術，精準擺設風水吉位，為您打造物質清淨、能量和諧、豐盛顯化的現代家居環境。',
+                'Combining premium air purification technology with quantum frequency tuning, precisely positioned for feng shui prosperity.'
+              )}
+            </span>
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto leading-relaxed">
-            {t(
-              '結合頂級空氣淨化科技與量子調頻技術，精準擺設風水吉位，為您打造物質清淨、能量和諧、豐盛顯化的現代家居環境。',
-              'Combining premium air purification technology with quantum frequency tuning, precisely positioned for feng shui prosperity.'
-            )}
-          </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link href="/contact">
               <a className="inline-flex items-center justify-center px-10 py-4 bg-gradient-to-r from-accent to-secondary text-accent-foreground font-semibold rounded-xl hover:shadow-xl hover:shadow-accent/30 transition-all duration-300 transform hover:-translate-y-1">
@@ -55,13 +56,14 @@ export default function Home() {
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
               {t('三合一服務模式', 'Three-in-One Service Model')}
+              <br />
+              <span className="text-xl md:text-2xl font-normal text-muted-foreground mt-4 block">
+                {t(
+                  '從物質、能量、風水三個層面全方位提升您的生活品質',
+                  'Enhance your quality of life from material, energy, and feng shui perspectives'
+                )}
+              </span>
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed text-center md:text-center">
-              {t(
-                '從物質、能量、風水三個層面全方位提升您的生活品質',
-                'Enhance your quality of life from material, energy, and feng shui perspectives'
-              )}
-            </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center">
             {/* Service 1 */}
@@ -183,13 +185,16 @@ export default function Home() {
                 {t('頂級技術展示', 'Premium Technology Showcase')}
               </span>
             </div>
-
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed text-center md:text-center">
-              {t(
-                '了解 Amway Sky 如何結合量子調頻技術與頂級空氣淨化系統，為您創造完美的能量空間',
-                'Discover how Amway Sky combines quantum tuning technology with premium air purification for perfect energy spaces'
-              )}
-            </p>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+              {t('量子風水空氣淨化技術', 'Quantum Feng Shui Air Purification Technology')}
+              <br />
+              <span className="text-xl md:text-2xl font-normal text-muted-foreground mt-4 block">
+                {t(
+                  '了解如何結合量子調頻技術與頂級空氣淨化系統，為您創造完美的能量空間',
+                  'Discover how quantum tuning technology combines with premium air purification for perfect energy spaces'
+                )}
+              </span>
+            </h2>
           </div>
           <div className="max-w-4xl mx-auto">
             <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl border border-border hover:shadow-accent/20 transition-all duration-300">
@@ -216,13 +221,14 @@ export default function Home() {
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
               {t('真實客戶體驗分享', 'Real Customer Experiences')}
+              <br />
+              <span className="text-xl md:text-2xl font-normal text-muted-foreground mt-4 block">
+                {t(
+                  '超過100位客戶見證了量子風水的神奇力量',
+                  'Over 100 customers have experienced the power of quantum feng shui'
+                )}
+              </span>
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed text-center md:text-center">
-              {t(
-                '超過100位客戶見證了量子風水的神奇力量',
-                'Over 100 customers have experienced the power of quantum feng shui'
-              )}
-            </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center">
             {[
@@ -297,7 +303,14 @@ export default function Home() {
               </span>
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-              {t('YouTube', 'YouTube')}
+              {t('專業技術解說', 'Professional Technical Explanation')}
+              <br />
+              <span className="text-xl md:text-2xl font-normal text-muted-foreground mt-4 block">
+                {t(
+                  '深入了解量子風水與空氣淨化的完美結合',
+                  'Deep dive into the perfect combination of quantum feng shui and air purification'
+                )}
+              </span>
             </h2>
           </div>
           <div className="max-w-4xl mx-auto">

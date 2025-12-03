@@ -198,25 +198,6 @@ export default function Contact() {
               </div>
             </div>
 
-            {/* Business Hours */}
-            <div className="bg-gradient-to-br from-primary to-secondary rounded-xl p-8 text-background">
-              <h2 className="text-2xl font-bold mb-4">{t('營業時間', 'Business Hours')}</h2>
-              <div className="space-y-3">
-                <div className="flex justify-between">
-                  <span>{t('週一至週五', 'Monday - Friday')}</span>
-                  <span className="font-semibold">9:00 - 18:00</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>{t('週六', 'Saturday')}</span>
-                  <span className="font-semibold">10:00 - 17:00</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>{t('週日及公眾假期', 'Sunday & Public Holidays')}</span>
-                  <span className="font-semibold">{t('休息', 'Closed')}</span>
-                </div>
-              </div>
-            </div>
-
             {/* Why Contact Us */}
             <div className="bg-muted border border-border rounded-xl p-8">
               <h2 className="text-2xl font-bold text-foreground mb-4">
