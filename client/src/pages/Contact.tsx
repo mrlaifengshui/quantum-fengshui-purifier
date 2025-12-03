@@ -29,15 +29,16 @@ export default function Contact() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             {t('聯繫我們', 'Contact Us')}
+            <br />
+            <span className="text-2xl md:text-3xl font-normal text-muted-foreground mt-4 block">
+              {t(
+                '立即預約免費諮詢，體驗量子風水空氣淨化的神奇效果',
+                'Book a free consultation and experience the magic of quantum feng shui air purification'
+              )}
+            </span>
           </h1>
-          <p className="text-xl text-center text-muted-foreground max-w-3xl mx-auto" style={{ textAlign: 'center' }}>
-            {t(
-              '立即預約免費諮詢，體驗量子風水空氣淨化的神奇效果',
-              'Book a free consultation and experience the magic of quantum feng shui air purification'
-            )}
-          </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
