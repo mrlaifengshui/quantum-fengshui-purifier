@@ -101,62 +101,7 @@ export default function Services() {
           </div>
         </div>
 
-        {/* Service Package - Combined Explanation */}
-        <div className="mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground text-center mb-12">
-            {t('服務詳程', 'Service Details')}
-            <br />
-            <span className="text-xl md:text-2xl font-normal text-muted-foreground mt-4 block">
-              {t('量子風水空氣淨化服務', 'Quantum Feng Shui Air Purification Service')}
-            </span>
-          </h2>
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10 border-2 border-accent rounded-2xl p-12">
-              <div className="text-center mb-8">
-                <div className="text-5xl font-bold text-accent mb-6">
-                  {t('HK$8,800 起', 'From HK$8,800')}
-                </div>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  {t(
-                    '我們提供三個層次的服務套餐，從基本套餐（HK$8,800）、標準套餐（HK$13,800）到尊貴套餐（HK$19,800），均包含三大核心服務：空氣淨化、量子調頻和風水擺位。根據您的需求和預算，我們的專業團隊會為您量身定制最適合的解決方案，全方位提升您的生活品質。',
-                    'We offer three service tiers from Basic (HK$8,800), Standard (HK$13,800) to Premium (HK$19,800), all including our three core services: Air Purification, Quantum Tuning, and Feng Shui Positioning. Our professional team will customize the best solution for your needs and budget.'
-                  )}
-                </p>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Wind className="w-8 h-8 text-background" />
-                  </div>
-                  <h4 className="font-bold text-foreground mb-2">{t('空氣淨化', 'Air Purification')}</h4>
-                  <p className="text-sm text-muted-foreground">{t('物質層面清淨', 'Material Purification')}</p>
-                </div>
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-gradient-to-br from-secondary to-accent rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Sparkles className="w-8 h-8 text-background" />
-                  </div>
-                  <h4 className="font-bold text-foreground mb-2">{t('量子調頻', 'Quantum Tuning')}</h4>
-                  <p className="text-sm text-muted-foreground">{t('能量層面提升', 'Energy Enhancement')}</p>
-                </div>
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-gradient-to-br from-accent to-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Compass className="w-8 h-8 text-background" />
-                  </div>
-                  <h4 className="font-bold text-foreground mb-2">{t('風水擺位', 'Feng Shui Positioning')}</h4>
-                  <p className="text-sm text-muted-foreground">{t('空間層面優化', 'Spatial Optimization')}</p>
-                </div>
-              </div>
-              <div className="text-center">
-                <Link href="/contact">
-                  <a className="inline-flex items-center justify-center px-12 py-4 bg-accent text-background font-bold text-lg rounded-xl hover:bg-accent/90 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-1">
-                    {t('立即預約免費諮詢', 'Book Free Consultation Now')}
-                    <ArrowRight className="ml-2 w-6 h-6" />
-                  </a>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
+
 
         {/* Service Process */}
         <div className="bg-muted rounded-xl p-8 md:p-12">

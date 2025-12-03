@@ -303,12 +303,12 @@ export default function Home() {
               </span>
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-              {t('專業技術解說', 'Professional Technical Explanation')}
+              {t('量子風水分享', 'Quantum Feng Shui Sharing')}
               <br />
               <span className="text-xl md:text-2xl font-normal text-muted-foreground mt-4 block">
                 {t(
-                  '深入了解量子風水與空氣淨化的完美結合',
-                  'Deep dive into the perfect combination of quantum feng shui and air purification'
+                  '了解量子風水',
+                  'Understanding Quantum Feng Shui'
                 )}
               </span>
             </h2>
@@ -327,26 +327,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Section - 深色背景與漸層 */}
-      <section className="py-20 bg-gradient-to-br from-primary/10 via-section-dark to-secondary/10">
-        <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 text-center">
-            {t('準備好開始您的量子風水之旅了嗎？', 'Ready to Start Your Quantum Feng Shui Journey?')}
-          </h2>
-          <p className="text-lg text-muted-foreground mb-10 leading-relaxed text-center max-w-3xl mx-auto">
-            {t(
-              '立即預約免費諮詢，讓我們的專業團隊為您打造專屬的能量提升方案',
-              'Book a free consultation now and let our professional team create a customized energy enhancement plan for you'
-            )}
-          </p>
-          <Link href="/contact">
-            <a className="inline-flex items-center justify-center px-12 py-5 bg-gradient-to-r from-accent via-secondary to-primary text-accent-foreground font-bold text-lg rounded-xl hover:shadow-2xl hover:shadow-accent/40 transition-all duration-300 transform hover:-translate-y-1 hover:scale-105">
-              {t('免費諮詢預約', 'Free Consultation')}
-              <ArrowRight className="ml-2 w-6 h-6" />
-            </a>
-          </Link>
-        </div>
-      </section>
+
     </div>
   );
 }

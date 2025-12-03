@@ -17,7 +17,8 @@ export default function Technology() {
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
             {t('技術原理', 'Technology Principles')}
           </h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-center">
+          <br />
+          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto text-center">
             {t(
               '從物質、能量、風水三個層面全方位提升您的生活品質',
               'Enhance your quality of life from material, energy, and feng shui perspectives'
@@ -214,7 +215,8 @@ export default function Technology() {
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
               {t('量子風水空氣淊化技術示範', 'Quantum Feng Shui Air Purification Technology Demonstration')}
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <br />
+            <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
               {t(
                 '深入了解量子調頻技術與頂級空氣淊化系統的完美結合',
                 'Deep dive into the perfect combination of quantum tuning technology and premium air purification systems'
