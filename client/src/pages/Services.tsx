@@ -13,7 +13,7 @@ export default function Services() {
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             {t('服務介紹', 'Our Services')}
           </h1>
-          <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto text-center mb-6">
+          <p className="text-sm md:text-base text-muted-foreground max-w-3xl mx-auto text-center mb-6">
             {t(
               '從物質、能量、風水三個層面全方位提升您的生活品質',
               'Enhance your quality of life from material, energy, and feng shui perspectives'

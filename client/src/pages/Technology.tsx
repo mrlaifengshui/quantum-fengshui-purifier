@@ -17,7 +17,7 @@ export default function Technology() {
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
             {t('技術原理', 'Technology Principles')}
           </h1>
-          <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto text-center mt-4">
+          <p className="text-sm md:text-base text-muted-foreground max-w-3xl mx-auto text-center mt-4">
             {t(
               '從物質、能量、風水三個層面全方位提升您的生活品質',
               'Enhance your quality of life from material, energy, and feng shui perspectives'
@@ -225,7 +225,7 @@ export default function Technology() {
           {/* Video 1 */}
           <div className="max-w-4xl mx-auto mb-12">
             <h3 className="text-xl md:text-2xl font-semibold text-foreground text-center mb-4">
-              {t('量子風水基礎原理', 'Quantum Feng Shui Fundamental Principles')}
+              {t('淨化空間氣場能量與過濾空氣懸浮粒子', 'Purifying Space Energy Field and Filtering Air Particles')}
             </h3>
             <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl border border-border hover:shadow-accent/20 transition-all duration-300">
               <iframe
@@ -241,7 +241,7 @@ export default function Technology() {
           {/* Video 2 */}
           <div className="max-w-4xl mx-auto mb-12">
             <h3 className="text-xl md:text-2xl font-semibold text-foreground text-center mb-4">
-              {t('空氣淨化與量子調頻技術', 'Air Purification and Quantum Tuning Technology')}
+              {t('空氣淨化器可以提升室內風水氣場', 'Air Purifiers Can Enhance Indoor Feng Shui Energy Field')}
             </h3>
             <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl border border-border hover:shadow-accent/20 transition-all duration-300">
               <iframe
@@ -257,7 +257,7 @@ export default function Technology() {
           {/* Video 3 */}
           <div className="max-w-4xl mx-auto">
             <h3 className="text-xl md:text-2xl font-semibold text-foreground text-center mb-4">
-              {t('風水擺位與能量場優化', 'Feng Shui Positioning and Energy Field Optimization')}
+              {t('空氣淨化器顛覆身心靈的思維模式', 'Air Purifiers Transform Mind, Body, and Spirit Thinking Patterns')}
             </h3>
             <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl border border-border hover:shadow-accent/20 transition-all duration-300">
               <iframe

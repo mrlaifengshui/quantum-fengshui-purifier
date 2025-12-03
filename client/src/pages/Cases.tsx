@@ -90,7 +90,7 @@ export default function Cases() {
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             {t('客戶見證案例', 'Client Testimonials')}
           </h1>
-          <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto text-center mb-6">
+          <p className="text-sm md:text-base text-muted-foreground max-w-3xl mx-auto text-center mb-6">
             {t(
               '真實案例分享，見證物質清淨、能量調頻、豐盛顯化的神奇效果',
               'Real case sharing, witnessing the amazing effects of material purification, energy tuning, and abundance manifestation'
