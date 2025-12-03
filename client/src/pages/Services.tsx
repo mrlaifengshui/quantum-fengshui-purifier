@@ -5,50 +5,6 @@ import { useLanguage } from '../contexts/LanguageContext';
 export default function Services() {
   const { t } = useLanguage();
 
-  const packages = [
-    {
-      name: t('基本套餐', 'Basic Package'),
-      price: 'HK$8,800',
-      features: [
-        t('空氣淨化', 'Air Purification'),
-        t('基礎量子調頻', 'Basic Quantum Tuning'),
-        t('簡單風水擺位', 'Basic Feng Shui Positioning'),
-        t('空氣淨化機選購建議', 'Air Purifier Consultation'),
-        t('1次現場服務', '1 On-site Service'),
-      ],
-    },
-    {
-      name: t('標準套餐', 'Standard Package'),
-      price: 'HK$13,800',
-      features: [
-        t('空氣淨化', 'Air Purification'),
-        t('量子調頻', 'Quantum Tuning'),
-        t('風水擺位', 'Feng Shui Positioning'),
-        t('全面空間評估', 'Complete Space Assessment'),
-        t('進階量子調頻', 'Advanced Quantum Tuning'),
-        t('專業風水擺位', 'Professional Feng Shui Positioning'),
-        t('2次現場服務', '2 On-site Services'),
-        t('1個月跟進服務', '1 Month Follow-up'),
-      ],
-      recommended: true,
-    },
-    {
-      name: t('尊貴套餐', 'Premium Package'),
-      price: 'HK$19,800',
-      features: [
-        t('空氣淨化', 'Air Purification'),
-        t('量子調頻', 'Quantum Tuning'),
-        t('風水擺位', 'Feng Shui Positioning'),
-        t('深度空間能量分析', 'Deep Energy Analysis'),
-        t('頂級量子調頻', 'Premium Quantum Tuning'),
-        t('大師級風水設計', 'Master Feng Shui Design'),
-        t('3次現場服務', '3 On-site Services'),
-        t('3個月跟進服務', '3 Months Follow-up'),
-        t('終身諮詢支持', 'Lifetime Consultation'),
-      ],
-    },
-  ];
-
   return (
     <div className="min-h-screen py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -143,49 +99,59 @@ export default function Services() {
           </div>
         </div>
 
-        {/* Pricing Packages */}
+        {/* Service Package - Combined Explanation */}
         <div className="mb-16">
           <h2 className="text-3xl font-bold text-foreground text-center mb-12">
             {t('服務套餐', 'Service Packages')}
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {packages.map((pkg, i) => (
-              <div
-                key={i}
-                className={`relative bg-muted border-2 rounded-xl p-8 ${
-                  pkg.recommended ? 'border-accent shadow-lg shadow-accent/20' : 'border-border'
-                }`}
-              >
-                {pkg.recommended && (
-                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                    <span className="bg-accent text-background px-4 py-1 rounded-full text-sm font-semibold">
-                      {t('推薦', 'Recommended')}
-                    </span>
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10 border-2 border-accent rounded-2xl p-12">
+              <div className="text-center mb-8">
+                <h3 className="text-3xl font-bold text-foreground mb-4">
+                  {t('量子風水空氣淨化服務', 'Quantum Feng Shui Air Purification Service')}
+                </h3>
+                <div className="text-5xl font-bold text-accent mb-6">
+                  {t('HK$8,800 起', 'From HK$8,800')}
+                </div>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  {t(
+                    '我們提供三個層次的服務套餐，從基本套餐（HK$8,800）、標準套餐（HK$13,800）到尊貴套餐（HK$19,800），均包含三大核心服務：空氣淨化、量子調頻和風水擺位。根據您的需求和預算，我們的專業團隊會為您量身定制最適合的解決方案，全方位提升您的生活品質。',
+                    'We offer three service tiers from Basic (HK$8,800), Standard (HK$13,800) to Premium (HK$19,800), all including our three core services: Air Purification, Quantum Tuning, and Feng Shui Positioning. Our professional team will customize the best solution for your needs and budget.'
+                  )}
+                </p>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Wind className="w-8 h-8 text-background" />
                   </div>
-                )}
-                <h3 className="text-2xl font-bold text-foreground mb-2">{pkg.name}</h3>
-                <div className="text-4xl font-bold text-accent mb-6">{pkg.price}</div>
-                <ul className="space-y-3 mb-8">
-                  {pkg.features.map((feature, j) => (
-                    <li key={j} className="flex items-start text-sm">
-                      <CheckCircle2 className="w-5 h-5 text-secondary mr-2 flex-shrink-0 mt-0.5" />
-                      <span>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
+                  <h4 className="font-bold text-foreground mb-2">{t('空氣淨化', 'Air Purification')}</h4>
+                  <p className="text-sm text-muted-foreground">{t('物質層面清淨', 'Material Purification')}</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-gradient-to-br from-secondary to-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Sparkles className="w-8 h-8 text-background" />
+                  </div>
+                  <h4 className="font-bold text-foreground mb-2">{t('量子調頻', 'Quantum Tuning')}</h4>
+                  <p className="text-sm text-muted-foreground">{t('能量層面提升', 'Energy Enhancement')}</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-gradient-to-br from-accent to-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Compass className="w-8 h-8 text-background" />
+                  </div>
+                  <h4 className="font-bold text-foreground mb-2">{t('風水擺位', 'Feng Shui Positioning')}</h4>
+                  <p className="text-sm text-muted-foreground">{t('空間層面優化', 'Spatial Optimization')}</p>
+                </div>
+              </div>
+              <div className="text-center">
                 <Link href="/contact">
-                  <a
-                    className={`block w-full text-center py-3 rounded-lg font-semibold transition-all duration-300 ${
-                      pkg.recommended
-                        ? 'bg-accent text-background hover:bg-accent/90'
-                        : 'bg-border text-foreground hover:bg-accent hover:text-background'
-                    }`}
-                  >
-                    {t('立即預約', 'Book Now')}
+                  <a className="inline-flex items-center justify-center px-12 py-4 bg-accent text-background font-bold text-lg rounded-xl hover:bg-accent/90 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-1">
+                    {t('立即預約免費諮詢', 'Book Free Consultation Now')}
+                    <ArrowRight className="ml-2 w-6 h-6" />
                   </a>
                 </Link>
               </div>
-            ))}
+            </div>
           </div>
         </div>
 
@@ -215,9 +181,12 @@ export default function Services() {
 
         {/* CTA */}
         <div className="text-center mt-16">
+          <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+            {t('立即預約免費諮詢，體驗量子風水空氣淨化的神奇效果', 'Book a Free Consultation and Experience the Amazing Effects')}
+          </h3>
           <Link href="/contact">
             <a className="inline-flex items-center justify-center px-10 py-4 bg-accent text-background font-bold rounded-lg hover:bg-accent/90 transition-all duration-300 shadow-lg">
-              {t('立即預約免費諮詢', 'Book Free Consultation')}
+              {t('免費諮詢預約', 'Free Consultation')}
               <ArrowRight className="ml-2 w-5 h-5" />
             </a>
           </Link>

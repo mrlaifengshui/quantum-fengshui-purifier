@@ -23,8 +23,8 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Quick Links */}
-          <div className="flex flex-col items-center md:items-start">
+          {/* Quick Links - Hidden on mobile */}
+          <div className="hidden md:flex flex-col items-center md:items-start">
             <h3 className="text-foreground font-semibold mb-4">
               {t('快速導航', 'Quick Links')}
             </h3>
@@ -38,10 +38,10 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/brands">
+                <Link href="/technology">
                   <a className="flex items-center space-x-2 text-muted-foreground hover:text-accent transition-colors text-sm group">
                     <div className="w-1 h-1 rounded-full bg-accent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                    <span>{t('品牌介紹', 'Brands')}</span>
+                    <span>{t('技術原理', 'Technology')}</span>
                   </a>
                 </Link>
               </li>
@@ -142,7 +142,7 @@ export default function Footer() {
         {/* Copyright */}
         <div className="mt-8 pt-8 border-t border-border text-center">
           <p className="text-muted-foreground text-sm">
-            © 2024 {t('量子風水空氣淨化服務', 'Quantum Feng Shui Air Purification Service')}.{' '}
+            © 2025 {t('量子風水空氣淨化服務', 'Quantum Feng Shui Air Purification Service')}.{' '}
             {t('版權所有', 'All rights reserved')}.
           </p>
         </div>

@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { Phone, Mail, MapPin, Send, CheckCircle2 } from 'lucide-react';
+import { Phone, Mail, Globe, Send, CheckCircle2 } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
-import { CONTACT_PHONE, CONTACT_EMAIL, CONTACT_ADDRESS, CONTACT_ADDRESS_EN } from '../const';
+import { CONTACT_PHONE, CONTACT_EMAIL, CONTACT_WEBSITE } from '../const';
 
 export default function Contact() {
   const { t } = useLanguage();
@@ -185,13 +185,13 @@ export default function Contact() {
 
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center flex-shrink-0">
-                    <MapPin className="w-6 h-6 text-background" />
+                    <Globe className="w-6 h-6 text-background" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-foreground mb-1">{t('地址', 'Address')}</h3>
-                    <p className="text-muted-foreground">
-                      {t(CONTACT_ADDRESS, CONTACT_ADDRESS_EN)}
-                    </p>
+                    <h3 className="font-semibold text-foreground mb-1">{t('網站', 'Website')}</h3>
+                    <a href={`https://${CONTACT_WEBSITE}`} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors">
+                      {CONTACT_WEBSITE}
+                    </a>
                   </div>
                 </div>
               </div>
@@ -223,7 +223,7 @@ export default function Contact() {
               </h2>
               <ul className="space-y-3">
                 {[
-                  t('免費上門諮詢', 'Free On-site Consultation'),
+                  t('免費線上諮詢', 'Free Online Consultation'),
                   t('專業團隊服務', 'Professional Team Service'),
                   t('多品牌支持', 'Multi-Brand Support'),
                   t('效果保證', 'Results Guaranteed'),

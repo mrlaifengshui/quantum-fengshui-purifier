@@ -1,8 +1,6 @@
 import { Link } from 'wouter';
 import { ArrowRight, Sparkles, Wind, Compass, CheckCircle2, Quote } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
-import BrandCard from '../components/BrandCard';
-import { brands } from '../lib/brands';
 
 export default function Home() {
   const { t } = useLanguage();
@@ -84,15 +82,15 @@ export default function Home() {
                 )}
               </p>
               <ul className="space-y-3 text-left w-full">
-                <li className="flex items-start justify-center">
+                <li className="flex items-start">
                   <CheckCircle2 className="w-5 h-5 text-success mr-2 flex-shrink-0 mt-0.5" />
                   <span className="text-sm text-muted-foreground">{t('99.97% 過濾效率', '99.97% Filtration')}</span>
                 </li>
-                <li className="flex items-start justify-center">
+                <li className="flex items-start">
                   <CheckCircle2 className="w-5 h-5 text-success mr-2 flex-shrink-0 mt-0.5" />
                   <span className="text-sm text-muted-foreground">{t('去除甲醛、異味', 'Remove Formaldehyde')}</span>
                 </li>
-                <li className="flex items-start justify-center">
+                <li className="flex items-start">
                   <CheckCircle2 className="w-5 h-5 text-success mr-2 flex-shrink-0 mt-0.5" />
                   <span className="text-sm text-muted-foreground">{t('抗菌防霉技術', 'Antibacterial Tech')}</span>
                 </li>
@@ -117,15 +115,15 @@ export default function Home() {
                 )}
               </p>
               <ul className="space-y-3 text-left w-full">
-                <li className="flex items-start justify-center">
+                <li className="flex items-start">
                   <CheckCircle2 className="w-5 h-5 text-success mr-2 flex-shrink-0 mt-0.5" />
                   <span className="text-sm text-muted-foreground">{t('負離子釋放', 'Negative Ions')}</span>
                 </li>
-                <li className="flex items-start justify-center">
+                <li className="flex items-start">
                   <CheckCircle2 className="w-5 h-5 text-success mr-2 flex-shrink-0 mt-0.5" />
                   <span className="text-sm text-muted-foreground">{t('能量場優化', 'Energy Field')}</span>
                 </li>
-                <li className="flex items-start justify-center">
+                <li className="flex items-start">
                   <CheckCircle2 className="w-5 h-5 text-success mr-2 flex-shrink-0 mt-0.5" />
                   <span className="text-sm text-muted-foreground">{t('改善睡眠品質', 'Better Sleep')}</span>
                 </li>
@@ -150,15 +148,15 @@ export default function Home() {
                 )}
               </p>
               <ul className="space-y-3 text-left w-full">
-                <li className="flex items-start justify-center">
+                <li className="flex items-start">
                   <CheckCircle2 className="w-5 h-5 text-success mr-2 flex-shrink-0 mt-0.5" />
                   <span className="text-sm text-muted-foreground">{t('專業風水分析', 'Professional Analysis')}</span>
                 </li>
-                <li className="flex items-start justify-center">
+                <li className="flex items-start">
                   <CheckCircle2 className="w-5 h-5 text-success mr-2 flex-shrink-0 mt-0.5" />
                   <span className="text-sm text-muted-foreground">{t('吉位精準定位', 'Precise Positioning')}</span>
                 </li>
-                <li className="flex items-start justify-center">
+                <li className="flex items-start">
                   <CheckCircle2 className="w-5 h-5 text-success mr-2 flex-shrink-0 mt-0.5" />
                   <span className="text-sm text-muted-foreground">{t('提升運勢磁場', 'Enhance Fortune')}</span>
                 </li>
@@ -185,9 +183,7 @@ export default function Home() {
                 {t('頂級技術展示', 'Premium Technology Showcase')}
               </span>
             </div>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-              {t('Amway Sky 量子風水空氣淨化機', 'Amway Sky Quantum Feng Shui Air Purifier')}
-            </h2>
+
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed text-center md:text-center">
               {t(
                 '了解 Amway Sky 如何結合量子調頻技術與頂級空氣淨化系統，為您創造完美的能量空間',
@@ -291,37 +287,29 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Supported Brands Section - 深色背景 */}
+      {/* YouTube Video Section - 深色背景 */}
       <section className="py-20 bg-section-dark">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="text-center mb-16">
-            <div className="inline-block mb-4 px-4 py-1 bg-primary/10 border border-primary/30 rounded-full">
-              <span className="text-primary font-medium text-sm">
-                {t('多品牌支持', 'Multi-Brand Support')}
+          <div className="text-center mb-12">
+            <div className="inline-block mb-4 px-4 py-1 bg-accent/10 border border-accent/30 rounded-full">
+              <span className="text-accent font-medium text-sm">
+                {t('專業展示', 'Professional Showcase')}
               </span>
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-              {t('支持的優質品牌', 'Supported Premium Brands')}
+              {t('YouTube', 'YouTube')}
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed text-center md:text-center">
-              {t(
-                '無論您選擇哪個品牌，我們都提供完整的量子調頻和風水擺位服務',
-                'We provide complete quantum tuning and feng shui positioning for all brands'
-              )}
-            </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
-            {brands.map((brand) => (
-              <BrandCard key={brand.id} brand={brand} />
-            ))}
-          </div>
-          <div className="text-center mt-12">
-            <Link href="/brands">
-              <a className="inline-flex items-center text-accent hover:text-secondary font-semibold text-lg transition-colors duration-300">
-                {t('查看所有品牌詳情', 'View All Brand Details')}
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </a>
-            </Link>
+          <div className="max-w-4xl mx-auto">
+            <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl border border-border hover:shadow-accent/20 transition-all duration-300">
+              <iframe
+                className="w-full h-full"
+                src="https://www.youtube.com/embed/kqsD2lVRyek?start=10"
+                title="量子風水空氣淨化"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
           </div>
         </div>
       </section>
