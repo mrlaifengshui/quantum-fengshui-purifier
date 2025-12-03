@@ -3,7 +3,7 @@ import { LanguageProvider } from './contexts/LanguageContext';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-import Brands from './pages/Brands';
+import Technology from './pages/Technology';
 import Services from './pages/Services';
 import Cases from './pages/Cases';
 import Contact from './pages/Contact';
@@ -21,7 +21,7 @@ export default function App() {
           <main className="flex-grow">
             <Switch>
               <Route path="/" component={Home} />
-              <Route path="/brands" component={Brands} />
+              <Route path="/technology" component={Technology} />
               <Route path="/services" component={Services} />
               <Route path="/cases" component={Cases} />
               <Route path="/contact" component={Contact} />

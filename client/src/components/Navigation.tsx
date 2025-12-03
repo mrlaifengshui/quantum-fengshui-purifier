@@ -39,26 +39,32 @@ export default function Navigation() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-10">
-            {navItems.map((item) => (
-              <Link key={item.path} href={item.path}>
-                <a
-                  className={cn(
-                    'text-base font-semibold transition-all duration-300 hover:text-accent relative group py-1',
-                    location === item.path ? 'text-accent' : 'text-foreground'
-                  )}
-                >
-                  {item.label}
-                  <span className={cn(
-                    'absolute bottom-[-6px] left-0 w-0 h-[3px] bg-gradient-to-r from-accent to-secondary rounded-full transition-all duration-300 group-hover:w-full',
-                    location === item.path && 'w-full'
-                  )}></span>
-                </a>
-              </Link>
+          <div className="hidden md:flex items-center space-x-2">
+            {navItems.map((item, index) => (
+              <div key={item.path} className="flex items-center">
+                <Link href={item.path}>
+                  <a
+                    className={cn(
+                      'px-4 py-2 text-base font-semibold transition-all duration-300 hover:text-accent hover:bg-accent/10 rounded-lg relative group',
+                      location === item.path ? 'text-accent bg-accent/10' : 'text-foreground'
+                    )}
+                  >
+                    {item.label}
+                    <span className={cn(
+                      'absolute bottom-0 left-0 w-0 h-[3px] bg-gradient-to-r from-accent to-secondary rounded-full transition-all duration-300 group-hover:w-full',
+                      location === item.path && 'w-full'
+                    )}></span>
+                  </a>
+                </Link>
+                {index < navItems.length - 1 && (
+                  <div className="w-px h-6 bg-border/50 mx-2"></div>
+                )}
+              </div>
             ))}
+            <div className="w-px h-6 bg-border/50 mx-2"></div>
             <button
               onClick={toggleLanguage}
-              className="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm font-medium text-muted-foreground hover:text-accent hover:bg-accent/10 transition-all duration-300"
+              className="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm font-medium text-muted-foreground hover:text-accent hover:bg-accent/10 transition-all duration-300 border border-border/30"
             >
               <Globe className="w-4 h-4" />
               <span>{language === 'zh' ? 'EN' : '中文'}</span>
