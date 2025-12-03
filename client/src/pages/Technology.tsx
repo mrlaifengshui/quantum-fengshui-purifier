@@ -208,25 +208,14 @@ export default function Technology() {
           </section>
         </div>
 
-        {/* Video Section 1 - Existing Amway Video */}
-        <section className="mt-20 bg-section-dark rounded-2xl p-8 md:p-12">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-foreground mb-4">
-              {t('Amway Sky 量子風水空氣淨化機', 'Amway Sky Quantum Feng Shui Air Purifier')}
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-center">
-              {t(
-                '了解 Amway Sky 如何結合量子調頻技術與頂級空氣淨化系統，為您創造完美的能量空間',
-                'Discover how Amway Sky combines quantum tuning technology with premium air purification'
-              )}
-            </p>
-          </div>
+        {/* Video Section 1 */}
+        <section className="mt-20">
           <div className="max-w-4xl mx-auto">
             <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl border border-border hover:shadow-accent/20 transition-all duration-300">
               <iframe
                 className="w-full h-full"
-                src="https://www.youtube.com/embed/eaVCJCSrqC0?si=n1Bo_jNL2y5FBhQC"
-                title="Amway Sky 量子風水空氣淨化機"
+                src="https://www.youtube.com/embed/qU5N5gjRS1k"
+                title={t('量子風水技術 1', 'Quantum Feng Shui Technology 1')}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
               ></iframe>
@@ -234,25 +223,29 @@ export default function Technology() {
           </div>
         </section>
 
-        {/* Video Section 2 - New Video */}
-        <section className="mt-20 bg-section-light rounded-2xl p-8 md:p-12">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-foreground mb-4">
-              {t('量子風水技術深度解析', 'In-Depth Analysis of Quantum Feng Shui Technology')}
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-center">
-              {t(
-                '深入了解量子風水的科學原理與實際應用，見證科技與傳統智慧的完美結合',
-                'In-depth understanding of the scientific principles and practical applications of quantum feng shui'
-              )}
-            </p>
-          </div>
+        {/* Video Section 2 */}
+        <section className="mt-12">
           <div className="max-w-4xl mx-auto">
             <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl border border-border hover:shadow-accent/20 transition-all duration-300">
               <iframe
                 className="w-full h-full"
-                src="https://www.youtube.com/embed/C7oqpToh1GY?si=5s"
-                title="量子風水技術深度解析"
+                src="https://www.youtube.com/embed/B5BMYjmIN-Q?start=10"
+                title={t('量子風水技術 2', 'Quantum Feng Shui Technology 2')}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </section>
+
+        {/* Video Section 3 */}
+        <section className="mt-12">
+          <div className="max-w-4xl mx-auto">
+            <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl border border-border hover:shadow-accent/20 transition-all duration-300">
+              <iframe
+                className="w-full h-full"
+                src="https://www.youtube.com/embed/C7oqpToh1GY?start=6"
+                title={t('量子風水技術 3', 'Quantum Feng Shui Technology 3')}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
               ></iframe>

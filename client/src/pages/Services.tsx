@@ -10,15 +10,16 @@ export default function Services() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             {t('服務介紹', 'Our Services')}
+            <br />
+            <span className="text-xl md:text-2xl font-normal text-muted-foreground mt-4 block">
+              {t(
+                '從物質、能量、風水三個層面全方位提升您的生活品質',
+                'Enhance your quality of life from material, energy, and feng shui perspectives'
+              )}
+            </span>
           </h1>
-          <p className="text-xl text-center text-muted-foreground max-w-3xl mx-auto">
-            {t(
-              '從物質、能量、風水三個層面全方位提升您的生活品質',
-              'Enhance your quality of life from material, energy, and feng shui perspectives'
-            )}
-          </p>
         </div>
 
         {/* Service Details */}
@@ -101,15 +102,16 @@ export default function Services() {
 
         {/* Service Package - Combined Explanation */}
         <div className="mb-16">
-          <h2 className="text-3xl font-bold text-foreground text-center mb-12">
-            {t('服務套餐', 'Service Packages')}
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground text-center mb-12">
+            {t('服務詳程', 'Service Details')}
+            <br />
+            <span className="text-xl md:text-2xl font-normal text-muted-foreground mt-4 block">
+              {t('量子風水空氣淨化服務', 'Quantum Feng Shui Air Purification Service')}
+            </span>
           </h2>
           <div className="max-w-4xl mx-auto">
             <div className="bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10 border-2 border-accent rounded-2xl p-12">
               <div className="text-center mb-8">
-                <h3 className="text-3xl font-bold text-foreground mb-4">
-                  {t('量子風水空氣淨化服務', 'Quantum Feng Shui Air Purification Service')}
-                </h3>
                 <div className="text-5xl font-bold text-accent mb-6">
                   {t('HK$8,800 起', 'From HK$8,800')}
                 </div>
