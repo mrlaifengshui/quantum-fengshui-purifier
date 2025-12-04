@@ -102,8 +102,8 @@ export default function Technology() {
                 </h2>
                 <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
                   {t(
-                    '運用量子物理學原理，透過432Hz、528Hz等特定頻率的共振技術，調整室內空間的能量場，有效釋放1000萬至2000萬個/立方厘米的負離子，平衡生理時鐘，促進深度睡眠。調整空間頻率，優化能量場，提升正向能量流動，改善居住者的身心靈和諧狀態，顯著提升整體生活品質和幸福感。',
-                    'Using quantum physics principles and specific frequency resonance technology (432Hz, 528Hz) to adjust indoor energy fields, effectively releasing 10-20 million negative ions per cubic centimeter. Balances circadian rhythm and promotes deep sleep. Adjusts spatial frequencies to optimize energy fields, enhance positive energy flow, improve mind-body-spirit harmony, and significantly enhance overall quality of life and well-being.'
+                    '運用量子物理學原理，透過特定頻率的共振技術，調整室內空間的能量場，釋放量子波動能量，平衡生理時鐘，促進深度睡眠。調整空間頻率，優化能量場，提升正向能量流動，改善居住者的身心靈和諧狀態，顯著提升整體生活品質和幸福感。',
+                    'Using quantum physics principles and specific frequency resonance technology to adjust indoor energy fields, releasing quantum wave energy. Balances circadian rhythm and promotes deep sleep. Adjusts spatial frequencies to optimize energy fields, enhance positive energy flow, improve mind-body-spirit harmony, and significantly enhance overall quality of life and well-being.'
                   )}
                 </p>
                 <ul className="space-y-3">
@@ -111,10 +111,10 @@ export default function Technology() {
                     <CheckCircle2 className="w-5 h-5 text-success mr-3 flex-shrink-0 mt-0.5" />
                     <div>
                       <span className="font-semibold text-foreground">
-                        {t('負離子釋放', 'Negative Ion Release')}
+                        {t('釋放量子頻率', 'Quantum Frequency Release')}
                       </span>
                       <p className="text-sm text-muted-foreground mt-1">
-                        {t('釋放森林級負離子，淨化空氣分子結構', 'Release forest-level negative ions to purify air molecular structure')}
+                        {t('釋放量子波動頻率，調節空間能量振動', 'Release quantum wave frequencies to modulate spatial energy vibrations')}
                       </p>
                     </div>
                   </li>
@@ -211,11 +211,11 @@ export default function Technology() {
         <section className="mt-20">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              {t('量子風水空氣淊化技術示範', 'Quantum Feng Shui Air Purification Technology Demonstration')}
+              {t('量子風水空氣淨化技術示範', 'Quantum Feng Shui Air Purification Technology Demonstration')}
               <br />
               <span className="text-xl md:text-2xl font-normal text-muted-foreground mt-4 block">
                 {t(
-                  '深入了解量子調頻技術與頂級空氣淊化系統的完美結合',
+                  '深入了解量子調頻技術與頂級空氣淨化系統的完美結合',
                   'Deep dive into the perfect combination of quantum tuning technology and premium air purification systems'
                 )}
               </span>

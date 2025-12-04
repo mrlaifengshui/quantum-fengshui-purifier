@@ -23,7 +23,7 @@ export default function Services() {
           {/* Banner Image */}
           <div className="max-w-4xl mx-auto">
             <img 
-              src="/quantum-fengshui-purifier/images/services-banner.jpg" 
+              src="/quantum-fengshui-purifier/images/services-banner-new.jpg" 
               alt={t('服務介紹圖片', 'Services Banner')}
               className="w-full rounded-2xl shadow-xl"
             />
@@ -117,18 +117,18 @@ export default function Services() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
             {[
-              { step: '1', title: t('初步諮詢', 'Consultation'), desc: t('了解需求', 'Understand Needs') },
-              { step: '2', title: t('空間評估', 'Assessment'), desc: t('現場分析', 'On-site Analysis') },
-              { step: '3', title: t('量子調頻', 'Quantum Tuning'), desc: t('能量植入', 'Energy Implant') },
-              { step: '4', title: t('風水擺位', 'Positioning'), desc: t('精準擺放', 'Precise Placement') },
-              { step: '5', title: t('效果跟進', 'Follow-up'), desc: t('持續支持', 'Continuous Support') },
+              { step: '1', title: t('初步諮詢', 'Consultation'), desc: t('透過詳細溝通，了解您的家居或辦公環境的具體需求，分析空間問題與期望目標。', 'Through detailed communication, understand your specific needs for home or office environment, analyze space issues and expected goals.') },
+              { step: '2', title: t('空間評估', 'Assessment'), desc: t('專業團隊現場測量空氣質素、電磁場水平、風水方位，提供全面科學評估報告。', 'Professional team measures on-site air quality, electromagnetic field levels, feng shui directions, providing comprehensive scientific assessment report.') },
+              { step: '3', title: t('量子調頻', 'Quantum Tuning'), desc: t('運用量子技術調整空間能量場，清除負面頻率，植入正向能量，提升空間振動頻率。', 'Use quantum technology to adjust spatial energy field, clear negative frequencies, implant positive energy, enhance space vibration frequency.') },
+              { step: '4', title: t('風水擺位', 'Positioning'), desc: t('根據八卦方位與現代科學，精準計算最佳擺位，安裝空氣淨化設備於財位、文昌位等吉位。', 'Based on Bagua directions and modern science, precisely calculate optimal positioning, install air purification equipment at wealth, wisdom and other auspicious positions.') },
+              { step: '5', title: t('效果跟進', 'Follow-up'), desc: t('定期回訪追蹤效果，提供持續的技術支持與調整建議，確保長期效果維持。', 'Regular follow-up visits to track effects, provide continuous technical support and adjustment recommendations, ensure long-term effectiveness maintenance.') },
             ].map((item, i) => (
               <div key={i} className="text-center">
                 <div className="w-16 h-16 bg-accent text-background rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                   {item.step}
                 </div>
                 <h3 className="font-bold text-foreground mb-2">{item.title}</h3>
-                <p className="text-sm text-muted-foreground">{item.desc}</p>
+                <p className="text-xs text-muted-foreground leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>

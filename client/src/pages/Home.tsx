@@ -24,7 +24,7 @@ export default function Home() {
             <br />
             <span className="block text-xl md:text-2xl text-muted-foreground font-normal mt-4">
               {t(
-                '結合頂級空氣淨化科技與量子調頻技術，精準擺設風水吉位，為您打造物質清淨、能量和諧、豐盛顯化的現代家居環境。',
+                '結合頂級空氣淨化科技與量子調頻技術，精準擺設風水吉位，為您打造物質清淨、非物質能量和諧、豐盛顯化的現代家居環境。',
                 'Combining premium air purification technology with quantum frequency tuning, precisely positioned for feng shui prosperity.'
               )}
             </span>
@@ -119,7 +119,7 @@ export default function Home() {
               <ul className="space-y-3 text-left w-full">
                 <li className="flex items-start">
                   <CheckCircle2 className="w-5 h-5 text-success mr-2 flex-shrink-0 mt-0.5" />
-                  <span className="text-sm text-muted-foreground">{t('負離子釋放', 'Negative Ions')}</span>
+                  <span className="text-sm text-muted-foreground">{t('釋放量子頻率', 'Quantum Frequency')}</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle2 className="w-5 h-5 text-success mr-2 flex-shrink-0 mt-0.5" />
@@ -197,6 +197,9 @@ export default function Home() {
             </h2>
           </div>
           <div className="max-w-4xl mx-auto">
+            <h3 className="text-xl md:text-2xl font-semibold text-foreground text-center mb-4">
+              {t('Amway Sky 量子風水空氣淨化機', 'Amway Sky Quantum Feng Shui Air Purifier')}
+            </h3>
             <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl border border-border hover:shadow-accent/20 transition-all duration-300">
               <iframe
                 className="w-full h-full"
@@ -207,6 +210,8 @@ export default function Home() {
               ></iframe>
             </div>
           </div>
+          {/* Empty row after video */}
+          <div className="mb-12"></div>
         </div>
       </section>
 
@@ -303,27 +308,32 @@ export default function Home() {
               </span>
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-              {t('量子風水分享', 'Quantum Feng Shui Sharing')}
+              {t('量子能量風水分享', 'Quantum Energy Feng Shui Sharing')}
               <br />
               <span className="text-xl md:text-2xl font-normal text-muted-foreground mt-4 block">
                 {t(
-                  '了解量子風水',
-                  'Understanding Quantum Feng Shui'
+                  '了解量子風水在充滿電磁波影響健康的應用',
+                  'Understanding Quantum Feng Shui Applications in Electromagnetic Wave Health Impact'
                 )}
               </span>
             </h2>
           </div>
           <div className="max-w-4xl mx-auto">
+            <h3 className="text-xl md:text-2xl font-semibold text-foreground text-center mb-4">
+              {t('量子風水在電磁波影響健康的應用', 'Quantum Feng Shui Applications in EMF Health Impact')}
+            </h3>
             <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl border border-border hover:shadow-accent/20 transition-all duration-300">
               <iframe
                 className="w-full h-full"
-                src="https://www.youtube.com/embed/kqsD2lVRyek?start=10"
+                src="https://www.youtube.com/embed/kqsD2lVRyek?start=9"
                 title="量子風水空氣淨化"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
               ></iframe>
             </div>
           </div>
+          {/* Empty row after video */}
+          <div className="mb-12"></div>
         </div>
       </section>
 
