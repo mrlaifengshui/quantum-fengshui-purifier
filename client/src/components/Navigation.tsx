@@ -20,11 +20,11 @@ export default function Navigation() {
   return (
     <nav className="sticky top-0 z-50 bg-gradient-to-r from-background/95 via-section-dark/98 to-background/95 backdrop-blur-xl border-b border-border/50 shadow-cosmic animate-fade-in">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between items-center h-20 md:h-20">
           {/* Logo - Quantum Taichi */}
           <Link href="/">
             <div className="flex items-center cursor-pointer group">
-              <div className="w-14 h-14 rounded-full flex items-center justify-center shadow-glow transform transition-all duration-300 group-hover:scale-110 group-hover:shadow-cosmic group-hover:rotate-180 relative overflow-hidden">
+              <div className="w-16 h-16 md:w-14 md:h-14 rounded-full flex items-center justify-center shadow-glow transform transition-all duration-300 group-hover:scale-110 group-hover:shadow-cosmic group-hover:rotate-180 relative overflow-hidden">
                 <img 
                   src="/quantum-fengshui-purifier/images/quantum-taichi-logo.png" 
                   alt="Quantum Taichi Logo" 
@@ -71,15 +71,15 @@ export default function Navigation() {
           <div className="md:hidden flex items-center space-x-4">
             <button
               onClick={toggleLanguage}
-              className="text-muted-foreground hover:text-accent transition-colors"
+              className="text-muted-foreground hover:text-accent transition-colors p-2"
             >
-              <Globe className="w-5 h-5" />
+              <Globe className="w-7 h-7" />
             </button>
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-foreground hover:text-accent transition-colors"
+              className="text-foreground hover:text-accent transition-colors p-2"
             >
-              {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {isOpen ? <X className="w-8 h-8" /> : <Menu className="w-8 h-8" />}
             </button>
           </div>
         </div>
@@ -94,7 +94,7 @@ export default function Navigation() {
                 <a
                   onClick={() => setIsOpen(false)}
                   className={cn(
-                    'block px-4 py-2 rounded-lg text-sm font-medium transition-colors',
+                    'block px-6 py-4 rounded-lg text-lg font-semibold transition-colors',
                     location === item.path
                       ? 'bg-primary text-primary-foreground'
                       : 'text-foreground hover:bg-border'

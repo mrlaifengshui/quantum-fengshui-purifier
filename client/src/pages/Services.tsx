@@ -28,7 +28,7 @@ export default function Services() {
               <div></div>
               <div>
                 <img 
-                  src="/quantum-fengshui-purifier/images/services-banner-quantum.jpg" 
+                  src="/quantum-fengshui-purifier/images/services-banner-energetic.jpg" 
                   alt={t('服務介紹圖片', 'Services Banner')}
                   className="w-full rounded-2xl shadow-xl"
                 />
@@ -38,7 +38,7 @@ export default function Services() {
             {/* Mobile: centered directly */}
             <div className="md:hidden max-w-4xl mx-auto">
               <img 
-                src="/quantum-fengshui-purifier/images/services-banner-quantum.jpg" 
+                src="/quantum-fengshui-purifier/images/services-banner-energetic.jpg" 
                 alt={t('服務介紹圖片', 'Services Banner')}
                 className="w-full rounded-2xl shadow-xl"
               />
@@ -160,9 +160,9 @@ export default function Services() {
             {t('立即預約免費諮詢，體驗量子風水空氣淨化的神奇效果', 'Book a Free Consultation and Experience the Amazing Effects')}
           </h3>
           <Link href="/contact">
-            <a className="inline-flex items-center justify-center px-10 py-4 bg-accent text-background font-bold rounded-lg hover:bg-accent/90 transition-all duration-300 shadow-lg">
+            <a className="inline-flex items-center justify-center px-16 py-6 text-xl md:text-2xl bg-gradient-to-r from-accent to-secondary text-white font-bold rounded-2xl hover:scale-105 hover:shadow-2xl hover:shadow-accent/50 transition-all duration-300 shadow-xl animate-pulse-slow border-4 border-accent/30">
               {t('免費諮詢預約', 'Free Consultation')}
-              <ArrowRight className="ml-2 w-5 h-5" />
+              <ArrowRight className="ml-3 w-7 h-7" />
             </a>
           </Link>
         </div>
