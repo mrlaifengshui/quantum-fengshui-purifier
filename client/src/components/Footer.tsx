@@ -1,7 +1,7 @@
 import { Link } from 'wouter';
-import { Facebook, Instagram, Phone, Mail, Globe } from 'lucide-react';
+import { MessageCircle, Mail, Globe } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
-import { CONTACT_PHONE, CONTACT_EMAIL, CONTACT_WEBSITE, SOCIAL_LINKS } from '../const';
+import { CONTACT_EMAIL, CONTACT_WEBSITE, SOCIAL_LINKS } from '../const';
 
 export default function Footer() {
   const { t } = useLanguage();
@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <footer className="bg-muted border-t border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 justify-items-center text-center md:text-left md:justify-items-start">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center text-center md:text-left md:justify-items-start">
           {/* About */}
           <div className="flex flex-col items-center md:items-start">
             <h3 className="text-accent font-bold text-lg mb-4">
@@ -79,11 +79,14 @@ export default function Footer() {
             </h3>
             <ul className="space-y-3 flex flex-col items-center md:items-start">
               <li className="flex items-center space-x-3">
-                <div className="w-8 h-8 bg-primary/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <Phone className="w-4 h-4 text-primary" />
-                </div>
-                <a href={`tel:${CONTACT_PHONE}`} className="text-muted-foreground hover:text-accent transition-colors text-sm">
-                  {CONTACT_PHONE}
+                <a 
+                  href={SOCIAL_LINKS.whatsapp}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center space-x-3 px-6 py-3 bg-[#25D366] hover:bg-[#128C7E] rounded-lg text-white transition-colors"
+                >
+                  <MessageCircle className="w-5 h-5" />
+                  <span className="font-medium">{t('WhatsApp', 'WhatsApp')}</span>
                 </a>
               </li>
               <li className="flex items-center space-x-3">
@@ -103,39 +106,6 @@ export default function Footer() {
                 </a>
               </li>
             </ul>
-          </div>
-
-          {/* Social Media */}
-          <div className="flex flex-col items-center md:items-start">
-            <h3 className="text-foreground font-semibold mb-4">
-              {t('關注我們', 'Follow Us')}
-            </h3>
-            <div className="flex space-x-4">
-              <a
-                href={SOCIAL_LINKS.facebook}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 bg-border rounded-full flex items-center justify-center text-muted-foreground hover:bg-accent hover:text-background transition-colors"
-              >
-                <Facebook className="w-5 h-5" />
-              </a>
-              <a
-                href={SOCIAL_LINKS.instagram}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 bg-border rounded-full flex items-center justify-center text-muted-foreground hover:bg-accent hover:text-background transition-colors"
-              >
-                <Instagram className="w-5 h-5" />
-              </a>
-              <a
-                href={SOCIAL_LINKS.whatsapp}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 bg-border rounded-full flex items-center justify-center text-muted-foreground hover:bg-accent hover:text-background transition-colors"
-              >
-                <Phone className="w-5 h-5" />
-              </a>
-            </div>
           </div>
         </div>
 
