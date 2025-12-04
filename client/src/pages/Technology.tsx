@@ -213,76 +213,68 @@ export default function Technology() {
         {/* Empty row between sections */}
         <div className="py-8"></div>
 
-        {/* Video Sections with Title */}
+        {/* Video Sections with Title - Table Layout */}
         <section className="mt-20">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
               {t('量子風水空氣淨化技術示範', 'Quantum Feng Shui Air Purification Technology Demonstration')}
-              <br />
-              <span className="text-xl md:text-2xl font-normal text-muted-foreground mt-4 block">
-                {t(
-                  '深入了解量子調頻技術與頂級空氣淨化系統的完美結合',
-                  'Deep dive into the perfect combination of quantum tuning technology and premium air purification systems'
-                )}
-              </span>
             </h2>
           </div>
 
-          {/* Video 1 */}
-          <div className="max-w-4xl mx-auto mb-12">
-            <h3 className="text-xl md:text-2xl font-semibold text-foreground text-center mb-4">
-              {t('淨化空間氣場能量與過濾空氣懸浮粒子', 'Purifying Space Energy Field and Filtering Air Particles')}
-            </h3>
-            <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl border border-border hover:shadow-accent/20 transition-all duration-300">
-              <iframe
-                className="w-full h-full"
-                src="https://www.youtube.com/embed/qU5N5gjRS1k"
-                title={t('量子風水技術 1', 'Quantum Feng Shui Technology 1')}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              ></iframe>
+          {/* Videos in Table: 1 row, 3 columns */}
+          <div className="max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+              {/* Video 1 */}
+              <div className="flex flex-col">
+                <h3 className="text-lg md:text-xl font-semibold text-foreground text-center mb-4 min-h-[3rem] flex items-center justify-center">
+                  {t('淨化空間氣場能量與過濾空氣懸浮粒子', 'Purifying Space Energy Field and Filtering Air Particles')}
+                </h3>
+                <div className="relative aspect-video rounded-xl overflow-hidden shadow-xl border border-border hover:shadow-accent/20 transition-all duration-300">
+                  <iframe
+                    className="w-full h-full"
+                    src="https://www.youtube.com/embed/qU5N5gjRS1k"
+                    title={t('量子風水技術 1', 'Quantum Feng Shui Technology 1')}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              </div>
+
+              {/* Video 2 */}
+              <div className="flex flex-col">
+                <h3 className="text-lg md:text-xl font-semibold text-foreground text-center mb-4 min-h-[3rem] flex items-center justify-center">
+                  {t('空氣淨化器可以提升室內風水氣場', 'Air Purifiers Can Enhance Indoor Feng Shui Energy Field')}
+                </h3>
+                <div className="relative aspect-video rounded-xl overflow-hidden shadow-xl border border-border hover:shadow-accent/20 transition-all duration-300">
+                  <iframe
+                    className="w-full h-full"
+                    src="https://www.youtube.com/embed/B5BMYjmIN-Q?start=10"
+                    title={t('量子風水技術 2', 'Quantum Feng Shui Technology 2')}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              </div>
+
+              {/* Video 3 */}
+              <div className="flex flex-col">
+                <h3 className="text-lg md:text-xl font-semibold text-foreground text-center mb-4 min-h-[3rem] flex items-center justify-center">
+                  {t('空氣淨化器顛覆身心靈的思維模式', 'Air Purifiers Transform Mind, Body, and Spirit Thinking Patterns')}
+                </h3>
+                <div className="relative aspect-video rounded-xl overflow-hidden shadow-xl border border-border hover:shadow-accent/20 transition-all duration-300">
+                  <iframe
+                    className="w-full h-full"
+                    src="https://www.youtube.com/embed/C7oqpToh1GY?start=6"
+                    title={t('量子風水技術 3', 'Quantum Feng Shui Technology 3')}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              </div>
             </div>
           </div>
 
-          {/* Empty row after video 1 */}
-          <div className="mb-12"></div>
-
-          {/* Video 2 */}
-          <div className="max-w-4xl mx-auto mb-12">
-            <h3 className="text-xl md:text-2xl font-semibold text-foreground text-center mb-4">
-              {t('空氣淨化器可以提升室內風水氣場', 'Air Purifiers Can Enhance Indoor Feng Shui Energy Field')}
-            </h3>
-            <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl border border-border hover:shadow-accent/20 transition-all duration-300">
-              <iframe
-                className="w-full h-full"
-                src="https://www.youtube.com/embed/B5BMYjmIN-Q?start=10"
-                title={t('量子風水技術 2', 'Quantum Feng Shui Technology 2')}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              ></iframe>
-            </div>
-          </div>
-
-          {/* Empty row after video 2 */}
-          <div className="mb-12"></div>
-
-          {/* Video 3 */}
-          <div className="max-w-4xl mx-auto mb-12">
-            <h3 className="text-xl md:text-2xl font-semibold text-foreground text-center mb-4">
-              {t('空氣淨化器顛覆身心靈的思維模式', 'Air Purifiers Transform Mind, Body, and Spirit Thinking Patterns')}
-            </h3>
-            <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl border border-border hover:shadow-accent/20 transition-all duration-300">
-              <iframe
-                className="w-full h-full"
-                src="https://www.youtube.com/embed/C7oqpToh1GY?start=6"
-                title={t('量子風水技術 3', 'Quantum Feng Shui Technology 3')}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              ></iframe>
-            </div>
-          </div>
-
-          {/* Empty row after video 3 */}
+          {/* Empty row after videos */}
           <div className="mb-12"></div>
         </section>
       </div>

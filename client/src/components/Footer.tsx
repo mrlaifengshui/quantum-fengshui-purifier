@@ -136,11 +136,6 @@ export default function Footer() {
               © 2025 <span className="text-foreground font-semibold">{t('量子風水空氣淨化服務', 'Quantum Feng Shui Air Purification')}</span> | 
               {t(' 版權所有', ' All Rights Reserved')}
             </p>
-            
-            {/* 🌐 網站連結 */}
-            <p className="text-xs text-muted-foreground">
-              {t('了解更多', 'Learn more')}: <a href={`https://${CONTACT_WEBSITE}`} target="_blank" rel="noopener noreferrer" className="text-accent hover:text-secondary transition-colors underline">{CONTACT_WEBSITE}</a>
-            </p>
           </div>
         </div>
       </div>

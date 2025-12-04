@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { Phone, Mail, Globe, Send, CheckCircle2 } from 'lucide-react';
+import { Mail, Globe, Send, CheckCircle2 } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
-import { CONTACT_PHONE, CONTACT_EMAIL, CONTACT_WEBSITE } from '../const';
+import { CONTACT_EMAIL, CONTACT_WEBSITE } from '../const';
 
 export default function Contact() {
   const { t } = useLanguage();
@@ -158,16 +158,6 @@ export default function Contact() {
                 {t('聯繫方式', 'Contact Information')}
               </h2>
               <div className="space-y-6">
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center flex-shrink-0">
-                    <Phone className="w-6 h-6 text-background" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-foreground mb-1">{t('電話', 'Phone')}</h3>
-                    <p className="text-muted-foreground">{CONTACT_PHONE}</p>
-                  </div>
-                </div>
-
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center flex-shrink-0">
                     <Mail className="w-6 h-6 text-background" />

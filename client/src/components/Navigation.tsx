@@ -21,19 +21,18 @@ export default function Navigation() {
     <nav className="sticky top-0 z-50 bg-gradient-to-r from-background/95 via-section-dark/98 to-background/95 backdrop-blur-xl border-b border-border/50 shadow-cosmic animate-fade-in">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          {/* Logo */}
+          {/* Logo - Icon Only */}
           <Link href="/">
-            <div className="flex items-center space-x-3 cursor-pointer group">
-              <div className="w-12 h-12 bg-gradient-to-br from-primary via-accent to-secondary rounded-xl flex items-center justify-center shadow-glow transform transition-all duration-300 group-hover:scale-110 group-hover:shadow-cosmic group-hover:rotate-6 animate-float">
-                <span className="text-white font-black text-2xl drop-shadow-lg">量</span>
-              </div>
-              <div className="hidden md:block">
-                <div className="text-foreground font-bold text-xl tracking-tight transition-colors duration-300 group-hover:text-accent">
-                  {t('量子空氣淨化風水', 'Quantum Air Purification Feng Shui')}
+            <div className="flex items-center cursor-pointer group">
+              <div className="w-14 h-14 bg-gradient-to-br from-primary via-accent to-secondary rounded-xl flex items-center justify-center shadow-glow transform transition-all duration-300 group-hover:scale-110 group-hover:shadow-cosmic group-hover:rotate-6 animate-float relative overflow-hidden">
+                {/* 量子波紋背景 */}
+                <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent opacity-50"></div>
+                <div className="absolute inset-0 animate-pulse opacity-30">
+                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 border-2 border-white/50 rounded-full"></div>
+                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-6 h-6 border-2 border-white/30 rounded-full"></div>
                 </div>
-                <div className="text-xs text-muted-foreground font-medium">
-                  {t('物質清淨 × 能量調頻 × 豐盛顯化', 'Matter × Energy × Manifestation')}
-                </div>
+                {/* 量子符號 */}
+                <span className="text-white font-black text-2xl drop-shadow-lg relative z-10">量</span>
               </div>
             </div>
           </Link>
