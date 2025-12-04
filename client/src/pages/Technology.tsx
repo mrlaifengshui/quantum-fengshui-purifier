@@ -1,4 +1,4 @@
-import { Wind, Compass, Sparkles, CheckCircle2 } from 'lucide-react';
+import { CheckCircle2 } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 export default function Technology() {
@@ -9,20 +9,16 @@ export default function Technology() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <div className="inline-block mb-4 px-4 py-1 bg-accent/10 border border-accent/30 rounded-full">
-            <span className="text-accent font-medium text-sm">
-              {t('科技創新', 'Technology Innovation')}
-            </span>
-          </div>
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
             {t('技術原理', 'Technology Principles')}
+            <br />
+            <span className="text-2xl md:text-3xl font-normal text-muted-foreground mt-4 block">
+              {t(
+                '從物質、能量、風水三個層面全方位提升您的生活品質',
+                'Enhance your quality of life from material, energy, and feng shui perspectives'
+              )}
+            </span>
           </h1>
-          <p className="text-sm md:text-base text-muted-foreground max-w-3xl mx-auto text-center mt-4">
-            {t(
-              '從物質、能量、風水三個層面全方位提升您的生活品質',
-              'Enhance your quality of life from material, energy, and feng shui perspectives'
-            )}
-          </p>
         </div>
 
         {/* Core Technology Sections */}
@@ -31,16 +27,13 @@ export default function Technology() {
           <section className="bg-section-light rounded-2xl p-8 md:p-12">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <div>
-                <div className="w-16 h-16 bg-gradient-to-br from-primary/30 to-secondary/30 rounded-2xl flex items-center justify-center mb-6 shadow-lg">
-                  <Wind className="w-8 h-8 text-primary" />
-                </div>
                 <h2 className="text-3xl font-bold text-foreground mb-4">
                   {t('空氣淨化技術', 'Air Purification Technology')}
                 </h2>
                 <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
                   {t(
-                    '採用頂級 HEPA H13 濾網技術，配合活性炭和光觸媒系統，有效過濾空氣中的有害物質，為您創造潔淨健康的呼吸環境。',
-                    'Using premium HEPA H13 filter technology with activated carbon and photocatalyst systems to effectively filter harmful substances in the air.'
+                    '採用頂級 HEPA H13 濾網技術，配合活性炭和光觸媒系統，有效過濾空氣中99.97%的PM2.5、PM0.3等超微粒子，同時釋放森林級負離子，淨化空氣分子結構。配合智能監測系統，實時顯示室內空氣品質，為您創造潔淨健康的呼吸環境，有效改善過敏症狀，提升整體健康水平。',
+                    'Using premium HEPA H13 filter technology with activated carbon and photocatalyst systems to effectively filter 99.97% of PM2.5, PM0.3 and ultra-fine particles. Releases forest-level negative ions to purify air molecular structure. With smart monitoring system displaying real-time air quality, creates a clean and healthy breathing environment, effectively improving allergy symptoms and enhancing overall health.'
                   )}
                 </p>
                 <ul className="space-y-3">
@@ -80,8 +73,12 @@ export default function Technology() {
                 </ul>
               </div>
               <div className="flex justify-center">
-                <div className="relative w-full max-w-md aspect-square bg-gradient-to-br from-primary/10 to-secondary/10 rounded-2xl flex items-center justify-center">
-                  <Wind className="w-32 h-32 text-primary/30" />
+                <div className="relative w-full max-w-md rounded-2xl overflow-hidden shadow-xl">
+                  <img 
+                    src="/quantum-fengshui-purifier/images/technology/air-purification.jpg" 
+                    alt={t('空氣淨化技術', 'Air Purification Technology')}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
             </div>
@@ -91,21 +88,22 @@ export default function Technology() {
           <section className="bg-section-dark rounded-2xl p-8 md:p-12">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <div className="order-2 md:order-1 flex justify-center">
-                <div className="relative w-full max-w-md aspect-square bg-gradient-to-br from-secondary/10 to-accent/10 rounded-2xl flex items-center justify-center">
-                  <Sparkles className="w-32 h-32 text-secondary/30" />
+                <div className="relative w-full max-w-md rounded-2xl overflow-hidden shadow-xl">
+                  <img 
+                    src="/quantum-fengshui-purifier/images/technology/quantum-tuning.jpg" 
+                    alt={t('量子調頻技術', 'Quantum Frequency Tuning Technology')}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
               <div className="order-1 md:order-2">
-                <div className="w-16 h-16 bg-gradient-to-br from-secondary/30 to-accent/30 rounded-2xl flex items-center justify-center mb-6 shadow-lg">
-                  <Sparkles className="w-8 h-8 text-secondary" />
-                </div>
                 <h2 className="text-3xl font-bold text-foreground mb-4">
                   {t('量子調頻技術', 'Quantum Frequency Tuning Technology')}
                 </h2>
                 <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
                   {t(
-                    '運用量子物理學原理，透過特定頻率的共振技術，調整室內空間的能量場，提升居住者的身心靈和諧狀態，改善整體生活品質。',
-                    'Using quantum physics principles and specific frequency resonance technology to adjust indoor energy fields and enhance overall quality of life.'
+                    '運用量子物理學原理，透過432Hz、528Hz等特定頻率的共振技術，調整室內空間的能量場，有效釋放1000萬至2000萬個/立方厘米的負離子，平衡生理時鐘，促進深度睡眠。調整空間頻率，優化能量場，提升正向能量流動，改善居住者的身心靈和諧狀態，顯著提升整體生活品質和幸福感。',
+                    'Using quantum physics principles and specific frequency resonance technology (432Hz, 528Hz) to adjust indoor energy fields, effectively releasing 10-20 million negative ions per cubic centimeter. Balances circadian rhythm and promotes deep sleep. Adjusts spatial frequencies to optimize energy fields, enhance positive energy flow, improve mind-body-spirit harmony, and significantly enhance overall quality of life and well-being.'
                   )}
                 </p>
                 <ul className="space-y-3">
@@ -151,16 +149,13 @@ export default function Technology() {
           <section className="bg-section-light rounded-2xl p-8 md:p-12">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <div>
-                <div className="w-16 h-16 bg-gradient-to-br from-accent/30 to-primary/30 rounded-2xl flex items-center justify-center mb-6 shadow-lg">
-                  <Compass className="w-8 h-8 text-accent" />
-                </div>
                 <h2 className="text-3xl font-bold text-foreground mb-4">
                   {t('風水擺位技術', 'Feng Shui Positioning Technology')}
                 </h2>
                 <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
                   {t(
-                    '結合傳統風水智慧與現代科學測量，透過精密儀器分析空間氣場，計算最佳擺位方位，引導正能量流動，提升運勢和生活品質。',
-                    'Combining traditional feng shui wisdom with modern scientific measurement to analyze spatial energy fields and calculate optimal positioning.'
+                    '結合傳統風水智慧與現代科學測量，運用羅盤與電磁場測量儀器，透過精密分析空間氣場與八卦方位，計算最佳擺位方位。精準定位財位、文昌位等吉位，優化能量點配置，有效引導正能量流動，提升事業運、學業運與財運，全面改善居住環境的磁場能量，為您帶來運勢提升和生活品質的顯著改善。',
+                    'Combining traditional feng shui wisdom with modern scientific measurement, using compass and electromagnetic field instruments to precisely analyze spatial energy fields and Bagua directions. Accurately locates auspicious positions such as wealth and wisdom positions, optimizes energy point configuration, effectively guides positive energy flow, enhances career, academic and financial fortune, comprehensively improves environmental magnetic field energy, bringing significant improvements in fortune and quality of life.'
                   )}
                 </p>
                 <ul className="space-y-3">
@@ -200,8 +195,12 @@ export default function Technology() {
                 </ul>
               </div>
               <div className="flex justify-center">
-                <div className="relative w-full max-w-md aspect-square bg-gradient-to-br from-accent/10 to-primary/10 rounded-2xl flex items-center justify-center">
-                  <Compass className="w-32 h-32 text-accent/30" />
+                <div className="relative w-full max-w-md rounded-2xl overflow-hidden shadow-xl">
+                  <img 
+                    src="/quantum-fengshui-purifier/images/technology/feng-shui-positioning.jpg" 
+                    alt={t('風水擺位技術', 'Feng Shui Positioning Technology')}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
             </div>
@@ -239,6 +238,9 @@ export default function Technology() {
             </div>
           </div>
 
+          {/* Empty row after video 1 */}
+          <div className="mb-12"></div>
+
           {/* Video 2 */}
           <div className="max-w-4xl mx-auto mb-12">
             <h3 className="text-xl md:text-2xl font-semibold text-foreground text-center mb-4">
@@ -255,8 +257,11 @@ export default function Technology() {
             </div>
           </div>
 
+          {/* Empty row after video 2 */}
+          <div className="mb-12"></div>
+
           {/* Video 3 */}
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-4xl mx-auto mb-12">
             <h3 className="text-xl md:text-2xl font-semibold text-foreground text-center mb-4">
               {t('空氣淨化器顛覆身心靈的思維模式', 'Air Purifiers Transform Mind, Body, and Spirit Thinking Patterns')}
             </h3>
@@ -270,6 +275,9 @@ export default function Technology() {
               ></iframe>
             </div>
           </div>
+
+          {/* Empty row after video 3 */}
+          <div className="mb-12"></div>
         </section>
       </div>
     </div>
