@@ -21,18 +21,30 @@ export default function Navigation() {
     <nav className="sticky top-0 z-50 bg-gradient-to-r from-background/95 via-section-dark/98 to-background/95 backdrop-blur-xl border-b border-border/50 shadow-cosmic animate-fade-in">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          {/* Logo - Icon Only */}
+          {/* Logo - Simple Quantum Taichi */}
           <Link href="/">
             <div className="flex items-center cursor-pointer group">
-              <div className="w-14 h-14 bg-gradient-to-br from-primary via-accent to-secondary rounded-xl flex items-center justify-center shadow-glow transform transition-all duration-300 group-hover:scale-110 group-hover:shadow-cosmic group-hover:rotate-6 animate-float relative overflow-hidden">
-                {/* 量子波紋背景 */}
-                <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent opacity-50"></div>
-                <div className="absolute inset-0 animate-pulse opacity-30">
-                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 border-2 border-white/50 rounded-full"></div>
-                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-6 h-6 border-2 border-white/30 rounded-full"></div>
-                </div>
-                {/* 量子符號 */}
-                <span className="text-white font-black text-2xl drop-shadow-lg relative z-10">量</span>
+              <div className="w-14 h-14 rounded-full flex items-center justify-center shadow-glow transform transition-all duration-300 group-hover:scale-110 group-hover:shadow-cosmic group-hover:rotate-180 relative overflow-hidden bg-white">
+                {/* Taichi symbol - Simple SVG */}
+                <svg viewBox="0 0 100 100" className="w-full h-full">
+                  {/* Background circle */}
+                  <circle cx="50" cy="50" r="48" fill="white" stroke="#667eea" strokeWidth="2"/>
+                  
+                  {/* Left half - Dark */}
+                  <path d="M 50 2 A 48 48 0 0 1 50 98 A 24 24 0 0 0 50 50 A 24 24 0 0 1 50 2" fill="#667eea"/>
+                  
+                  {/* Right half - Light (already white background) */}
+                  
+                  {/* Small circle in dark side */}
+                  <circle cx="50" cy="26" r="8" fill="white"/>
+                  
+                  {/* Small circle in light side */}
+                  <circle cx="50" cy="74" r="8" fill="#667eea"/>
+                  
+                  {/* Energy dots */}
+                  <circle cx="50" cy="26" r="2" fill="#ffd700" opacity="0.8"/>
+                  <circle cx="50" cy="74" r="2" fill="#ffd700" opacity="0.8"/>
+                </svg>
               </div>
             </div>
           </Link>

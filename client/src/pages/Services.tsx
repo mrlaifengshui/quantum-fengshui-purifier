@@ -20,13 +20,25 @@ export default function Services() {
               )}
             </span>
           </h1>
-          {/* Banner Image */}
-          <div className="max-w-4xl mx-auto">
-            <img 
-              src="/quantum-fengshui-purifier/images/services-banner-new.jpg" 
-              alt={t('服務介紹圖片', 'Services Banner')}
-              className="w-full rounded-2xl shadow-xl"
-            />
+          
+          {/* 1 row 3 columns invisible table with centered image */}
+          <div className="max-w-7xl mx-auto">
+            <div className="grid grid-cols-3 gap-4">
+              {/* Empty left column */}
+              <div></div>
+              
+              {/* Center column with banner image */}
+              <div>
+                <img 
+                  src="/quantum-fengshui-purifier/images/services-banner-new.jpg" 
+                  alt={t('服務介紹圖片', 'Services Banner')}
+                  className="w-full rounded-2xl shadow-xl"
+                />
+              </div>
+              
+              {/* Empty right column */}
+              <div></div>
+            </div>
           </div>
         </div>
 

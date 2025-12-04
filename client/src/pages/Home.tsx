@@ -180,33 +180,36 @@ export default function Home() {
       <section className="py-20 bg-section-dark">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center mb-12">
-            <div className="inline-block mb-4 px-4 py-1 bg-accent/10 border border-accent/30 rounded-full">
-              <span className="text-accent font-medium text-sm">
-                {t('頂級技術展示', 'Premium Technology Showcase')}
-              </span>
-            </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              {t('量子風水空氣淨化技術', 'Quantum Feng Shui Air Purification Technology')}
-              <br />
-              <span className="text-xl md:text-2xl font-normal text-muted-foreground mt-4 block">
-                {t(
-                  '了解如何結合量子調頻技術與頂級空氣淨化系統，為您創造完美的能量空間',
-                  'Discover how quantum tuning technology combines with premium air purification for perfect energy spaces'
-                )}
-              </span>
+            <h2 className="text-xl md:text-2xl font-normal text-muted-foreground">
+              {t(
+                '了解如何結合量子調頻技術與頂級空氣淨化系統，為您創造完美的能量空間',
+                'Discover how quantum tuning technology combines with premium air purification for perfect energy spaces'
+              )}
             </h2>
           </div>
-          <div className="max-w-4xl mx-auto">
-            <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl border border-border hover:shadow-accent/20 transition-all duration-300">
-              <iframe
-                className="w-full h-full"
-                src="https://www.youtube.com/embed/eaVCJCSrqC0?si=n1Bo_jNL2y5FBhQC"
-                title="量子風水空氣淨化技術示範"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              ></iframe>
+          
+          {/* 1 row 3 columns invisible table with centered YouTube */}
+          <div className="grid grid-cols-3 gap-4">
+            {/* Empty left column */}
+            <div></div>
+            
+            {/* Center column with YouTube video */}
+            <div>
+              <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl border border-border hover:shadow-accent/20 transition-all duration-300">
+                <iframe
+                  className="w-full h-full"
+                  src="https://www.youtube.com/embed/eaVCJCSrqC0?si=n1Bo_jNL2y5FBhQC"
+                  title="量子風水空氣淨化技術示範"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                ></iframe>
+              </div>
             </div>
+            
+            {/* Empty right column */}
+            <div></div>
           </div>
+          
           {/* Empty row after video */}
           <div className="mb-12"></div>
         </div>
@@ -304,37 +307,28 @@ export default function Home() {
       {/* YouTube Video Section - 深色背景 */}
       <section className="py-20 bg-section-dark">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="text-center mb-12">
-            <div className="inline-block mb-4 px-4 py-1 bg-accent/10 border border-accent/30 rounded-full">
-              <span className="text-accent font-medium text-sm">
-                {t('專業展示', 'Professional Showcase')}
-              </span>
+          {/* 1 row 3 columns invisible table with centered YouTube */}
+          <div className="grid grid-cols-3 gap-4">
+            {/* Empty left column */}
+            <div></div>
+            
+            {/* Center column with YouTube video */}
+            <div>
+              <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl border border-border hover:shadow-accent/20 transition-all duration-300">
+                <iframe
+                  className="w-full h-full"
+                  src="https://www.youtube.com/embed/kqsD2lVRyek?start=9"
+                  title="量子風水空氣淨化"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                ></iframe>
+              </div>
             </div>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-              {t('量子能量風水分享', 'Quantum Energy Feng Shui Sharing')}
-              <br />
-              <span className="text-xl md:text-2xl font-normal text-muted-foreground mt-4 block">
-                {t(
-                  '了解量子風水在充滿電磁波影響健康的應用',
-                  'Understanding Quantum Feng Shui Applications in Electromagnetic Wave Health Impact'
-                )}
-              </span>
-            </h2>
+            
+            {/* Empty right column */}
+            <div></div>
           </div>
-          <div className="max-w-4xl mx-auto">
-            <h3 className="text-xl md:text-2xl font-semibold text-foreground text-center mb-4">
-              {t('量子風水在電磁波影響健康的應用', 'Quantum Feng Shui Applications in EMF Health Impact')}
-            </h3>
-            <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl border border-border hover:shadow-accent/20 transition-all duration-300">
-              <iframe
-                className="w-full h-full"
-                src="https://www.youtube.com/embed/kqsD2lVRyek?start=9"
-                title="量子風水空氣淨化"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              ></iframe>
-            </div>
-          </div>
+          
           {/* Empty row after video */}
           <div className="mb-12"></div>
         </div>

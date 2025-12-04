@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { Mail, Globe, Send, CheckCircle2 } from 'lucide-react';
+import { Mail, Globe, Send, CheckCircle2, MessageCircle } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
-import { CONTACT_EMAIL, CONTACT_WEBSITE } from '../const';
+import { CONTACT_EMAIL, CONTACT_WEBSITE, SOCIAL_LINKS } from '../const';
 
 export default function Contact() {
   const { t } = useLanguage();
@@ -158,6 +158,19 @@ export default function Contact() {
                 {t('聯繫方式', 'Contact Information')}
               </h2>
               <div className="space-y-6">
+                {/* WhatsApp Button */}
+                <div className="flex items-center justify-center">
+                  <a 
+                    href={SOCIAL_LINKS.whatsapp}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center space-x-3 px-8 py-4 bg-[#25D366] hover:bg-[#128C7E] rounded-lg text-white font-medium transition-all duration-300 hover:scale-105 hover:shadow-xl shadow-lg"
+                  >
+                    <MessageCircle className="w-6 h-6 text-white" />
+                    <span>{t('WhatsApp 聯絡我們', 'WhatsApp Contact')}</span>
+                  </a>
+                </div>
+
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center flex-shrink-0">
                     <Mail className="w-6 h-6 text-background" />

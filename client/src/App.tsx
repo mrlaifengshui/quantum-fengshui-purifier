@@ -2,6 +2,7 @@ import { Route, Switch, Router } from 'wouter';
 import { LanguageProvider } from './contexts/LanguageContext';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
+import FloatingWhatsApp from './components/FloatingWhatsApp';
 import Home from './pages/Home';
 import Technology from './pages/Technology';
 import Services from './pages/Services';
@@ -29,6 +30,7 @@ export default function App() {
             </Switch>
           </main>
           <Footer />
+          <FloatingWhatsApp />
         </div>
       </Router>
     </LanguageProvider>

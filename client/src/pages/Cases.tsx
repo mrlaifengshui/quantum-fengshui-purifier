@@ -97,14 +97,27 @@ export default function Cases() {
               )}
             </span>
           </h1>
-          {/* Banner Image - Centered */}
-          <div className="max-w-4xl mx-auto mb-6">
-            <img 
-              src="/quantum-fengshui-purifier/images/cases-banner-new.jpg" 
-              alt={t('客戶見證案例圖片', 'Cases Banner')}
-              className="w-full rounded-2xl shadow-xl"
-            />
+          
+          {/* 1 row 3 columns invisible table with centered image */}
+          <div className="max-w-7xl mx-auto mb-6">
+            <div className="grid grid-cols-3 gap-4">
+              {/* Empty left column */}
+              <div></div>
+              
+              {/* Center column with banner image */}
+              <div>
+                <img 
+                  src="/quantum-fengshui-purifier/images/cases-banner-new.jpg" 
+                  alt={t('客戶見證案例圖片', 'Cases Banner')}
+                  className="w-full rounded-2xl shadow-xl"
+                />
+              </div>
+              
+              {/* Empty right column */}
+              <div></div>
+            </div>
           </div>
+          
           <div className="mt-6 flex justify-center items-center space-x-8 text-accent font-semibold">
             <div>{t('95%+ 滿意度', '95%+ Satisfaction')}</div>
             <div className="w-px h-6 bg-border"></div>
