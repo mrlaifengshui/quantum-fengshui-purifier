@@ -21,6 +21,9 @@ export default function Technology() {
           </h1>
         </div>
 
+        {/* Empty row after header */}
+        <div className="mb-12"></div>
+
         {/* Core Technology Sections */}
         <div className="space-y-20">
           {/* Section 1: Air Purification */}
@@ -206,6 +209,9 @@ export default function Technology() {
             </div>
           </section>
         </div>
+
+        {/* Empty row between sections */}
+        <div className="py-8"></div>
 
         {/* Video Sections with Title */}
         <section className="mt-20">

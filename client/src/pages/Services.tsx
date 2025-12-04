@@ -108,7 +108,8 @@ export default function Services() {
           </div>
         </div>
 
-
+        {/* Empty row between sections */}
+        <div className="py-8"></div>
 
         {/* Service Process */}
         <div className="bg-muted rounded-xl p-8 md:p-12">
@@ -133,6 +134,9 @@ export default function Services() {
             ))}
           </div>
         </div>
+
+        {/* Empty row between sections */}
+        <div className="py-8"></div>
 
         {/* CTA */}
         <div className="text-center mt-16">

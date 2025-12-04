@@ -176,7 +176,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Video Section - Amway Sky - 深色背景 */}
+      {/* Video Section - 深色背景 */}
       <section className="py-20 bg-section-dark">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center mb-12">
@@ -197,14 +197,11 @@ export default function Home() {
             </h2>
           </div>
           <div className="max-w-4xl mx-auto">
-            <h3 className="text-xl md:text-2xl font-semibold text-foreground text-center mb-4">
-              {t('Amway Sky 量子風水空氣淨化機', 'Amway Sky Quantum Feng Shui Air Purifier')}
-            </h3>
             <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl border border-border hover:shadow-accent/20 transition-all duration-300">
               <iframe
                 className="w-full h-full"
                 src="https://www.youtube.com/embed/eaVCJCSrqC0?si=n1Bo_jNL2y5FBhQC"
-                title="Amway Sky 量子風水空氣淨化機"
+                title="量子風水空氣淨化技術示範"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
               ></iframe>
@@ -214,6 +211,9 @@ export default function Home() {
           <div className="mb-12"></div>
         </div>
       </section>
+
+      {/* Empty row between sections */}
+      <div className="py-8"></div>
 
       {/* Customer Testimonials - 淺色背景 */}
       <section className="py-20 bg-section-light">
@@ -297,6 +297,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Empty row between sections */}
+      <div className="py-8"></div>
 
       {/* YouTube Video Section - 深色背景 */}
       <section className="py-20 bg-section-dark">

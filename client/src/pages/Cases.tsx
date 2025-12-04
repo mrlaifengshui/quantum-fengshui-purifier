@@ -97,7 +97,7 @@ export default function Cases() {
               )}
             </span>
           </h1>
-          {/* Banner Image */}
+          {/* Banner Image - Centered */}
           <div className="max-w-4xl mx-auto mb-6">
             <img 
               src="/quantum-fengshui-purifier/images/cases-banner-new.jpg" 
@@ -113,6 +113,9 @@ export default function Cases() {
             <div>{t('60%+ 重複購買率', '60%+ Repeat Rate')}</div>
           </div>
         </div>
+
+        {/* Empty row after header */}
+        <div className="mb-12"></div>
 
         {/* Cases */}
         <div className="space-y-12">
