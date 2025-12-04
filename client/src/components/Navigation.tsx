@@ -24,24 +24,12 @@ export default function Navigation() {
           {/* Logo - Quantum Taichi */}
           <Link href="/">
             <div className="flex items-center cursor-pointer group">
-              <div className="w-14 h-14 rounded-full flex items-center justify-center shadow-glow transform transition-all duration-300 group-hover:scale-110 group-hover:shadow-cosmic group-hover:rotate-180 relative overflow-hidden bg-white">
-                <svg viewBox="0 0 100 100" className="w-full h-full">
-                  <defs>
-                    <radialGradient id="bgGrad"><stop offset="0%" stopColor="#fff"/><stop offset="100%" stopColor="#f0f0ff"/></radialGradient>
-                    <radialGradient id="darkGrad"><stop offset="0%" stopColor="#667eea"/><stop offset="100%" stopColor="#4a5fb8"/></radialGradient>
-                  </defs>
-                  <circle cx="50" cy="50" r="48" fill="url(#bgGrad)" stroke="#667eea" strokeWidth="2"/>
-                  <circle cx="50" cy="50" r="42" fill="none" stroke="#667eea" strokeWidth="0.5" opacity="0.2"/>
-                  <circle cx="50" cy="50" r="36" fill="none" stroke="#667eea" strokeWidth="0.5" opacity="0.2"/>
-                  <circle cx="50" cy="50" r="30" fill="none" stroke="#667eea" strokeWidth="0.5" opacity="0.2"/>
-                  <path d="M 50 2 A 48 48 0 0 1 50 98 A 24 24 0 0 0 50 50 A 24 24 0 0 1 50 2" fill="url(#darkGrad)"/>
-                  <circle cx="50" cy="26" r="10" fill="white" stroke="#667eea" strokeWidth="1"/>
-                  <circle cx="50" cy="74" r="10" fill="url(#darkGrad)" stroke="#fff" strokeWidth="1"/>
-                  <circle cx="50" cy="26" r="3" fill="#ffd700" opacity="0.9"/>
-                  <circle cx="50" cy="74" r="3" fill="#ffd700" opacity="0.9"/>
-                  <circle cx="35" cy="50" r="1.5" fill="#ffd700" opacity="0.6"/>
-                  <circle cx="65" cy="50" r="1.5" fill="#ffd700" opacity="0.6"/>
-                </svg>
+              <div className="w-14 h-14 rounded-full flex items-center justify-center shadow-glow transform transition-all duration-300 group-hover:scale-110 group-hover:shadow-cosmic group-hover:rotate-180 relative overflow-hidden">
+                <img 
+                  src="/quantum-fengshui-purifier/images/quantum-taichi-logo.png" 
+                  alt="Quantum Taichi Logo" 
+                  className="w-full h-full object-cover rounded-full"
+                />
               </div>
             </div>
           </Link>
