@@ -100,7 +100,7 @@ export default function Cases() {
           {/* Banner Image */}
           <div className="max-w-4xl mx-auto mb-6">
             <img 
-              src="/quantum-fengshui-purifier/images/cases-banner.jpg" 
+              src="/quantum-fengshui-purifier/images/cases-banner-new.jpg" 
               alt={t('客戶見證案例圖片', 'Cases Banner')}
               className="w-full rounded-2xl shadow-xl"
             />

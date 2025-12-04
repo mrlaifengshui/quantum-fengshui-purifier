@@ -17,8 +17,8 @@ export default function Footer() {
             </h3>
             <p className="text-muted-foreground text-sm leading-relaxed">
               {t(
-                '結合頂級空氣淨化科技與量子調頻技術，為您打造物質清淨、能量和諧的現代家居環境。',
-                'Combining premium air purification with quantum frequency tuning for a harmonious modern living environment.'
+                '結合頂級空氣淨化科技與量子調頻技術，精準擺設風水吉位，為您打造物質清淨、非物質能量和諧、豐盛顯化的現代家居環境。',
+                'Combining premium air purification technology with quantum frequency tuning, precisely positioned for feng shui prosperity, creating a modern home environment of material purity, non-material energy harmony, and abundance manifestation.'
               )}
             </p>
           </div>
@@ -79,14 +79,14 @@ export default function Footer() {
             </h3>
             <ul className="space-y-3 flex flex-col items-center md:items-start">
               <li className="flex items-center space-x-3">
+                <MessageCircle className="w-8 h-8 text-[#25D366]" />
                 <a 
                   href={SOCIAL_LINKS.whatsapp}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center space-x-3 px-6 py-3 bg-[#25D366] hover:bg-[#128C7E] rounded-lg text-white transition-colors"
+                  className="px-6 py-3 bg-[#25D366] hover:bg-[#128C7E] rounded-lg text-white font-medium transition-colors"
                 >
-                  <MessageCircle className="w-5 h-5" />
-                  <span className="font-medium">{t('WhatsApp', 'WhatsApp')}</span>
+                  {t('WhatsApp', 'WhatsApp')}
                 </a>
               </li>
               <li className="flex items-center space-x-3">
