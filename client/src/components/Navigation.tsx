@@ -18,14 +18,14 @@ export default function Navigation() {
   ];
 
   return (
-    <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur-lg border-b border-border/40 shadow-lg">
+    <nav className="sticky top-0 z-50 bg-gradient-to-r from-background/95 via-section-dark/98 to-background/95 backdrop-blur-xl border-b border-border/50 shadow-cosmic animate-fade-in">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link href="/">
             <div className="flex items-center space-x-3 cursor-pointer group">
-              <div className="w-12 h-12 bg-gradient-to-br from-primary via-accent to-secondary rounded-xl flex items-center justify-center shadow-lg transform transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl">
-                <span className="text-white font-black text-2xl">量</span>
+              <div className="w-12 h-12 bg-gradient-to-br from-primary via-accent to-secondary rounded-xl flex items-center justify-center shadow-glow transform transition-all duration-300 group-hover:scale-110 group-hover:shadow-cosmic group-hover:rotate-6 animate-float">
+                <span className="text-white font-black text-2xl drop-shadow-lg">量</span>
               </div>
               <div className="hidden md:block">
                 <div className="text-foreground font-bold text-xl tracking-tight transition-colors duration-300 group-hover:text-accent">
@@ -45,8 +45,8 @@ export default function Navigation() {
                 <Link href={item.path}>
                   <a
                     className={cn(
-                      'px-5 py-2 text-base font-semibold transition-all duration-300 hover:text-accent hover:bg-accent/10 rounded-lg relative group',
-                      location === item.path ? 'text-accent bg-accent/10' : 'text-foreground'
+                      'px-5 py-2 text-base font-semibold transition-all duration-300 hover:text-accent hover:bg-accent/20 hover:shadow-glow rounded-lg relative group transform hover:scale-105',
+                      location === item.path ? 'text-accent bg-accent/15 shadow-glow' : 'text-foreground'
                     )}
                   >
                     | {item.label}
