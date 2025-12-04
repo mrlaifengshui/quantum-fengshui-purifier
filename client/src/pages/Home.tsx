@@ -188,12 +188,9 @@ export default function Home() {
             </h2>
           </div>
           
-          {/* 1 row 3 columns invisible table with centered YouTube */}
-          <div className="grid grid-cols-3 gap-4">
-            {/* Empty left column */}
+          {/* Desktop: 3 columns grid */}
+          <div className="hidden md:grid md:grid-cols-3 gap-4">
             <div></div>
-            
-            {/* Center column with YouTube video */}
             <div>
               <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl border border-border hover:shadow-accent/20 transition-all duration-300">
                 <iframe
@@ -205,9 +202,19 @@ export default function Home() {
                 ></iframe>
               </div>
             </div>
-            
-            {/* Empty right column */}
             <div></div>
+          </div>
+          {/* Mobile: centered directly */}
+          <div className="md:hidden max-w-4xl mx-auto">
+            <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl border border-border hover:shadow-accent/20 transition-all duration-300">
+              <iframe
+                className="w-full h-full"
+                src="https://www.youtube.com/embed/eaVCJCSrqC0?si=n1Bo_jNL2y5FBhQC"
+                title="量子風水空氣淨化技術示範"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
           </div>
           
           {/* Empty row after video */}
@@ -304,15 +311,21 @@ export default function Home() {
       {/* Empty row between sections */}
       <div className="py-8"></div>
 
-      {/* YouTube Video Section - 深色背景 */}
+      {/* YouTube Video Section 2 - 深色背景 */}
       <section className="py-20 bg-section-dark">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-          {/* 1 row 3 columns invisible table with centered YouTube */}
-          <div className="grid grid-cols-3 gap-4">
-            {/* Empty left column */}
+          <div className="text-center mb-12">
+            <h2 className="text-xl md:text-2xl font-normal text-muted-foreground">
+              {t(
+                '了解量子風水在電磁波影響健康的應用',
+                'Understanding Quantum Feng Shui Applications in EMF Health Impact'
+              )}
+            </h2>
+          </div>
+          
+          {/* Desktop: 3 columns grid */}
+          <div className="hidden md:grid md:grid-cols-3 gap-4">
             <div></div>
-            
-            {/* Center column with YouTube video */}
             <div>
               <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl border border-border hover:shadow-accent/20 transition-all duration-300">
                 <iframe
@@ -324,9 +337,19 @@ export default function Home() {
                 ></iframe>
               </div>
             </div>
-            
-            {/* Empty right column */}
             <div></div>
+          </div>
+          {/* Mobile: centered directly */}
+          <div className="md:hidden max-w-4xl mx-auto">
+            <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl border border-border hover:shadow-accent/20 transition-all duration-300">
+              <iframe
+                className="w-full h-full"
+                src="https://www.youtube.com/embed/kqsD2lVRyek?start=9"
+                title="量子風水空氣淨化"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
           </div>
           
           {/* Empty row after video */}
