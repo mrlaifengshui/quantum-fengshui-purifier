@@ -29,16 +29,7 @@ export default function Technology() {
           {/* Section 1: Air Purification */}
           <section className="bg-section-light rounded-2xl p-8 md:p-12">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-              <div className="order-2 md:order-1 flex justify-center">
-                <div className="relative w-full max-w-md rounded-2xl overflow-hidden shadow-xl">
-                  <img 
-                    src="/quantum-fengshui-purifier/images/technology/air-purification.jpg" 
-                    alt={t('空氣淨化技術', 'Air Purification Technology')}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-              <div className="order-1 md:order-2">
+              <div className="order-1 md:order-1">
                 <h2 className="text-3xl font-bold text-foreground mb-4">
                   {t('空氣淨化技術', 'Air Purification Technology')}
                 </h2>
@@ -84,13 +75,31 @@ export default function Technology() {
                   </li>
                 </ul>
               </div>
+              <div className="order-2 md:order-2 flex justify-center">
+                <div className="relative w-full max-w-md rounded-2xl overflow-hidden shadow-xl">
+                  <img 
+                    src="/quantum-fengshui-purifier/images/technology/air-purification.jpg" 
+                    alt={t('空氣淨化技術', 'Air Purification Technology')}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
             </div>
           </section>
 
           {/* Section 2: Quantum Tuning */}
           <section className="bg-section-dark rounded-2xl p-8 md:p-12">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-              <div className="order-1 md:order-1">
+              <div className="order-2 md:order-1 flex justify-center">
+                <div className="relative w-full max-w-md rounded-2xl overflow-hidden shadow-xl">
+                  <img 
+                    src="/quantum-fengshui-purifier/images/technology/quantum-tuning.jpg" 
+                    alt={t('量子調頻技術', 'Quantum Frequency Tuning Technology')}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+              <div className="order-1 md:order-2">
                 <h2 className="text-3xl font-bold text-foreground mb-4">
                   {t('量子調頻技術', 'Quantum Frequency Tuning Technology')}
                 </h2>
@@ -136,31 +145,13 @@ export default function Technology() {
                   </li>
                 </ul>
               </div>
-              <div className="order-2 md:order-2 flex justify-center">
-                <div className="relative w-full max-w-md rounded-2xl overflow-hidden shadow-xl">
-                  <img 
-                    src="/quantum-fengshui-purifier/images/technology/quantum-tuning.jpg" 
-                    alt={t('量子調頻技術', 'Quantum Frequency Tuning Technology')}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
             </div>
           </section>
 
           {/* Section 3: Feng Shui Placement */}
           <section className="bg-section-light rounded-2xl p-8 md:p-12">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-              <div className="order-2 md:order-1 flex justify-center">
-                <div className="relative w-full max-w-md rounded-2xl overflow-hidden shadow-xl">
-                  <img 
-                    src="/quantum-fengshui-purifier/images/technology/feng-shui-positioning.jpg" 
-                    alt={t('風水擺位技術', 'Feng Shui Positioning Technology')}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-              <div className="order-1 md:order-2">
+              <div className="order-1 md:order-1">
                 <h2 className="text-3xl font-bold text-foreground mb-4">
                   {t('風水擺位技術', 'Feng Shui Positioning Technology')}
                 </h2>
@@ -205,6 +196,15 @@ export default function Technology() {
                     </div>
                   </li>
                 </ul>
+              </div>
+              <div className="order-2 md:order-2 flex justify-center">
+                <div className="relative w-full max-w-md rounded-2xl overflow-hidden shadow-xl">
+                  <img 
+                    src="/quantum-fengshui-purifier/images/technology/feng-shui-positioning.jpg" 
+                    alt={t('風水擺位技術', 'Feng Shui Positioning Technology')}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </div>
             </div>
           </section>
