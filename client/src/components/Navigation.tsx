@@ -21,7 +21,7 @@ export default function Navigation() {
     <nav className="sticky top-0 z-50 bg-gradient-to-r from-background/95 via-section-dark/98 to-background/95 backdrop-blur-xl border-b border-border/50 shadow-cosmic animate-fade-in">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-24 md:h-20">
-          {/* Logo - Quantum Taichi */}
+          {/* Logo - Quantum Energy */}
           <Link href="/">
             <div className="flex items-center cursor-pointer group">
               <div className="w-20 h-20 md:w-14 md:h-14 rounded-full flex items-center justify-center shadow-glow transform transition-all duration-300 group-hover:scale-110 group-hover:shadow-cosmic group-hover:rotate-180 relative overflow-hidden">
@@ -31,6 +31,10 @@ export default function Navigation() {
                   className="w-full h-full object-contain"
                 />
               </div>
+              {/* 量子顯化 文字 - 只在手機版顯示 */}
+              <span className="md:hidden ml-3 text-xl font-bold text-accent animate-pulse">
+                {t('量子顯化', 'Quantum Manifestation')}
+              </span>
             </div>
           </Link>
 
@@ -95,7 +99,7 @@ export default function Navigation() {
                   <a
                     onClick={() => setIsOpen(false)}
                     className={cn(
-                      'px-3 py-2 text-sm font-semibold transition-colors whitespace-nowrap',
+                      'px-2 py-2 text-[0.8125rem] font-semibold transition-colors whitespace-nowrap',
                       location === item.path
                         ? 'text-accent'
                         : 'text-foreground hover:text-accent'

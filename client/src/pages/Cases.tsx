@@ -203,15 +203,15 @@ export default function Cases() {
         <div className="mt-16 bg-gradient-to-r from-primary via-secondary to-accent rounded-xl p-12">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div>
-              <div className="text-5xl font-bold text-background mb-2">95%+</div>
+              <div className="text-4xl font-bold text-background mb-2">95%+</div>
               <div className="text-background/90">{t('客戶滿意度', 'Customer Satisfaction')}</div>
             </div>
             <div>
-              <div className="text-5xl font-bold text-background mb-2">100+</div>
+              <div className="text-4xl font-bold text-background mb-2">100+</div>
               <div className="text-background/90">{t('成功案例', 'Successful Cases')}</div>
             </div>
             <div>
-              <div className="text-5xl font-bold text-background mb-2">60%+</div>
+              <div className="text-4xl font-bold text-background mb-2">60%+</div>
               <div className="text-background/90">{t('重複購買率', 'Repeat Purchase Rate')}</div>
             </div>
           </div>

@@ -90,7 +90,7 @@ export default function Technology() {
           {/* Section 2: Quantum Tuning */}
           <section className="bg-section-dark rounded-2xl p-8 md:p-12">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-              <div className="order-1 md:order-1">
+              <div className="order-2 md:order-1">
                 <h2 className="text-3xl font-bold text-foreground mb-4">
                   {t('量子調頻技術', 'Quantum Frequency Tuning Technology')}
                 </h2>
@@ -136,7 +136,7 @@ export default function Technology() {
                   </li>
                 </ul>
               </div>
-              <div className="order-2 md:order-2 flex justify-center">
+              <div className="order-1 md:order-2 flex justify-center">
                 <div className="relative w-full max-w-md rounded-2xl overflow-hidden shadow-xl">
                   <img 
                     src="/quantum-fengshui-purifier/images/technology/quantum-tuning.jpg" 
