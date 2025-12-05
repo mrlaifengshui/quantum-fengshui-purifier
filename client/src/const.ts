@@ -1,4 +1,4 @@
-export const SITE_NAME = '量子風水空氣淨化服務';
+export const SITE_NAME = '量子風水空氣淨化方案';
 export const SITE_NAME_EN = 'Quantum Feng Shui Air Purification Service';
 
 export const SITE_DESCRIPTION = '結合頂級空氣淨化科技與量子調頻技術，精準擺設風水吉位，為您打造物質清淨、能量和諧、豐盛顯化的現代家居環境。';

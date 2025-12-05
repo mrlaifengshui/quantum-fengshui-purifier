@@ -133,7 +133,7 @@ export default function Footer() {
             
             {/* Copyright */}
             <p className="text-muted-foreground text-sm text-center">
-              © 2025 <span className="text-foreground font-semibold">{t('量子風水空氣淨化服務', 'Quantum Feng Shui Air Purification')}</span> | 
+              © 2025 <span className="text-foreground font-semibold">{t('量子風水空氣淨化方案', 'Quantum Feng Shui Air Purification')}</span> | 
               {t(' 版權所有', ' All Rights Reserved')}
             </p>
           </div>

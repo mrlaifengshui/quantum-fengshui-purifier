@@ -17,7 +17,7 @@ export default function Home() {
             </span>
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight tracking-tight">
-            {t('量子風水空氣淨化服務', 'Quantum Feng Shui')}<br />
+            {t('量子風水空氣淨化方案', 'Quantum Feng Shui')}<br />
             <span className="block text-lg sm:text-xl md:text-2xl lg:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-accent via-secondary to-primary mt-2">
               {t('物質清淨 × 能量調頻 × 豐盛顯化', 'Material Purity × Energy Tuning × Abundance Manifestation')}
             </span>
