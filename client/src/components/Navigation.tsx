@@ -14,6 +14,7 @@ export default function Navigation() {
     { path: '/technology', label: t('技術原理', 'Technology') },
     { path: '/services', label: t('服務方案', 'Services') },
     { path: '/cases', label: t('成功案例', 'Cases') },
+    { path: '/blog', label: t('博客', 'Blog') },
     { path: '/contact', label: t('聯繫我們', 'Contact') },
   ];
 

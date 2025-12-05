@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import Technology from './pages/Technology';
 import Services from './pages/Services';
 import Cases from './pages/Cases';
+import Blog from './pages/Blog';
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
 
@@ -25,6 +26,7 @@ export default function App() {
               <Route path="/technology" component={Technology} />
               <Route path="/services" component={Services} />
               <Route path="/cases" component={Cases} />
+              <Route path="/blog" component={Blog} />
               <Route path="/contact" component={Contact} />
               <Route component={NotFound} />
             </Switch>
