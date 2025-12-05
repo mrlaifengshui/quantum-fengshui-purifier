@@ -26,9 +26,9 @@ export default function Navigation() {
             <div className="flex items-center cursor-pointer group">
               <div className="w-20 h-20 md:w-14 md:h-14 rounded-full flex items-center justify-center shadow-glow transform transition-all duration-300 group-hover:scale-110 group-hover:shadow-cosmic group-hover:rotate-180 relative overflow-hidden">
                 <img 
-                  src="/quantum-fengshui-purifier/images/quantum-taichi-logo.png" 
-                  alt="Quantum Taichi Logo" 
-                  className="w-full h-full object-cover rounded-full"
+                  src="/quantum-fengshui-purifier/images/quantum-energy-logo.png" 
+                  alt="Quantum Energy Logo" 
+                  className="w-full h-full object-contain"
                 />
               </div>
             </div>
@@ -88,21 +88,26 @@ export default function Navigation() {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-muted border-t border-border">
-          <div className="px-4 py-4 space-y-3">
-            {navItems.map((item) => (
-              <Link key={item.path} href={item.path}>
-                <a
-                  onClick={() => setIsOpen(false)}
-                  className={cn(
-                    'block px-8 py-5 rounded-xl text-xl font-bold transition-colors',
-                    location === item.path
-                      ? 'bg-primary text-primary-foreground shadow-lg'
-                      : 'text-foreground hover:bg-border hover:shadow-md'
-                  )}
-                >
-                  {item.label}
-                </a>
-              </Link>
+          <div className="px-3 py-3 flex items-center justify-center flex-wrap gap-2">
+            {navItems.map((item, index) => (
+              <div key={item.path} className="flex items-center">
+                <Link href={item.path}>
+                  <a
+                    onClick={() => setIsOpen(false)}
+                    className={cn(
+                      'px-3 py-2 text-sm font-semibold transition-colors whitespace-nowrap',
+                      location === item.path
+                        ? 'text-accent'
+                        : 'text-foreground hover:text-accent'
+                    )}
+                  >
+                    {item.label}
+                  </a>
+                </Link>
+                {index < navItems.length - 1 && (
+                  <span className="text-border mx-1">|</span>
+                )}
+              </div>
             ))}
           </div>
         </div>
