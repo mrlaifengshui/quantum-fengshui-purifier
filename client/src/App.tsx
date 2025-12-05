@@ -8,6 +8,7 @@ import Technology from './pages/Technology';
 import Services from './pages/Services';
 import Cases from './pages/Cases';
 import Blog from './pages/Blog';
+import BlogArticle from './pages/BlogArticle';
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
 
@@ -27,6 +28,7 @@ export default function App() {
               <Route path="/services" component={Services} />
               <Route path="/cases" component={Cases} />
               <Route path="/blog" component={Blog} />
+              <Route path="/blog/:id" component={BlogArticle} />
               <Route path="/contact" component={Contact} />
               <Route component={NotFound} />
             </Switch>
