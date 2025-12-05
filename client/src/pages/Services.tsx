@@ -28,7 +28,7 @@ export default function Services() {
               <div></div>
               <div>
                 <img 
-                  src="/quantum-fengshui-purifier/images/services-banner-energy.jpg" 
+                  src="/images/services-banner-energy.jpg" 
                   alt={t('服務介紹圖片', 'Services Banner')}
                   className="w-full rounded-2xl shadow-xl"
                 />
@@ -38,7 +38,7 @@ export default function Services() {
             {/* Mobile: centered directly */}
             <div className="md:hidden max-w-4xl mx-auto">
               <img 
-                src="/quantum-fengshui-purifier/images/services-banner-energy.jpg" 
+                src="/images/services-banner-energy.jpg" 
                 alt={t('服務介紹圖片', 'Services Banner')}
                 className="w-full rounded-2xl shadow-xl"
               />

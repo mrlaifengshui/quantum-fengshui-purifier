@@ -105,7 +105,7 @@ export default function Cases() {
               <div></div>
               <div>
                 <img 
-                  src="/quantum-fengshui-purifier/images/cases-banner-new.jpg" 
+                  src="/images/cases-banner-new.jpg" 
                   alt={t('客戶見證案例圖片', 'Cases Banner')}
                   className="w-full rounded-2xl shadow-xl"
                 />
@@ -115,7 +115,7 @@ export default function Cases() {
             {/* Mobile: centered directly */}
             <div className="md:hidden max-w-4xl mx-auto">
               <img 
-                src="/quantum-fengshui-purifier/images/cases-banner-new.jpg" 
+                src="/images/cases-banner-new.jpg" 
                 alt={t('客戶見證案例圖片', 'Cases Banner')}
                 className="w-full rounded-2xl shadow-xl"
               />
