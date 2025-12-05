@@ -1,0 +1,12 @@
+# robots.txt for fengshuipurifier.com
+# 量子風水空氣淨化方案
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://fengshuipurifier.com/sitemap.xml
+
+# Disallow specific paths (if any)
+# Disallow: /admin/
+# Disallow: /private/
