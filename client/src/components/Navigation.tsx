@@ -31,8 +31,8 @@ export default function Navigation() {
                   className="w-full h-full object-contain"
                 />
               </div>
-              {/* 量子顯化 文字 - 只在手機版顯示 */}
-              <span className="md:hidden ml-3 text-xl font-bold text-accent animate-pulse">
+              {/* 量子顯化 文字 - 手機版和 PC 版都顯示 */}
+              <span className="ml-3 text-xl md:text-lg font-bold text-accent animate-pulse">
                 {t('量子顯化', 'Quantum Manifestation')}
               </span>
             </div>
