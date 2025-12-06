@@ -75,7 +75,7 @@ export default function BlogArticle() {
                   className="w-full rounded-xl shadow-lg"
                 />
                 <p className="text-sm text-muted-foreground mt-2 text-center italic">
-                  圖1：量子風水空間佈局與能量流動示意
+                  {t('圖1：量子風水空間佈局與能量流動示意', 'Figure 1: Quantum Feng Shui Space Layout and Energy Flow Diagram')}
                 </p>
               </div>
 
@@ -119,7 +119,7 @@ export default function BlogArticle() {
                   className="w-full rounded-xl shadow-lg"
                 />
                 <p className="text-sm text-muted-foreground mt-2 text-center italic">
-                  圖2：量子調頻能量場與頻率共振效果
+                  {t('圖2：量子調頻能量場與頻率共振效果', 'Figure 2: Quantum Frequency Tuning Energy Field and Resonance Effect')}
                 </p>
               </div>
 
@@ -169,7 +169,7 @@ export default function BlogArticle() {
                   className="w-full rounded-xl shadow-lg"
                 />
                 <p className="text-sm text-muted-foreground mt-2 text-center italic">
-                  圖3：量子調頻設備與能量頻率測量技術
+                  {t('圖3：量子調頻設備與能量頻率測量技術', 'Figure 3: Quantum Frequency Tuning Device and Energy Measurement Technology')}
                 </p>
               </div>
 

@@ -78,7 +78,7 @@ export default function BrandComparisonArticle() {
                   className="w-full rounded-xl shadow-lg"
                 />
                 <p className="text-sm text-muted-foreground mt-2 text-center italic">
-                  圖1：Dyson 無葉片設計展現金屬質感與動態氣流特性
+                  {t('圖1：Dyson 無葉片設計展現金屬質感與動態氣流特性', 'Figure 1: Dyson Bladeless Design Showcasing Metallic Texture and Dynamic Airflow')}
                 </p>
               </div>
 
@@ -125,7 +125,7 @@ export default function BrandComparisonArticle() {
                   className="w-full rounded-xl shadow-lg"
                 />
                 <p className="text-sm text-muted-foreground mt-2 text-center italic">
-                  圖2：Philips 方正設計展現土性穩定與溫和氣流特質
+                  {t('圖2：Philips 方正設計展現土性穩定與溫和氣流特質', 'Figure 2: Philips Square Design Exhibiting Earth Element Stability and Gentle Airflow')}
                 </p>
               </div>
 
@@ -286,7 +286,7 @@ export default function BrandComparisonArticle() {
                   className="w-full rounded-xl shadow-lg"
                 />
                 <p className="text-sm text-muted-foreground mt-2 text-center italic">
-                  圖3：主流品牌空氣淨化機的風水特性與五行屬性對比
+                  {t('圖3：主流品牌空氣淨化機的風水特性與五行屬性對比', 'Figure 3: Feng Shui Characteristics and Five Elements Comparison of Major Air Purifier Brands')}
                 </p>
               </div>
 

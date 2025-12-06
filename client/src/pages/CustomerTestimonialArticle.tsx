@@ -78,7 +78,7 @@ export default function CustomerTestimonialArticle() {
                   className="w-full rounded-xl shadow-lg"
                 />
                 <p className="text-sm text-muted-foreground mt-2 text-center italic">
-                  圖1：張太太長期被凌晨三點準時醒來的失眠問題困擾
+                  {t('圖1：張太太長期被凌晨三點準時醒來的失眠問題困擾', 'Figure 1: Mrs. Zhang Troubled by Chronic Insomnia, Waking at 3 AM')}
                 </p>
               </div>
 
@@ -130,7 +130,7 @@ export default function CustomerTestimonialArticle() {
                   className="w-full rounded-xl shadow-lg"
                 />
                 <p className="text-sm text-muted-foreground mt-2 text-center italic">
-                  圖2：團隊使用量子調頻設備對臥室進行能量頻率掃描
+                  {t('圖2：團隊使用量子調頻設備對臥室進行能量頻率掃描', 'Figure 2: Team Using Quantum Frequency Device to Scan Bedroom Energy')}
                 </p>
               </div>
 
@@ -165,7 +165,7 @@ export default function CustomerTestimonialArticle() {
                   className="w-full rounded-xl shadow-lg"
                 />
                 <p className="text-sm text-muted-foreground mt-2 text-center italic">
-                  圖3：量子調頻技術中和電磁波干擾，優化空間能量場
+                  {t('圖3：量子調頻技術中和電磁波干擾，優化空間能量場', 'Figure 3: Quantum Frequency Technology Neutralizing Electromagnetic Interference')}
                 </p>
               </div>
 
@@ -190,7 +190,7 @@ export default function CustomerTestimonialArticle() {
                   className="w-full rounded-xl shadow-lg"
                 />
                 <p className="text-sm text-muted-foreground mt-2 text-center italic">
-                  圖4：服務後的張太太精力充沛，工作效率顯著提升
+                  {t('圖4：服務後的張太太精力充沛，工作效率顯著提升', 'Figure 4: Mrs. Zhang Full of Energy After Service, Work Efficiency Significantly Improved')}
                 </p>
               </div>
 
