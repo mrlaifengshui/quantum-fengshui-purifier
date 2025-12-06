@@ -10,6 +10,7 @@ import Cases from './pages/Cases';
 import Blog from './pages/Blog';
 import BlogArticle from './pages/BlogArticle';
 import BrandComparisonArticle from './pages/BrandComparisonArticle';
+import CustomerTestimonialArticle from './pages/CustomerTestimonialArticle';
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
 
@@ -31,6 +32,7 @@ export default function App() {
               <Route path="/blog" component={Blog} />
               <Route path="/blog/quantum-feng-shui-guide-2026" component={BlogArticle} />
               <Route path="/blog/brand-comparison-dyson-philips-xiaomi" component={BrandComparisonArticle} />
+              <Route path="/blog/customer-testimonial-mrs-zhang" component={CustomerTestimonialArticle} />
               <Route path="/contact" component={Contact} />
               <Route component={NotFound} />
             </Switch>
