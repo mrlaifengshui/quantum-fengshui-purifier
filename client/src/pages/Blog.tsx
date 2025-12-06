@@ -36,11 +36,11 @@ export default function Blog() {
       title: t('風水客戶見證：從失眠到精力充沛 - 張太太的真實故事', 'Feng Shui Customer Testimonial: From Insomnia to Full Energy - Mrs. Zhang\'s Real Story'),
       excerpt: t(
         '張太太被失眠困擾了七年，凌晨三點準時醒來成為她的噩夢。她嘗試過所有傳統方法都無效。直到她遇見量子風水空氣淨化服務，僅用三天就徹底改變了她的睡眠品質，工作效率提升 40%。',
-        'Mrs. Zhang was troubled by insomnia for seven years, waking up at 3 AM became her nightmare. She tried all traditional methods without success. Until she discovered Quantum Feng Shui Air Purification Service, which completely changed her sleep quality in just three days and improved work efficiency by 40%.'
+        'Mrs. Zhang was troubled by insomnia for seven years, waking up at 3 AM became her nightmare. She tried all traditional methods without success. Until she discovered Quantum Feng Shui Air Purification Service, which completely changed her sleep quality in just three days and improved her work efficiency by 40%.'
       ),
       date: '2026-01-25',
       readTime: '6',
-      image: '/images/blog/insomnia-3am.jpg',
+      image: '/images/blog/energetic-workspace.jpg',
       category: t('客戶見證', 'Customer Testimonial'),
     },
   ];

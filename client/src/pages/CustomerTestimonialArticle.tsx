@@ -74,35 +74,35 @@ export default function CustomerTestimonialArticle() {
               <div className="my-8">
                 <img
                   src="/images/blog/insomnia-3am.jpg"
-                  alt="凌晨三點失眠醒來的張太太"
+                  alt={t('凌晨三點失眠醒來的張太太', 'Mrs. Zhang waking up with insomnia at 3 AM')}
                   className="w-full rounded-xl shadow-lg"
                 />
                 <p className="text-sm text-muted-foreground mt-2 text-center italic">
-                  {t('圖1：張太太長期被凌晨三點準時醒來的失眠問題困擾', 'Figure 1: Mrs. Zhang Troubled by Chronic Insomnia, Waking at 3 AM')}
+                  {t('圖1：張太太長期被凌晨三點準時醒來的失眠問題困擾', 'Figure 1: Mrs. Zhang troubled by chronic insomnia, waking at 3 AM regularly')}
                 </p>
               </div>
 
               <div className="bg-section-dark border border-border/30 rounded-xl p-6 mb-6">
-                <h3 className="text-xl font-semibold mb-4 text-primary">她嘗試了所有傳統方法：</h3>
+                <h3 className="text-xl font-semibold mb-4 text-primary">{t('她嘗試了所有傳統方法：', 'She tried all traditional methods:')}</h3>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
                     <span className="text-accent mt-1">•</span>
                     <div>
-                      <strong className="text-accent">醫療與保健：</strong>
+                      <strong className="text-accent">{t('醫療與保健：', 'Medical & Healthcare:')}</strong>
                       <span className="text-foreground/80 ml-2">尋求過中西醫幫助，服用過褪黑激素、安眠藥，但藥物依賴讓她感到焦慮。</span>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-accent mt-1">•</span>
                     <div>
-                      <strong className="text-accent">環境優化：</strong>
+                      <strong className="text-accent">{t('環境優化：', 'Environment Optimization:')}</strong>
                       <span className="text-foreground/80 ml-2">購買了頂級的空氣淨化機、遮光窗簾、香薰機，甚至更換了數萬元的高級床墊。</span>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-accent mt-1">•</span>
                     <div>
-                      <strong className="text-accent">傳統風水：</strong>
+                      <strong className="text-accent">{t('傳統風水：', 'Traditional Feng Shui:')}</strong>
                       <span className="text-foreground/80 ml-2">諮詢過傳統風水師，調整了床位、擺放了水晶和風水擺件，但效果微乎其微。</span>
                     </div>
                   </li>
@@ -125,48 +125,37 @@ export default function CustomerTestimonialArticle() {
 
               <div className="my-8">
                 <img
-                  src="/images/blog/quantum-tuning-device.jpg"
-                  alt="量子調頻設備進行能量頻率掃描"
+                  src="/images/blog/electromagnetic-vs-quantum.jpg"
+                  alt={t('電磁污染與量子調頻技術對比', 'Comparison between electromagnetic pollution and quantum frequency technology')}
                   className="w-full rounded-xl shadow-lg"
                 />
                 <p className="text-sm text-muted-foreground mt-2 text-center italic">
-                  {t('圖2：團隊使用量子調頻設備對臥室進行能量頻率掃描', 'Figure 2: Team Using Quantum Frequency Device to Scan Bedroom Energy')}
+                  {t('圖2：量子調頻技術中和電磁波干擾，優化空間能量場', 'Figure 2: Quantum frequency technology neutralizing electromagnetic interference and optimizing space energy field')}
                 </p>
               </div>
 
               <div className="bg-gradient-to-br from-primary/10 to-secondary/10 border border-primary/30 rounded-xl p-6 mb-6">
-                <h3 className="text-xl font-semibold mb-4 text-primary">黎Sir 團隊採用的解決方案是「三維淨化」：</h3>
+                <h3 className="text-xl font-semibold mb-4 text-primary">{t('黎Sir 團隊採用的解決方案是「三維淨化」：', 'Team adopted a "Three-Dimensional Purification" solution:')}</h3>
                 <div className="space-y-4">
                   <div className="border-l-4 border-accent pl-4">
-                    <h4 className="font-semibold text-accent mb-2">1. 精準測量與診斷</h4>
+                    <h4 className="font-semibold text-accent mb-2">{t('1. 精準測量與診斷', '1. Precise Measurement and Diagnosis')}</h4>
                     <p className="text-foreground/80 text-sm">
                       團隊首先使用高精度儀器，對張太太的臥室進行了<strong>「能量頻率掃描」。結果顯示，臥室內存在多個高頻電磁波干擾點，且空間的「生命能量指數」（LEI）</strong>遠低於健康標準。
                     </p>
                   </div>
                   <div className="border-l-4 border-secondary pl-4">
-                    <h4 className="font-semibold text-secondary mb-2">2. 量子調頻技術導入</h4>
+                    <h4 className="font-semibold text-secondary mb-2">{t('2. 量子調頻技術導入', '2. Quantum Frequency Tuning Technology Introduction')}</h4>
                     <p className="text-foreground/80 text-sm">
                       團隊並非要求張太太更換現有的空氣淨化機，而是利用量子調頻技術，對其淨化機進行了能量優化。這項技術的核心是發射一種與人體和諧共振的高頻能量波，以中和空間中混亂的低頻電磁波和負面情緒能量。
                     </p>
                   </div>
                   <div className="border-l-4 border-primary pl-4">
-                    <h4 className="font-semibold text-primary mb-2">3. 風水擺位微調</h4>
+                    <h4 className="font-semibold text-primary mb-2">{t('3. 風水擺位微調', '3. Feng Shui Positioning Fine-tuning')}</h4>
                     <p className="text-foreground/80 text-sm">
                       根據能量掃描結果，團隊微調了淨化機的擺放位置，使其避開了電磁波干擾點，並將其出風口指向了臥室的<strong>「生氣位」，確保淨化機輸出的不僅是潔淨的空氣，更是穩定、高頻的「旺氣」</strong>。
                     </p>
                   </div>
                 </div>
-              </div>
-
-              <div className="my-8">
-                <img
-                  src="/images/blog/electromagnetic-vs-quantum.jpg"
-                  alt="電磁污染與量子調頻技術對比"
-                  className="w-full rounded-xl shadow-lg"
-                />
-                <p className="text-sm text-muted-foreground mt-2 text-center italic">
-                  {t('圖3：量子調頻技術中和電磁波干擾，優化空間能量場', 'Figure 3: Quantum Frequency Technology Neutralizing Electromagnetic Interference')}
-                </p>
               </div>
 
               <p className="text-foreground/90 leading-relaxed">
@@ -186,29 +175,29 @@ export default function CustomerTestimonialArticle() {
               <div className="my-8">
                 <img
                   src="/images/blog/energetic-workspace.jpg"
-                  alt="精力充沛工作中的張太太"
+                  alt={t('精力充沛工作中的張太太', 'Mrs. Zhang working energetically after the service')}
                   className="w-full rounded-xl shadow-lg"
                 />
                 <p className="text-sm text-muted-foreground mt-2 text-center italic">
-                  {t('圖4：服務後的張太太精力充沛，工作效率顯著提升', 'Figure 4: Mrs. Zhang Full of Energy After Service, Work Efficiency Significantly Improved')}
+                  {t('圖3：服務後的張太太精力充沛，工作效率顯著提升', 'Figure 3: Mrs. Zhang full of energy after service, work efficiency significantly improved')}
                 </p>
               </div>
 
               <div className="grid md:grid-cols-3 gap-4 mb-6">
                 <div className="bg-gradient-to-br from-accent/20 to-accent/5 border border-accent/30 rounded-xl p-6">
-                  <h4 className="font-semibold text-accent mb-3">睡眠質量</h4>
+                  <h4 className="font-semibold text-accent mb-3">{t('睡眠質量', 'Sleep Quality')}</h4>
                   <p className="text-foreground/80 text-sm leading-relaxed">
                     她不再需要依賴藥物，入睡時間從原來的 1 小時縮短到 15 分鐘內。最重要的是，她能夠一覺睡到天亮，<strong>「凌晨三點醒來」的魔咒徹底被打破</strong>。她形容：「那種感覺就像是臥室的空氣突然變得『輕盈』了，身體完全放鬆，進入了久違的深層睡眠。」
                   </p>
                 </div>
                 <div className="bg-gradient-to-br from-primary/20 to-primary/5 border border-primary/30 rounded-xl p-6">
-                  <h4 className="font-semibold text-primary mb-3">日間精力</h4>
+                  <h4 className="font-semibold text-primary mb-3">{t('日間精力', 'Daily Energy')}</h4>
                   <p className="text-foreground/80 text-sm leading-relaxed">
                     由於睡眠質量的大幅提升，張太太白天的精力變得異常充沛。她不再需要咖啡因來維持專注，設計靈感如泉湧般湧現，<strong>工作效率提高了至少 40%</strong>。
                   </p>
                 </div>
                 <div className="bg-gradient-to-br from-secondary/20 to-secondary/5 border border-secondary/30 rounded-xl p-6">
-                  <h4 className="font-semibold text-secondary mb-3">情緒與人際</h4>
+                  <h4 className="font-semibold text-secondary mb-3">{t('情緒與人際', 'Emotions & Relationships')}</h4>
                   <p className="text-foreground/80 text-sm leading-relaxed">
                     她的情緒變得更加穩定和積極。她發現與客戶的溝通更加順暢，甚至在一個月內成功簽下了一個她追蹤了近半年的大型設計合約。她深信，這不僅是運氣，更是氣場優化帶來的連鎖反應。
                   </p>
@@ -233,41 +222,41 @@ export default function CustomerTestimonialArticle() {
                 <table className="w-full text-sm border-collapse">
                   <thead>
                     <tr className="bg-primary/20">
-                      <th className="border border-border/30 p-3 text-left">測量指標</th>
-                      <th className="border border-border/30 p-3 text-center">服務前</th>
-                      <th className="border border-border/30 p-3 text-center">服務後</th>
-                      <th className="border border-border/30 p-3 text-center">改善幅度</th>
+                      <th className="border border-border/30 p-3 text-left">{t('測量指標', 'Metric')}</th>
+                      <th className="border border-border/30 p-3 text-center">{t('服務前', 'Before')}</th>
+                      <th className="border border-border/30 p-3 text-center">{t('服務後', 'After')}</th>
+                      <th className="border border-border/30 p-3 text-center">{t('改善幅度', 'Improvement')}</th>
                     </tr>
                   </thead>
                   <tbody className="text-foreground/80">
                     <tr>
-                      <td className="border border-border/30 p-3 font-semibold">平均入睡時間</td>
-                      <td className="border border-border/30 p-3 text-center">60 分鐘</td>
-                      <td className="border border-border/30 p-3 text-center">15 分鐘</td>
+                      <td className="border border-border/30 p-3 font-semibold">{t('平均入睡時間', 'Average Sleep Onset Time')}</td>
+                      <td className="border border-border/30 p-3 text-center">{t('60 分鐘', '60 minutes')}</td>
+                      <td className="border border-border/30 p-3 text-center">{t('15 分鐘', '15 minutes')}</td>
                       <td className="border border-border/30 p-3 text-center text-accent font-semibold">↓ 75%</td>
                     </tr>
                     <tr className="bg-muted/30">
-                      <td className="border border-border/30 p-3 font-semibold">夜間醒來次數</td>
-                      <td className="border border-border/30 p-3 text-center">3-5 次</td>
-                      <td className="border border-border/30 p-3 text-center">0-1 次</td>
+                      <td className="border border-border/30 p-3 font-semibold">{t('夜間醒來次數', 'Night Wakings')}</td>
+                      <td className="border border-border/30 p-3 text-center">{t('3-5 次', '3-5 times')}</td>
+                      <td className="border border-border/30 p-3 text-center">{t('0-1 次', '0-1 times')}</td>
                       <td className="border border-border/30 p-3 text-center text-accent font-semibold">↓ 80%</td>
                     </tr>
                     <tr>
-                      <td className="border border-border/30 p-3 font-semibold">深層睡眠時間</td>
-                      <td className="border border-border/30 p-3 text-center">1.2 小時</td>
-                      <td className="border border-border/30 p-3 text-center">3.5 小時</td>
+                      <td className="border border-border/30 p-3 font-semibold">{t('深層睡眠時間', 'Deep Sleep Duration')}</td>
+                      <td className="border border-border/30 p-3 text-center">{t('1.2 小時', '1.2 hours')}</td>
+                      <td className="border border-border/30 p-3 text-center">{t('3.5 小時', '3.5 hours')}</td>
                       <td className="border border-border/30 p-3 text-center text-accent font-semibold">↑ 191%</td>
                     </tr>
                     <tr className="bg-muted/30">
-                      <td className="border border-border/30 p-3 font-semibold">生命能量指數 (LEI)</td>
+                      <td className="border border-border/30 p-3 font-semibold">{t('生命能量指數 (LEI)', 'Life Energy Index (LEI)')}</td>
                       <td className="border border-border/30 p-3 text-center">42/100</td>
                       <td className="border border-border/30 p-3 text-center">88/100</td>
                       <td className="border border-border/30 p-3 text-center text-accent font-semibold">↑ 109%</td>
                     </tr>
                     <tr>
-                      <td className="border border-border/30 p-3 font-semibold">白天疲勞感評分</td>
-                      <td className="border border-border/30 p-3 text-center">8.5/10 (高)</td>
-                      <td className="border border-border/30 p-3 text-center">2.5/10 (低)</td>
+                      <td className="border border-border/30 p-3 font-semibold">{t('白天疲勞感評分', 'Daytime Fatigue Score')}</td>
+                      <td className="border border-border/30 p-3 text-center">{t('8.5/10 (高)', '8.5/10 (High)')}</td>
+                      <td className="border border-border/30 p-3 text-center">{t('2.5/10 (低)', '2.5/10 (Low)')}</td>
                       <td className="border border-border/30 p-3 text-center text-accent font-semibold">↓ 70%</td>
                     </tr>
                   </tbody>
@@ -290,21 +279,21 @@ export default function CustomerTestimonialArticle() {
 
               <div className="space-y-4">
                 <div className="bg-section-dark border border-border/30 rounded-xl p-6">
-                  <h4 className="font-semibold text-primary mb-2">陳先生（金融業高管）</h4>
+                  <h4 className="font-semibold text-primary mb-2">{t('陳先生（金融業高管）', 'Mr. Chen (Financial Executive)')}</h4>
                   <p className="text-foreground/80 leading-relaxed">
                     「自從黎Sir 調整了我的書房氣場後，我的決策效率明顯提高，不再感到焦慮。兩個月內，我成功完成了一筆數千萬的併購案。我認為這是一種<strong>『能量上的優勢』</strong>。」
                   </p>
                 </div>
 
                 <div className="bg-section-dark border border-border/30 rounded-xl p-6">
-                  <h4 className="font-semibold text-primary mb-2">李小姐（全職媽媽）</h4>
+                  <h4 className="font-semibold text-primary mb-2">{t('李小姐（全職媽媽）', 'Ms. Li (Full-time Mother)')}</h4>
                   <p className="text-foreground/80 leading-relaxed">
                     「我的孩子以前經常半夜哭鬧，醫生也找不出原因。實施量子淨化後，孩子睡得安穩了，家裡的爭吵也少了。這讓我覺得，家裡的『氣』真的變好了。」
                   </p>
                 </div>
 
                 <div className="bg-section-dark border border-border/30 rounded-xl p-6">
-                  <h4 className="font-semibold text-primary mb-2">王先生（創業家）</h4>
+                  <h4 className="font-semibold text-primary mb-2">{t('王先生（創業家）', 'Mr. Wang (Entrepreneur)')}</h4>
                   <p className="text-foreground/80 leading-relaxed">
                     「我的辦公室位於商業大廈的『路沖位』，生意一直不順。黎Sir 建議我用量子調頻技術來<strong>『化煞為權』</strong>。現在，我的團隊氛圍更積極，訂單量也開始穩定增長。」
                   </p>
