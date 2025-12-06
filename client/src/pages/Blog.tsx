@@ -19,6 +19,18 @@ export default function Blog() {
       image: '/images/blog/quantum-energy-waves.jpg',
       category: t('完全指南', 'Complete Guide'),
     },
+    {
+      id: 'brand-comparison-dyson-philips-xiaomi',
+      title: t('不同品牌空氣淨化機的風水特性 - Dyson vs Philips vs 小米 vs Amway Sky', 'Feng Shui Characteristics of Different Air Purifier Brands - Dyson vs Philips vs Xiaomi vs Amway Sky'),
+      excerpt: t(
+        '選擇空氣淨化機不應只看 CADR 值和 HEPA 等級。從量子風水角度，Dyson、Philips、小米等品牌在五行屬性、氣流模式和能量場上各有特色。本指南助您找到最適合家居氣場的淨化設備。',
+        'Choosing an air purifier should not only consider CADR value and HEPA grade. From the quantum feng shui perspective, brands like Dyson, Philips, and Xiaomi each have unique characteristics in five-element attributes, airflow patterns, and energy fields. This guide helps you find the purification device most suitable for your home energy field.'
+      ),
+      date: '2026-01-20',
+      readTime: '10',
+      image: '/images/blog/brand-comparison-table.jpg',
+      category: t('品牌對比', 'Brand Comparison'),
+    },
   ];
 
   return (

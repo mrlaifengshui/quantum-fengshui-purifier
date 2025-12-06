@@ -9,6 +9,7 @@ import Services from './pages/Services';
 import Cases from './pages/Cases';
 import Blog from './pages/Blog';
 import BlogArticle from './pages/BlogArticle';
+import BrandComparisonArticle from './pages/BrandComparisonArticle';
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
 
@@ -28,7 +29,8 @@ export default function App() {
               <Route path="/services" component={Services} />
               <Route path="/cases" component={Cases} />
               <Route path="/blog" component={Blog} />
-              <Route path="/blog/:id" component={BlogArticle} />
+              <Route path="/blog/quantum-feng-shui-guide-2026" component={BlogArticle} />
+              <Route path="/blog/brand-comparison-dyson-philips-xiaomi" component={BrandComparisonArticle} />
               <Route path="/contact" component={Contact} />
               <Route component={NotFound} />
             </Switch>
