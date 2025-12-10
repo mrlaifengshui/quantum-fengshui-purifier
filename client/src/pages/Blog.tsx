@@ -1,6 +1,7 @@
-import { Link } from 'wouter';
+
 import { useLanguage } from '../contexts/LanguageContext';
 import { Calendar, Clock, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function Blog() {
   const { t } = useLanguage();
@@ -122,11 +123,11 @@ export default function Blog() {
                       </p>
                     </div>
 
-                    <Link href={`/blog/${article.id}`}>
-                      <a className="inline-flex items-center gap-2 text-accent font-semibold hover:gap-4 transition-all duration-300 group/link">
+                    <Link to={`/blog/${article.id}`}>
+                      <span className="inline-flex items-center gap-2 text-accent font-semibold hover:gap-4 transition-all duration-300 group/link">
                         {t('閱讀全文', 'Read Full Article')}
                         <ArrowRight className="w-5 h-5 transform group-hover/link:translate-x-1 transition-transform" />
-                      </a>
+                      </span>
                     </Link>
                   </div>
                 </div>
