@@ -11,6 +11,7 @@ import Blog from './pages/Blog';
 import BlogArticle from './pages/BlogArticle';
 import BrandComparisonArticle from './pages/BrandComparisonArticle';
 import CustomerTestimonialArticle from './pages/CustomerTestimonialArticle';
+import BlogArticle4 from './pages/BlogArticle4';
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
 
@@ -33,6 +34,7 @@ export default function App() {
               <Route path="/blog/quantum-feng-shui-guide-2026" component={BlogArticle} />
               <Route path="/blog/brand-comparison-dyson-philips-xiaomi" component={BrandComparisonArticle} />
               <Route path="/blog/customer-testimonial-mrs-zhang" component={CustomerTestimonialArticle} />
+              <Route path="/blog/quantum-layout-science" component={BlogArticle4} />
               <Route path="/contact" component={Contact} />
               <Route component={NotFound} />
             </Switch>

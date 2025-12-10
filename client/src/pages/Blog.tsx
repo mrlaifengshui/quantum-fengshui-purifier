@@ -32,6 +32,18 @@ export default function Blog() {
       category: t('品牌對比', 'Brand Comparison'),
     },
     {
+      id: 'quantum-layout-science',
+      title: t('量子風水佈局的科學：如何測量和調整家居能量場', 'The Science of Quantum Feng Shui Layout: How to Measure and Adjust Home Energy Fields'),
+      excerpt: t(
+        '傳統風水依賴經驗，量子風水則通過高科技儀器精確測量家居空間的能量頻率，繪製出「空間能量地圖」，實現從「感覺」到「數據」的佈局升級。',
+        'Traditional Feng Shui relies on experience, while Quantum Feng Shui uses high-tech instruments to precisely measure the home\'s energy field frequency, creating a "Space Energy Map" to achieve layout upgrades from "feeling" to "data."'
+      ),
+      date: '2026-02-05',
+      readTime: '12',
+      image: '/images/blog/space_energy_heatmap.png',
+      category: t('科學佈局', 'Scientific Layout'),
+    },
+    {
       id: 'customer-testimonial-mrs-zhang',
       title: t('風水客戶見證：從失眠到精力充沛 - 張太太的真實故事', 'Feng Shui Customer Testimonial: From Insomnia to Full Energy - Mrs. Zhang\'s Real Story'),
       excerpt: t(
