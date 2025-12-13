@@ -28,18 +28,18 @@ export default function SEOHead({
   const { language } = useLanguage();
   
   const defaultTitle = {
-    zh: '量子風水空氣淨化方案 | Quantum Feng Shui Air Purification',
-    en: 'Quantum Feng Shui Air Purification | Premium Air Quality Solutions'
+    zh: '量子風水空氣淨化方案 | 香港專業風水師服務',
+    en: 'Quantum Feng Shui Air Purification | Hong Kong Professional Feng Shui Master Service'
   };
   
   const defaultDescription = {
-    zh: '結合頂級空氣淨化科技與量子調頻技術，精準擺設風水吉位，為您打造物質清淨、能量和諧、豐盛顯化的現代家居環境。',
-    en: 'Combining premium air purification technology with quantum frequency tuning and precise feng shui positioning to create a harmonious, prosperous modern living environment.'
+    zh: '結合頂級空氣淨化科技與量子調頻技術，精準擺設風水吉位。提供Dyson、Philips、Sharp等品牌空氣淨化器風水佈局服務。香港風水師專業團隊，超過100個成功案例。',
+    en: 'Professional quantum feng shui air purification service in Hong Kong. Combining premium Dyson, Philips, Sharp air purifiers with feng shui layout and quantum frequency tuning. Expert feng shui master team with 100+ successful cases. Call +852-9882-1298 for consultation.'
   };
   
   const defaultKeywords = {
-    zh: '量子風水, 空氣淨化, 風水擺位, 量子調頻, HEPA濾網, 香港風水師, Dyson空氣清新機, Philips空氣淨化器, 家居風水, 辦公室風水',
-    en: 'Quantum Feng Shui, Air Purification, Feng Shui Positioning, Quantum Frequency, HEPA Filter, Hong Kong Feng Shui Master, Dyson Air Purifier, Philips Air Purifier, Home Feng Shui, Office Feng Shui'
+    zh: '量子風水, 香港風水師, 空氣淨化器風水擺位, Dyson風水, Philips空氣淨化, 家居風水, 辦公室風水, 量子調頻, 風水佈局, 風水師推薦',
+    en: 'Quantum Feng Shui, Hong Kong Feng Shui Master, Air Purifier Feng Shui Placement, Dyson Feng Shui, Philips Air Purification, Home Feng Shui, Office Feng Shui, Quantum Frequency Tuning, Feng Shui Consultation Hong Kong, Professional Feng Shui Service'
   };
 
   const pageTitle = title ? title[language] : defaultTitle[language];
