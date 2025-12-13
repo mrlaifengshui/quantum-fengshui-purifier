@@ -56,8 +56,7 @@ export default function BlogArticle() {
           
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
             {t(
-              '量子風水空氣淨化完全指南 - 2026 年最全面的解決方案',
-              'Complete Guide to Quantum Feng Shui Air Purification - The Most Comprehensive Solution for 2026'
+             '量子風水空氣淨化完全指南 - 2026 年最全面的解決方案',\n              'Complete Guide to Quantum Feng Shui Air Purification - The Most Comprehensive Solution for 2026'
             )}
           </h1>
         </div>

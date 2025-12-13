@@ -59,8 +59,7 @@ export default function BrandComparisonArticle() {
           
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
             {t(
-              '不同品牌空氣淨化機的風水特性 - Dyson vs Philips vs 小米 vs Amway Sky',
-              'Feng Shui Characteristics of Different Air Purifier Brands - Dyson vs Philips vs Xiaomi vs Amway Sky'
+              '不同品牌空氣淨化機的風水特性 - Dyson vs Philips vs 小米 vs Amway Sky',\n              'Feng Shui Characteristics of Different Air Purifier Brands - Dyson vs Philips vs Xiaomi vs Amway Sky'
             )}
           </h1>
         </div>

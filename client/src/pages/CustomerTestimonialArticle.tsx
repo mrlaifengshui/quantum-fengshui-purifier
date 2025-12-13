@@ -25,7 +25,7 @@ const CustomerTestimonialArticle: React.FC = () => {
   return (
     <div className="container mx-auto py-12 px-4">
       <h1 className="text-4xl md:text-5xl font-extrabold text-center mb-12 text-primary">
-        {t('客戶見證：從失眠到精力充沛 - 張太太的真實故事', 'Customer Testimonial: From Insomnia to Energy - Mrs. Zhang\'s True Story')}
+        {t('客戶見證：從失眠到精力充沛 - 張太太的真實故事',\n              'Customer Testimonial: From Insomnia to Energy - Mrs. Zhang\'s True Story')}
       </h1>
 
       <div className="max-w-4xl mx-auto bg-card p-6 md:p-10 rounded-xl shadow-2xl">
