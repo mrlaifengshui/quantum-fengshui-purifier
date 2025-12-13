@@ -3,6 +3,7 @@ import { LanguageProvider } from './contexts/LanguageContext';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import FloatingWhatsApp from './components/FloatingWhatsApp';
+import StructuredData from './components/StructuredData';
 import Home from './pages/Home';
 import Technology from './pages/Technology';
 import Services from './pages/Services';
@@ -21,6 +22,7 @@ const base = import.meta.env.BASE_URL || '/';
 export default function App() {
   return (
     <LanguageProvider>
+      <StructuredData />
       <Router base={base}>
         <div className="flex flex-col min-h-screen bg-background text-foreground">
           <Navigation />

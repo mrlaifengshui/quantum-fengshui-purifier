@@ -1,12 +1,28 @@
 import { Link } from 'wouter';
 import { ArrowRight, Sparkles, Wind, Compass, CheckCircle2, Quote } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
+import SEOHead from '../components/SEOHead';
 
 export default function Home() {
   const { t } = useLanguage();
 
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title={{
+          zh: '量子風水空氣淨化方案 | 香港專業風水師推薦',
+          en: 'Quantum Feng Shui Air Purification | Hong Kong Professional Feng Shui Master'
+        }}
+        description={{
+          zh: '結合頂級空氣淨化科技與量子調頻技術，精準擺設風水吉位。提供Dyson、Philips、Sharp等品牌空氣淨化器風水佈局服務。香港風水師黎Sir專業團隊，超過100個成功案例。',
+          en: 'Combining premium air purification technology with quantum frequency tuning and precise feng shui positioning. Offering Dyson, Philips, Sharp air purifier feng shui layout services. Professional Hong Kong Feng Shui Master with 100+ successful cases.'
+        }}
+        keywords={{
+          zh: '量子風水, 香港風水師, 空氣淨化器風水擺位, Dyson風水, Philips空氣淨化, 家居風水, 辦公室風水, 量子調頻, 風水佈局, 黎Sir風水',
+          en: 'Quantum Feng Shui, Hong Kong Feng Shui Master, Air Purifier Feng Shui Placement, Dyson Feng Shui, Philips Air Purification, Home Feng Shui, Office Feng Shui, Quantum Frequency, Feng Shui Layout'
+        }}
+        canonical="https://fengshuipurifier.com/"
+      />
       {/* Hero Section - 漸層背景 */}
       <section className="relative bg-gradient-to-br from-primary/20 via-background to-secondary/20 py-20 md:py-32">
         <div className="absolute inset-0 bg-[url('/images/hero-pattern.svg')] opacity-5"></div>
