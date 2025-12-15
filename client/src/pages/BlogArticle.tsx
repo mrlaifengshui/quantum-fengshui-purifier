@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
-import { LanguageContext } from "./contexts/LanguageContext"; // 確認路徑正確（contexts 在 pages 同層）
-import { quantumGuide as zhContent } from "./locales/zh"; // 確認 locales 在 pages 同層
-import { quantumGuide as enContent } from "./locales/en";
+import { LanguageContext } from "../contexts/LanguageContext"; // 確認路徑正確（contexts 在 pages 同層）
+import { quantumGuide as zhContent } from "../locales/zh"; // 確認 locales 在 pages 同層
+import { quantumGuide as enContent } from "../locales/en";
 
 const BlogArticle = () => {
   const { language } = useContext(LanguageContext);
