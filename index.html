@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>量子風水指南</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 1200px; margin: 0 auto; padding: 20px; }
+        .lang-switch { position: fixed; top: 20px; right: 20px; padding: 8px 16px; cursor: pointer; }
+        .content { margin-top: 50px; }
+    </style>
+</head>
+<body>
+    <button class="lang-switch" onclick="toggleLang()">切換語言 / Switch Language</button>
+    <div class="content" id="content">
+        <h1>量子風水指南 2026</h1>
+        <p>歡迎來到量子風水指南，探索現代科技與傳統風水的結合。</p>
+        <p>核心原則：空間能量與量子振動的相互作用...</p>
+    </div>
+
+    <script>
+        let isZh = true;
+        const zhContent = `
+            <h1>量子風水指南 2026</h1>
+            <p>歡迎來到量子風水指南，探索現代科技與傳統風水的結合。</p>
+            <p>核心原則：空間能量與量子振動的相互作用，影響居住者的身心狀態。</p>
+            <h2>2026年重點建議</h2>
+            <ul>
+                <li>客廳擺放水晶製品，強化正能量振動</li>
+                <li>臥室減少電子產品，降低量子干擾</li>
+                <li>廚房保持通風，維持能量流動</li>
+            </ul>
+        `;
+        const enContent = `
+            <h1>Quantum Feng Shui Guide 2026</h1>
+            <p>Welcome to the Quantum Feng Shui Guide, exploring the combination of modern technology and traditional feng shui.</p>
+            <p>Core Principle: The interaction between spatial energy and quantum vibration affects the physical and mental state of occupants.</p>
+            <h2>2026 Key Recommendations</h2>
+            <ul>
+                <li>Place crystal products in the living room to strengthen positive energy vibration</li>
+                <li>Reduce electronic products in the bedroom to lower quantum interference</li>
+                <li>Keep the kitchen ventilated to maintain energy flow</li>
+            </ul>
+        `;
+
+        function toggleLang() {
+            isZh = !isZh;
+            document.getElementById('content').innerHTML = isZh ? zhContent : enContent;
+        }
+    </script>
+</body>
+</html>
