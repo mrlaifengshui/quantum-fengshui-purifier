@@ -1,13 +1,14 @@
 import React, { useContext } from "react";
-import { LanguageContext } from "../contexts/LanguageContext";
-import { quantumGuide as zhContent } from "../locales/zh";
-import { quantumGuide as enContent } from "../locales/en";
+import { LanguageContext } from "./contexts/LanguageContext"; // 確認路徑正確（contexts 在 pages 同層）
+import { quantumGuide as zhContent } from "./locales/zh"; // 確認 locales 在 pages 同層
+import { quantumGuide as enContent } from "./locales/en";
 
 const BlogArticle = () => {
-  // 取得當前選擇的語言（zh=中文，en=英文）
   const { language } = useContext(LanguageContext);
-  // 根據語言切換對應的翻譯內容
   const content = language === "en" ? enContent : zhContent;
+
+  // 加入這行，確認語言狀態能讀取（方便排查）
+  console.log("當前語言：", language);
 
   return (
     <div className="blog-page p-6 max-w-4xl mx-auto">
