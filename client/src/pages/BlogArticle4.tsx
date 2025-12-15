@@ -64,10 +64,10 @@ const BlogArticle4: React.FC = () => {
             href="https://wa.me/852xxxxxxxx" // Replace with actual WhatsApp link
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 shadow-lg"
-          >
-            {t('點擊此處，預約您的專屬能量場診斷服務！', 'Click Here to Book Your Exclusive Energy Field Diagnostic Service!')}
-          </a>
+	            className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 shadow-lg"
+	          >
+	            {t('點擊此處，預約您的專屬能量場診斷服務！', 'Click Here to Book Your Exclusive Energy Field Diagnostic Service!')}
+	          </a>
         </div>
       </div>
     </div>
