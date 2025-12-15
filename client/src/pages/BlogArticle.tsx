@@ -12,12 +12,9 @@ const BlogArticle = () => {
       <h1 className="text-3xl font-bold mb-6 text-amber-400">{content.title}</h1>
       <div className="blog-content text-gray-100 space-y-4">
         <p>{content.intro}</p>
-        
         <h2 className="text-2xl font-semibold mt-8 text-white">{content.coreConcept}</h2>
         <p>{content.coreText}</p>
-        
-        {/* Fixed: content.2026Tip → content.tip2026 */}
-        <h2 className="text-2xl font-semibold mt-8 text-white">{content.tip2026}</h2>
+        <h2 className="text-2xl font-semibold mt-8 text-white">{content.tip2026}</h2> {/* 已改：tip2026 */}
         <p>{content.tipText}</p>
       </div>
     </div>
