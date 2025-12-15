@@ -14,8 +14,7 @@ const BlogArticle = () => {
         <p>{content.intro}</p>
         <h2 className="text-2xl font-semibold mt-8 text-white">{content.coreConcept}</h2>
         <p>{content.coreText}</p>
-        {/* 用方括号访问数字开头的属性：content["2026Tip"] */}
-        <h2 className="text-2xl font-semibold mt-8 text-white">{content["2026Tip"]}</h2>
+        // 删掉这一行：<h2 className="text-2xl font-semibold mt-8 text-white">{content.2026Tip}</h2>
         <p>{content.tipText}</p>
       </div>
     </div>
