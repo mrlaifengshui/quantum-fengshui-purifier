@@ -16,7 +16,7 @@ const BlogArticle = () => {
         <h2 className="text-2xl font-semibold mt-8 text-white">{content.coreConcept}</h2>
         <p>{content.coreText}</p>
         
-        {/* 修复：2026Tip → tip2026 */}
+        {/* Fixed: content.2026Tip → content.tip2026 */}
         <h2 className="text-2xl font-semibold mt-8 text-white">{content.tip2026}</h2>
         <p>{content.tipText}</p>
       </div>
