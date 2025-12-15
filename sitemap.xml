@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://fengshuipurifier.com/</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="zh-HK" href="https://fengshuipurifier.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://fengshuipurifier.com/" />
+  </url>
+  
+  <!-- Technology Page -->
+  <url>
+    <loc>https://fengshuipurifier.com/technology</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="zh-HK" href="https://fengshuipurifier.com/technology" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://fengshuipurifier.com/technology" />
+  </url>
+  
+  <!-- Services Page -->
+  <url>
+    <loc>https://fengshuipurifier.com/services</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="zh-HK" href="https://fengshuipurifier.com/services" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://fengshuipurifier.com/services" />
+  </url>
+  
+  <!-- Cases Page -->
+  <url>
+    <loc>https://fengshuipurifier.com/cases</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-HK" href="https://fengshuipurifier.com/cases" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://fengshuipurifier.com/cases" />
+  </url>
+  
+  <!-- Contact Page -->
+  <url>
+    <loc>https://fengshuipurifier.com/contact</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-HK" href="https://fengshuipurifier.com/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://fengshuipurifier.com/contact" />
+  </url>
+  
+</urlset>
