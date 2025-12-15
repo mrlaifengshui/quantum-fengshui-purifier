@@ -1,14 +1,12 @@
-// Quantum Feng Shui Guide (BlogArticle.tsx)
 export const quantumGuide = {
   title: "2026 Quantum Feng Shui Guide: Build a Positive Energy Living Space",
   intro: "In modern times where health and quality of life are pursued, our requirements for living environments are no longer limited to the material level. Quantum Feng Shui, a new theory combining traditional Feng Shui with modern quantum physics, can help you optimize the spatial energy field.",
   coreConcept: "Core Concept: The Combination of Quantum and Feng Shui",
   coreText: "Quantum Feng Shui holds that every object in space, even air molecules, vibrates in a quantum state, and these vibrations affect people's emotions, health, and fortune. The 'Qi' in traditional Feng Shui is essentially the flow of quantum energy.",
-  tip2026: "2026 Key Recommendations", // Fixed: 2026Tip → tip2026
+  tip2026: "2026 Key Recommendations", // 已改：tip2026（无数字开头）
   tipText: "1. Place crystal products in the living room to strengthen positive energy vibration; 2. Avoid excessive electronic products in the bedroom to reduce quantum interference; 3. Keep the kitchen ventilated to ensure energy circulation."
 };
 
-// Brand Comparison (BrandComparisonArticle.tsx)
 export const brandComparison = {
   title: "Brand Comparison: Feng Shui Efficiency of Popular Air Purifiers",
   introParagraph1: "When we talk about air purifiers, most people only focus on CADR values, HEPA filtration levels, or noise levels. However, for modern people pursuing a harmonious home environment, choosing a purifier goes beyond these. A purifier is not just an appliance; it is a 'energy core' that rotates continuously in the home. Its external shape, material elements, and airflow circulation mode will have subtle but profound impacts on the feng shui of the space.",
@@ -21,7 +19,6 @@ export const brandComparison = {
   xiaomiText: "Pros: High cost-effectiveness, smart control for easy adjustment; Cons: Light material, slightly poor energy stability."
 };
 
-// Customer Testimonial (CustomerTestimonialArticle.tsx)
 export const customerTestimonial = {
   title: "Customer Testimonial: Ms. Zhang's Experience with Feng Shui Purifier",
   intro: "Ms. Zhang is a business owner. Since installing Feng Shui purifiers in her office and home, not only has the air quality improved, but her career and family fortune have also significantly increased.",
