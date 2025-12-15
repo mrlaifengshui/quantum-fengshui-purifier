@@ -1,4 +1,4 @@
-// 對應 BlogArticle.tsx（量子風水指南）
+// 对应 BlogArticle.tsx（量子风水指南）
 export const quantumGuide = {
   title: "2026量子風水指南：打造正能量居住空間",
   intro: "在追求健康與品質生活的現代，我們對居住環境的要求已不再侷限於物質層面，量子風水作為結合傳統風水與現代量子物理的新學說，能幫助你優化空間能量場。",
@@ -8,10 +8,11 @@ export const quantumGuide = {
   tipText: "1. 客廳擺放水晶製品，強化正能量振動；2. 臥室避免電子產品過多，減少量子干擾；3. 廚房保持通風，確保能量循環。"
 };
 
-// 對應 BrandComparisonArticle.tsx（品牌對比）
+// 对应 BrandComparisonArticle.tsx（品牌对比）
 export const brandComparison = {
-  title: "品牌對比：戴森、飛利浦、小米淨化器風水效能",
-  intro: "選擇合適的空氣淨化器不僅能改善空氣質量，更能優化空間風水。以下針對三款熱門品牌的淨化器，從風水角度分析其優缺點。",
+  title: "品牌對比：主流空氣淨化機的風水效能分析",
+  introParagraph1: "當我們談論空氣淨化機時，大多數人只關注CADR（潔淨空氣輸送率）值、HEPA過濾等級或噪音水平。然而，對於追求家居氣場和諧的現代人而言，淨化機的選擇遠不止於此。一台淨化機不僅是電器，它更是家中一個持續運轉的「氣流中心」，其外觀形狀、材質五行、以及氣流循環模式，都會對空間的風水產生微妙而深遠的影響。",
+  introParagraph2: "本指南將從量子風水的角度，深入分析市面上主流空氣淨化機品牌——Dyson、Philips、小米、Sharp、LG、以及Amway Sky——的最適時貼點，並將其與風水學中的「氣」流動、五行平衡、以及形煞概念相結合。我們的目標是幫助您選擇一台不僅能淨化空氣，更能優化家居氣場，為您帶來健康與好運的淨化設備。",
   dyson: "戴森（Dyson）",
   dysonText: "優點：風力強勁，能快速循環空間能量；缺點：運轉噪音大，易擾亂靜態能量場。",
   philips: "飛利浦（Philips）",
@@ -20,7 +21,7 @@ export const brandComparison = {
   xiaomiText: "優點：性價比高，智能控制便於調節；缺點：材質較輕，能量穩定性稍差。"
 };
 
-// 對應 CustomerTestimonialArticle.tsx（顧客見證）
+// 对应 CustomerTestimonialArticle.tsx（顾客见证）
 export const customerTestimonial = {
   title: "顧客見證：張女士的風水淨化器使用體驗",
   intro: "張女士是一位企業主，自從在辦公室和家中安裝風水淨化器後，不僅空氣質量改善，事業和家庭運勢也明顯提升。",
@@ -28,6 +29,7 @@ export const customerTestimonial = {
   bgText: "張女士的辦公室位於高樓北向，傳統風水認為「北向缺火」，能量偏寒，導致團隊士氣低落、業績下滑。",
   effect: "使用效果",
   effectText: "安裝風水淨化器後，辦公室能量場明顯活躍，團隊溝通更順暢，3個月內業績增長20%；家中臥室使用後，睡眠質量也大幅提升。",
+  mrsZhangDesc: "張女士描述：「使用淨化器前，辦公室常給人壓抑感，即使夏天員工也會莫名覺得冷。將淨化器擺放在東南方位（風水學中的『財位』）後，團隊溝通氛圍明顯活躍，之前卡殼的幾個重點項目都順利簽約了。」",
   comment: "張女士評價",
   commentText: "一開始只是想改善空氣，沒想到風水也跟著變好，這台淨化器真的是雙重收穫！"
 };
