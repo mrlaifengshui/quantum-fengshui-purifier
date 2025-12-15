@@ -1,37 +1,23 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
-import { useLanguage } from '../contexts/LanguageContext';
+import React, { useContext } from "react";
+import { LanguageContext } from "../contexts/LanguageContext";
+import { customerTestimonial as zhContent } from "../locales/zh";
+import { customerTestimonial as enContent } from "../locales/en";
 
-const CustomerTestimonialArticle: React.FC = () => {
-  const { language, t } = useLanguage();
-  const [markdownContent, setMarkdownContent] = useState('');
-
-  useEffect(() => {
-    const langPath = language === 'zh' ? 'zh' : 'en';
-    const filePath = `/blog/${langPath}/customer-testimonial.md`;
-
-    fetch(filePath)
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        return response.text();
-      })
-      .then((text) => setMarkdownContent(text))
-      .catch((error) => console.error('Error fetching markdown:', error));
-  }, [language]);
+const CustomerTestimonialArticle = () => {
+  const { language } = useContext(LanguageContext);
+  const content = language === "en" ? enContent : zhContent;
 
   return (
-    <div className="container mx-auto py-12 px-4">
-      <h1 className="text-4xl md:text-5xl font-extrabold text-center mb-12 text-primary">
-        {t('客戶見證：從失眠到精力充沛 - 張太太的真實故事', 'Customer Testimonial: From Insomnia to Energy - Mrs. Zhang\'s True Story')}
-      </h1>
-
-      <div className="max-w-4xl mx-auto bg-card p-6 md:p-10 rounded-xl shadow-2xl">
-        <div className="prose max-w-none prose-lg prose-primary">
-          <ReactMarkdown>{markdownContent}</ReactMarkdown>
-        </div>
+    <div className="blog-page p-6 max-w-4xl mx-auto">
+      <h1 className="text-3xl font-bold mb-6 text-amber-400">{content.title}</h1>
+      <div className="blog-content text-gray-100 space-y-4">
+        <p>{content.intro}</p>
+        <h3 className="text-xl font-semibold mt-6 text-blue-400">{content.background}</h3>
+        <p>{content.bgText}</p>
+        <h3 className="text-xl font-semibold mt-6 text-blue-400">{content.effect}</h3>
+        <p>{content.effectText}</p>
+        <h3 className="text-xl font-semibold mt-6 text-blue-400">{content.comment}</h3>
+        <p className="italic border-l-4 border-blue-400 pl-4">{content.commentText}</p>
       </div>
     </div>
   );
