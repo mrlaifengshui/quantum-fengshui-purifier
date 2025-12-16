@@ -1,41 +1,53 @@
+// 仅保留必要导入，移除硬编码多语言内容
 import { useContext, useEffect, useState } from 'react';
-import { LanguageContext } from '../contexts/LanguageContext';
+import { LanguageContext } from '../contexts/LanguageContext'; // 语言上下文（项目已存在）
 import ReactMarkdown from 'react-markdown'; // 导入MD解析组件
 
-// 定义当前博客对应的MD文件名（与public/blog/zh/en下的文件名一致）
+// 关键：指定该组件对应public/blog下的MD文件名（和前置准备的文件名一致）
 const BLOG_FILE_NAME = '2026-guide.md';
 
 const BlogArticle4 = () => {
-  const { language } = useContext(LanguageContext); // 获取当前语言（zh-HK/en）
-  const [markdownContent, setMarkdownContent] = useState(''); // 存储加载的MD内容
+  // 1. 获取当前语言（zh-HK 或 en）
+  const { language } = useContext(LanguageContext);
+  // 2. 存储加载的MD博客内容
+  const [markdownContent, setMarkdownContent] = useState('');
 
-  // 动态加载对应语言的MD文件
+  // 3. 语言切换时，动态加载对应目录的MD文件
   useEffect(() => {
-    // 映射语言标识：zh-HK → zh 目录，en → en 目录
+    // 映射语言：zh-HK → 加载zh目录，en → 加载en目录
     const langDir = language === 'en' ? 'en' : 'zh';
-    // 构建MD文件路径（public目录下的文件可直接通过/访问）
+    // public目录下的文件可直接通过 / 访问，路径格式：/blog/语言目录/文件名.md
     const mdFilePath = `/blog/${langDir}/${BLOG_FILE_NAME}`;
 
     // 加载MD文件
     fetch(mdFilePath)
       .then(response => {
-        if (!response.ok) throw new Error('博客文件加载失败');
+        // 若文件不存在，提示错误
+        if (!response.ok) throw new Error(`无法加载博客文件：${mdFilePath}`);
         return response.text(); // 读取MD文本内容
       })
       .then(content => {
-        setMarkdownContent(content); // 存入状态
+        setMarkdownContent(content); // 把MD内容存入状态
       })
       .catch(err => {
-        console.error('加载博客失败：', err);
-        // 降级显示提示（可选）
-        setMarkdownContent(`# 加载失败\n无法加载 ${mdFilePath} 文件，请检查路径是否正确`);
+        console.error('博客加载失败：', err);
+        // 降级提示（可选，避免页面空白）
+        setMarkdownContent(`# 博客加载失败\n请检查文件路径：${mdFilePath}`);
       });
-  }, [language]); // 语言切换时重新加载
+  }, [language]); // 仅当语言变化时重新加载
 
+  // 4. 渲染MD内容（无需硬编码任何中文/英文）
   return (
-    <div className="blog-page-container">
-      {/* 渲染Markdown内容 */}
-      <ReactMarkdown className="blog-content">
+    <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '20px' }}>
+      <ReactMarkdown 
+        style={{ 
+          lineHeight: '1.8', 
+          fontSize: '16px',
+          '& h1': { fontSize: '28px', marginBottom: '20px' },
+          '& h2': { fontSize: '24px', margin: '15px 0' },
+          '& p': { marginBottom: '10px' }
+        }}
+      >
         {markdownContent}
       </ReactMarkdown>
     </div>
