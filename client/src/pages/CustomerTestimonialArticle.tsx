@@ -14,14 +14,19 @@ const CustomerTestimonialArticle = () => {
     const mdFilePath = `/blog/${langDir}/${BLOG_FILE_NAME}`;
 
     fetch(mdFilePath)
-      .then(response => response.text())
+      .then(res => res.text())
       .then(content => setMarkdownContent(content))
-      .catch(err => console.error('加载失败：', err));
+      .catch(err => {
+        console.error('加载失败：', err);
+        setMarkdownContent(`# 加载失败\n路径：${mdFilePath}`);
+      });
   }, [language]);
 
   return (
-    <div className="blog-page-container">
-      <ReactMarkdown className="blog-content">{markdownContent}</ReactMarkdown>
+    <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '20px' }}>
+      <ReactMarkdown style={{ lineHeight: '1.8', fontSize: '16px' }}>
+        {markdownContent}
+      </ReactMarkdown>
     </div>
   );
 };
