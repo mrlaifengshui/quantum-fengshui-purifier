@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quantum Feng Shui Purifier</title>
+    <title>量子風水淨化方案</title>
     <style>
         body { font-family: Arial, sans-serif; max-width: 1200px; margin: 0 auto; padding: 20px; background: #000; color: #fff; }
         .lang-switch { position: fixed; top: 20px; right: 20px; padding: 8px 16px; background: #333; color: #fff; border: none; cursor: pointer; border-radius: 4px; }
@@ -17,15 +17,15 @@
     </style>
 </head>
 <body>
-    <button class="lang-switch" onclick="toggleLang()">Switch Language / 切換語言</button>
+    <button class="lang-switch" onclick="toggleLang()">切換語言 / Switch Language</button>
     <div class="nav">
-        <a href="#guide">Quantum Guide / 量子風水指南</a>
-        <a href="#brand">Brand Comparison / 品牌對比</a>
-        <a href="#testimonial">Testimonial / 顧客見證</a>
+        <a href="#guide">量子風水指南 / Quantum Guide</a>
+        <a href="#brand">品牌對比 / Brand Comparison</a>
+        <a href="#testimonial">顧客見證 / Testimonial</a>
     </div>
 
     <div id="content">
-        <!-- Default: Pure Chinese (no mixed English) -->
+        <!-- 預設：純中文內容 -->
         <div class="blog" id="guide">
             <h2>量子風水淨化指南 2026</h2>
             <p>在追求健康與和諧生活的現代，我們對居住環境的要求已不再侷限於物質層面，量子風水作為結合傳統風水與現代量子物理的新學說，能幫助你優化空間能量場。</p>
@@ -57,7 +57,7 @@
 
     <script>
         let isZh = true;
-        // 1. PURE CHINESE (no English mix)
+        // 1. 純中文內容（無英文混雜）
         const zhContent = `
             <div class="blog" id="guide">
                 <h2>量子風水淨化指南 2026</h2>
@@ -88,7 +88,7 @@
             </div>
         `;
 
-        // 2. PURE ENGLISH (ZERO Chinese characters)
+        // 2. 純英文內容（無任何中文字符）
         const enContent = `
             <div class="blog" id="guide">
                 <h2>Quantum Feng Shui Purification Guide 2026</h2>
@@ -119,11 +119,11 @@
             </div>
         `;
 
-        // Toggle between PURE Chinese/English (no mix)
+        // 切換時替換為純語言內容（無混合）
         function toggleLang() {
             isZh = !isZh;
             document.getElementById('content').innerHTML = isZh ? zhContent : enContent;
-            // Update page language attribute
+            // 更新網頁語言屬性
             document.documentElement.lang = isZh ? 'zh-TW' : 'en';
         }
     </script>
