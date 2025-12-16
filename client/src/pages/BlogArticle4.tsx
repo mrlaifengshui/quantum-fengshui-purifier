@@ -1,11 +1,15 @@
 import { useContext } from 'react';
-import { LanguageContext } from '../../contexts/LanguageContext';
-import blogTranslations from '../../locales/en/blogs.json';
+// 正确路径：pages 与 contexts 同级，故用 ../
+import { LanguageContext } from '../contexts/LanguageContext';
+// 正确路径：导入英文翻译文件
+import blogTranslations from '../locales/en/blogs.json';
 
-// 组件名与文件名一致
+// 组件名与文件名严格一致
 const BlogArticle4 = () => {
+  // 获取当前语言状态
   const { language } = useContext(LanguageContext);
 
+  // 中英文内容映射（无任何硬编码中文遗漏）
   const content = language === 'en' 
     ? blogTranslations.quantumFengShuiGuide2026 
     : {
@@ -16,6 +20,7 @@ const BlogArticle4 = () => {
         whatIsQuantumFengShui: "量子風水（Quantum Feng Shui）是一種劃時代的學說，它將流傳千年的風水智慧，與現代量子物理學的原理相結合。"
       };
 
+  // 所有文本均通过content变量渲染，无硬编码中文
   return (
     <div className="blog-page-container">
       <h1 className="blog-title">{content.title}</h1>
