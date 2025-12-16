@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Feng Shui Purifier</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 1200px; margin: 0 auto; padding: 20px; background: #000; color: #fff; }
+        .lang-switch { position: fixed; top: 20px; right: 20px; padding: 8px 16px; background: #333; color: #fff; border: none; cursor: pointer; border-radius: 4px; }
+        .nav { margin: 30px 0; }
+        .nav a { color: #ccc; margin-right: 20px; text-decoration: none; }
+        .nav a:hover { color: #fff; }
+        .blog { margin: 50px 0; }
+        .blog h2 { font-size: 24px; margin: 20px 0; }
+        .blog p { line-height: 1.6; margin: 10px 0; }
+        .blog ul { margin: 10px 0 20px 20px; }
+    </style>
+</head>
+<body>
+    <button class="lang-switch" onclick="toggleLang()">Switch Language / 切換語言</button>
+    <div class="nav">
+        <a href="#guide">Quantum Guide / 量子風水指南</a>
+        <a href="#brand">Brand Comparison / 品牌對比</a>
+        <a href="#testimonial">Testimonial / 顧客見證</a>
+    </div>
+
+    <div id="content">
+        <!-- Default: Pure Chinese (no mixed English) -->
+        <div class="blog" id="guide">
+            <h2>量子風水淨化指南 2026</h2>
+            <p>在追求健康與和諧生活的現代，我們對居住環境的要求已不再侷限於物質層面，量子風水作為結合傳統風水與現代量子物理的新學說，能幫助你優化空間能量場。</p>
+            <h3>核心概念：量子與風水的結合</h3>
+            <p>量子風水認為，空間中的每一個物體、甚至空氣分子，都會以量子態振動，這些振動會影響人的情緒、健康與運勢。傳統風水的「氣」，本質上就是量子能量的流動。</p>
+            <h3>2026年重點建議</h3>
+            <ul>
+                <li>客廳擺放水晶製品，強化正能量振動</li>
+                <li>臥室避免電子產品過多，減少量子干擾</li>
+                <li>廚房保持通風，確保能量循環</li>
+            </ul>
+        </div>
+
+        <div class="blog" id="brand">
+            <h2>品牌對比：主流空氣淨化機的風水效能</h2>
+            <p>當我們談論空氣淨化機時，大多數人只關注CADR值、HEPA過濾等級或噪音水平。然而，對於追求家居氣場和諧的現代人而言，淨化機的選擇遠不止於此。</p>
+            <h3>戴森（Dyson）</h3>
+            <p>優點：風力強勁，能快速循環空間能量；缺點：運轉噪音大，易擾亂靜態能量場。</p>
+            <h3>飛利浦（Philips）</h3>
+            <p>優點：靜音設計，符合臥室風水要求；缺點：淨化範圍較小，適合小空間。</p>
+        </div>
+
+        <div class="blog" id="testimonial">
+            <h2>顧客見證：張女士的使用體驗</h2>
+            <p>張女士是一位企業主，自從在辦公室和家中安裝風水淨化器後，不僅空氣質量改善，事業和家庭運勢也明顯提升。</p>
+            <p>「使用淨化器前，辦公室常給人壓抑感，將淨化器擺放在東南財位後，團隊溝通氛圍明顯活躍，之前卡殼的項目都順利簽約了。」</p>
+        </div>
+    </div>
+
+    <script>
+        let isZh = true;
+        // 1. PURE CHINESE (no English mix)
+        const zhContent = `
+            <div class="blog" id="guide">
+                <h2>量子風水淨化指南 2026</h2>
+                <p>在追求健康與和諧生活的現代，我們對居住環境的要求已不再侷限於物質層面，量子風水作為結合傳統風水與現代量子物理的新學說，能幫助你優化空間能量場。</p>
+                <h3>核心概念：量子與風水的結合</h3>
+                <p>量子風水認為，空間中的每一個物體、甚至空氣分子，都會以量子態振動，這些振動會影響人的情緒、健康與運勢。傳統風水的「氣」，本質上就是量子能量的流動。</p>
+                <h3>2026年重點建議</h3>
+                <ul>
+                    <li>客廳擺放水晶製品，強化正能量振動</li>
+                    <li>臥室避免電子產品過多，減少量子干擾</li>
+                    <li>廚房保持通風，確保能量循環</li>
+                </ul>
+            </div>
+
+            <div class="blog" id="brand">
+                <h2>品牌對比：主流空氣淨化機的風水效能</h2>
+                <p>當我們談論空氣淨化機時，大多數人只關注CADR值、HEPA過濾等級或噪音水平。然而，對於追求家居氣場和諧的現代人而言，淨化機的選擇遠不止於此。</p>
+                <h3>戴森（Dyson）</h3>
+                <p>優點：風力強勁，能快速循環空間能量；缺點：運轉噪音大，易擾亂靜態能量場。</p>
+                <h3>飛利浦（Philips）</h3>
+                <p>優點：靜音設計，符合臥室風水要求；缺點：淨化範圍較小，適合小空間。</p>
+            </div>
+
+            <div class="blog" id="testimonial">
+                <h2>顧客見證：張女士的使用體驗</h2>
+                <p>張女士是一位企業主，自從在辦公室和家中安裝風水淨化器後，不僅空氣質量改善，事業和家庭運勢也明顯提升。</p>
+                <p>「使用淨化器前，辦公室常給人壓抑感，將淨化器擺放在東南財位後，團隊溝通氛圍明顯活躍，之前卡殼的項目都順利簽約了。」</p>
+            </div>
+        `;
+
+        // 2. PURE ENGLISH (ZERO Chinese characters)
+        const enContent = `
+            <div class="blog" id="guide">
+                <h2>Quantum Feng Shui Purification Guide 2026</h2>
+                <p>In modern times, as we pursue healthy and harmonious living, our requirements for living environments extend beyond material aspects. Quantum Feng Shui, a new theory combining traditional Feng Shui with modern quantum physics, helps optimize spatial energy fields.</p>
+                <h3>Core Concept: Quantum & Feng Shui Integration</h3>
+                <p>Quantum Feng Shui posits that every object in space—even air molecules—vibrates in a quantum state. These vibrations impact emotions, health, and fortune. The "Qi" in traditional Feng Shui is essentially the flow of quantum energy.</p>
+                <h3>2026 Key Recommendations</h3>
+                <ul>
+                    <li>Place crystal items in the living room to enhance positive energy vibration</li>
+                    <li>Reduce electronic devices in bedrooms to minimize quantum interference</li>
+                    <li>Keep kitchens ventilated to maintain energy circulation</li>
+                </ul>
+            </div>
+
+            <div class="blog" id="brand">
+                <h2>Brand Comparison: Feng Shui Efficacy of Top Air Purifiers</h2>
+                <p>When discussing air purifiers, most people focus only on CADR ratings, HEPA filtration levels, or noise levels. However, for modern seekers of harmonious home energy, choosing a purifier involves much more.</p>
+                <h3>Dyson</h3>
+                <p>Pros: Powerful airflow for rapid spatial energy circulation; Cons: Loud operation disrupts static energy fields.</p>
+                <h3>Philips</h3>
+                <p>Pros: Silent design meets bedroom Feng Shui requirements; Cons: Small purification range (ideal for compact spaces).</p>
+            </div>
+
+            <div class="blog" id="testimonial">
+                <h2>Customer Testimonial: Ms. Zhang's Experience</h2>
+                <p>Ms. Zhang, a business owner, noticed significant improvements in air quality, career success, and family fortune after installing Feng Shui purifiers in her office and home.</p>
+                <p>"Before using the purifier, my office felt oppressive. After placing it in the southeast wealth position, team communication improved dramatically, and previously stalled projects were successfully signed."</p>
+            </div>
+        `;
+
+        // Toggle between PURE Chinese/English (no mix)
+        function toggleLang() {
+            isZh = !isZh;
+            document.getElementById('content').innerHTML = isZh ? zhContent : enContent;
+            // Update page language attribute
+            document.documentElement.lang = isZh ? 'zh-TW' : 'en';
+        }
+    </script>
+</body>
+</html>
