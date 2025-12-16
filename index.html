@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>量子風水淨化方案</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 1200px; margin: 0 auto; padding: 20px; background: #000; color: #fff; }
+        .lang-switch { position: fixed; top: 20px; right: 20px; padding: 8px 16px; background: #333; color: #fff; border: none; cursor: pointer; border-radius: 4px; }
+        .nav { margin: 30px 0; }
+        .nav a { color: #ccc; margin-right: 20px; text-decoration: none; }
+        .nav a:hover { color: #fff; }
+        .blog { margin: 50px 0; }
+        .blog h2 { font-size: 24px; margin: 20px 0; }
+        .blog p { line-height: 1.6; margin: 10px 0; }
+        .blog ul { margin: 10px 0 20px 20px; }
+    </style>
+</head>
+<body>
+    <button class="lang-switch" onclick="toggleLang()">切換語言 / Switch Language</button>
+    <div class="nav">
+        <a href="#guide">量子風水指南 / Quantum Guide</a>
+        <a href="#brand">品牌對比 / Brand Comparison</a>
+        <a href="#testimonial">顧客見證 / Testimonial</a>
+    </div>
+
+    <div id="content">
+        <!-- 中文內容 -->
+        <div class="blog" id="guide">
+            <h2>量子風水淨化指南 2026</h2>
+            <p>在追求健康與和諧生活的現代，我們對居住環境的要求已不再侷限於物質層面，量子風水作為結合傳統風水與現代量子物理的新學說，能幫助你優化空間能量場。</p>
+            <h3>核心概念：量子與風水的結合</h3>
+            <p>量子風水認為，空間中的每一個物體、甚至空氣分子，都會以量子態振動，這些振動會影響人的情緒、健康與運勢。傳統風水的「氣」，本質上就是量子能量的流動。</p>
+            <h3>2026年重點建議</h3>
+            <ul>
+                <li>客廳擺放水晶製品，強化正能量振動</li>
+                <li>臥室避免電子產品過多，減少量子干擾</li>
+                <li>廚房保持通風，確保能量循環</li>
+            </ul>
+        </div>
+
+        <div class="blog" id="brand">
+            <h2>品牌對比：主流空氣淨化機的風水效能</h2>
+            <p>當我們談論空氣淨化機時，大多數人只關注CADR值、HEPA過濾等級或噪音水平。然而，對於追求家居氣場和諧的現代人而言，淨化機的選擇遠不止於此。</p>
+            <h3>戴森（Dyson）</h3>
+            <p>優點：風力強勁，能快速循環空間能量；缺點：運轉噪音大，易擾亂靜態能量場。</p>
+            <h3>飛利浦（Philips）</h3>
+            <p>優點：靜音設計，符合臥室風水要求；缺點：淨化範圍較小，適合小空間。</p>
+        </div>
+
+        <div class="blog" id="testimonial">
+            <h2>顧客見證：張女士的使用體驗</h2>
+            <p>張女士是一位企業主，自從在辦公室和家中安裝風水淨化器後，不僅空氣質量改善，事業和家庭運勢也明顯提升。</p>
+            <p>「使用淨化器前，辦公室常給人壓抑感，將淨化器擺放在東南財位後，團隊溝通氛圍明顯活躍，之前卡殼的項目都順利簽約了。」</p>
+        </div>
+    </div>
+
+    <script>
+        let isZh = true;
+        // 中文內容（與上方HTML一致）
+        const zhContent = `
+            <div class="blog" id="guide">
+                <h2>量子風水淨化指南 2026</h2>
+                <p>在追求健康與和諧生活的現代，我們對居住環境的要求已不再侷限於物質層面，量子風水作為結合傳統風水與現代量子物理的新學說，能幫助你優化空間能量場。</p>
+                <h3>核心概念：量子與風水的結合</h3>
+                <p>量子風水認為，空間中的每一個物體、甚至空氣分子，都會以量子態振動，這些振動會影響人的情緒、健康與運勢。傳統風水的「氣」，本質上就是量子能量的流動。</p>
+                <h3>2026年重點建議</h3>
+                <ul>
+                    <li>客廳擺放水晶製品，強化正能量振動</li>
+                    <li>臥室避免電子產品過多，減少量子干擾</li>
+                    <li>廚房保持通風，確保能量循環</li>
+                </ul>
+            </div>
+
+            <div class="blog" id="brand">
+                <h2>品牌對比：主流空氣淨化機的風水效能</h2>
+                <p>當我們談論空氣淨化機時，大多數人只關注CADR值、HEPA過濾等級或噪音水平。然而，對於追求家居氣場和諧的現代人而言，淨化機的選擇遠不止於此。</p>
+                <h3>戴森（Dyson）</h3>
+                <p>優點：風力強勁，能快速循環空間能量；缺點：運轉噪音大，易擾亂靜態能量場。</p>
+                <h3>飛利浦（Philips）</h3>
+                <p>優點：靜音設計，符合臥室風水要求；缺點：淨化範圍較小，適合小空間。</p>
+            </div>
+
+            <div class="blog" id="testimonial">
+                <h2>顧客見證：張女士的使用體驗</h2>
+                <p>張女士是一位企業主，自從在辦公室和家中安裝風水淨化器後，不僅空氣質量改善，事業和家庭運勢也明顯提升。</p>
+                <p>「使用淨化器前，辦公室常給人壓抑感，將淨化器擺放在東南財位後，團隊溝通氛圍明顯活躍，之前卡殼的項目都順利簽約了。」</p>
+            </div>
+        `;
+        // 英文內容（對應翻譯）
+        const enContent = `
+            <div class="blog" id="guide">
+                <h2>Quantum Feng Shui Purification Guide 2026</h2>
+                <p>In modern times pursuing health and harmonious living, our requirements for living environments are no longer limited to the material level. Quantum Feng Shui, a new theory combining traditional Feng Shui with modern quantum physics, can help you optimize the spatial energy field.</p>
+                <h3>Core Concept: The Combination of Quantum and Feng Shui</h3>
+                <p>Quantum Feng Shui holds that every object in space, even air molecules, vibrates in a quantum state. These vibrations affect people's emotions, health, and fortune. The "Qi" in traditional Feng Shui is essentially the flow of quantum energy.</p>
+                <h3>2026 Key Recommendations</h3>
+                <ul>
+                    <li>Place crystal products in the living room to strengthen positive energy vibration</li>
+                    <li>Avoid excessive electronic products in the bedroom to reduce quantum interference</li>
+                    <li>Keep the kitchen ventilated to ensure energy circulation</li>
+                </ul>
+            </div>
+
+            <div class="blog" id="brand">
+                <h2>Brand Comparison: Feng Shui Efficiency of Popular Air Purifiers</h2>
+                <p>When talking about air purifiers, most people only focus on CADR values, HEPA filtration levels, or noise levels. However, for modern people pursuing a harmonious home energy field, the choice of purifier goes far beyond these.</p>
+                <h3>Dyson</h3>
+                <p>Pros: Strong wind power, can quickly circulate spatial energy; Cons: Loud operation noise, easy to disrupt static energy fields.</p>
+                <h3>Philips</h3>
+                <p>Pros: Silent design, meets bedroom Feng Shui requirements; Cons: Small purification range, suitable for small spaces.</p>
+            </div>
+
+            <div class="blog" id="testimonial">
+                <h2>Customer Testimonial: Ms. Zhang's Experience</h2>
+                <p>Ms. Zhang is a business owner. Since installing the Feng Shui purifier in her office and home, not only has the air quality improved, but her career and family fortune have also significantly increased.</p>
+                <p>"Before using the purifier, the office often felt oppressive. After placing the purifier in the southeast wealth position, the team's communication atmosphere became significantly active, and the previously stuck projects were successfully signed."</p>
+            </div>
+        `;
+
+        // 切換語言時替換全部內容
+        function toggleLang() {
+            isZh = !isZh;
+            document.getElementById('content').innerHTML = isZh ? zhContent : enContent;
+        }
+    </script>
+</body>
+</html>
