@@ -1,39 +1,43 @@
-import { useContext } from 'react';
-// 正确路径：pages 与 contexts 同级，故用 ../
+import { useContext, useEffect, useState } from 'react';
 import { LanguageContext } from '../contexts/LanguageContext';
-// 正确路径：导入英文翻译文件
-import blogTranslations from '../locales/en/blogs.json';
+import ReactMarkdown from 'react-markdown'; // 导入MD解析组件
 
-// 组件名与文件名严格一致
+// 定义当前博客对应的MD文件名（与public/blog/zh/en下的文件名一致）
+const BLOG_FILE_NAME = '2026-guide.md';
+
 const BlogArticle4 = () => {
-  // 获取当前语言状态
-  const { language } = useContext(LanguageContext);
+  const { language } = useContext(LanguageContext); // 获取当前语言（zh-HK/en）
+  const [markdownContent, setMarkdownContent] = useState(''); // 存储加载的MD内容
 
-  // 中英文内容映射（无任何硬编码中文遗漏）
-  const content = language === 'en' 
-    ? blogTranslations.quantumFengShuiGuide2026 
-    : {
-        title: "量子風水空氣淨化完整指南 - 2026最全面解決方案",
-        introTitle: "引言：超越傳統淨化與佈局",
-        introduction: "在追求健康與和諧生活的現代，我們對居住環境的要求已不再侷限於物質層面。隨著科技的飛速發展，我們意識到：除了看得見的空氣污染物，還有看不見的「能量污染」正在悄然影響我們的健康、情緒乃至運勢。傳統的空氣淨化機僅能處理懸浮粒子，而傳統風水則缺乏現代科學的驗證手段。",
-        subTitle: "什麼是量子風水？",
-        whatIsQuantumFengShui: "量子風水（Quantum Feng Shui）是一種劃時代的學說，它將流傳千年的風水智慧，與現代量子物理學的原理相結合。"
-      };
+  // 动态加载对应语言的MD文件
+  useEffect(() => {
+    // 映射语言标识：zh-HK → zh 目录，en → en 目录
+    const langDir = language === 'en' ? 'en' : 'zh';
+    // 构建MD文件路径（public目录下的文件可直接通过/访问）
+    const mdFilePath = `/blog/${langDir}/${BLOG_FILE_NAME}`;
 
-  // 所有文本均通过content变量渲染，无硬编码中文
+    // 加载MD文件
+    fetch(mdFilePath)
+      .then(response => {
+        if (!response.ok) throw new Error('博客文件加载失败');
+        return response.text(); // 读取MD文本内容
+      })
+      .then(content => {
+        setMarkdownContent(content); // 存入状态
+      })
+      .catch(err => {
+        console.error('加载博客失败：', err);
+        // 降级显示提示（可选）
+        setMarkdownContent(`# 加载失败\n无法加载 ${mdFilePath} 文件，请检查路径是否正确`);
+      });
+  }, [language]); // 语言切换时重新加载
+
   return (
     <div className="blog-page-container">
-      <h1 className="blog-title">{content.title}</h1>
-      
-      <section className="blog-section">
-        <h2>{content.introTitle}</h2>
-        <p>{content.introduction}</p>
-      </section>
-
-      <section className="blog-section">
-        <h2>{content.subTitle}</h2>
-        <p>{content.whatIsQuantumFengShui}</p>
-      </section>
+      {/* 渲染Markdown内容 */}
+      <ReactMarkdown className="blog-content">
+        {markdownContent}
+      </ReactMarkdown>
     </div>
   );
 };
