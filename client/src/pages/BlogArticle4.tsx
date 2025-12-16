@@ -1,75 +1,34 @@
-import React, { useContext, useEffect, useState } from 'react';
-import { LanguageContext } from '../contexts/LanguageContext';
-import ReactMarkdown from 'react-markdown';
-import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { LanguageContext } from '../../contexts/LanguageContext';
+import blogTranslations from '../../locales/en/blogs.json';
 
-const BlogArticle4: React.FC = () => {
-  const { language, t } = useContext(LanguageContext);
-  const [markdownContent, setMarkdownContent] = useState('');
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+// 组件名与文件名一致
+const BlogArticle4 = () => {
+  const { language } = useContext(LanguageContext);
 
-  // Define the path to the Markdown file based on the current language
-  const contentPath = `/blog/${language}/quantum-layout-science.md`;
-
-  useEffect(() => {
-    setLoading(true);
-    setError(null);
-    fetch(contentPath)
-      .then(response => {
-        if (!response.ok) {
-          throw new Error(`Failed to load content: ${response.statusText}`);
-        }
-        return response.text();
-      })
-      .then(text => {
-        setMarkdownContent(text);
-        setLoading(false);
-      })
-      .catch(err => {
-        console.error('Error loading markdown:', err);
-        setError(t('文章載入失敗，請稍後再試。', 'Failed to load article. Please try again later.'));
-        setLoading(false);
-      });
-  }, [language, contentPath, t]);
-
-  if (loading) {
-    return <div className="text-center py-20">{t('文章載入中...', 'Loading article...')}</div>;
-  }
-
-  if (error) {
-    return <div className="text-center py-20 text-red-500">{error}</div>;
-  }
+  const content = language === 'en' 
+    ? blogTranslations.quantumFengShuiGuide2026 
+    : {
+        title: "量子風水空氣淨化完整指南 - 2026最全面解決方案",
+        introTitle: "引言：超越傳統淨化與佈局",
+        introduction: "在追求健康與和諧生活的現代，我們對居住環境的要求已不再侷限於物質層面。隨著科技的飛速發展，我們意識到：除了看得見的空氣污染物，還有看不見的「能量污染」正在悄然影響我們的健康、情緒乃至運勢。傳統的空氣淨化機僅能處理懸浮粒子，而傳統風水則缺乏現代科學的驗證手段。",
+        subTitle: "什麼是量子風水？",
+        whatIsQuantumFengShui: "量子風水（Quantum Feng Shui）是一種劃時代的學說，它將流傳千年的風水智慧，與現代量子物理學的原理相結合。"
+      };
 
   return (
-    <div className="container mx-auto px-4 py-12">
-      <div className="max-w-4xl mx-auto">
-        {/* Back to Blog Link */}
-        <Link to="/blog" className="text-blue-500 hover:text-blue-700 transition duration-300 mb-8 block">
-          &larr; {t('返回部落格', 'Back to Blog')}
-        </Link>
+    <div className="blog-page-container">
+      <h1 className="blog-title">{content.title}</h1>
+      
+      <section className="blog-section">
+        <h2>{content.introTitle}</h2>
+        <p>{content.introduction}</p>
+      </section>
 
-        {/* Article Content */}
-        <article className="prose dark:prose-invert max-w-none">
-          <ReactMarkdown>{markdownContent}</ReactMarkdown>
-        </article>
-
-        {/* Call to Action Section (Hardcoded for consistency with other pages) */}
-        <div className="mt-16 pt-8 border-t border-gray-700 text-center">
-          <h3 className="text-2xl font-bold mb-4">{t('立即行動：開啟您的氣場升級之旅', 'Act Now: Start Your Energy Field Upgrade Journey')}</h3>
-          <p className="mb-6">
-            {t('如果您渴望一個真正科學、高效的家居能量優化方案，請立即聯繫我們。黎Sir 及其專業團隊將利用最先進的量子測量儀器，為您繪製專屬的「家居能量地圖」，並提供最精準的量子風水佈局建議。', 'If you desire a truly scientific, highly effective home energy optimization solution, contact us immediately. Master Lai and his professional team will use the most advanced quantum measuring instruments to create your exclusive "Home Energy Map" and provide the most precise Quantum Feng Shui layout advice.')}
-          </p>
-          <a
-            href="https://wa.me/852xxxxxxxx" // Replace with actual WhatsApp link
-            target="_blank"
-            rel="noopener noreferrer"
-	            className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 shadow-lg"
-	          >
-	            {t('點擊此處，預約您的專屬能量場診斷服務！', 'Click Here to Book Your Exclusive Energy Field Diagnostic Service!')}
-	          </a>
-        </div>
-      </div>
+      <section className="blog-section">
+        <h2>{content.subTitle}</h2>
+        <p>{content.whatIsQuantumFengShui}</p>
+      </section>
     </div>
   );
 };
