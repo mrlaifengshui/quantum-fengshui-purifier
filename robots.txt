@@ -1,0 +1,22 @@
+# Robots.txt for Quantum Feng Shui Air Purification
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+
+# Sitemaps
+Sitemap: https://fengshuipurifier.com/sitemap.xml
+Sitemap: https://mrlaifengshui.github.io/quantum-fengshui-purifier/sitemap.xml
+
+# Major Search Engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+# Crawl-delay for better server performance
+Crawl-delay: 1
