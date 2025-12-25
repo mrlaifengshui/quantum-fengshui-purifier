@@ -8,6 +8,7 @@ import HomePage from "./pages/HomePage";
 import BlogArticle from "./pages/BlogArticle";
 import BrandComparisonArticle from "./pages/BrandComparisonArticle";
 import CustomerTestimonialArticle from "./pages/CustomerTestimonialArticle";
+import BedroomHarmonyArticle from "./pages/BedroomHarmonyArticle";
 // 其他页面...
 
 function App() {
@@ -34,6 +35,10 @@ function App() {
             <Route 
               path="/blog/customer-testimonial-mrs-zhang" 
               component={CustomerTestimonialArticle} 
+            />
+            <Route 
+              path="/blog/bedroom-harmony-feng-shui" 
+              component={BedroomHarmonyArticle} 
             />
             {/* 其他页面路由... */}
           </Routes>

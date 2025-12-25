@@ -4,7 +4,7 @@ export const quantumGuide = {
   intro: "In modern times where health and quality of life are pursued, our requirements for living environments are no longer limited to the material level. Quantum Feng Shui, a new theory combining traditional Feng Shui with modern quantum physics, can help you optimize the spatial energy field.",
   coreConcept: "Core Concept: The Combination of Quantum and Feng Shui",
   coreText: "Quantum Feng Shui holds that every object in space, even air molecules, vibrates in a quantum state, and these vibrations affect people's emotions, health, and fortune. The 'Qi' in traditional Feng Shui is essentially the flow of quantum energy.",
-  2026Tip: "2026 Key Recommendations",
+  tip2026: "2026 Key Recommendations",
   tipText: "1. Place crystal products in the living room to strengthen positive energy vibration; 2. Avoid excessive electronic products in the bedroom to reduce quantum interference; 3. Keep the kitchen ventilated to ensure energy circulation."
 };
 

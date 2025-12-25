@@ -16,7 +16,7 @@ const BlogArticle = () => {
         <p>{content.intro}</p>
         <h2 className="text-2xl font-semibold mt-8 text-white">{content.coreConcept}</h2>
         <p>{content.coreText}</p>
-        <h2 className="text-2xl font-semibold mt-8 text-white">{content.2026Tip}</h2>
+        <h2 className="text-2xl font-semibold mt-8 text-white">{content.tip2026}</h2>
         <p>{content.tipText}</p>
       </div>
     </div>
