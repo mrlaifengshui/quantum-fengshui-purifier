@@ -17,16 +17,8 @@ export default function OfficeCareerArticle() {
         </Link>
       </div>
 
-      {/* 文章頭部 - 封面圖片 */}
+      {/* 文章頭部 */}
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="mb-8 rounded-2xl overflow-hidden shadow-cosmic">
-          <img
-            src="/images/blog/office-career-placement.jpg"
-            alt={t('辦公室事業位擺放示意圖', 'Office Career Position Placement Guide')}
-            className="w-full h-auto object-cover"
-          />
-        </div>
-
         {/* 文章標題與元數據 */}
         <header className="mb-12 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent">
@@ -56,6 +48,15 @@ export default function OfficeCareerArticle() {
               )}
             </p>
           </section>
+
+          {/* 封面圖片 - 置於引言之後 */}
+          <div className="mb-12 rounded-2xl overflow-hidden shadow-cosmic">
+            <img
+              src="/images/blog/office-career-placement.jpg"
+              alt={t('辦公室事業位擺放示意圖', 'Office Career Position Placement Guide')}
+              className="w-full h-auto object-cover"
+            />
+          </div>
 
           {/* 第一招：找到辦公室的「貴人位」與「事業位」 */}
           <section className="mb-12">
