@@ -1,64 +1,46 @@
-import { useContext, useEffect } from 'react';
-// 导入语言上下文（路径必须正确，若contexts在src下，此路径正确）
-import { LanguageContext } from './contexts/LanguageContext';
-import { BrowserRouter } from 'react-router-dom';
-// 👇 替换为你项目中实际的路由组件名（比如Router、MainRoutes等）
-import YourRouterComponent from './router'; 
+import { Route, Switch, Router } from 'wouter';
+import { LanguageProvider } from './contexts/LanguageContext';
+import Navigation from './components/Navigation';
+import Footer from './components/Footer';
+import FloatingWhatsApp from './components/FloatingWhatsApp';
+import Home from './pages/Home';
+import Technology from './pages/Technology';
+import Services from './pages/Services';
+import Cases from './pages/Cases';
+import Blog from './pages/Blog';
+import BlogArticle from './pages/BlogArticle';
+import BrandComparisonArticle from './pages/BrandComparisonArticle';
+import CustomerTestimonialArticle from './pages/CustomerTestimonialArticle';
+import Contact from './pages/Contact';
+import NotFound from './pages/NotFound';
 
-function App() {
-  // 获取语言上下文的当前语言状态
-  const { language } = useContext(LanguageContext);
+// Get base path from environment or use root
+const base = import.meta.env.BASE_URL || '/';
 
-  // 监听语言变化，动态修改HTML标签、meta、title
-  useEffect(() => {
-    // 1. 获取HTML根元素和所有需要动态修改的标签
-    const htmlEl = document.documentElement;
-    const descEl = document.getElementById('meta-description');
-    const keywordsEl = document.getElementById('meta-keywords');
-    const titleEl = document.getElementById('page-title');
-
-    // 2. 设置HTML的lang属性（英文=en，繁体中文=zh-HK）
-    if (language === 'en') {
-      htmlEl.lang = 'en';
-    } else {
-      htmlEl.lang = 'zh-HK';
-    }
-
-    // 3. 动态设置meta描述（description）
-    const descContent = {
-      en: "Quantum Feng Shui Air Purification Solution - Combining top-tier air purification technology with quantum frequency modulation technology, accurately placing feng shui auspicious positions to create a modern home environment with clean materials, harmonious energy, and abundant manifestation.",
-      'zh-HK': "量子風水空氣淨化方案 - 結合頂級空氣淨化科技與量子調頻技術，精準擺設風水吉位，為您打造物質清淨、能量和諧、豐盛顯化的現代家居環境。"
-    };
-    if (descEl) { // 防止标签不存在报错
-      descEl.content = descContent[language] || descContent['zh-HK'];
-    }
-
-    // 4. 动态设置meta关键词（keywords）
-    const keywordsContent = {
-      en: "Quantum Feng Shui, Air Purification, Feng Shui, Quantum Frequency Modulation, Dyson, Philips, Sharp, LG, Xiaomi, Amway Sky",
-      'zh-HK': "量子風水, 空氣淨化, 風水, 量子調頻, Dyson, Philips, Sharp, LG, 小米, Amway Sky"
-    };
-    if (keywordsEl) {
-      keywordsEl.content = keywordsContent[language] || keywordsContent['zh-HK'];
-    }
-
-    // 5. 动态设置页面标题（title）
-    const titleContent = {
-      en: "Quantum Feng Shui Air Purification Solution",
-      'zh-HK': "量子風水空氣淨化方案 | Quantum Feng Shui Air Purification"
-    };
-    if (titleEl) {
-      titleEl.textContent = titleContent[language] || titleContent['zh-HK'];
-    }
-
-  }, [language]); // 仅当language变化时执行，避免重复渲染
-
-  // 保留原有路由结构，仅添加多语言逻辑
+export default function App() {
   return (
-    <BrowserRouter>
-      <YourRouterComponent />
-    </BrowserRouter>
+    <LanguageProvider>
+      <Router base={base}>
+        <div className="flex flex-col min-h-screen bg-background text-foreground">
+          <Navigation />
+          <main className="flex-grow">
+            <Switch>
+              <Route path="/" component={Home} />
+              <Route path="/technology" component={Technology} />
+              <Route path="/services" component={Services} />
+              <Route path="/cases" component={Cases} />
+              <Route path="/blog" component={Blog} />
+              <Route path="/blog/quantum-feng-shui-guide-2026" component={BlogArticle} />
+              <Route path="/blog/brand-comparison-dyson-philips-xiaomi" component={BrandComparisonArticle} />
+              <Route path="/blog/customer-testimonial-mrs-zhang" component={CustomerTestimonialArticle} />
+              <Route path="/contact" component={Contact} />
+              <Route component={NotFound} />
+            </Switch>
+          </main>
+          <Footer />
+          <FloatingWhatsApp />
+        </div>
+      </Router>
+    </LanguageProvider>
   );
 }
-
-export default App;

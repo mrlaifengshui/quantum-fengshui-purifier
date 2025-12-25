@@ -1,7 +1,6 @@
-
+import { Link } from 'wouter';
 import { useLanguage } from '../contexts/LanguageContext';
 import { Calendar, Clock, ArrowRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
 
 export default function Blog() {
   const { t } = useLanguage();
@@ -31,18 +30,6 @@ export default function Blog() {
       readTime: '10',
       image: '/images/blog/brand-comparison-table.jpg',
       category: t('品牌對比', 'Brand Comparison'),
-    },
-    {
-      id: 'quantum-layout-science',
-      title: t('量子風水佈局的科學：如何測量和調整家居能量場', 'The Science of Quantum Feng Shui Layout: How to Measure and Adjust Home Energy Fields'),
-      excerpt: t(
-        '傳統風水依賴經驗，量子風水則通過高科技儀器精確測量家居空間的能量頻率，繪製出「空間能量地圖」，實現從「感覺」到「數據」的佈局升級。',
-        'Traditional Feng Shui relies on experience, while Quantum Feng Shui uses high-tech instruments to precisely measure the home\'s energy field frequency, creating a "Space Energy Map" to achieve layout upgrades from "feeling" to "data."'
-      ),
-      date: '2026-02-05',
-      readTime: '12',
-      image: '/images/blog/space_energy_heatmap.png',
-      category: t('科學佈局', 'Scientific Layout'),
     },
     {
       id: 'customer-testimonial-mrs-zhang',
@@ -123,11 +110,11 @@ export default function Blog() {
                       </p>
                     </div>
 
-                    <Link to={`/blog/${article.id}`}>
-                      <span className="inline-flex items-center gap-2 text-accent font-semibold hover:gap-4 transition-all duration-300 group/link">
+                    <Link href={`/blog/${article.id}`}>
+                      <a className="inline-flex items-center gap-2 text-accent font-semibold hover:gap-4 transition-all duration-300 group/link">
                         {t('閱讀全文', 'Read Full Article')}
                         <ArrowRight className="w-5 h-5 transform group-hover/link:translate-x-1 transition-transform" />
-                      </span>
+                      </a>
                     </Link>
                   </div>
                 </div>
