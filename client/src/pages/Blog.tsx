@@ -55,6 +55,18 @@ export default function Blog() {
       image: '/images/blog/quantum-energy-waves.jpg',
       category: t('關係和諧', 'Relationship Harmony'),
     },
+    {
+      id: 'office-career-feng-shui',
+      title: t('辦公室空氣淨化機擺錯位置？難怪你升不了職！量子風水教你3招扭轉事業運', 'Air Purifier in Wrong Office Position? No Wonder You Can\'t Get Promoted! 3 Quantum Feng Shui Tricks to Transform Your Career'),
+      excerpt: t(
+        '你是否發現，明明工作很努力，卻總是得不到上司的賞識？同事一個個升職加薪，唯獨你原地踏步？或許問題不在你的能力，而在於辦公室的「能量場失衡」。本文將揭示辦公室風水的3大核心秘密，教你如何用正確的空氣淨化機擺位，扭轉事業困境，開啟升職加薪之路！',
+        'Have you noticed that despite working hard, you never seem to get your boss\'s recognition? Colleagues getting promoted one after another, while you stay stuck? Perhaps the problem isn\'t your ability, but your office\'s "energy field imbalance." This article reveals 3 core office feng shui secrets, teaching you how to use correct air purifier placement to transform career difficulties!'
+      ),
+      date: '2026-02-15',
+      readTime: '10',
+      image: '/images/blog/office-career-placement.jpg',
+      category: t('事業發展', 'Career Development'),
+    },
   ];
 
   return (
