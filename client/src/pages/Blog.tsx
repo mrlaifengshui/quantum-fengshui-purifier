@@ -43,6 +43,18 @@ export default function Blog() {
       image: '/images/blog/energetic-workspace.jpg',
       category: t('客戶見證', 'Customer Testimonial'),
     },
+    {
+      id: 'bedroom-harmony-feng-shui',
+      title: t('夫妻臥室的量子風水秘密：如何用空氣淨化提升感情和諧度', 'Quantum Feng Shui Secrets for Couple\'s Bedroom: Enhance Relationship Harmony with Air Purification'),
+      excerpt: t(
+        '您是否注意到，很多夫妻之間的爭吵都發生在臥室？臥室的能量場直接影響著感情和諧度、親密關係，甚至健康狀況。本文深入探討臥室風水的 6 大禁忌、空氣淨化機的和諧擺位法，以及 5 個真實的夫妻感情改善案例。',
+        'Have you noticed that many arguments between couples happen in the bedroom? The bedroom\'s energy field directly affects relationship harmony, intimacy, and even health. This article explores 6 major feng shui taboos, harmonious air purifier placement methods, and 5 real cases of couples improving their relationships.'
+      ),
+      date: '2026-02-10',
+      readTime: '9',
+      image: '/images/blog/quantum-energy-waves.jpg',
+      category: t('關係和諧', 'Relationship Harmony'),
+    },
   ];
 
   return (
