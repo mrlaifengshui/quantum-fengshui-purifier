@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'wouter';
-import { Menu, X, Globe } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { cn } from '../lib/utils';
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const [location] = useLocation();
-  const { language, toggleLanguage, t } = useLanguage();
+  const { t } = useLanguage();
 
   const navItems = [
     { path: '/', label: t('首頁', 'Home') },
@@ -62,24 +62,10 @@ export default function Navigation() {
                 )}
               </div>
             ))}
-            <div className="w-px h-5 bg-border/60 mx-3"></div>
-            <button
-              onClick={toggleLanguage}
-              className="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm font-medium text-muted-foreground hover:text-accent hover:bg-accent/10 transition-all duration-300 border border-border/30"
-            >
-              <Globe className="w-4 h-4" />
-              <span>{language === 'zh' ? 'EN' : '中文'}</span>
-            </button>
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center space-x-4">
-            <button
-              onClick={toggleLanguage}
-              className="text-muted-foreground hover:text-accent transition-colors p-2"
-            >
-              <Globe className="w-8 h-8" />
-            </button>
+          <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-foreground hover:text-accent transition-colors p-2"

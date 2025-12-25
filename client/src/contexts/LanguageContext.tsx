@@ -11,81 +11,29 @@ interface LanguageContextType {
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
-/**
- * Detect user's preferred language from multiple sources
- * Priority: URL params > localStorage > Browser language > Default (zh)
- */
-function detectUserLanguage(): Language {
-  // 1. Check URL parameter (?lang=en or ?lang=zh)
-  const urlParams = new URLSearchParams(window.location.search);
-  const langParam = urlParams.get('lang');
-  if (langParam === 'en' || langParam === 'zh') {
-    return langParam;
-  }
-
-  // 2. Check localStorage (user's previous choice)
-  const savedLanguage = localStorage.getItem('preferred-language');
-  if (savedLanguage === 'en' || savedLanguage === 'zh') {
-    return savedLanguage;
-  }
-
-  // 3. Check browser language
-  const browserLang = navigator.language || (navigator as any).userLanguage;
-  
-  // English variants: en, en-US, en-GB, etc.
-  if (browserLang.toLowerCase().startsWith('en')) {
-    return 'en';
-  }
-  
-  // Chinese variants: zh, zh-CN, zh-TW, zh-HK, etc.
-  if (browserLang.toLowerCase().startsWith('zh')) {
-    return 'zh';
-  }
-
-  // 4. Default to Chinese (primary market is Hong Kong)
-  return 'zh';
-}
-
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  // Initialize with detected language
-  const [language, setLanguageState] = useState<Language>(() => detectUserLanguage());
+  // Language is now locked to Chinese only
+  const [language] = useState<Language>('zh');
 
-  // Update localStorage and URL when language changes
-  const setLanguage = (lang: Language) => {
-    setLanguageState(lang);
-    localStorage.setItem('preferred-language', lang);
-    
-    // Update URL parameter without page reload
-    const url = new URL(window.location.href);
-    url.searchParams.set('lang', lang);
-    window.history.replaceState({}, '', url.toString());
+  const setLanguage = (_lang: Language) => {
+    // Language change disabled - always Chinese
+    return;
   };
 
   const toggleLanguage = () => {
-    setLanguage(language === 'zh' ? 'en' : 'zh');
+    // Language toggle disabled - always Chinese
+    return;
   };
 
-  const t = (zh: string, en: string) => {
-    return language === 'zh' ? zh : en;
+  const t = (zh: string, _en: string) => {
+    // Always return Chinese text
+    return zh;
   };
-
-  // Listen for URL changes (browser back/forward)
-  useEffect(() => {
-    const handlePopState = () => {
-      const detectedLang = detectUserLanguage();
-      if (detectedLang !== language) {
-        setLanguageState(detectedLang);
-      }
-    };
-
-    window.addEventListener('popstate', handlePopState);
-    return () => window.removeEventListener('popstate', handlePopState);
-  }, [language]);
 
   // Update document.documentElement.lang for accessibility and SEO
   useEffect(() => {
-    document.documentElement.lang = language === 'zh' ? 'zh-HK' : 'en';
-  }, [language]);
+    document.documentElement.lang = 'zh-HK';
+  }, []);
 
   return (
     <LanguageContext.Provider value={{ language, setLanguage, toggleLanguage, t }}>
