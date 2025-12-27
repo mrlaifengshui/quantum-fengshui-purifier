@@ -29,7 +29,7 @@ export default function Services() {
               <div>
                 <img 
                   src="/images/services-banner-energy.jpg" 
-                  alt={t('服務介紹圖片', 'Services Banner')}
+                  alt={t('量子風水空氣淨化三合一服務介紹 - 物質清淨 × 能量調頻 × 豐盛顯化', 'Quantum Feng Shui Three-in-One Air Purification Service - Material Purity × Energy Tuning × Abundance Manifestation')}
                   className="w-full rounded-2xl shadow-xl"
                 />
               </div>
@@ -39,7 +39,7 @@ export default function Services() {
             <div className="md:hidden max-w-4xl mx-auto">
               <img 
                 src="/images/services-banner-energy.jpg" 
-                alt={t('服務介紹圖片', 'Services Banner')}
+                alt={t('量子風水空氣淨化三合一服務介紹 - 物質清淨 × 能量調頻 × 豐盛顯化', 'Quantum Feng Shui Three-in-One Air Purification Service - Material Purity × Energy Tuning × Abundance Manifestation')}
                 className="w-full rounded-2xl shadow-xl"
               />
             </div>

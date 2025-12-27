@@ -28,7 +28,7 @@ export default function Navigation() {
               <div className="w-20 h-20 md:w-14 md:h-14 rounded-full flex items-center justify-center shadow-glow transform transition-all duration-300 group-hover:scale-110 group-hover:shadow-cosmic group-hover:rotate-180 relative overflow-hidden">
                 <img 
                   src="/images/quantum-energy-logo.png" 
-                  alt="Quantum Energy Logo" 
+                  alt={t('量子顯化 - 香港專業量子風水空氣淨化服務', 'Quantum Manifestation - Hong Kong Professional Quantum Feng Shui Air Purification Service')} 
                   className="w-full h-full object-contain"
                 />
               </div>

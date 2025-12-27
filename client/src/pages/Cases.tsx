@@ -106,7 +106,7 @@ export default function Cases() {
               <div>
                 <img 
                   src="/images/cases-banner-new.jpg" 
-                  alt={t('客戶見證案例圖片', 'Cases Banner')}
+                  alt={t('香港客戶真實見證 - 量子風水空氣淨化改善案例 - 睡眠品質提升、事業運增強、家庭和諧', 'Hong Kong Customer Testimonials - Quantum Feng Shui Air Purification Success Stories')}
                   className="w-full rounded-2xl shadow-xl"
                 />
               </div>
@@ -116,7 +116,7 @@ export default function Cases() {
             <div className="md:hidden max-w-4xl mx-auto">
               <img 
                 src="/images/cases-banner-new.jpg" 
-                alt={t('客戶見證案例圖片', 'Cases Banner')}
+                alt={t('香港客戶真實見證 - 量子風水空氣淨化改善案例 - 睡眠品質提升、事業運增強、家庭和諧', 'Hong Kong Customer Testimonials - Quantum Feng Shui Air Purification Success Stories')}
                 className="w-full rounded-2xl shadow-xl"
               />
             </div>
