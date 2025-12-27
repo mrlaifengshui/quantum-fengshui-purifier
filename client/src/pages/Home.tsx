@@ -17,7 +17,7 @@ export default function Home() {
             </span>
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight tracking-tight">
-            {t('量子風水空氣淨化方案', 'Quantum Feng Shui')}<br />
+            {t('量子風水空氣淨化方案 | 香港專業風水淨化器服務', 'Quantum Feng Shui Air Purification | Professional Hong Kong Service')}<br />
             <span className="block text-lg sm:text-xl md:text-2xl lg:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-accent via-secondary to-primary mt-2">
               {t('物質清淨 × 能量調頻 × 豐盛顯化', 'Material Purity × Energy Tuning × Abundance Manifestation')}
             </span>
@@ -55,7 +55,7 @@ export default function Home() {
               </span>
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-              {t('三合一服務模式', 'Three-in-One Service Model')}
+              {t('三合一量子風水空氣淨化服務', 'Three-in-One Quantum Feng Shui Air Purification Service')}
               <br />
               <span className="text-xl md:text-2xl font-normal text-muted-foreground mt-4 block">
                 {t(
@@ -72,10 +72,10 @@ export default function Home() {
                 <Wind className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-2xl font-bold text-foreground mb-3">
-                {t('改善空間粒子', 'Improve Air Quality')}
+                {t('物質清淨 - 99.97% 高效過濾', 'Material Purity - 99.97% Filtration')}
               </h3>
               <p className="text-accent font-medium mb-4 text-sm tracking-wide uppercase">
-                {t('空氣淨化', 'Air Purification')}
+                {t('頂級空氣淨化技術', 'Premium Air Purification')}
               </p>
               <p className="text-muted-foreground leading-relaxed mb-6">
                 {t(
@@ -105,10 +105,10 @@ export default function Home() {
                 <Sparkles className="w-8 h-8 text-secondary" />
               </div>
               <h3 className="text-2xl font-bold text-foreground mb-3">
-                {t('提升能量頻率', 'Enhance Energy')}
+                {t('能量調頻 - 量子頻率優化', 'Energy Tuning - Quantum Frequency Optimization')}
               </h3>
               <p className="text-accent font-medium mb-4 text-sm tracking-wide uppercase">
-                {t('量子調頻', 'Quantum Tuning')}
+                {t('改善睡眠品質與能量場', 'Improve Sleep Quality & Energy Field')}
               </p>
               <p className="text-muted-foreground leading-relaxed mb-6">
                 {t(
@@ -138,10 +138,10 @@ export default function Home() {
                 <Compass className="w-8 h-8 text-accent" />
               </div>
               <h3 className="text-2xl font-bold text-foreground mb-3">
-                {t('激活豐盛磁場', 'Activate Abundance')}
+                {t('豐盛顯化 - 專業風水擺位', 'Abundance Manifestation - Professional Feng Shui Placement')}
               </h3>
               <p className="text-accent font-medium mb-4 text-sm tracking-wide uppercase">
-                {t('風水擺位', 'Feng Shui Placement')}
+                {t('提升事業運財運健康運', 'Enhance Career, Wealth & Health Fortune')}
               </p>
               <p className="text-muted-foreground leading-relaxed mb-6">
                 {t(
@@ -235,7 +235,7 @@ export default function Home() {
               </span>
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-              {t('真實客戶體驗分享', 'Real Customer Experiences')}
+              {t('香港客戶真實見證 - 量子風水改善案例', 'Hong Kong Customer Testimonials - Quantum Feng Shui Success Stories')}
               <br />
               <span className="text-xl md:text-2xl font-normal text-muted-foreground mt-4 block">
                 {t(
@@ -357,6 +357,90 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Blog Articles Section - 淺色背景 */}
+      <section className="py-20 bg-section-light">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+          <div className="text-center mb-16">
+            <div className="inline-block mb-4 px-4 py-1 bg-primary/10 border border-primary/30 rounded-full">
+              <span className="text-primary font-medium text-sm">
+                {t('量子風水知識', 'Quantum Feng Shui Knowledge')}
+              </span>
+            </div>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
+              {t('精選博客文章 - 風水淨化專業指南', 'Featured Blog Articles - Professional Feng Shui Purification Guide')}
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              {t(
+                '探索辦公室風水、臥室和諧、量子能量場優化的專業知識，幫助您提升生活品質',
+                'Explore professional knowledge on office feng shui, bedroom harmony, and quantum energy field optimization'
+              )}
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Office Career Article */}
+            <Link href="/blog/office-career-feng-shui">
+              <a className="block bg-section-dark border border-border rounded-2xl overflow-hidden hover:border-accent hover:shadow-xl hover:shadow-accent/10 transition-all duration-300 transform hover:-translate-y-1">
+                <div className="p-8">
+                  <div className="inline-block mb-4 px-3 py-1 bg-accent/10 border border-accent/30 rounded-full">
+                    <span className="text-accent font-medium text-xs">
+                      {t('事業發展', 'Career Development')}
+                    </span>
+                  </div>
+                  <h3 className="text-2xl font-bold text-foreground mb-4">
+                    {t('辦公室空氣淨化機擺錯位置？量子風水教你3招扭轉事業運', 'Office Air Purifier Wrong Position? 3 Quantum Feng Shui Tricks to Transform Your Career')}
+                  </h3>
+                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                    {t(
+                      '你是否發現，明明工作很努力，卻總是得不到上司的賞識？了解如何用正確的空氣淨化機擺位，扭轉事業困境，開啟升職加薪之路！',
+                      'Working hard but no recognition? Learn correct air purifier placement to transform your career!'
+                    )}
+                  </p>
+                  <div className="flex items-center text-accent font-medium">
+                    {t('閱讀全文', 'Read More')}
+                    <ArrowRight className="ml-2 w-4 h-4" />
+                  </div>
+                </div>
+              </a>
+            </Link>
+
+            {/* Bedroom Harmony Article */}
+            <Link href="/blog/bedroom-harmony-feng-shui">
+              <a className="block bg-section-dark border border-border rounded-2xl overflow-hidden hover:border-secondary hover:shadow-xl hover:shadow-secondary/10 transition-all duration-300 transform hover:-translate-y-1">
+                <div className="p-8">
+                  <div className="inline-block mb-4 px-3 py-1 bg-secondary/10 border border-secondary/30 rounded-full">
+                    <span className="text-secondary font-medium text-xs">
+                      {t('關係和諧', 'Relationship Harmony')}
+                    </span>
+                  </div>
+                  <h3 className="text-2xl font-bold text-foreground mb-4">
+                    {t('夫妻臥室的量子風水秘密：如何用空氣淨化提升感情和諧度', 'Couple Bedroom Quantum Feng Shui Secrets: Enhance Relationship Harmony with Air Purification')}
+                  </h3>
+                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                    {t(
+                      '臥室不僅是休息的場所，更是夫妻感情能量交融的核心空間。空氣淨化機的正確擺位與量子調頻，能有效提升臥室的「感情頻率」，讓愛與和諧重新流動。',
+                      'Bedroom is not just for rest, but core space for emotional energy. Correct placement can enhance emotional frequency.'
+                    )}
+                  </p>
+                  <div className="flex items-center text-secondary font-medium">
+                    {t('閱讀全文', 'Read More')}
+                    <ArrowRight className="ml-2 w-4 h-4" />
+                  </div>
+                </div>
+              </a>
+            </Link>
+          </div>
+
+          <div className="text-center mt-12">
+            <Link href="/blog">
+              <a className="inline-flex items-center px-10 py-4 bg-gradient-to-r from-primary to-secondary text-primary-foreground font-semibold rounded-xl hover:shadow-xl hover:shadow-primary/30 transition-all duration-300 transform hover:-translate-y-1">
+                {t('探索更多風水淨化知識', 'Explore More Feng Shui Purification Knowledge')}
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </a>
+            </Link>
+          </div>
+        </div>
+      </section>
 
     </div>
   );
