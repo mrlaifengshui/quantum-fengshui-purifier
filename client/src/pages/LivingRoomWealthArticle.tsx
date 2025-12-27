@@ -906,20 +906,12 @@ export default function LivingRoomWealthArticle() {
               'Contact us now for a free consultation with a professional feng shui consultant! We will customize a living room wealth position air purification plan for you, helping you create a golden home that attracts wealth and prosperity.'
             )}
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex justify-center items-center">
             <Link href="/contact">
               <a className="inline-flex items-center px-10 py-4 bg-gradient-to-r from-accent to-secondary text-accent-foreground font-semibold rounded-xl hover:shadow-xl hover:shadow-accent/30 transition-all duration-300 transform hover:-translate-y-1">
                 {t('立即預約免費諮詢', 'Book Free Consultation Now')}
               </a>
             </Link>
-            <a
-              href="https://wa.me/85256161088"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center px-10 py-4 bg-green-600 text-white font-semibold rounded-xl hover:bg-green-700 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
-            >
-              {t('WhatsApp 諮詢', 'WhatsApp Consultation')} +852 5616 1088
-            </a>
           </div>
         </section>
 
