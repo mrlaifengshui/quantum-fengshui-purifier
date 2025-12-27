@@ -67,6 +67,18 @@ export default function Blog() {
       image: '/images/blog/office-career-placement.jpg',
       category: t('事業發展', 'Career Development'),
     },
+    {
+      id: 'living-room-wealth-feng-shui',
+      title: t('客廳財位空氣淨化機擺放秘訣 - 量子風水提升家庭財運', 'Living Room Wealth Position Air Purifier Placement Secrets - Quantum Feng Shui to Enhance Family Fortune'),
+      excerpt: t(
+        '你知道嗎？客廳的「財位」不僅影響家庭財運，更是整個家居能量場的核心！如果在財位正確擺放空氣淨化機，配合量子調頻技術，不僅能淨化空氣，更能激活財運能量，為全家帶來源源不絕的豐盛與繁榮。本文將揭秘客廳財位的奧秘，教你如何打造招財進寶的黃金家居！',
+        'Did you know? The "wealth position" in your living room not only affects family fortune but is also the core of your home\'s energy field! If you correctly place an air purifier in the wealth position and combine it with quantum frequency tuning technology, you can not only purify the air but also activate fortune energy. This article reveals the secrets of the living room wealth position!'
+      ),
+      date: '2025-12-27',
+      readTime: '12',
+      image: '/images/blog/living-room-wealth-position.jpg',
+      category: t('家庭財運', 'Family Fortune'),
+    },
   ];
 
   return (
