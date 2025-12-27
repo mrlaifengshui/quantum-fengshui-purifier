@@ -1,9 +1,14 @@
+import { useEffect } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { Calendar, Clock, ArrowLeft } from 'lucide-react';
 import { Link } from 'wouter';
 
 export default function BrandComparisonArticle() {
   const { t } = useLanguage();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="min-h-screen bg-background">

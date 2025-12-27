@@ -1,9 +1,14 @@
+import { useEffect } from 'react';
 import { Link } from 'wouter';
 import { ArrowLeft } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 export default function LivingRoomWealthArticle() {
   const { t } = useLanguage();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="min-h-screen bg-background py-12">

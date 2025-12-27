@@ -1,9 +1,14 @@
+import { useEffect } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { ArrowLeft, Briefcase, TrendingUp, Users, Sparkles, AlertTriangle, CheckCircle } from 'lucide-react';
 import { Link } from 'wouter';
 
 export default function OfficeCareerArticle() {
   const { t } = useLanguage();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="min-h-screen bg-background">
