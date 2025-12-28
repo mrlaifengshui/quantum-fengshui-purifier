@@ -7,31 +7,22 @@ export default function Home() {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section - 漸層背景 + 專業圖片 */}
-      <section className="relative bg-gradient-to-br from-primary/20 via-background to-secondary/20 py-20 md:py-32 overflow-hidden">
-        {/* 背景圖片 */}
-        <div className="absolute inset-0">
-          <img 
-            src="/images/hero-quantum-fengshui.jpg" 
-            alt="量子風水空氣淨化服務 - 結合科學、能量與風水的專業香港服務，99.97%高效過濾技術 | Quantum Feng Shui Air Purification - Professional Hong Kong Service combining Science, Energy and Feng Shui with 99.97% Filtration Technology"
-            className="w-full h-full object-cover opacity-20"
-          />
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/40 via-background/60 to-secondary/40"></div>
-        </div>
+      {/* Hero Section - 漸層背景 */}
+      <section className="relative bg-gradient-to-br from-primary/20 via-background to-secondary/20 py-20 md:py-32">
         <div className="absolute inset-0 bg-[url('/images/hero-pattern.svg')] opacity-5"></div>
         <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
-          <div className="inline-block mb-6 px-6 py-2 bg-accent/10 border border-accent/30 rounded-full backdrop-blur-sm">
+          <div className="inline-block mb-6 px-6 py-2 bg-accent/10 border border-accent/30 rounded-full">
             <span className="text-accent font-medium text-sm tracking-wide">
               {t('科學 × 能量 × 風水', 'Science × Energy × Feng Shui')}
             </span>
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight tracking-tight drop-shadow-lg">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight tracking-tight">
             {t('量子風水空氣淨化方案 | 香港專業風水淨化器服務', 'Quantum Feng Shui Air Purification | Professional Hong Kong Service')}<br />
             <span className="block text-lg sm:text-xl md:text-2xl lg:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-accent via-secondary to-primary mt-2">
               {t('物質清淨 × 能量調頻 × 豐盛顯化', 'Material Purity × Energy Tuning × Abundance Manifestation')}
             </span>
             <br />
-            <span className="block text-xl md:text-2xl text-muted-foreground font-normal mt-4 drop-shadow">
+            <span className="block text-xl md:text-2xl text-muted-foreground font-normal mt-4">
               {t(
                 '結合頂級空氣淨化科技與量子調頻技術，精準擺設風水吉位，為您打造物質清淨、非物質能量和諧、豐盛顯化的現代家居環境。',
                 'Combining premium air purification technology with quantum frequency tuning, precisely positioned for feng shui prosperity.'
@@ -40,13 +31,13 @@ export default function Home() {
           </h1>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link href="/contact">
-              <a className="inline-flex items-center justify-center px-10 py-4 bg-gradient-to-r from-accent to-secondary text-accent-foreground font-semibold rounded-xl hover:shadow-xl hover:shadow-accent/30 transition-all duration-300 transform hover:-translate-y-1 backdrop-blur-sm">
+              <a className="inline-flex items-center justify-center px-10 py-4 bg-gradient-to-r from-accent to-secondary text-accent-foreground font-semibold rounded-xl hover:shadow-xl hover:shadow-accent/30 transition-all duration-300 transform hover:-translate-y-1">
                 {t('立即預約', 'Book Now')}
                 <ArrowRight className="ml-2 w-5 h-5" />
               </a>
             </Link>
             <Link href="/services">
-              <a className="inline-flex items-center justify-center px-10 py-4 bg-background/80 backdrop-blur-sm border-2 border-accent/50 text-accent font-semibold rounded-xl hover:bg-accent/10 hover:border-accent transition-all duration-300">
+              <a className="inline-flex items-center justify-center px-10 py-4 bg-transparent border-2 border-accent/50 text-accent font-semibold rounded-xl hover:bg-accent/10 hover:border-accent transition-all duration-300">
                 {t('了解服務', 'Learn More')}
               </a>
             </Link>
@@ -74,6 +65,18 @@ export default function Home() {
               </span>
             </h2>
           </div>
+
+          {/* 專業雙語圖片展示 */}
+          <div className="mb-16 flex justify-center">
+            <div className="w-full max-w-5xl">
+              <img 
+                src="/images/hero-quantum-fengshui.jpg" 
+                alt="量子風水空氣淨化服務 - 結合科學、能量與風水的專業香港服務，99.97%高效過濾技術 | Quantum Feng Shui Air Purification - Professional Hong Kong Service combining Science, Energy and Feng Shui with 99.97% Filtration Technology"
+                className="w-full h-auto rounded-2xl shadow-2xl"
+              />
+            </div>
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center">
             {/* Service 1 */}
             <div className="bg-section-light/50 border border-border rounded-2xl p-8 hover:border-primary hover:shadow-xl hover:shadow-primary/20 transition-all duration-300 transform hover:-translate-y-1 text-center flex flex-col items-center">
