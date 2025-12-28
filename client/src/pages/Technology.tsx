@@ -1,8 +1,36 @@
+import { useEffect } from 'react';
 import { CheckCircle2 } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 export default function Technology() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+
+  useEffect(() => {
+    // Update page title and meta description
+    const title = language === 'zh' 
+      ? '量子風水淨化核心技術｜香港 HEPA 99.97% 過濾 + 量子調頻原理'
+      : 'Quantum Fengshui Purification Technology | HEPA 99.97% Filtration & Energy Tuning';
+    
+    const description = language === 'zh'
+      ? '深入解析量子風水淨化技術核心：HEPA 99.97% 高效除甲醛細菌，量子調頻優化空間能量場，香港本地認證 + 海外華人技術支持，科學驗證風水與淨化雙重功效！'
+      : 'Explore the core of quantum fengshui purification technology: HEPA 99.97% filtration for formaldehyde & bacteria, quantum energy tuning for space optimization. Certified in Hong Kong with global support for overseas Chinese—scientifically proven dual benefits!';
+    
+    document.title = title;
+    
+    // Update or create meta description
+    let metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', description);
+    } else {
+      metaDescription = document.createElement('meta');
+      metaDescription.setAttribute('name', 'description');
+      metaDescription.setAttribute('content', description);
+      document.head.appendChild(metaDescription);
+    }
+
+    // Scroll to top
+    window.scrollTo(0, 0);
+  }, [language]);
 
   return (
     <div className="min-h-screen py-16">
@@ -32,9 +60,9 @@ export default function Technology() {
               <div className="order-1 md:order-1 flex justify-center">
                 <div className="relative w-full max-w-md rounded-2xl overflow-hidden shadow-xl">
                   <img 
-                    src="/images/technology/air-purification.jpg" 
-                    alt={t('空氣淨化技術', 'Air Purification Technology')}
-                    className="w-full h-full object-cover"
+                    src="/images/technology/air-purification-new.jpg" 
+                    alt="HEPA H13 空氣淨化技術 - 99.97% 高效過濾 PM2.5 PM0.3 超微粒子，香港認證專業空氣淨化系統 | HEPA H13 Air Purification Technology - 99.97% Filtration Efficiency for PM2.5 PM0.3 Ultra-fine Particles, Hong Kong Certified Professional Air Purification System"
+                    className="w-full h-auto object-cover"
                   />
                 </div>
               </div>
@@ -154,9 +182,9 @@ export default function Technology() {
               <div className="order-1 md:order-1 flex justify-center">
                 <div className="relative w-full max-w-md rounded-2xl overflow-hidden shadow-xl">
                   <img 
-                    src="/images/technology/feng-shui-positioning.jpg" 
-                    alt={t('風水擺位技術', 'Feng Shui Positioning Technology')}
-                    className="w-full h-full object-cover"
+                    src="/images/technology/feng-shui-positioning-new.jpg" 
+                    alt="風水擺位技術 - 八卦方位分析與電磁場測量，吉位精準定位財位文昌位，專業羅盤與科學儀器結合 | Feng Shui Positioning Technology - Bagua Direction Analysis and Electromagnetic Measurement, Precise Auspicious Positioning for Wealth and Wisdom Positions, Professional Compass Combined with Scientific Instruments"
+                    className="w-full h-auto object-cover"
                   />
                 </div>
               </div>
