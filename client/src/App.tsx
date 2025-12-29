@@ -15,6 +15,7 @@ import BedroomHarmonyArticle from './pages/BedroomHarmonyArticle';
 import OfficeCareerArticle from './pages/OfficeCareerArticle';
 import LivingRoomWealthArticle from './pages/LivingRoomWealthArticle';
 import InsomniaSolutionArticle from './pages/InsomniaSolutionArticle';
+import ChildrensRoomHealthArticle from './pages/ChildrensRoomHealthArticle';
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
 
@@ -41,6 +42,7 @@ export default function App() {
               <Route path="/blog/office-career-feng-shui" component={OfficeCareerArticle} />
               <Route path="/blog/living-room-wealth-feng-shui" component={LivingRoomWealthArticle} />
               <Route path="/blog/insomnia-solution-quantum-fengshui" component={InsomniaSolutionArticle} />
+              <Route path="/blog/childrens-room-health-fengshui" component={ChildrensRoomHealthArticle} />
               <Route path="/contact" component={Contact} />
               <Route component={NotFound} />
             </Switch>
