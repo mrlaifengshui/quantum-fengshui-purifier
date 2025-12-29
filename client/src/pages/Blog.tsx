@@ -8,6 +8,18 @@ export default function Blog() {
   // Blog article data (sorted by date descending - newest first)
   const articles = [
     {
+      id: 'healing-space-quantum-fengshui',
+      title: t('打造家居療癒空間：5 個讓壓力瞬間消失的量子風水設計秘訣', 'Create a Healing Home Space: 5 Quantum Feng Shui Design Secrets to Instantly Eliminate Stress'),
+      excerpt: t(
+        '香港人平均每週工作 50 小時，壓力指數位居全球前列。您是否感到疲憊不堪、焦慮不安、難以放鬆？家，應該是您的療癒聖殿，而不是另一個壓力源。本文將揭示 5 個量子風水設計秘訣，讓您的家成為壓力消失、能量充盈的療癒空間！',
+        'Hong Kong residents work an average of 50 hours per week, with stress levels ranking among the highest globally. Do you feel exhausted, anxious, unable to relax? Home should be your healing sanctuary, not another source of stress. This article reveals 5 quantum feng shui design secrets to transform your home into a healing space where stress disappears and energy flows!'
+      ),
+      date: '2025-12-30',
+      readTime: '20',
+      image: '/images/blog/healing-bedroom-transformation.jpg',
+      category: t('療癒空間設計', 'Healing Space Design'),
+    },
+    {
       id: 'childrens-room-health-fengshui',
       title: t('孩子經常生病？可能是兒童房風水與空氣質量出了問題', 'Is Your Child Getting Sick Often? It Might Be Children\'s Room Feng Shui and Air Quality Issues'),
       excerpt: t(
