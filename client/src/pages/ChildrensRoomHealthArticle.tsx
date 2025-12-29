@@ -186,8 +186,8 @@ export default function ChildrensRoomHealthArticle() {
                   </span>
                 </li>
               </ul>
-              <div className="bg-red-100 dark:bg-red-950/30 rounded-xl p-4 border border-red-300 dark:border-red-700">
-                <p className="text-red-900 dark:text-red-200 font-semibold">
+              <div className="bg-red-100 dark:bg-red-950/40 rounded-xl p-4 border border-red-400 dark:border-red-700">
+                <p className="text-red-950 dark:text-red-100 font-semibold">
                   ⚠️ {t('警告', 'Warning')}:{' '}
                   {t(
                     '即使聞不到刺鼻氣味，甲醛依然可能超標！兒童房必須使用專業 HEPA 過濾系統。',
@@ -232,8 +232,8 @@ export default function ChildrensRoomHealthArticle() {
                   </span>
                 </li>
               </ul>
-              <div className="bg-orange-100 dark:bg-orange-950/30 rounded-xl p-4 border border-orange-300 dark:border-orange-700">
-                <p className="text-orange-900 dark:text-orange-200 font-semibold">
+              <div className="bg-orange-100 dark:bg-orange-950/40 rounded-xl p-4 border border-orange-400 dark:border-orange-700">
+                <p className="text-orange-950 dark:text-orange-100 font-semibold">
                   💡 {t('解決方案', 'Solution')}:{' '}
                   {t(
                     '定期高溫清洗（60°C 以上）+ 使用帶 HEPA 過濾的空氣淨化機，每 2 週曬太陽一次',
@@ -370,8 +370,8 @@ export default function ChildrensRoomHealthArticle() {
             </p>
 
             {/* Taboo 1 */}
-            <div className="bg-gradient-to-br from-red-50 to-red-100 dark:from-red-950/20 dark:to-red-900/20 rounded-2xl p-8 mb-6 border border-red-200 dark:border-red-800">
-              <h3 className="text-2xl font-bold mb-4 text-red-600 dark:text-red-400 flex items-center gap-2">
+            <div className="bg-gradient-to-br from-red-50 to-red-100 dark:from-red-950/30 dark:to-red-900/30 rounded-2xl p-8 mb-6 border border-red-300 dark:border-red-700">
+              <h3 className="text-2xl font-bold mb-4 text-red-700 dark:text-red-300 flex items-center gap-2">
                 ❌ {t('禁忌 1：床頭對門（驚嚇頻繁）', 'Taboo 1: Bed Head Facing Door (Frequent Startling)')}
               </h3>
               <p className="text-lg leading-relaxed mb-4">
@@ -390,8 +390,8 @@ export default function ChildrensRoomHealthArticle() {
             </div>
 
             {/* Taboo 2 */}
-            <div className="bg-gradient-to-br from-orange-50 to-orange-100 dark:from-orange-950/20 dark:to-orange-900/20 rounded-2xl p-8 mb-6 border border-orange-200 dark:border-orange-800">
-              <h3 className="text-2xl font-bold mb-4 text-orange-600 dark:text-orange-400 flex items-center gap-2">
+            <div className="bg-gradient-to-br from-orange-50 to-orange-100 dark:from-orange-950/30 dark:to-orange-900/30 rounded-2xl p-8 mb-6 border border-orange-300 dark:border-orange-700">
+              <h3 className="text-2xl font-bold mb-4 text-orange-700 dark:text-orange-300 flex items-center gap-2">
                 ❌ {t('禁忌 2：樑壓床（壓迫感重）', 'Taboo 2: Beam Over Bed (Heavy Pressure)')}
               </h3>
               <p className="text-lg leading-relaxed mb-4">
@@ -410,8 +410,8 @@ export default function ChildrensRoomHealthArticle() {
             </div>
 
             {/* Taboo 3 */}
-            <div className="bg-gradient-to-br from-yellow-50 to-yellow-100 dark:from-yellow-950/20 dark:to-yellow-900/20 rounded-2xl p-8 mb-6 border border-yellow-200 dark:border-yellow-800">
-              <h3 className="text-2xl font-bold mb-4 text-yellow-700 dark:text-yellow-400 flex items-center gap-2">
+            <div className="bg-gradient-to-br from-yellow-50 to-yellow-100 dark:from-yellow-950/30 dark:to-yellow-900/30 rounded-2xl p-8 mb-6 border border-yellow-300 dark:border-yellow-700">
+              <h3 className="text-2xl font-bold mb-4 text-yellow-800 dark:text-yellow-200 flex items-center gap-2">
                 ❌ {t('禁忌 3：鏡子對床（睡眠不安）', 'Taboo 3: Mirror Facing Bed (Restless Sleep)')}
               </h3>
               <p className="text-lg leading-relaxed mb-4">
@@ -430,8 +430,8 @@ export default function ChildrensRoomHealthArticle() {
             </div>
 
             {/* Taboo 4 */}
-            <div className="bg-gradient-to-br from-green-50 to-green-100 dark:from-green-950/20 dark:to-green-900/20 rounded-2xl p-8 mb-6 border border-green-200 dark:border-green-800">
-              <h3 className="text-2xl font-bold mb-4 text-green-700 dark:text-green-400 flex items-center gap-2">
+            <div className="bg-gradient-to-br from-green-50 to-green-100 dark:from-green-950/30 dark:to-green-900/30 rounded-2xl p-8 mb-6 border border-green-300 dark:border-green-700">
+              <h3 className="text-2xl font-bold mb-4 text-green-800 dark:text-green-200 flex items-center gap-2">
                 ❌ {t('禁忌 4：尖角沖射（易受驚）', 'Taboo 4: Sharp Corner Pointing (Easily Startled)')}
               </h3>
               <p className="text-lg leading-relaxed mb-4">
@@ -450,8 +450,8 @@ export default function ChildrensRoomHealthArticle() {
             </div>
 
             {/* Taboo 5 */}
-            <div className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-950/20 dark:to-blue-900/20 rounded-2xl p-8 mb-6 border border-blue-200 dark:border-blue-800">
-              <h3 className="text-2xl font-bold mb-4 text-blue-700 dark:text-blue-400 flex items-center gap-2">
+            <div className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-950/30 dark:to-blue-900/30 rounded-2xl p-8 mb-6 border border-blue-300 dark:border-blue-700">
+              <h3 className="text-2xl font-bold mb-4 text-blue-800 dark:text-blue-200 flex items-center gap-2">
                 ❌ {t('禁忌 5：顏色過深（情緒壓抑）', 'Taboo 5: Colors Too Dark (Emotional Suppression)')}
               </h3>
               <p className="text-lg leading-relaxed mb-4">
@@ -470,8 +470,8 @@ export default function ChildrensRoomHealthArticle() {
             </div>
 
             {/* Taboo 6 */}
-            <div className="bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-950/20 dark:to-purple-900/20 rounded-2xl p-8 mb-6 border border-purple-200 dark:border-purple-800">
-              <h3 className="text-2xl font-bold mb-4 text-purple-700 dark:text-purple-400 flex items-center gap-2">
+            <div className="bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-950/30 dark:to-purple-900/30 rounded-2xl p-8 mb-6 border border-purple-300 dark:border-purple-700">
+              <h3 className="text-2xl font-bold mb-4 text-purple-800 dark:text-purple-200 flex items-center gap-2">
                 ❌ {t('禁忌 6：雜物堆積（能量阻塞）', 'Taboo 6: Clutter Accumulation (Energy Blockage)')}
               </h3>
               <p className="text-lg leading-relaxed mb-4">
@@ -854,8 +854,8 @@ export default function ChildrensRoomHealthArticle() {
                 </div>
               </div>
 
-              <div className="mt-8 bg-green-50 dark:bg-green-950/20 rounded-xl p-6 border border-green-200 dark:border-green-800">
-                <p className="text-lg font-semibold text-green-700 dark:text-green-300">
+              <div className="mt-8 bg-green-50 dark:bg-green-950/40 rounded-xl p-6 border border-green-300 dark:border-green-800">
+                <p className="text-lg font-semibold text-green-800 dark:text-green-200">
                   💚 {t('張太太的感言', 'Mrs. Zhang\'s Testimonial')}:
                 </p>
                 <p className="text-lg leading-relaxed mt-4 italic">
@@ -976,13 +976,13 @@ export default function ChildrensRoomHealthArticle() {
               </div>
             </div>
 
-            <div className="mt-8 bg-yellow-100 dark:bg-yellow-950/30 rounded-xl p-6 border border-yellow-300 dark:border-yellow-700">
-              <p className="text-lg font-semibold text-yellow-900 dark:text-yellow-200 mb-4">
+            <div className="mt-8 bg-yellow-100 dark:bg-yellow-950/40 rounded-xl p-6 border border-yellow-400 dark:border-yellow-700">
+              <p className="text-lg font-semibold text-yellow-950 dark:text-yellow-100 mb-4">
                 ⚠️ {t('重要提示', 'Important Reminder')}:
               </p>
               <ul className="space-y-2 text-lg">
                 <li className="flex items-start gap-2">
-                  <span className="text-yellow-800 dark:text-yellow-300">•</span>
+                  <span className="text-yellow-900 dark:text-yellow-200">•</span>
                   <span>
                     {t(
                       '如果有超過 5 項未達標，孩子的健康可能正在受到威脅',
@@ -991,7 +991,7 @@ export default function ChildrensRoomHealthArticle() {
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-yellow-800 dark:text-yellow-300">•</span>
+                  <span className="text-yellow-900 dark:text-yellow-200">•</span>
                   <span>
                     {t(
                       '建議立即預約免費兒童房風水與空氣質量專業檢測',
@@ -1000,7 +1000,7 @@ export default function ChildrensRoomHealthArticle() {
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-yellow-800 dark:text-yellow-300">•</span>
+                  <span className="text-yellow-900 dark:text-yellow-200">•</span>
                   <span>
                     {t(
                       '我們的專家將為您提供詳細報告和改善方案',
