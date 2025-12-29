@@ -79,6 +79,18 @@ export default function Blog() {
       image: '/images/blog/living-room-wealth-position.jpg',
       category: t('家庭財運', 'Family Fortune'),
     },
+    {
+      id: 'insomnia-solution-quantum-fengshui',
+      title: t('失眠救星！量子風水空氣淨化如何讓您一覺到天亮（附科學證據）', 'Insomnia Solution! How Quantum Feng Shui Air Purification Helps You Sleep Through the Night (With Scientific Evidence)'),
+      excerpt: t(
+        '香港有超過 30% 的人口深受失眠困擾。您是否也曾在凌晨 3 點醒來，翻來覆去無法入睡？失眠不僅影響日間精神，更會導致免疫力下降、情緒失控。本文將揭示失眠的真正原因，以及如何透過量子風水空氣淨化技術，結合科學與風水智慧，讓您重拾深度睡眠，一覺到天亮！',
+        'Over 30% of Hong Kong\'s population suffers from insomnia. Do you also wake up at 3 AM, tossing and turning unable to sleep? Insomnia not only affects daytime energy but also leads to weakened immunity and emotional instability. This article reveals the real causes of insomnia and how quantum feng shui air purification technology combines science and feng shui wisdom to help you regain deep sleep!'
+      ),
+      date: '2025-12-29',
+      readTime: '15',
+      image: '/images/blog/insomnia-struggle.jpg',
+      category: t('睡眠健康', 'Sleep Health'),
+    },
   ];
 
   return (
