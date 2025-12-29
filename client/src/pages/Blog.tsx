@@ -5,8 +5,44 @@ import { Calendar, Clock, ArrowRight } from 'lucide-react';
 export default function Blog() {
   const { t } = useLanguage();
 
-  // Blog article data
+  // Blog article data (sorted by date descending - newest first)
   const articles = [
+    {
+      id: 'childrens-room-health-fengshui',
+      title: t('孩子經常生病？可能是兒童房風水與空氣質量出了問題', 'Is Your Child Getting Sick Often? It Might Be Children\'s Room Feng Shui and Air Quality Issues'),
+      excerpt: t(
+        '香港有超過 30% 的兒童患有過敏性鼻炎，15% 的兒童患有哮喘。如果您的孩子經常感冒、咳嗽、流鼻涕，或者睡眠質量差、注意力不集中，問題可能不僅僅是體質弱，而是兒童房的風水與空氣質量出了問題。本文揭示 5 大健康隱患和 6 大風水禁忌，並提供專業解決方案。',
+        'Over 30% of children in Hong Kong suffer from allergic rhinitis, and 15% have asthma. If your child frequently catches colds, coughs, has a runny nose, or experiences poor sleep quality and difficulty concentrating, the problem might not just be a weak constitution, but issues with the children\'s room feng shui and air quality. This article reveals 5 major health hazards and 6 feng shui taboos, providing professional solutions.'
+      ),
+      date: '2025-12-29',
+      readTime: '18',
+      image: '/images/blog/unhealthy-childrens-room.jpg',
+      category: t('兒童健康', 'Children\'s Health'),
+    },
+    {
+      id: 'insomnia-solution-quantum-fengshui',
+      title: t('失眠救星！量子風水空氣淨化如何讓您一覺到天亮（附科學證據）', 'Insomnia Solution! How Quantum Feng Shui Air Purification Helps You Sleep Through the Night (With Scientific Evidence)'),
+      excerpt: t(
+        '香港有超過 30% 的人口深受失眠困擾。您是否也曾在凌晨 3 點醒來，翻來覆去無法入睡？失眠不僅影響日間精神，更會導致免疫力下降、情緒失控。本文將揭示失眠的真正原因，以及如何透過量子風水空氣淨化技術，結合科學與風水智慧，讓您重拾深度睡眠，一覺到天亮！',
+        'Over 30% of Hong Kong\'s population suffers from insomnia. Do you also wake up at 3 AM, tossing and turning unable to sleep? Insomnia not only affects daytime energy but also leads to weakened immunity and emotional instability. This article reveals the real causes of insomnia and how quantum feng shui air purification technology combines science and feng shui wisdom to help you regain deep sleep!'
+      ),
+      date: '2025-12-29',
+      readTime: '15',
+      image: '/images/blog/insomnia-struggle.jpg',
+      category: t('睡眠健康', 'Sleep Health'),
+    },
+    {
+      id: 'living-room-wealth-feng-shui',
+      title: t('客廳財位空氣淨化機擺放秘訣 - 量子風水提升家庭財運', 'Living Room Wealth Position Air Purifier Placement Secrets - Quantum Feng Shui to Enhance Family Fortune'),
+      excerpt: t(
+        '你知道嗎？客廳的「財位」不僅影響家庭財運，更是整個家居能量場的核心！如果在財位正確擺放空氣淨化機，配合量子調頻技術，不僅能淨化空氣，更能激活財運能量，為全家帶來源源不絕的豐盛與繁榮。本文將揭秘客廳財位的奧秘，教你如何打造招財進寶的黃金家居！',
+        'Did you know? The "wealth position" in your living room not only affects family fortune but is also the core of your home\'s energy field! If you correctly place an air purifier in the wealth position and combine it with quantum frequency tuning technology, you can not only purify the air but also activate fortune energy. This article reveals the secrets of the living room wealth position!'
+      ),
+      date: '2025-12-27',
+      readTime: '12',
+      image: '/images/blog/living-room-wealth-position.jpg',
+      category: t('家庭財運', 'Family Fortune'),
+    },
     {
       id: 'quantum-feng-shui-guide-2026',
       title: t('量子風水空氣淨化完全指南 - 2026 年最全面的解決方案', 'Complete Guide to Quantum Feng Shui Air Purification - The Most Comprehensive Solution for 2026'),
@@ -66,30 +102,6 @@ export default function Blog() {
       readTime: '10',
       image: '/images/blog/office-career-placement.jpg',
       category: t('事業發展', 'Career Development'),
-    },
-    {
-      id: 'living-room-wealth-feng-shui',
-      title: t('客廳財位空氣淨化機擺放秘訣 - 量子風水提升家庭財運', 'Living Room Wealth Position Air Purifier Placement Secrets - Quantum Feng Shui to Enhance Family Fortune'),
-      excerpt: t(
-        '你知道嗎？客廳的「財位」不僅影響家庭財運，更是整個家居能量場的核心！如果在財位正確擺放空氣淨化機，配合量子調頻技術，不僅能淨化空氣，更能激活財運能量，為全家帶來源源不絕的豐盛與繁榮。本文將揭秘客廳財位的奧秘，教你如何打造招財進寶的黃金家居！',
-        'Did you know? The "wealth position" in your living room not only affects family fortune but is also the core of your home\'s energy field! If you correctly place an air purifier in the wealth position and combine it with quantum frequency tuning technology, you can not only purify the air but also activate fortune energy. This article reveals the secrets of the living room wealth position!'
-      ),
-      date: '2025-12-27',
-      readTime: '12',
-      image: '/images/blog/living-room-wealth-position.jpg',
-      category: t('家庭財運', 'Family Fortune'),
-    },
-    {
-      id: 'insomnia-solution-quantum-fengshui',
-      title: t('失眠救星！量子風水空氣淨化如何讓您一覺到天亮（附科學證據）', 'Insomnia Solution! How Quantum Feng Shui Air Purification Helps You Sleep Through the Night (With Scientific Evidence)'),
-      excerpt: t(
-        '香港有超過 30% 的人口深受失眠困擾。您是否也曾在凌晨 3 點醒來，翻來覆去無法入睡？失眠不僅影響日間精神，更會導致免疫力下降、情緒失控。本文將揭示失眠的真正原因，以及如何透過量子風水空氣淨化技術，結合科學與風水智慧，讓您重拾深度睡眠，一覺到天亮！',
-        'Over 30% of Hong Kong\'s population suffers from insomnia. Do you also wake up at 3 AM, tossing and turning unable to sleep? Insomnia not only affects daytime energy but also leads to weakened immunity and emotional instability. This article reveals the real causes of insomnia and how quantum feng shui air purification technology combines science and feng shui wisdom to help you regain deep sleep!'
-      ),
-      date: '2025-12-29',
-      readTime: '15',
-      image: '/images/blog/insomnia-struggle.jpg',
-      category: t('睡眠健康', 'Sleep Health'),
     },
   ];
 

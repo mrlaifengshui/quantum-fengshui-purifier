@@ -186,8 +186,8 @@ export default function ChildrensRoomHealthArticle() {
                   </span>
                 </li>
               </ul>
-              <div className="bg-red-50 dark:bg-red-950/20 rounded-xl p-4 border border-red-200 dark:border-red-800">
-                <p className="text-red-700 dark:text-red-300 font-semibold">
+              <div className="bg-red-100 dark:bg-red-950/30 rounded-xl p-4 border border-red-300 dark:border-red-700">
+                <p className="text-red-900 dark:text-red-200 font-semibold">
                   ⚠️ {t('警告', 'Warning')}:{' '}
                   {t(
                     '即使聞不到刺鼻氣味，甲醛依然可能超標！兒童房必須使用專業 HEPA 過濾系統。',
@@ -232,8 +232,8 @@ export default function ChildrensRoomHealthArticle() {
                   </span>
                 </li>
               </ul>
-              <div className="bg-orange-50 dark:bg-orange-950/20 rounded-xl p-4 border border-orange-200 dark:border-orange-800">
-                <p className="text-orange-700 dark:text-orange-300 font-semibold">
+              <div className="bg-orange-100 dark:bg-orange-950/30 rounded-xl p-4 border border-orange-300 dark:border-orange-700">
+                <p className="text-orange-900 dark:text-orange-200 font-semibold">
                   💡 {t('解決方案', 'Solution')}:{' '}
                   {t(
                     '定期高溫清洗（60°C 以上）+ 使用帶 HEPA 過濾的空氣淨化機，每 2 週曬太陽一次',
@@ -976,13 +976,13 @@ export default function ChildrensRoomHealthArticle() {
               </div>
             </div>
 
-            <div className="mt-8 bg-yellow-50 dark:bg-yellow-950/20 rounded-xl p-6 border border-yellow-200 dark:border-yellow-800">
-              <p className="text-lg font-semibold text-yellow-700 dark:text-yellow-300 mb-4">
+            <div className="mt-8 bg-yellow-100 dark:bg-yellow-950/30 rounded-xl p-6 border border-yellow-300 dark:border-yellow-700">
+              <p className="text-lg font-semibold text-yellow-900 dark:text-yellow-200 mb-4">
                 ⚠️ {t('重要提示', 'Important Reminder')}:
               </p>
               <ul className="space-y-2 text-lg">
                 <li className="flex items-start gap-2">
-                  <span className="text-yellow-600 dark:text-yellow-400">•</span>
+                  <span className="text-yellow-800 dark:text-yellow-300">•</span>
                   <span>
                     {t(
                       '如果有超過 5 項未達標，孩子的健康可能正在受到威脅',
@@ -991,7 +991,7 @@ export default function ChildrensRoomHealthArticle() {
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-yellow-600 dark:text-yellow-400">•</span>
+                  <span className="text-yellow-800 dark:text-yellow-300">•</span>
                   <span>
                     {t(
                       '建議立即預約免費兒童房風水與空氣質量專業檢測',
@@ -1000,7 +1000,7 @@ export default function ChildrensRoomHealthArticle() {
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-yellow-600 dark:text-yellow-400">•</span>
+                  <span className="text-yellow-800 dark:text-yellow-300">•</span>
                   <span>
                     {t(
                       '我們的專家將為您提供詳細報告和改善方案',
