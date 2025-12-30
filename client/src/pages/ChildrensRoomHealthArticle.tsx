@@ -431,21 +431,7 @@ export default function ChildrensRoomHealthArticle() {
             </div>
           </div>
 
-          {/* Call to Action */}
-          <div className="bg-gradient-to-br from-accent/20 to-secondary/20 border-l-4 border-accent rounded-r-2xl p-8">
-            <h3 className="text-2xl font-bold text-foreground mb-4">
-              {t('立即預約免費兒童房健康檢測', 'Book Free Children\'s Room Health Testing Now')}
-            </h3>
-            <p className="text-lg text-muted-foreground mb-6">
-              {t(
-                '我們提供免費上門兒童房健康檢測服務，幫助您了解孩子的居住環境現狀，並提供專業的改善建議。為了孩子的健康，不要再等待！立即聯繫我們！',
-                'We offer free on-site children\'s room health testing service to help you understand your child\'s living environment and provide professional improvement suggestions. For your child\'s health, don\'t wait! Contact us now!'
-              )}
-            </p>
-            <p className="text-xl font-bold text-accent">
-              {t('WhatsApp：+852 6888 0000', 'WhatsApp: +852 6888 0000')}
-            </p>
-          </div>
+
         </article>
       </div>
     </div>

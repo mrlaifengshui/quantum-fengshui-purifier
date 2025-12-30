@@ -339,21 +339,7 @@ export default function HealingSpaceArticle() {
             </div>
           </div>
 
-          {/* Call to Action */}
-          <div className="bg-gradient-to-br from-accent/20 to-secondary/20 border-l-4 border-accent rounded-r-2xl p-8">
-            <h3 className="text-2xl font-bold text-foreground mb-4">
-              {t('立即預約免費空氣質量檢測', 'Book Free Air Quality Testing Now')}
-            </h3>
-            <p className="text-lg text-muted-foreground mb-6">
-              {t(
-                '我們提供免費上門空氣質量檢測服務，幫助您了解家居環境現狀，並提供專業的療癒空間設計建議。名額有限，立即聯繫我們！',
-                'We offer free on-site air quality testing service to help you understand your home environment and provide professional healing space design suggestions. Limited slots, contact us now!'
-              )}
-            </p>
-            <p className="text-xl font-bold text-accent">
-              {t('WhatsApp：+852 6888 0000', 'WhatsApp: +852 6888 0000')}
-            </p>
-          </div>
+
         </article>
       </div>
     </div>
