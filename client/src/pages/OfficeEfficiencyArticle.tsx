@@ -410,6 +410,24 @@ export default function OfficeEfficiencyArticle() {
             </div>
           </div>
 
+          {/* Visual: Office Floor Plan */}
+          <div className="mb-12 rounded-2xl overflow-hidden shadow-2xl">
+            <img 
+              src="/images/blog/office-floor-plan.jpg" 
+              alt={t(
+                '辦公室風水佈局平面圖 - 專業的辦公空間規劃，展示最佳座位擺放、空氣淨化器位置和能量流動路徑',
+                'Office Feng Shui Layout Floor Plan - Professional office space planning showing optimal seat arrangement, air purifier placement, and energy flow paths'
+              )}
+              className="w-full h-auto"
+            />
+            <p className="text-center text-sm text-muted-foreground mt-4 px-4">
+              {t(
+                '專業的辦公室風水佈局圖，清楚標示座位方位、空氣淨化器擺放位置及能量流動方向',
+                'Professional office feng shui layout diagram clearly marking seat orientations, air purifier placements, and energy flow directions'
+              )}
+            </p>
+          </div>
+
           {/* Section 3: Real Case Study */}
           <h2 className="text-3xl font-bold text-foreground mb-6">
             {t('真實案例：科技公司改造前後對比', 'Real Case: Tech Company Before-After Transformation')}
@@ -425,6 +443,18 @@ export default function OfficeEfficiencyArticle() {
                 'This company faced severe turnover issues (annual turnover rate 32%), employees frequently complained about stuffy office, poor air quality, and easy fatigue. After using quantum feng shui air purification service and optimizing office layout:'
               )}
             </p>
+
+            {/* Visual: Office Before-After Transformation */}
+            <div className="mb-8 rounded-xl overflow-hidden shadow-2xl">
+              <img 
+                src="/images/blog/office-before-after.jpg" 
+                alt={t(
+                  '辦公室改造前後對比 - 展示量子風水優化前後的辦公環境變化，員工工作狀態明顯改善',
+                  'Office Before-After Transformation - Showing office environment changes before and after quantum feng shui optimization, employee work conditions significantly improved'
+                )}
+                className="w-full h-auto"
+              />
+            </div>
 
             <div className="grid md:grid-cols-2 gap-6 mb-6">
               <div className="bg-background/50 rounded-lg p-6">
