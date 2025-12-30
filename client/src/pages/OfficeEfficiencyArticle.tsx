@@ -238,6 +238,24 @@ export default function OfficeEfficiencyArticle() {
             </ul>
           </div>
 
+          {/* Visual: Energy Flow Optimization */}
+          <div className="mb-12 rounded-2xl overflow-hidden shadow-2xl">
+            <img 
+              src="/images/blog/office-energy-flow-optimization.jpg" 
+              alt={t(
+                '辦公室能量場優化對比 - 改善前後的辦公環境，展示風水佈局和空氣淨化如何優化能量流動',
+                'Office Energy Field Optimization Comparison - Before and after office environment showing how feng shui layout and air purification optimize energy flow'
+              )}
+              className="w-full h-auto"
+            />
+            <p className="text-center text-sm text-muted-foreground mt-4 px-4">
+              {t(
+                '正確的風水佈局和空氣淨化系統可以顯著改善辦公室能量流動，提升員工效率和滿意度',
+                'Proper feng shui layout and air purification system can significantly improve office energy flow, boosting employee efficiency and satisfaction'
+              )}
+            </p>
+          </div>
+
           {/* Section 2: The Solution */}
           <h2 className="text-3xl font-bold text-foreground mb-6">
             {t('量子風水空氣淨化：全方位提升辦公環境', 'Quantum Feng Shui Air Purification: Comprehensive Office Environment Enhancement')}
