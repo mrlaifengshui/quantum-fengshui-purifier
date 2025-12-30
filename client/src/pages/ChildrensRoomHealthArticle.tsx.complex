@@ -69,9 +69,8 @@ export default function ChildrensRoomHealthArticle() {
       </section>
 
       {/* Article Content */}
-      <div className="py-8 md:py-12">
+      <article className="py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <article className="prose prose-lg max-w-none">
           {/* Section 1: Hong Kong Children Health Crisis */}
           <section className="mb-16">
             <h2 className="text-3xl font-bold mb-6 text-foreground flex items-center gap-3">
@@ -83,7 +82,7 @@ export default function ChildrensRoomHealthArticle() {
               <h3 className="text-2xl font-bold mb-4 text-red-600 dark:text-red-400">
                 {t('讓人震驚的數據', 'Shocking Data')}
               </h3>
-              <ul className="space-y-3 text-lg">
+              <ul className="space-y-3 text-lg text-gray-900 dark:text-gray-100">
                 <li className="flex items-start gap-3">
                   <span className="text-red-500 mt-1">⚠️</span>
                   <span>
@@ -123,14 +122,14 @@ export default function ChildrensRoomHealthArticle() {
               </ul>
             </div>
 
-            <p className="text-lg leading-relaxed mb-6">
+            <p className="text-lg leading-relaxed mb-6 text-gray-900 dark:text-gray-100">
               {t(
                 '作為父母，我們總是希望給孩子最好的一切。但您知道嗎？即使您每天辛苦工作、購買最好的食物和衣服，如果忽略了兒童房的空氣質量和風水佈局，孩子的健康依然可能受到嚴重威脅。',
                 'As parents, we always want to give our children the best of everything. But did you know? Even if you work hard every day and buy the best food and clothes, if you ignore the air quality and feng shui layout of the children\'s room, your child\'s health may still be seriously threatened.'
               )}
             </p>
 
-            <p className="text-lg leading-relaxed mb-6">
+            <p className="text-lg leading-relaxed mb-6 text-gray-900 dark:text-gray-100">
               {t(
                 '頻繁生病不僅影響孩子的身體發育，更會影響學習表現、情緒穩定和社交能力。長期下來，還可能導致免疫力低下，形成惡性循環。',
                 'Frequent illness not only affects children\'s physical development but also impacts academic performance, emotional stability, and social skills. Over time, it may lead to weakened immunity, creating a vicious cycle.'
@@ -375,7 +374,7 @@ export default function ChildrensRoomHealthArticle() {
               <h3 className="text-2xl font-bold mb-4 text-red-700 dark:text-red-300 flex items-center gap-2">
                 ❌ {t('禁忌 1：床頭對門（驚嚇頻繁）', 'Taboo 1: Bed Head Facing Door (Frequent Startling)')}
               </h3>
-              <p className="text-lg leading-relaxed mb-4">
+              <p className="text-lg leading-relaxed mb-4 text-gray-900 dark:text-gray-100">
                 {t(
                   '門是氣流進出的通道，如果床頭對著門，孩子睡眠時會受到氣流沖擊，導致睡眠不安、頻繁驚醒、容易做噩夢。長期下來，孩子會變得膽小、易受驚嚇，免疫力也會下降。',
                   'The door is a passage for airflow. If the bed head faces the door, children will be impacted by airflow during sleep, leading to restless sleep, frequent awakenings, and nightmares. Over time, children become timid, easily startled, and have weakened immunity.'
@@ -395,7 +394,7 @@ export default function ChildrensRoomHealthArticle() {
               <h3 className="text-2xl font-bold mb-4 text-orange-700 dark:text-orange-300 flex items-center gap-2">
                 ❌ {t('禁忌 2：樑壓床（壓迫感重）', 'Taboo 2: Beam Over Bed (Heavy Pressure)')}
               </h3>
-              <p className="text-lg leading-relaxed mb-4">
+              <p className="text-lg leading-relaxed mb-4 text-gray-900 dark:text-gray-100">
                 {t(
                   '天花板的橫樑正對床鋪會產生強烈的壓迫感，影響孩子的身心發展。孩子會感到莫名的壓力、睡眠質量差、容易頭痛、注意力不集中。',
                   'A beam on the ceiling directly over the bed creates a strong sense of pressure, affecting children\'s physical and mental development. Children feel inexplicable pressure, poor sleep quality, frequent headaches, and difficulty concentrating.'
@@ -415,7 +414,7 @@ export default function ChildrensRoomHealthArticle() {
               <h3 className="text-2xl font-bold mb-4 text-yellow-800 dark:text-yellow-200 flex items-center gap-2">
                 ❌ {t('禁忌 3：鏡子對床（睡眠不安）', 'Taboo 3: Mirror Facing Bed (Restless Sleep)')}
               </h3>
-              <p className="text-lg leading-relaxed mb-4">
+              <p className="text-lg leading-relaxed mb-4 text-gray-900 dark:text-gray-100">
                 {t(
                   '鏡子在風水中屬陰，會反射能量。如果鏡子正對床鋪，孩子半夜醒來看到鏡中的影子會受到驚嚇，導致睡眠質量差、多夢、精神緊張。',
                   'Mirrors are considered yin in feng shui and reflect energy. If a mirror faces the bed, children who wake up at night and see their reflection will be startled, leading to poor sleep quality, many dreams, and mental tension.'
@@ -435,7 +434,7 @@ export default function ChildrensRoomHealthArticle() {
               <h3 className="text-2xl font-bold mb-4 text-green-800 dark:text-green-200 flex items-center gap-2">
                 ❌ {t('禁忌 4：尖角沖射（易受驚）', 'Taboo 4: Sharp Corner Pointing (Easily Startled)')}
               </h3>
-              <p className="text-lg leading-relaxed mb-4">
+              <p className="text-lg leading-relaxed mb-4 text-gray-900 dark:text-gray-100">
                 {t(
                   '牆角、家具的尖角對著床鋪或書桌，會形成「煞氣」，讓孩子感到不安、易受驚嚇、情緒不穩定，甚至可能導致意外受傷。',
                   'Sharp corners of walls or furniture pointing at the bed or desk create "sha qi," making children feel uneasy, easily startled, emotionally unstable, and may even lead to accidental injuries.'
@@ -455,7 +454,7 @@ export default function ChildrensRoomHealthArticle() {
               <h3 className="text-2xl font-bold mb-4 text-blue-800 dark:text-blue-200 flex items-center gap-2">
                 ❌ {t('禁忌 5：顏色過深（情緒壓抑）', 'Taboo 5: Colors Too Dark (Emotional Suppression)')}
               </h3>
-              <p className="text-lg leading-relaxed mb-4">
+              <p className="text-lg leading-relaxed mb-4 text-gray-900 dark:text-gray-100">
                 {t(
                   '兒童房使用深色（黑色、深灰、深紫等）會讓空間顯得壓抑、沉重，影響孩子的心理健康，導致情緒低落、缺乏活力、學習興趣減退。',
                   'Using dark colors (black, dark gray, dark purple, etc.) in children\'s rooms makes the space feel oppressive and heavy, affecting children\'s mental health, leading to low mood, lack of vitality, and reduced learning interest.'
@@ -475,7 +474,7 @@ export default function ChildrensRoomHealthArticle() {
               <h3 className="text-2xl font-bold mb-4 text-purple-800 dark:text-purple-200 flex items-center gap-2">
                 ❌ {t('禁忌 6：雜物堆積（能量阻塞）', 'Taboo 6: Clutter Accumulation (Energy Blockage)')}
               </h3>
-              <p className="text-lg leading-relaxed mb-4">
+              <p className="text-lg leading-relaxed mb-4 text-gray-900 dark:text-gray-100">
                 {t(
                   '兒童房雜物過多會阻塞氣流，讓空間能量無法流動，導致孩子思維混亂、注意力不集中、學習效率低下，還會影響呼吸系統健康。',
                   'Too much clutter in children\'s rooms blocks airflow, preventing energy from flowing, leading to confused thinking, difficulty concentrating, low learning efficiency, and affecting respiratory health.'
@@ -525,7 +524,7 @@ export default function ChildrensRoomHealthArticle() {
                 <CheckCircle className="w-6 h-6" />
                 {t('1. 兒童房專用過濾系統', '1. Children\'s Room Specialized Filtration System')}
               </h3>
-              <ul className="space-y-3 text-lg">
+              <ul className="space-y-3 text-lg text-gray-900 dark:text-gray-100">
                 <li className="flex items-start gap-3">
                   <span className="text-green-500 text-xl">✓</span>
                   <span>
@@ -571,7 +570,7 @@ export default function ChildrensRoomHealthArticle() {
                 <CheckCircle className="w-6 h-6" />
                 {t('2. 量子調頻促進深度睡眠', '2. Quantum Frequency Tuning for Deep Sleep')}
               </h3>
-              <ul className="space-y-3 text-lg">
+              <ul className="space-y-3 text-lg text-gray-900 dark:text-gray-100">
                 <li className="flex items-start gap-3">
                   <span className="text-green-500 text-xl">✓</span>
                   <span>
@@ -608,7 +607,7 @@ export default function ChildrensRoomHealthArticle() {
                 <CheckCircle className="w-6 h-6" />
                 {t('3. 風水擺位增強學習運', '3. Feng Shui Positioning to Enhance Learning Fortune')}
               </h3>
-              <ul className="space-y-3 text-lg">
+              <ul className="space-y-3 text-lg text-gray-900 dark:text-gray-100">
                 <li className="flex items-start gap-3">
                   <span className="text-green-500 text-xl">✓</span>
                   <span>
@@ -645,7 +644,7 @@ export default function ChildrensRoomHealthArticle() {
                 <CheckCircle className="w-6 h-6" />
                 {t('4. 靜音模式保護睡眠', '4. Silent Mode to Protect Sleep')}
               </h3>
-              <ul className="space-y-3 text-lg">
+              <ul className="space-y-3 text-lg text-gray-900 dark:text-gray-100">
                 <li className="flex items-start gap-3">
                   <span className="text-green-500 text-xl">✓</span>
                   <span>
@@ -688,7 +687,7 @@ export default function ChildrensRoomHealthArticle() {
               <h3 className="text-2xl font-bold mb-4 text-accent">
                 {t('案例背景', 'Case Background')}
               </h3>
-              <p className="text-lg leading-relaxed mb-6">
+              <p className="text-lg leading-relaxed mb-6 text-gray-900 dark:text-gray-100">
                 {t(
                   '張太太的兒子小明（6 歲）從 4 歲開始就頻繁生病，每個月至少感冒一次，還有嚴重的過敏性鼻炎。每天早上起床就打噴嚏、流鼻涕，晚上經常咳嗽無法入睡。張太太帶他看了很多醫生，試過各種藥物，但效果都不理想。孩子的身體越來越弱，注意力也越來越難集中，學習成績下降，性格變得內向。',
                   'Mrs. Zhang\'s son Xiao Ming (6 years old) has been frequently ill since age 4, catching colds at least once a month, with severe allergic rhinitis. He sneezes and has a runny nose every morning, and often coughs at night unable to sleep. Mrs. Zhang took him to many doctors and tried various medications, but the results were unsatisfactory. The child became weaker, had more difficulty concentrating, academic performance declined, and personality became introverted.'
@@ -698,7 +697,7 @@ export default function ChildrensRoomHealthArticle() {
               <h3 className="text-2xl font-bold mb-4 text-accent">
                 {t('問題診斷', 'Problem Diagnosis')}
               </h3>
-              <p className="text-lg leading-relaxed mb-6">
+              <p className="text-lg leading-relaxed mb-6 text-gray-900 dark:text-gray-100">
                 {t(
                   '我們的量子風水專家到張太太家中進行全面檢測，發現了以下問題：',
                   'Our quantum feng shui expert conducted a comprehensive inspection at Mrs. Zhang\'s home and found the following issues:'
@@ -805,23 +804,23 @@ export default function ChildrensRoomHealthArticle() {
                   <ul className="space-y-2">
                     <li className="flex items-start gap-2">
                       <span className="text-red-500">📉</span>
-                      <span>{t('每月感冒 3-4 次', 'Catching cold 3-4 times per month')}</span>
+                      <span className="text-gray-900 dark:text-gray-100">{t('每月感冒 3-4 次', 'Catching cold 3-4 times per month')}</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-red-500">📉</span>
-                      <span>{t('每天早上打噴嚏 20+ 次', 'Sneezing 20+ times every morning')}</span>
+                      <span className="text-gray-900 dark:text-gray-100">{t('每天早上打噴嚏 20+ 次', 'Sneezing 20+ times every morning')}</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-red-500">📉</span>
-                      <span>{t('夜間咳嗽，睡眠質量差', 'Coughing at night, poor sleep quality')}</span>
+                      <span className="text-gray-900 dark:text-gray-100">{t('夜間咳嗽，睡眠質量差', 'Coughing at night, poor sleep quality')}</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-red-500">📉</span>
-                      <span>{t('注意力不集中，學習成績下降', 'Difficulty concentrating, declining grades')}</span>
+                      <span className="text-gray-900 dark:text-gray-100">{t('注意力不集中，學習成績下降', 'Difficulty concentrating, declining grades')}</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-red-500">📉</span>
-                      <span>{t('性格內向，不愛說話', 'Introverted personality, reluctant to talk')}</span>
+                      <span className="text-gray-900 dark:text-gray-100">{t('性格內向，不愛說話', 'Introverted personality, reluctant to talk')}</span>
                     </li>
                   </ul>
                 </div>
@@ -833,23 +832,23 @@ export default function ChildrensRoomHealthArticle() {
                   <ul className="space-y-2">
                     <li className="flex items-start gap-2">
                       <span className="text-green-500">📈</span>
-                      <span>{t('3 個月內只感冒 1 次', 'Only 1 cold in 3 months')}</span>
+                      <span className="text-gray-900 dark:text-gray-100">{t('3 個月內只感冒 1 次', 'Only 1 cold in 3 months')}</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-green-500">📈</span>
-                      <span>{t('早上打噴嚏減少 90%', 'Morning sneezing reduced by 90%')}</span>
+                      <span className="text-gray-900 dark:text-gray-100">{t('早上打噴嚏減少 90%', 'Morning sneezing reduced by 90%')}</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-green-500">📈</span>
-                      <span>{t('夜間不再咳嗽，睡眠深沉', 'No more coughing at night, deep sleep')}</span>
+                      <span className="text-gray-900 dark:text-gray-100">{t('夜間不再咳嗽，睡眠深沉', 'No more coughing at night, deep sleep')}</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-green-500">📈</span>
-                      <span>{t('注意力明顯提升，成績進步', 'Significantly improved concentration, better grades')}</span>
+                      <span className="text-gray-900 dark:text-gray-100">{t('注意力明顯提升，成績進步', 'Significantly improved concentration, better grades')}</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-green-500">📈</span>
-                      <span>{t('變得開朗活潑，喜歡交朋友', 'Became cheerful and lively, enjoys making friends')}</span>
+                      <span className="text-gray-900 dark:text-gray-100">{t('變得開朗活潑，喜歡交朋友', 'Became cheerful and lively, enjoys making friends')}</span>
                     </li>
                   </ul>
                 </div>
@@ -906,35 +905,35 @@ export default function ChildrensRoomHealthArticle() {
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
                     <input type="checkbox" className="mt-1 w-5 h-5 text-accent" />
-                    <span>{t('房間無明顯異味（甲醛、黴味等）', 'No obvious odors in room (formaldehyde, mold, etc.)')}</span>
+                    <span className="text-gray-900 dark:text-gray-100">{t('房間無明顯異味（甲醛、黴味等）', 'No obvious odors in room (formaldehyde, mold, etc.)')}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <input type="checkbox" className="mt-1 w-5 h-5 text-accent" />
-                    <span>{t('裝修超過 3 年或使用環保材料', 'Renovated over 3 years ago or used eco-friendly materials')}</span>
+                    <span className="text-gray-900 dark:text-gray-100">{t('裝修超過 3 年或使用環保材料', 'Renovated over 3 years ago or used eco-friendly materials')}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <input type="checkbox" className="mt-1 w-5 h-5 text-accent" />
-                    <span>{t('每天開窗通風至少 2 小時', 'Open windows for ventilation at least 2 hours daily')}</span>
+                    <span className="text-gray-900 dark:text-gray-100">{t('每天開窗通風至少 2 小時', 'Open windows for ventilation at least 2 hours daily')}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <input type="checkbox" className="mt-1 w-5 h-5 text-accent" />
-                    <span>{t('使用 HEPA 過濾空氣淨化機', 'Use air purifier with HEPA filter')}</span>
+                    <span className="text-gray-900 dark:text-gray-100">{t('使用 HEPA 過濾空氣淨化機', 'Use air purifier with HEPA filter')}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <input type="checkbox" className="mt-1 w-5 h-5 text-accent" />
-                    <span>{t('毛絨玩具定期高溫清洗（60°C+）', 'Regularly high-temperature wash stuffed toys (60°C+)')}</span>
+                    <span className="text-gray-900 dark:text-gray-100">{t('毛絨玩具定期高溫清洗（60°C+）', 'Regularly high-temperature wash stuffed toys (60°C+)')}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <input type="checkbox" className="mt-1 w-5 h-5 text-accent" />
-                    <span>{t('書櫃、窗簾無黴斑', 'No mold spots on bookcases or curtains')}</span>
+                    <span className="text-gray-900 dark:text-gray-100">{t('書櫃、窗簾無黴斑', 'No mold spots on bookcases or curtains')}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <input type="checkbox" className="mt-1 w-5 h-5 text-accent" />
-                    <span>{t('空調定期清洗（每季度一次）', 'Air conditioner regularly cleaned (once per quarter)')}</span>
+                    <span className="text-gray-900 dark:text-gray-100">{t('空調定期清洗（每季度一次）', 'Air conditioner regularly cleaned (once per quarter)')}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <input type="checkbox" className="mt-1 w-5 h-5 text-accent" />
-                    <span>{t('室內濕度控制在 40-60%', 'Indoor humidity controlled at 40-60%')}</span>
+                    <span className="text-gray-900 dark:text-gray-100">{t('室內濕度控制在 40-60%', 'Indoor humidity controlled at 40-60%')}</span>
                   </li>
                 </ul>
               </div>
@@ -947,31 +946,31 @@ export default function ChildrensRoomHealthArticle() {
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
                     <input type="checkbox" className="mt-1 w-5 h-5 text-accent" />
-                    <span>{t('床頭不對門', 'Bed head not facing door')}</span>
+                    <span className="text-gray-900 dark:text-gray-100">{t('床頭不對門', 'Bed head not facing door')}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <input type="checkbox" className="mt-1 w-5 h-5 text-accent" />
-                    <span>{t('床上方無橫樑壓頂', 'No beam above bed')}</span>
+                    <span className="text-gray-900 dark:text-gray-100">{t('床上方無橫樑壓頂', 'No beam above bed')}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <input type="checkbox" className="mt-1 w-5 h-5 text-accent" />
-                    <span>{t('鏡子不對床', 'Mirror not facing bed')}</span>
+                    <span className="text-gray-900 dark:text-gray-100">{t('鏡子不對床', 'Mirror not facing bed')}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <input type="checkbox" className="mt-1 w-5 h-5 text-accent" />
-                    <span>{t('床位和書桌避開尖角沖射', 'Bed and desk avoid sharp corner pointing')}</span>
+                    <span className="text-gray-900 dark:text-gray-100">{t('床位和書桌避開尖角沖射', 'Bed and desk avoid sharp corner pointing')}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <input type="checkbox" className="mt-1 w-5 h-5 text-accent" />
-                    <span>{t('房間顏色明亮溫暖', 'Room colors bright and warm')}</span>
+                    <span className="text-gray-900 dark:text-gray-100">{t('房間顏色明亮溫暖', 'Room colors bright and warm')}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <input type="checkbox" className="mt-1 w-5 h-5 text-accent" />
-                    <span>{t('房間整潔無雜物堆積', 'Room tidy without clutter accumulation')}</span>
+                    <span className="text-gray-900 dark:text-gray-100">{t('房間整潔無雜物堆積', 'Room tidy without clutter accumulation')}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <input type="checkbox" className="mt-1 w-5 h-5 text-accent" />
-                    <span>{t('電子設備遠離床鋪（1.5米以上）', 'Electronic devices away from bed (1.5m+)')}</span>
+                    <span className="text-gray-900 dark:text-gray-100">{t('電子設備遠離床鋪（1.5米以上）', 'Electronic devices away from bed (1.5m+)')}</span>
                   </li>
                 </ul>
               </div>
@@ -981,7 +980,7 @@ export default function ChildrensRoomHealthArticle() {
               <p className="text-lg font-semibold text-yellow-950 dark:text-yellow-100 mb-4">
                 ⚠️ {t('重要提示', 'Important Reminder')}:
               </p>
-              <ul className="space-y-2 text-lg">
+              <ul className="space-y-2 text-lg text-gray-900 dark:text-gray-100">
                 <li className="flex items-start gap-2">
                   <span className="text-yellow-900 dark:text-yellow-200">•</span>
                   <span>
@@ -1020,14 +1019,14 @@ export default function ChildrensRoomHealthArticle() {
                 {t('結論：給孩子一個健康的成長環境', 'Conclusion: Give Your Child a Healthy Growth Environment')}
               </h2>
 
-              <p className="text-lg leading-relaxed mb-6">
+              <p className="text-lg leading-relaxed mb-6 text-gray-900 dark:text-gray-100">
                 {t(
                   '孩子的健康是父母最大的心願。如果您的孩子經常生病、睡眠不好、注意力不集中，請不要再歸咎於「體質弱」，而是要從根本上解決問題——改善兒童房的空氣質量和風水佈局。',
                   'Children\'s health is parents\' greatest wish. If your child is frequently ill, has poor sleep, or difficulty concentrating, don\'t blame it on "weak constitution," but solve the problem fundamentally—improve children\'s room air quality and feng shui layout.'
                 )}
               </p>
 
-              <p className="text-lg leading-relaxed mb-6">
+              <p className="text-lg leading-relaxed mb-6 text-gray-900 dark:text-gray-100">
                 {t(
                   '量子風水空氣淨化服務結合了現代科技與傳統智慧，從物質、能量、風水三個層面全方位保護孩子健康。我們已經幫助超過 500 個香港家庭改善了兒童房環境，孩子們的健康狀況都得到了顯著提升。',
                   'Quantum Feng Shui Air Purification Service combines modern technology with traditional wisdom, comprehensively protecting children\'s health from three levels: physical, energy, and feng shui. We have helped over 500 Hong Kong families improve their children\'s room environment, and children\'s health has significantly improved.'
@@ -1098,9 +1097,8 @@ export default function ChildrensRoomHealthArticle() {
               </Link>
             </div>
           </section>
-          </article>
         </div>
-      </div>
+      </article>
     </div>
   );
 }
