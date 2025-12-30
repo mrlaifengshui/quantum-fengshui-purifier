@@ -134,7 +134,7 @@ export default function Blog() {
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-br from-primary/10 via-secondary/5 to-background overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/images/hero-pattern.svg')] opacity-5"></div>
+        <div className="absolute inset-0 bg-[url('/images/hero-pattern.jpg')] opacity-5"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent animate-fade-in">
             {t('量子風水博客', 'Quantum Feng Shui Blog')}

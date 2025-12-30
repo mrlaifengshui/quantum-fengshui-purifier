@@ -11,7 +11,7 @@ export default function Home() {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-background to-secondary py-24 overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/images/hero-pattern.svg')] opacity-10"></div>
+        <div className="absolute inset-0 bg-[url('/images/hero-pattern.jpg')] opacity-10"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="inline-block mb-4 px-4 py-2 bg-accent/20 rounded-full">
             <span className="text-accent font-semibold text-sm">
