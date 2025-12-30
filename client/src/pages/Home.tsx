@@ -9,7 +9,7 @@ export default function Home() {
     <div className="min-h-screen">
       {/* Hero Section - 漸層背景 */}
       <section className="relative bg-gradient-to-br from-primary/20 via-background to-secondary/20 py-20 md:py-32">
-        <div className="absolute inset-0 bg-[url('/images/hero-pattern.svg')] opacity-5"></div>
+        <div className="absolute inset-0 bg-[url('/images/hero-pattern.jpg')] opacity-5"></div>
         <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
           <div className="inline-block mb-6 px-6 py-2 bg-accent/10 border border-accent/30 rounded-full">
             <span className="text-accent font-medium text-sm tracking-wide">
