@@ -116,6 +116,18 @@ export default function Blog() {
       image: '/images/blog/insomnia-struggle.jpg',
       category: t('睡眠健康', 'Sleep Health'),
     },
+    {
+      id: 'office-efficiency-turnover',
+      title: t('員工效率低、離職率高？辦公室風水與空氣環境可能是關鍵', 'Low Employee Efficiency and High Turnover? Office Feng Shui and Air Environment Might Be the Key'),
+      excerpt: t(
+        '香港企業面臨高離職率（18-25%）和低效率問題。本文揭示辦公室風水與空氣質量如何影響員工表現，科學證據證明：改善辦公環境可降低離職率 63%、提升生產力 30%！',
+        'Hong Kong businesses face high turnover (18-25%) and low efficiency. This article reveals how office feng shui and air quality affect employee performance. Scientific evidence shows: improving office environment can reduce turnover by 63% and boost productivity by 30%!'
+      ),
+      date: '2025-12-30',
+      readTime: '15',
+      image: '/images/blog/office-environment-productivity.jpg',
+      category: t('企業管理', 'Business Management'),
+    },
   ];
 
   return (

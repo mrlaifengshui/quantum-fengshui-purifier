@@ -16,6 +16,7 @@ import OfficeCareerArticle from './pages/OfficeCareerArticle';
 import HealingSpaceArticle from './pages/HealingSpaceArticle';
 import ChildrensRoomHealthArticle from './pages/ChildrensRoomHealthArticle';
 import InsomniaSolutionArticle from './pages/InsomniaSolutionArticle';
+import OfficeEfficiencyArticle from './pages/OfficeEfficiencyArticle';
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
 
@@ -43,6 +44,7 @@ export default function App() {
               <Route path="/blog/healing-space-quantum-fengshui" component={HealingSpaceArticle} />
               <Route path="/blog/childrens-room-health-fengshui" component={ChildrensRoomHealthArticle} />
               <Route path="/blog/insomnia-solution-quantum-fengshui" component={InsomniaSolutionArticle} />
+              <Route path="/blog/office-efficiency-turnover" component={OfficeEfficiencyArticle} />
               <Route path="/contact" component={Contact} />
               <Route component={NotFound} />
             </Switch>
