@@ -804,23 +804,23 @@ export default function ChildrensRoomHealthArticle() {
                   <ul className="space-y-2">
                     <li className="flex items-start gap-2">
                       <span className="text-red-500">📉</span>
-                      <span>{t('每月感冒 3-4 次', 'Catching cold 3-4 times per month')}</span>
+                      <span className="text-gray-900 dark:text-gray-100">{t('每月感冒 3-4 次', 'Catching cold 3-4 times per month')}</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-red-500">📉</span>
-                      <span>{t('每天早上打噴嚏 20+ 次', 'Sneezing 20+ times every morning')}</span>
+                      <span className="text-gray-900 dark:text-gray-100">{t('每天早上打噴嚏 20+ 次', 'Sneezing 20+ times every morning')}</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-red-500">📉</span>
-                      <span>{t('夜間咳嗽，睡眠質量差', 'Coughing at night, poor sleep quality')}</span>
+                      <span className="text-gray-900 dark:text-gray-100">{t('夜間咳嗽，睡眠質量差', 'Coughing at night, poor sleep quality')}</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-red-500">📉</span>
-                      <span>{t('注意力不集中，學習成績下降', 'Difficulty concentrating, declining grades')}</span>
+                      <span className="text-gray-900 dark:text-gray-100">{t('注意力不集中，學習成績下降', 'Difficulty concentrating, declining grades')}</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-red-500">📉</span>
-                      <span>{t('性格內向，不愛說話', 'Introverted personality, reluctant to talk')}</span>
+                      <span className="text-gray-900 dark:text-gray-100">{t('性格內向，不愛說話', 'Introverted personality, reluctant to talk')}</span>
                     </li>
                   </ul>
                 </div>
@@ -832,23 +832,23 @@ export default function ChildrensRoomHealthArticle() {
                   <ul className="space-y-2">
                     <li className="flex items-start gap-2">
                       <span className="text-green-500">📈</span>
-                      <span>{t('3 個月內只感冒 1 次', 'Only 1 cold in 3 months')}</span>
+                      <span className="text-gray-900 dark:text-gray-100">{t('3 個月內只感冒 1 次', 'Only 1 cold in 3 months')}</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-green-500">📈</span>
-                      <span>{t('早上打噴嚏減少 90%', 'Morning sneezing reduced by 90%')}</span>
+                      <span className="text-gray-900 dark:text-gray-100">{t('早上打噴嚏減少 90%', 'Morning sneezing reduced by 90%')}</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-green-500">📈</span>
-                      <span>{t('夜間不再咳嗽，睡眠深沉', 'No more coughing at night, deep sleep')}</span>
+                      <span className="text-gray-900 dark:text-gray-100">{t('夜間不再咳嗽，睡眠深沉', 'No more coughing at night, deep sleep')}</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-green-500">📈</span>
-                      <span>{t('注意力明顯提升，成績進步', 'Significantly improved concentration, better grades')}</span>
+                      <span className="text-gray-900 dark:text-gray-100">{t('注意力明顯提升，成績進步', 'Significantly improved concentration, better grades')}</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-green-500">📈</span>
-                      <span>{t('變得開朗活潑，喜歡交朋友', 'Became cheerful and lively, enjoys making friends')}</span>
+                      <span className="text-gray-900 dark:text-gray-100">{t('變得開朗活潑，喜歡交朋友', 'Became cheerful and lively, enjoys making friends')}</span>
                     </li>
                   </ul>
                 </div>
@@ -905,35 +905,35 @@ export default function ChildrensRoomHealthArticle() {
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
                     <input type="checkbox" className="mt-1 w-5 h-5 text-accent" />
-                    <span>{t('房間無明顯異味（甲醛、黴味等）', 'No obvious odors in room (formaldehyde, mold, etc.)')}</span>
+                    <span className="text-gray-900 dark:text-gray-100">{t('房間無明顯異味（甲醛、黴味等）', 'No obvious odors in room (formaldehyde, mold, etc.)')}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <input type="checkbox" className="mt-1 w-5 h-5 text-accent" />
-                    <span>{t('裝修超過 3 年或使用環保材料', 'Renovated over 3 years ago or used eco-friendly materials')}</span>
+                    <span className="text-gray-900 dark:text-gray-100">{t('裝修超過 3 年或使用環保材料', 'Renovated over 3 years ago or used eco-friendly materials')}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <input type="checkbox" className="mt-1 w-5 h-5 text-accent" />
-                    <span>{t('每天開窗通風至少 2 小時', 'Open windows for ventilation at least 2 hours daily')}</span>
+                    <span className="text-gray-900 dark:text-gray-100">{t('每天開窗通風至少 2 小時', 'Open windows for ventilation at least 2 hours daily')}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <input type="checkbox" className="mt-1 w-5 h-5 text-accent" />
-                    <span>{t('使用 HEPA 過濾空氣淨化機', 'Use air purifier with HEPA filter')}</span>
+                    <span className="text-gray-900 dark:text-gray-100">{t('使用 HEPA 過濾空氣淨化機', 'Use air purifier with HEPA filter')}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <input type="checkbox" className="mt-1 w-5 h-5 text-accent" />
-                    <span>{t('毛絨玩具定期高溫清洗（60°C+）', 'Regularly high-temperature wash stuffed toys (60°C+)')}</span>
+                    <span className="text-gray-900 dark:text-gray-100">{t('毛絨玩具定期高溫清洗（60°C+）', 'Regularly high-temperature wash stuffed toys (60°C+)')}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <input type="checkbox" className="mt-1 w-5 h-5 text-accent" />
-                    <span>{t('書櫃、窗簾無黴斑', 'No mold spots on bookcases or curtains')}</span>
+                    <span className="text-gray-900 dark:text-gray-100">{t('書櫃、窗簾無黴斑', 'No mold spots on bookcases or curtains')}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <input type="checkbox" className="mt-1 w-5 h-5 text-accent" />
-                    <span>{t('空調定期清洗（每季度一次）', 'Air conditioner regularly cleaned (once per quarter)')}</span>
+                    <span className="text-gray-900 dark:text-gray-100">{t('空調定期清洗（每季度一次）', 'Air conditioner regularly cleaned (once per quarter)')}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <input type="checkbox" className="mt-1 w-5 h-5 text-accent" />
-                    <span>{t('室內濕度控制在 40-60%', 'Indoor humidity controlled at 40-60%')}</span>
+                    <span className="text-gray-900 dark:text-gray-100">{t('室內濕度控制在 40-60%', 'Indoor humidity controlled at 40-60%')}</span>
                   </li>
                 </ul>
               </div>
@@ -946,31 +946,31 @@ export default function ChildrensRoomHealthArticle() {
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
                     <input type="checkbox" className="mt-1 w-5 h-5 text-accent" />
-                    <span>{t('床頭不對門', 'Bed head not facing door')}</span>
+                    <span className="text-gray-900 dark:text-gray-100">{t('床頭不對門', 'Bed head not facing door')}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <input type="checkbox" className="mt-1 w-5 h-5 text-accent" />
-                    <span>{t('床上方無橫樑壓頂', 'No beam above bed')}</span>
+                    <span className="text-gray-900 dark:text-gray-100">{t('床上方無橫樑壓頂', 'No beam above bed')}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <input type="checkbox" className="mt-1 w-5 h-5 text-accent" />
-                    <span>{t('鏡子不對床', 'Mirror not facing bed')}</span>
+                    <span className="text-gray-900 dark:text-gray-100">{t('鏡子不對床', 'Mirror not facing bed')}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <input type="checkbox" className="mt-1 w-5 h-5 text-accent" />
-                    <span>{t('床位和書桌避開尖角沖射', 'Bed and desk avoid sharp corner pointing')}</span>
+                    <span className="text-gray-900 dark:text-gray-100">{t('床位和書桌避開尖角沖射', 'Bed and desk avoid sharp corner pointing')}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <input type="checkbox" className="mt-1 w-5 h-5 text-accent" />
-                    <span>{t('房間顏色明亮溫暖', 'Room colors bright and warm')}</span>
+                    <span className="text-gray-900 dark:text-gray-100">{t('房間顏色明亮溫暖', 'Room colors bright and warm')}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <input type="checkbox" className="mt-1 w-5 h-5 text-accent" />
-                    <span>{t('房間整潔無雜物堆積', 'Room tidy without clutter accumulation')}</span>
+                    <span className="text-gray-900 dark:text-gray-100">{t('房間整潔無雜物堆積', 'Room tidy without clutter accumulation')}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <input type="checkbox" className="mt-1 w-5 h-5 text-accent" />
-                    <span>{t('電子設備遠離床鋪（1.5米以上）', 'Electronic devices away from bed (1.5m+)')}</span>
+                    <span className="text-gray-900 dark:text-gray-100">{t('電子設備遠離床鋪（1.5米以上）', 'Electronic devices away from bed (1.5m+)')}</span>
                   </li>
                 </ul>
               </div>

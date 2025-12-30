@@ -85,7 +85,7 @@ export default function HealingSpaceArticle() {
               <ul className="space-y-3 text-lg text-gray-900 dark:text-gray-100">
                 <li className="flex items-start gap-3">
                   <span className="text-red-500 mt-1">📊</span>
-                  <span>
+                  <span className="text-gray-900 dark:text-gray-100">
                     {t(
                       '超過 60% 的香港人承受中度到高度心理壓力（香港精神健康調查 2024）',
                       'Over 60% of Hong Kong people experience moderate to high psychological stress (HK Mental Health Survey 2024)'
@@ -94,7 +94,7 @@ export default function HealingSpaceArticle() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-red-500 mt-1">📊</span>
-                  <span>
+                  <span className="text-gray-900 dark:text-gray-100">
                     {t(
                       '45% 的上班族每天工作超過 10 小時，下班後仍難以放鬆',
                       '45% of office workers work over 10 hours daily and still struggle to relax after work'
@@ -103,7 +103,7 @@ export default function HealingSpaceArticle() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-red-500 mt-1">📊</span>
-                  <span>
+                  <span className="text-gray-900 dark:text-gray-100">
                     {t(
                       '長期壓力導致：失眠（68%）、免疫力下降（52%）、焦慮抑鬱（38%）、慢性疲勞（61%）',
                       'Long-term stress leads to: insomnia (68%), weakened immunity (52%), anxiety/depression (38%), chronic fatigue (61%)'
@@ -112,7 +112,7 @@ export default function HealingSpaceArticle() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-red-500 mt-1">📊</span>
-                  <span>
+                  <span className="text-gray-900 dark:text-gray-100">
                     {t(
                       '研究證實：擁有專屬療癒空間的人，壓力水平下降 45%，睡眠質量提升 58%',
                       'Research confirms: People with dedicated healing spaces see 45% stress reduction and 58% sleep quality improvement'
@@ -149,7 +149,7 @@ export default function HealingSpaceArticle() {
               <ul className="space-y-2 text-lg text-gray-900 dark:text-gray-100">
                 <li className="flex items-start gap-3">
                   <span className="text-green-500 text-xl">✓</span>
-                  <span>
+                  <span className="text-gray-900 dark:text-gray-100">
                     {t(
                       '啟動副交感神經系統，促進身體進入「休息與修復」模式',
                       'Activate parasympathetic nervous system, promote body into "rest and repair" mode'
@@ -158,7 +158,7 @@ export default function HealingSpaceArticle() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-green-500 text-xl">✓</span>
-                  <span>
+                  <span className="text-gray-900 dark:text-gray-100">
                     {t(
                       '降低皮質醇（壓力激素）水平，緩解焦慮和緊張',
                       'Reduce cortisol (stress hormone) levels, relieve anxiety and tension'
@@ -167,7 +167,7 @@ export default function HealingSpaceArticle() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-green-500 text-xl">✓</span>
-                  <span>
+                  <span className="text-gray-900 dark:text-gray-100">
                     {t(
                       '提升血清素和多巴胺分泌，改善情緒和幸福感',
                       'Boost serotonin and dopamine secretion, improve mood and well-being'
@@ -176,7 +176,7 @@ export default function HealingSpaceArticle() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-green-500 text-xl">✓</span>
-                  <span>
+                  <span className="text-gray-900 dark:text-gray-100">
                     {t(
                       '優化腦波頻率（Alpha 波），促進深度放鬆和創造力',
                       'Optimize brainwave frequency (Alpha waves), promote deep relaxation and creativity'
@@ -227,9 +227,9 @@ export default function HealingSpaceArticle() {
                 <ul className="space-y-3 text-lg text-gray-900 dark:text-gray-100">
                   <li className="flex items-start gap-3">
                     <span className="text-blue-900 dark:text-blue-100 font-bold">1.</span>
-                    <div>
-                      <span className="font-semibold">{t('最大化自然光', 'Maximize Natural Light')}:</span>
-                      <p className="mt-1">
+                    <div className="text-gray-900 dark:text-gray-100">
+                      <span className="font-semibold text-gray-900 dark:text-gray-100">{t('最大化自然光', 'Maximize Natural Light')}:</span>
+                      <p className="mt-1 text-gray-900 dark:text-gray-100">
                         {t(
                           '將療癒空間設置在靠窗位置，使用輕薄透光窗簾（白色或米色紗簾），讓陽光均勻灑入空間。研究證實，每天接受 2 小時自然光可降低壓力激素 30%。',
                           'Position healing space near windows, use light translucent curtains (white or beige sheer), allow sunlight to evenly fill the space. Research confirms 2 hours of natural light daily reduces stress hormones by 30%.'
@@ -239,9 +239,9 @@ export default function HealingSpaceArticle() {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-blue-900 dark:text-blue-100 font-bold">2.</span>
-                    <div>
-                      <span className="font-semibold">{t('智能色溫調節', 'Smart Color Temperature Adjustment')}:</span>
-                      <p className="mt-1">
+                    <div className="text-gray-900 dark:text-gray-100">
+                      <span className="font-semibold text-gray-900 dark:text-gray-100">{t('智能色溫調節', 'Smart Color Temperature Adjustment')}:</span>
+                      <p className="mt-1 text-gray-900 dark:text-gray-100">
                         {t(
                           '使用可調色溫的 LED 燈具。早上：5000-6500K 冷白光（提神醒腦）；下午：4000-5000K 自然白光（維持活力）；晚上：2700-3000K 暖黃光（促進放鬆）。配合量子風水原理，在不同時段調節光頻，讓身心自然進入相應狀態。',
                           'Use adjustable color temperature LED lights. Morning: 5000-6500K cool white (energizing); Afternoon: 4000-5000K natural white (maintaining vitality); Evening: 2700-3000K warm yellow (promoting relaxation). Following quantum feng shui principles, adjust light frequency at different times to naturally guide body and mind into corresponding states.'
@@ -251,9 +251,9 @@ export default function HealingSpaceArticle() {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-blue-900 dark:text-blue-100 font-bold">3.</span>
-                    <div>
-                      <span className="font-semibold">{t('間接照明設計', 'Indirect Lighting Design')}:</span>
-                      <p className="mt-1">
+                    <div className="text-gray-900 dark:text-gray-100">
+                      <span className="font-semibold text-gray-900 dark:text-gray-100">{t('間接照明設計', 'Indirect Lighting Design')}:</span>
+                      <p className="mt-1 text-gray-900 dark:text-gray-100">
                         {t(
                           '避免刺眼的直射光源，使用壁燈、檯燈、落地燈營造柔和的間接照明。光線應從側面或上方溫柔灑落，模擬自然界的漫射光，讓眼睛和大腦自然放鬆。',
                           'Avoid harsh direct light sources, use wall lamps, table lamps, floor lamps to create soft indirect lighting. Light should gently fall from sides or above, simulating natural diffused light, allowing eyes and brain to naturally relax.'
@@ -263,9 +263,9 @@ export default function HealingSpaceArticle() {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-blue-900 dark:text-blue-100 font-bold">4.</span>
-                    <div>
-                      <span className="font-semibold">{t('量子頻率光療', 'Quantum Frequency Light Therapy')}:</span>
-                      <p className="mt-1">
+                    <div className="text-gray-900 dark:text-gray-100">
+                      <span className="font-semibold text-gray-900 dark:text-gray-100">{t('量子頻率光療', 'Quantum Frequency Light Therapy')}:</span>
+                      <p className="mt-1 text-gray-900 dark:text-gray-100">
                         {t(
                           '配合量子風水空氣淨化機的藍光指示燈（432Hz 頻率調製），釋放與人體細胞共振的量子波，促進深度放鬆。藍光波長（450-495nm）經科學證實可刺激視網膜特殊細胞，調節生理節律，改善睡眠質量。',
                           'Pair with quantum feng shui air purifier\'s blue LED indicator (432Hz frequency modulation), release quantum waves resonating with human cells, promote deep relaxation. Blue light wavelength (450-495nm) scientifically proven to stimulate special retinal cells, regulate circadian rhythm, improve sleep quality.'
@@ -313,9 +313,9 @@ export default function HealingSpaceArticle() {
                 <ul className="space-y-4 text-lg text-gray-900 dark:text-gray-100">
                   <li className="flex items-start gap-3">
                     <span className="text-purple-900 dark:text-purple-100 font-bold">層次 1</span>
-                    <div>
-                      <span className="font-semibold">{t('物質層面 — HEPA H13 醫療級過濾', 'Material Level — HEPA H13 Medical-Grade Filtration')}:</span>
-                      <p className="mt-1">
+                    <div className="text-gray-900 dark:text-gray-100">
+                      <span className="font-semibold text-gray-900 dark:text-gray-100">{t('物質層面 — HEPA H13 醫療級過濾', 'Material Level — HEPA H13 Medical-Grade Filtration')}:</span>
+                      <p className="mt-1 text-gray-900 dark:text-gray-100">
                         {t(
                           '99.97% 過濾 0.3 微米超微粒子（包含細菌、病毒、塵蟎、花粉），配合活性炭吸附甲醛、苯等有害氣體。潔淨的空氣讓大腦獲得充足氧氣，思維更清晰，情緒更穩定。',
                           '99.97% filtration of 0.3 micron ultra-fine particles (including bacteria, viruses, dust mites, pollen), paired with activated carbon adsorption of formaldehyde, benzene and harmful gases. Clean air provides brain with sufficient oxygen, clearer thinking, more stable emotions.'
@@ -325,9 +325,9 @@ export default function HealingSpaceArticle() {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-purple-900 dark:text-purple-100 font-bold">層次 2</span>
-                    <div>
-                      <span className="font-semibold">{t('能量層面 — 量子調頻技術', 'Energy Level — Quantum Frequency Tuning Technology')}:</span>
-                      <p className="mt-1">
+                    <div className="text-gray-900 dark:text-gray-100">
+                      <span className="font-semibold text-gray-900 dark:text-gray-100">{t('能量層面 — 量子調頻技術', 'Energy Level — Quantum Frequency Tuning Technology')}:</span>
+                      <p className="mt-1 text-gray-900 dark:text-gray-100">
                         {t(
                           '釋放 432Hz 量子波頻率，與人體細胞自然共振。這個頻率被稱為「宇宙頻率」或「自然頻率」，能夠調節心率、降低血壓、平衡腦波（促進 Alpha 波），讓身心快速進入深度放鬆狀態。科學研究證實，接觸 432Hz 頻率 15 分鐘，焦慮指數下降 28%。',
                           'Release 432Hz quantum wave frequency, naturally resonate with human cells. This frequency is called "cosmic frequency" or "natural frequency", can regulate heart rate, lower blood pressure, balance brain waves (promote Alpha waves), allow body and mind to quickly enter deep relaxation state. Scientific research confirms exposure to 432Hz frequency for 15 minutes reduces anxiety index by 28%.'
@@ -337,9 +337,9 @@ export default function HealingSpaceArticle() {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-purple-900 dark:text-purple-100 font-bold">層次 3</span>
-                    <div>
-                      <span className="font-semibold">{t('風水層面 — 氣流優化佈局', 'Feng Shui Level — Airflow Optimization Layout')}:</span>
-                      <p className="mt-1">
+                    <div className="text-gray-900 dark:text-gray-100">
+                      <span className="font-semibold text-gray-900 dark:text-gray-100">{t('風水層面 — 氣流優化佈局', 'Feng Shui Level — Airflow Optimization Layout')}:</span>
+                      <p className="mt-1 text-gray-900 dark:text-gray-100">
                         {t(
                           '將量子風水空氣淨化機放置在療癒空間的「生氣位」（根據個人八字和空間佈局確定），讓淨化後的空氣帶著正面能量循環流動。配合開窗通風（早上 7-9 點、下午 3-5 點），形成「吐故納新」的能量循環，讓空間充滿活力與生機。',
                           'Place quantum feng shui air purifier in healing space\'s "vitality position" (determined by personal eight characters and space layout), let purified air circulate with positive energy. Pair with window ventilation (7-9 AM, 3-5 PM), form "exhale old, inhale new" energy circulation, fill space with vitality and life.'
@@ -387,9 +387,9 @@ export default function HealingSpaceArticle() {
                 <ul className="space-y-4 text-lg text-gray-900 dark:text-gray-100">
                   <li className="flex items-start gap-3">
                     <span className="text-green-900 dark:text-green-100 font-bold">1.</span>
-                    <div>
-                      <span className="font-semibold">{t('虎尾蘭（Sansevieria）', 'Snake Plant (Sansevieria)')}:</span>
-                      <p className="mt-1">
+                    <div className="text-gray-900 dark:text-gray-100">
+                      <span className="font-semibold text-gray-900 dark:text-gray-100">{t('虎尾蘭（Sansevieria）', 'Snake Plant (Sansevieria)')}:</span>
+                      <p className="mt-1 text-gray-900 dark:text-gray-100">
                         {t(
                           '夜間釋放氧氣，吸收 CO2 和甲醛，改善睡眠質量。風水上屬「木」能量，放置在臥室東方或東南方，可提升健康運和財運。',
                           'Releases oxygen at night, absorbs CO2 and formaldehyde, improves sleep quality. In feng shui, belongs to "wood" energy, place in bedroom east or southeast to enhance health fortune and wealth.'
@@ -399,9 +399,9 @@ export default function HealingSpaceArticle() {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-green-900 dark:text-green-100 font-bold">2.</span>
-                    <div>
-                      <span className="font-semibold">{t('吊蘭（Spider Plant）', 'Spider Plant')}:</span>
-                      <p className="mt-1">
+                    <div className="text-gray-900 dark:text-gray-100">
+                      <span className="font-semibold text-gray-900 dark:text-gray-100">{t('吊蘭（Spider Plant）', 'Spider Plant')}:</span>
+                      <p className="mt-1 text-gray-900 dark:text-gray-100">
                         {t(
                           '強力吸附甲醛、苯、一氧化碳，被譽為「空氣淨化冠軍」。生命力頑強，適合初學者，象徵生生不息的生命能量。',
                           'Powerfully adsorbs formaldehyde, benzene, carbon monoxide, dubbed "air purification champion". Strong vitality, suitable for beginners, symbolizes endless life energy.'
@@ -411,9 +411,9 @@ export default function HealingSpaceArticle() {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-green-900 dark:text-green-100 font-bold">3.</span>
-                    <div>
-                      <span className="font-semibold">{t('白鶴芋（Peace Lily）', 'Peace Lily')}:</span>
-                      <p className="mt-1">
+                    <div className="text-gray-900 dark:text-gray-100">
+                      <span className="font-semibold text-gray-900 dark:text-gray-100">{t('白鶴芋（Peace Lily）', 'Peace Lily')}:</span>
+                      <p className="mt-1 text-gray-900 dark:text-gray-100">
                         {t(
                           '分解苯、甲醛、三氯乙烯等有毒氣體，提升空氣濕度 5-10%。白色花朵象徵純潔與和平，帶來寧靜祥和的氛圍。',
                           'Decomposes toxic gases like benzene, formaldehyde, trichloroethylene, increases air humidity 5-10%. White flowers symbolize purity and peace, bring serene and peaceful atmosphere.'
@@ -423,9 +423,9 @@ export default function HealingSpaceArticle() {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-green-900 dark:text-green-100 font-bold">4.</span>
-                    <div>
-                      <span className="font-semibold">{t('薰衣草（Lavender）', 'Lavender')}:</span>
-                      <p className="mt-1">
+                    <div className="text-gray-900 dark:text-gray-100">
+                      <span className="font-semibold text-gray-900 dark:text-gray-100">{t('薰衣草（Lavender）', 'Lavender')}:</span>
+                      <p className="mt-1 text-gray-900 dark:text-gray-100">
                         {t(
                           '釋放天然精油芳香，促進血清素分泌，緩解焦慮和失眠。科學證實，薰衣草香氣可縮短入睡時間 36%，延長深度睡眠 42%。',
                           'Releases natural essential oil aroma, promotes serotonin secretion, relieves anxiety and insomnia. Scientifically proven lavender aroma can shorten sleep onset time by 36%, extend deep sleep by 42%.'
@@ -435,9 +435,9 @@ export default function HealingSpaceArticle() {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-green-900 dark:text-green-100 font-bold">5.</span>
-                    <div>
-                      <span className="font-semibold">{t('竹子（Bamboo）', 'Bamboo')}:</span>
-                      <p className="mt-1">
+                    <div className="text-gray-900 dark:text-gray-100">
+                      <span className="font-semibold text-gray-900 dark:text-gray-100">{t('竹子（Bamboo）', 'Bamboo')}:</span>
+                      <p className="mt-1 text-gray-900 dark:text-gray-100">
                         {t(
                           '風水上屬「木」能量，象徵節節高升、平安吉祥。竹子釋放大量負離子，改善空氣品質，帶來清新活力的氛圍。',
                           'In feng shui, belongs to "wood" energy, symbolizes rising success and peace. Bamboo releases abundant negative ions, improves air quality, brings fresh and vibrant atmosphere.'
@@ -447,9 +447,9 @@ export default function HealingSpaceArticle() {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-green-900 dark:text-green-100 font-bold">6.</span>
-                    <div>
-                      <span className="font-semibold">{t('多肉植物（Succulents）', 'Succulents')}:</span>
-                      <p className="mt-1">
+                    <div className="text-gray-900 dark:text-gray-100">
+                      <span className="font-semibold text-gray-900 dark:text-gray-100">{t('多肉植物（Succulents）', 'Succulents')}:</span>
+                      <p className="mt-1 text-gray-900 dark:text-gray-100">
                         {t(
                           '低維護、高療癒，適合忙碌的都市人。圓潤飽滿的外形帶來視覺療癒，象徵圓滿和富足，放置在書桌或床頭櫃，提升正能量。',
                           'Low maintenance, high healing, suitable for busy urban people. Plump rounded shape brings visual healing, symbolizes completeness and abundance, place on desk or bedside table to boost positive energy.'
@@ -467,7 +467,7 @@ export default function HealingSpaceArticle() {
                 <ul className="space-y-2 text-lg text-gray-900 dark:text-gray-100">
                   <li className="flex items-start gap-3">
                     <span className="text-orange-900 dark:text-orange-100">•</span>
-                    <span>
+                    <span className="text-gray-900 dark:text-gray-100">
                       {t(
                         '東方或東南方（木位）：放置闊葉植物，提升健康運和財運',
                         'East or Southeast (Wood position): Place broad-leaf plants to enhance health fortune and wealth'
@@ -476,7 +476,7 @@ export default function HealingSpaceArticle() {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-orange-900 dark:text-orange-100">•</span>
-                    <span>
+                    <span className="text-gray-900 dark:text-gray-100">
                       {t(
                         '臥室：選擇夜間釋放氧氣的植物（虎尾蘭、蘆薈），避免強烈香氣植物',
                         'Bedroom: Choose plants that release oxygen at night (snake plant, aloe), avoid strong fragrance plants'
@@ -485,7 +485,7 @@ export default function HealingSpaceArticle() {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-orange-900 dark:text-orange-100">•</span>
-                    <span>
+                    <span className="text-gray-900 dark:text-gray-100">
                       {t(
                         '書桌旁：放置小型綠植（多肉、竹子），提升專注力和創造力',
                         'Near desk: Place small green plants (succulents, bamboo) to enhance focus and creativity'
@@ -494,7 +494,7 @@ export default function HealingSpaceArticle() {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-orange-900 dark:text-orange-100">•</span>
-                    <span>
+                    <span className="text-gray-900 dark:text-gray-100">
                       {t(
                         '避免：床頭正上方、廁所旁、陰暗角落（植物會吸收負能量並枯萎）',
                         'Avoid: Directly above bed, near toilet, dark corners (plants absorb negative energy and wither)'
@@ -541,9 +541,9 @@ export default function HealingSpaceArticle() {
                 <ul className="space-y-4 text-lg text-gray-900 dark:text-gray-100">
                   <li className="flex items-start gap-3">
                     <span className="text-blue-900 dark:text-blue-100 font-bold">方案 1</span>
-                    <div>
-                      <span className="font-semibold">{t('寧靜藍 + 柔和白（深度放鬆）', 'Serene Blue + Soft White (Deep Relaxation)')}:</span>
-                      <p className="mt-1">
+                    <div className="text-gray-900 dark:text-gray-100">
+                      <span className="font-semibold text-gray-900 dark:text-gray-100">{t('寧靜藍 + 柔和白（深度放鬆）', 'Serene Blue + Soft White (Deep Relaxation)')}:</span>
+                      <p className="mt-1 text-gray-900 dark:text-gray-100">
                         {t(
                           '適合：高壓工作者、失眠人士。藍色為主色調（牆面、床品），白色為輔（家具、窗簾），營造海洋般的寧靜氛圍。配合淺灰色或米色點綴，增添溫暖感。風水上，藍色屬「水」，適合命理缺水之人，可補充能量、緩解焦躁。',
                           'Suitable for: High-pressure workers, insomniacs. Blue as main tone (walls, bedding), white as accent (furniture, curtains), create ocean-like serene atmosphere. Pair with light gray or beige accents to add warmth. In feng shui, blue belongs to "water", suitable for those lacking water in destiny, can replenish energy, relieve restlessness.'
@@ -553,9 +553,9 @@ export default function HealingSpaceArticle() {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-blue-900 dark:text-blue-100 font-bold">方案 2</span>
-                    <div>
-                      <span className="font-semibold">{t('自然綠 + 原木色（能量恢復）', 'Natural Green + Wood Tone (Energy Recovery)')}:</span>
-                      <p className="mt-1">
+                    <div className="text-gray-900 dark:text-gray-100">
+                      <span className="font-semibold text-gray-900 dark:text-gray-100">{t('自然綠 + 原木色（能量恢復）', 'Natural Green + Wood Tone (Energy Recovery)')}:</span>
+                      <p className="mt-1 text-gray-900 dark:text-gray-100">
                         {t(
                           '適合：慢性疲勞、免疫力低下者。淺綠色為主（牆面、軟裝），搭配原木家具和地板，模擬森林環境。加入淺黃色或奶油色，提升溫馨感。風水上，綠色屬「木」，適合命理缺木之人，可提升健康運、活力和生命力。',
                           'Suitable for: Chronic fatigue, weakened immunity. Light green as main (walls, soft furnishings), pair with wood furniture and flooring, simulate forest environment. Add light yellow or cream to enhance warmth. In feng shui, green belongs to "wood", suitable for those lacking wood in destiny, can enhance health fortune, vitality and life force.'
@@ -565,9 +565,9 @@ export default function HealingSpaceArticle() {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-blue-900 dark:text-blue-100 font-bold">方案 3</span>
-                    <div>
-                      <span className="font-semibold">{t('暖黃 + 淺粉（情緒療癒）', 'Warm Yellow + Light Pink (Emotional Healing)')}:</span>
-                      <p className="mt-1">
+                    <div className="text-gray-900 dark:text-gray-100">
+                      <span className="font-semibold text-gray-900 dark:text-gray-100">{t('暖黃 + 淺粉（情緒療癒）', 'Warm Yellow + Light Pink (Emotional Healing)')}:</span>
+                      <p className="mt-1 text-gray-900 dark:text-gray-100">
                         {t(
                           '適合：焦慮抑鬱、情緒低落者。淺黃色為主（牆面、燈光），配合淺粉色軟裝（抱枕、毛毯），營造溫暖包容的氛圍。加入米白色或淺灰色平衡。風水上，黃色屬「土」，可穩定情緒、增強安全感；粉色屬「火」的柔和表現，可促進愛與關懷的能量流動。',
                           'Suitable for: Anxiety, depression, low mood. Light yellow as main (walls, lighting), pair with light pink soft furnishings (cushions, blankets), create warm embracing atmosphere. Add beige or light gray to balance. In feng shui, yellow belongs to "earth", can stabilize emotions, enhance security; pink is gentle expression of "fire", can promote flow of love and care energy.'
@@ -577,9 +577,9 @@ export default function HealingSpaceArticle() {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-blue-900 dark:text-blue-100 font-bold">方案 4</span>
-                    <div>
-                      <span className="font-semibold">{t('大地色系（全方位平衡）', 'Earth Tones (Comprehensive Balance)')}:</span>
-                      <p className="mt-1">
+                    <div className="text-gray-900 dark:text-gray-100">
+                      <span className="font-semibold text-gray-900 dark:text-gray-100">{t('大地色系（全方位平衡）', 'Earth Tones (Comprehensive Balance)')}:</span>
+                      <p className="mt-1 text-gray-900 dark:text-gray-100">
                         {t(
                           '適合：追求簡約禪意者。米白、淺褐、淺灰為主色調，搭配原木和綠植，打造自然簡約的療癒空間。風水上，大地色系屬「土」能量，可穩定氣場、平衡陰陽五行，適合所有體質。',
                           'Suitable for: Those seeking minimalist zen. Beige, light brown, light gray as main tones, pair with wood and greenery, create natural minimalist healing space. In feng shui, earth tones belong to "earth" energy, can stabilize energy field, balance yin-yang five elements, suitable for all constitutions.'
@@ -597,8 +597,8 @@ export default function HealingSpaceArticle() {
                 <ul className="space-y-2 text-lg text-gray-900 dark:text-gray-100">
                   <li className="flex items-start gap-3">
                     <span className="text-orange-900 dark:text-orange-100">•</span>
-                    <span>
-                      <span className="font-semibold">{t('天然纖維', 'Natural Fibers')}:</span>{' '}
+                    <span className="text-gray-900 dark:text-gray-100">
+                      <span className="font-semibold text-gray-900 dark:text-gray-100">{t('天然纖維', 'Natural Fibers')}:</span>{' '}
                       {t(
                         '棉、麻、羊毛等天然材質透氣親膚，觸感溫潤，帶來安全感和舒適感',
                         'Cotton, linen, wool and other natural materials are breathable and skin-friendly, warm touch, bring security and comfort'
@@ -607,8 +607,8 @@ export default function HealingSpaceArticle() {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-orange-900 dark:text-orange-100">•</span>
-                    <span>
-                      <span className="font-semibold">{t('原木家具', 'Wood Furniture')}:</span>{' '}
+                    <span className="text-gray-900 dark:text-gray-100">
+                      <span className="font-semibold text-gray-900 dark:text-gray-100">{t('原木家具', 'Wood Furniture')}:</span>{' '}
                       {t(
                         '釋放天然木質香氣，傳遞「木」能量，帶來生命力和溫暖感',
                         'Releases natural wood aroma, conveys "wood" energy, brings vitality and warmth'
@@ -617,8 +617,8 @@ export default function HealingSpaceArticle() {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-orange-900 dark:text-orange-100">•</span>
-                    <span>
-                      <span className="font-semibold">{t('圓角設計', 'Rounded Design')}:</span>{' '}
+                    <span className="text-gray-900 dark:text-gray-100">
+                      <span className="font-semibold text-gray-900 dark:text-gray-100">{t('圓角設計', 'Rounded Design')}:</span>{' '}
                       {t(
                         '家具選擇圓角設計，避免尖銳稜角（風水「煞氣」），營造柔和流動的氛圍',
                         'Choose furniture with rounded design, avoid sharp corners (feng shui "sha qi"), create soft flowing atmosphere'
@@ -627,8 +627,8 @@ export default function HealingSpaceArticle() {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-orange-900 dark:text-orange-100">•</span>
-                    <span>
-                      <span className="font-semibold">{t('柔軟織品', 'Soft Textiles')}:</span>{' '}
+                    <span className="text-gray-900 dark:text-gray-100">
+                      <span className="font-semibold text-gray-900 dark:text-gray-100">{t('柔軟織品', 'Soft Textiles')}:</span>{' '}
                       {t(
                         '地毯、抱枕、毛毯選擇柔軟觸感，視覺和觸覺雙重療癒',
                         'Carpets, cushions, blankets choose soft touch, dual healing of vision and touch'
@@ -675,9 +675,9 @@ export default function HealingSpaceArticle() {
                 <ol className="space-y-3 text-lg text-gray-900 dark:text-gray-100">
                   <li className="flex items-start gap-3">
                     <span className="text-purple-900 dark:text-purple-100 font-bold">1.</span>
-                    <div>
-                      <span className="font-semibold">{t('開啟空間（1 分鐘）', 'Open Space (1 min)')}:</span>
-                      <p className="mt-1">
+                    <div className="text-gray-900 dark:text-gray-100">
+                      <span className="font-semibold text-gray-900 dark:text-gray-100">{t('開啟空間（1 分鐘）', 'Open Space (1 min)')}:</span>
+                      <p className="mt-1 text-gray-900 dark:text-gray-100">
                         {t(
                           '拉開窗簾，讓自然光灑入空間。開啟量子風水空氣淨化機，讓潔淨空氣和 432Hz 量子波開始循環。深呼吸 3 次，感受新鮮空氣進入身體。',
                           'Draw curtains, let natural light enter space. Turn on quantum feng shui air purifier, let clean air and 432Hz quantum waves start circulating. Take 3 deep breaths, feel fresh air entering body.'
@@ -687,9 +687,9 @@ export default function HealingSpaceArticle() {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-purple-900 dark:text-purple-100 font-bold">2.</span>
-                    <div>
-                      <span className="font-semibold">{t('身體伸展（3 分鐘）', 'Body Stretching (3 min)')}:</span>
-                      <p className="mt-1">
+                    <div className="text-gray-900 dark:text-gray-100">
+                      <span className="font-semibold text-gray-900 dark:text-gray-100">{t('身體伸展（3 分鐘）', 'Body Stretching (3 min)')}:</span>
+                      <p className="mt-1 text-gray-900 dark:text-gray-100">
                         {t(
                           '站在療癒空間中央，跟隨呼吸做簡單伸展：雙手向上伸展、側彎、轉體、前彎。讓身體喚醒，氣血流動。',
                           'Stand in healing space center, follow breath for simple stretches: arms up, side bends, torso twists, forward bends. Awaken body, circulate energy and blood.'
@@ -699,9 +699,9 @@ export default function HealingSpaceArticle() {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-purple-900 dark:text-purple-100 font-bold">3.</span>
-                    <div>
-                      <span className="font-semibold">{t('正念冥想（5 分鐘）', 'Mindfulness Meditation (5 min)')}:</span>
-                      <p className="mt-1">
+                    <div className="text-gray-900 dark:text-gray-100">
+                      <span className="font-semibold text-gray-900 dark:text-gray-100">{t('正念冥想（5 分鐘）', 'Mindfulness Meditation (5 min)')}:</span>
+                      <p className="mt-1 text-gray-900 dark:text-gray-100">
                         {t(
                           '坐在療癒角落（冥想墊或舒適椅子），閉上眼睛，專注呼吸。吸氣時感受能量進入身體，呼氣時釋放壓力和負面情緒。配合量子調頻，讓身心進入深度放鬆。',
                           'Sit in healing corner (meditation cushion or comfortable chair), close eyes, focus on breathing. Inhale feeling energy entering body, exhale releasing stress and negative emotions. With quantum frequency tuning, let body and mind enter deep relaxation.'
@@ -711,9 +711,9 @@ export default function HealingSpaceArticle() {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-purple-900 dark:text-purple-100 font-bold">4.</span>
-                    <div>
-                      <span className="font-semibold">{t('設定意圖（1 分鐘）', 'Set Intention (1 min)')}:</span>
-                      <p className="mt-1">
+                    <div className="text-gray-900 dark:text-gray-100">
+                      <span className="font-semibold text-gray-900 dark:text-gray-100">{t('設定意圖（1 分鐘）', 'Set Intention (1 min)')}:</span>
+                      <p className="mt-1 text-gray-900 dark:text-gray-100">
                         {t(
                           '在心中為新的一天設定正面意圖：「今天我充滿能量和活力」、「我能從容應對一切挑戰」。正面意圖會啟動大腦的自我實現機制。',
                           'Set positive intention for new day in mind: "Today I am full of energy and vitality", "I can calmly handle all challenges". Positive intention activates brain\'s self-fulfillment mechanism.'
@@ -731,9 +731,9 @@ export default function HealingSpaceArticle() {
                 <ol className="space-y-3 text-lg text-gray-900 dark:text-gray-100">
                   <li className="flex items-start gap-3">
                     <span className="text-blue-900 dark:text-blue-100 font-bold">1.</span>
-                    <div>
-                      <span className="font-semibold">{t('淨化空間（2 分鐘）', 'Purify Space (2 min)')}:</span>
-                      <p className="mt-1">
+                    <div className="text-gray-900 dark:text-gray-100">
+                      <span className="font-semibold text-gray-900 dark:text-gray-100">{t('淨化空間（2 分鐘）', 'Purify Space (2 min)')}:</span>
+                      <p className="mt-1 text-gray-900 dark:text-gray-100">
                         {t(
                           '關閉電子設備（手機、電腦、電視），開啟量子風水空氣淨化機夜間模式。調暗燈光（色溫 2700K），營造安靜舒適的氛圍。',
                           'Turn off electronic devices (phone, computer, TV), turn on quantum feng shui air purifier night mode. Dim lights (color temperature 2700K), create quiet comfortable atmosphere.'
@@ -743,9 +743,9 @@ export default function HealingSpaceArticle() {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-blue-900 dark:text-blue-100 font-bold">2.</span>
-                    <div>
-                      <span className="font-semibold">{t('釋放壓力（5 分鐘）', 'Release Stress (5 min)')}:</span>
-                      <p className="mt-1">
+                    <div className="text-gray-900 dark:text-gray-100">
+                      <span className="font-semibold text-gray-900 dark:text-gray-100">{t('釋放壓力（5 分鐘）', 'Release Stress (5 min)')}:</span>
+                      <p className="mt-1 text-gray-900 dark:text-gray-100">
                         {t(
                           '寫下今天的 3 個煩惱或壓力（不需要解決方案，只是記錄），然後將紙張撕碎或收起，象徵性地「釋放」壓力。這個動作可以幫助大腦清空負面記憶。',
                           'Write down 3 worries or stresses from today (no need for solutions, just record), then tear or put away paper, symbolically "release" stress. This action helps brain clear negative memories.'
@@ -755,9 +755,9 @@ export default function HealingSpaceArticle() {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-blue-900 dark:text-blue-100 font-bold">3.</span>
-                    <div>
-                      <span className="font-semibold">{t('感恩練習（3 分鐘）', 'Gratitude Practice (3 min)')}:</span>
-                      <p className="mt-1">
+                    <div className="text-gray-900 dark:text-gray-100">
+                      <span className="font-semibold text-gray-900 dark:text-gray-100">{t('感恩練習（3 分鐘）', 'Gratitude Practice (3 min)')}:</span>
+                      <p className="mt-1 text-gray-900 dark:text-gray-100">
                         {t(
                           '寫下今天的 3 件值得感恩的事（無論大小），例如：「今天天氣很好」、「同事幫了我一個忙」、「晚餐很美味」。感恩練習可提升血清素和多巴胺水平，改善睡眠質量。',
                           'Write down 3 things to be grateful for today (big or small), e.g., "Weather was nice today", "Colleague helped me", "Dinner was delicious". Gratitude practice boosts serotonin and dopamine levels, improves sleep quality.'
@@ -767,9 +767,9 @@ export default function HealingSpaceArticle() {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-blue-900 dark:text-blue-100 font-bold">4.</span>
-                    <div>
-                      <span className="font-semibold">{t('放鬆呼吸（5 分鐘）', 'Relaxation Breathing (5 min)')}:</span>
-                      <p className="mt-1">
+                    <div className="text-gray-900 dark:text-gray-100">
+                      <span className="font-semibold text-gray-900 dark:text-gray-100">{t('放鬆呼吸（5 分鐘）', 'Relaxation Breathing (5 min)')}:</span>
+                      <p className="mt-1 text-gray-900 dark:text-gray-100">
                         {t(
                           '躺在床上或舒適椅子上，進行 4-7-8 呼吸法：吸氣 4 秒 → 屏息 7 秒 → 呼氣 8 秒。重複 8 次。這個呼吸法可快速啟動副交感神經，促進深度睡眠。',
                           'Lie on bed or comfortable chair, practice 4-7-8 breathing: inhale 4 seconds → hold 7 seconds → exhale 8 seconds. Repeat 8 times. This breathing method quickly activates parasympathetic nervous system, promotes deep sleep.'
@@ -829,7 +829,7 @@ export default function HealingSpaceArticle() {
                 <ul className="space-y-2 text-lg text-gray-900 dark:text-gray-100">
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
-                    <span>
+                    <span className="text-gray-900 dark:text-gray-100">
                       {t(
                         '色彩：藍色 + 白色主調，營造海洋般寧靜氛圍',
                         'Colors: Blue + white main tone, create ocean-like serene atmosphere'
@@ -838,7 +838,7 @@ export default function HealingSpaceArticle() {
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
-                    <span>
+                    <span className="text-gray-900 dark:text-gray-100">
                       {t(
                         '植物：虎尾蘭、薰衣草（夜間釋放氧氣、促進睡眠）',
                         'Plants: Snake plant, lavender (release oxygen at night, promote sleep)'
@@ -847,7 +847,7 @@ export default function HealingSpaceArticle() {
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
-                    <span>
+                    <span className="text-gray-900 dark:text-gray-100">
                       {t(
                         '淨化機位置：床頭斜對角（文昌位或健康位），促進深度睡眠',
                         'Purifier position: Diagonal from bed head (Wen Chang or health position), promote deep sleep'
@@ -856,7 +856,7 @@ export default function HealingSpaceArticle() {
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
-                    <span>
+                    <span className="text-gray-900 dark:text-gray-100">
                       {t(
                         '光線：晚上色溫 2700K 暖黃光，營造放鬆氛圍',
                         'Lighting: Evening color temperature 2700K warm yellow, create relaxed atmosphere'
@@ -874,7 +874,7 @@ export default function HealingSpaceArticle() {
                 <ul className="space-y-2 text-lg text-gray-900 dark:text-gray-100">
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
-                    <span>
+                    <span className="text-gray-900 dark:text-gray-100">
                       {t(
                         '色彩：自然綠 + 原木色，營造森林般生機氛圍',
                         'Colors: Natural green + wood tone, create forest-like vibrant atmosphere'
@@ -883,7 +883,7 @@ export default function HealingSpaceArticle() {
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
-                    <span>
+                    <span className="text-gray-900 dark:text-gray-100">
                       {t(
                         '植物：吊蘭、竹子、多肉植物（淨化空氣、提升活力）',
                         'Plants: Spider plant, bamboo, succulents (purify air, boost vitality)'
@@ -892,7 +892,7 @@ export default function HealingSpaceArticle() {
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
-                    <span>
+                    <span className="text-gray-900 dark:text-gray-100">
                       {t(
                         '淨化機位置：客廳財位（進門對角線遠端），提升家庭運勢',
                         'Purifier position: Living room wealth position (far diagonal from entrance), enhance family fortune'
@@ -901,7 +901,7 @@ export default function HealingSpaceArticle() {
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
-                    <span>
+                    <span className="text-gray-900 dark:text-gray-100">
                       {t(
                         '光線：白天充足自然光，晚上色溫 4000K 自然白光',
                         'Lighting: Abundant natural light during day, evening color temperature 4000K natural white'
@@ -919,7 +919,7 @@ export default function HealingSpaceArticle() {
                 <ul className="space-y-2 text-lg text-gray-900 dark:text-gray-100">
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
-                    <span>
+                    <span className="text-gray-900 dark:text-gray-100">
                       {t(
                         '色彩：淺黃 + 淺綠，提升創造力和專注力',
                         'Colors: Light yellow + light green, enhance creativity and focus'
@@ -928,7 +928,7 @@ export default function HealingSpaceArticle() {
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
-                    <span>
+                    <span className="text-gray-900 dark:text-gray-100">
                       {t(
                         '植物：竹子、多肉植物（小型，不佔空間，提升正能量）',
                         'Plants: Bamboo, succulents (small, space-saving, boost positive energy)'
@@ -937,7 +937,7 @@ export default function HealingSpaceArticle() {
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
-                    <span>
+                    <span className="text-gray-900 dark:text-gray-100">
                       {t(
                         '淨化機位置：書桌左後方（文昌位），提升學習運和事業運',
                         'Purifier position: Left rear of desk (Wen Chang position), enhance learning and career fortune'
@@ -946,7 +946,7 @@ export default function HealingSpaceArticle() {
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
-                    <span>
+                    <span className="text-gray-900 dark:text-gray-100">
                       {t(
                         '光線：白天色溫 5000K 冷白光，提神醒腦',
                         'Lighting: Daytime color temperature 5000K cool white, energizing'
@@ -964,7 +964,7 @@ export default function HealingSpaceArticle() {
                 <ul className="space-y-2 text-lg text-gray-900 dark:text-gray-100">
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
-                    <span>
+                    <span className="text-gray-900 dark:text-gray-100">
                       {t(
                         '色彩：大地色系（米白、淺褐、淺灰），營造禪意氛圍',
                         'Colors: Earth tones (beige, light brown, light gray), create zen atmosphere'
@@ -973,7 +973,7 @@ export default function HealingSpaceArticle() {
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
-                    <span>
+                    <span className="text-gray-900 dark:text-gray-100">
                       {t(
                         '植物：白鶴芋、薰衣草（淨化空氣、舒緩情緒）',
                         'Plants: Peace lily, lavender (purify air, soothe emotions)'
@@ -982,7 +982,7 @@ export default function HealingSpaceArticle() {
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
-                    <span>
+                    <span className="text-gray-900 dark:text-gray-100">
                       {t(
                         '淨化機位置：冥想墊旁（1-2 米距離），釋放量子波促進冥想',
                         'Purifier position: Near meditation cushion (1-2 meters), release quantum waves to promote meditation'
@@ -991,7 +991,7 @@ export default function HealingSpaceArticle() {
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
-                    <span>
+                    <span className="text-gray-900 dark:text-gray-100">
                       {t(
                         '光線：柔和間接照明，色溫 3000K 暖白光',
                         'Lighting: Soft indirect lighting, color temperature 3000K warm white'
@@ -1040,15 +1040,15 @@ export default function HealingSpaceArticle() {
                 <ul className="space-y-2 text-lg text-gray-900 dark:text-gray-100">
                   <li className="flex items-start gap-3">
                     <span className="text-accent font-bold">Day 1-2:</span>
-                    <span>{t('確定療癒空間位置，清理雜物，騰出空間', 'Determine healing space location, clear clutter, free up space')}</span>
+                    <span className="text-gray-900 dark:text-gray-100">{t('確定療癒空間位置，清理雜物，騰出空間', 'Determine healing space location, clear clutter, free up space')}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-accent font-bold">Day 3-4:</span>
-                    <span>{t('安裝量子風水空氣淨化機，根據風水位置調整擺放', 'Install quantum feng shui air purifier, adjust placement according to feng shui position')}</span>
+                    <span className="text-gray-900 dark:text-gray-100">{t('安裝量子風水空氣淨化機，根據風水位置調整擺放', 'Install quantum feng shui air purifier, adjust placement according to feng shui position')}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-accent font-bold">Day 5-7:</span>
-                    <span>{t('調整光線（窗簾、燈具），確保自然光充足', 'Adjust lighting (curtains, fixtures), ensure adequate natural light')}</span>
+                    <span className="text-gray-900 dark:text-gray-100">{t('調整光線（窗簾、燈具），確保自然光充足', 'Adjust lighting (curtains, fixtures), ensure adequate natural light')}</span>
                   </li>
                 </ul>
               </div>
@@ -1061,15 +1061,15 @@ export default function HealingSpaceArticle() {
                 <ul className="space-y-2 text-lg text-gray-900 dark:text-gray-100">
                   <li className="flex items-start gap-3">
                     <span className="text-green-900 dark:text-green-100 font-bold">Day 8-10:</span>
-                    <span>{t('更換軟裝（窗簾、床品、抱枕），選擇療癒色彩', 'Replace soft furnishings (curtains, bedding, cushions), choose healing colors')}</span>
+                    <span className="text-gray-900 dark:text-gray-100">{t('更換軟裝（窗簾、床品、抱枕），選擇療癒色彩', 'Replace soft furnishings (curtains, bedding, cushions), choose healing colors')}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-green-900 dark:text-green-100 font-bold">Day 11-12:</span>
-                    <span>{t('添加 3-5 盆療癒植物，根據風水位置擺放', 'Add 3-5 healing plants, place according to feng shui positions')}</span>
+                    <span className="text-gray-900 dark:text-gray-100">{t('添加 3-5 盆療癒植物，根據風水位置擺放', 'Add 3-5 healing plants, place according to feng shui positions')}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-green-900 dark:text-green-100 font-bold">Day 13-14:</span>
-                    <span>{t('調整家具（圓角設計、柔軟材質），優化氣流循環', 'Adjust furniture (rounded design, soft materials), optimize airflow circulation')}</span>
+                    <span className="text-gray-900 dark:text-gray-100">{t('調整家具（圓角設計、柔軟材質），優化氣流循環', 'Adjust furniture (rounded design, soft materials), optimize airflow circulation')}</span>
                   </li>
                 </ul>
               </div>
@@ -1082,15 +1082,15 @@ export default function HealingSpaceArticle() {
                 <ul className="space-y-2 text-lg text-gray-900 dark:text-gray-100">
                   <li className="flex items-start gap-3">
                     <span className="text-purple-900 dark:text-purple-100 font-bold">Day 15-17:</span>
-                    <span>{t('開始晨間療癒儀式（10 分鐘），訓練大腦條件反射', 'Start morning healing ritual (10 minutes), train brain conditioned reflex')}</span>
+                    <span className="text-gray-900 dark:text-gray-100">{t('開始晨間療癒儀式（10 分鐘），訓練大腦條件反射', 'Start morning healing ritual (10 minutes), train brain conditioned reflex')}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-purple-900 dark:text-purple-100 font-bold">Day 18-19:</span>
-                    <span>{t('加入晚間療癒儀式（15 分鐘），促進深度睡眠', 'Add evening healing ritual (15 minutes), promote deep sleep')}</span>
+                    <span className="text-gray-900 dark:text-gray-100">{t('加入晚間療癒儀式（15 分鐘），促進深度睡眠', 'Add evening healing ritual (15 minutes), promote deep sleep')}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-purple-900 dark:text-purple-100 font-bold">Day 20-21:</span>
-                    <span>{t('記錄身心變化（睡眠質量、壓力水平、情緒狀態）', 'Record body-mind changes (sleep quality, stress level, emotional state)')}</span>
+                    <span className="text-gray-900 dark:text-gray-100">{t('記錄身心變化（睡眠質量、壓力水平、情緒狀態）', 'Record body-mind changes (sleep quality, stress level, emotional state)')}</span>
                   </li>
                 </ul>
               </div>
@@ -1103,15 +1103,15 @@ export default function HealingSpaceArticle() {
                 <ul className="space-y-2 text-lg text-gray-900 dark:text-gray-100">
                   <li className="flex items-start gap-3">
                     <span className="text-yellow-800 dark:text-yellow-300 font-bold">Day 22-25:</span>
-                    <span>{t('根據個人喜好微調（香氛、音樂、裝飾品）', 'Fine-tune according to personal preferences (aromatherapy, music, décor)')}</span>
+                    <span className="text-gray-900 dark:text-gray-100">{t('根據個人喜好微調（香氛、音樂、裝飾品）', 'Fine-tune according to personal preferences (aromatherapy, music, décor)')}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-yellow-800 dark:text-yellow-300 font-bold">Day 26-28:</span>
-                    <span>{t('邀請家人一起體驗療癒空間，分享感受', 'Invite family to experience healing space together, share feelings')}</span>
+                    <span className="text-gray-900 dark:text-gray-100">{t('邀請家人一起體驗療癒空間，分享感受', 'Invite family to experience healing space together, share feelings')}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-yellow-800 dark:text-yellow-300 font-bold">Day 29-30:</span>
-                    <span>{t('總結 30 天變化，設定下一階段目標', 'Summarize 30-day changes, set next phase goals')}</span>
+                    <span className="text-gray-900 dark:text-gray-100">{t('總結 30 天變化，設定下一階段目標', 'Summarize 30-day changes, set next phase goals')}</span>
                   </li>
                 </ul>
               </div>
@@ -1142,7 +1142,7 @@ export default function HealingSpaceArticle() {
               </h3>
               <div className="mb-4">
                 <p className="text-lg mb-2 text-gray-900 dark:text-gray-100">
-                  <span className="font-semibold">{t('改造前', 'Before')}:</span>{' '}
+                  <span className="font-semibold text-gray-900 dark:text-gray-100">{t('改造前', 'Before')}:</span>{' '}
                   {t(
                     '每天工作 12 小時以上，回家後無法放鬆，失眠嚴重，壓力指數 85 分（滿分 100）。臥室雜亂，光線昏暗，空氣污染嚴重（PM2.5 超標 3 倍）。',
                     'Working 12+ hours daily, unable to relax at home, severe insomnia, stress index 85 points (out of 100). Bedroom cluttered, dim lighting, severe air pollution (PM2.5 exceeding standard by 3 times).'
@@ -1151,7 +1151,7 @@ export default function HealingSpaceArticle() {
               </div>
               <div className="mb-4">
                 <p className="text-lg mb-2 text-gray-900 dark:text-gray-100">
-                  <span className="font-semibold">{t('改造方案', 'Transformation Plan')}:</span>
+                  <span className="font-semibold text-gray-900 dark:text-gray-100">{t('改造方案', 'Transformation Plan')}:</span>
                 </p>
                 <ul className="list-disc list-inside space-y-1 text-lg ml-4">
                   <li>{t('安裝量子風水空氣淨化機於臥室健康位', 'Install quantum feng shui air purifier in bedroom health position')}</li>
@@ -1180,7 +1180,7 @@ export default function HealingSpaceArticle() {
               </h3>
               <div className="mb-4">
                 <p className="text-lg mb-2 text-gray-900 dark:text-gray-100">
-                  <span className="font-semibold">{t('改造前', 'Before')}:</span>{' '}
+                  <span className="font-semibold text-gray-900 dark:text-gray-100">{t('改造前', 'Before')}:</span>{' '}
                   {t(
                     '全天候照顧兩個孩子，長期疲勞、焦慮、情緒失控，沒有個人空間。客廳雜亂無章，沒有任何放鬆角落。',
                     'Full-time care for two children, chronic fatigue, anxiety, emotional outbursts, no personal space. Living room cluttered, no relaxation corners.'
@@ -1189,7 +1189,7 @@ export default function HealingSpaceArticle() {
               </div>
               <div className="mb-4">
                 <p className="text-lg mb-2 text-gray-900 dark:text-gray-100">
-                  <span className="font-semibold">{t('改造方案', 'Transformation Plan')}:</span>
+                  <span className="font-semibold text-gray-900 dark:text-gray-100">{t('改造方案', 'Transformation Plan')}:</span>
                 </p>
                 <ul className="list-disc list-inside space-y-1 text-lg ml-4">
                   <li>{t('在客廳角落打造 2 平米冥想療癒角落', 'Create 2 sqm meditation healing corner in living room corner')}</li>
@@ -1218,7 +1218,7 @@ export default function HealingSpaceArticle() {
               </h3>
               <div className="mb-4">
                 <p className="text-lg mb-2 text-gray-900 dark:text-gray-100">
-                  <span className="font-semibold">{t('改造前', 'Before')}:</span>{' '}
+                  <span className="font-semibold text-gray-900 dark:text-gray-100">{t('改造前', 'Before')}:</span>{' '}
                   {t(
                     '創意工作壓力大，經常加班到深夜，長期失眠（每晚睡眠不足 5 小時），注意力不集中，創造力枯竭。書房兼臥室，環境混亂。',
                     'High pressure creative work, often working until late night, chronic insomnia (less than 5 hours sleep nightly), difficulty concentrating, creativity exhausted. Study-bedroom combo, chaotic environment.'
@@ -1227,7 +1227,7 @@ export default function HealingSpaceArticle() {
               </div>
               <div className="mb-4">
                 <p className="text-lg mb-2 text-gray-900 dark:text-gray-100">
-                  <span className="font-semibold">{t('改造方案', 'Transformation Plan')}:</span>
+                  <span className="font-semibold text-gray-900 dark:text-gray-100">{t('改造方案', 'Transformation Plan')}:</span>
                 </p>
                 <ul className="list-disc list-inside space-y-1 text-lg ml-4">
                   <li>{t('劃分書房和臥室功能區，分離工作與休息', 'Divide study and bedroom functional areas, separate work and rest')}</li>
