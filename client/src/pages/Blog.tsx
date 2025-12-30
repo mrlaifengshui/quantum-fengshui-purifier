@@ -1,7 +1,7 @@
 
 import { useLanguage } from '../contexts/LanguageContext';
 import { Calendar, Clock, ArrowRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link } from 'wouter';
 
 export default function Blog() {
   const { t } = useLanguage();
@@ -79,6 +79,42 @@ export default function Blog() {
       readTime: '10',
       image: '/images/blog/office-career-placement.jpg',
       category: t('事業發展', 'Career Development'),
+    },
+    {
+      id: 'healing-space-quantum-fengshui',
+      title: t('打造家居療癒空間：5 個讓壓力瞬間消失的量子風水設計秘訣', 'Create a Healing Home Space: 5 Quantum Feng Shui Design Secrets to Instantly Eliminate Stress'),
+      excerpt: t(
+        '在快節奏的香港生活中，超過 60% 的香港人承受著中度到高度的心理壓力。本文揭示 5 個量子風水設計秘訣，教您如何在家中打造專屬療癒空間，讓壓力瞬間消失！',
+        'In fast-paced Hong Kong life, over 60% of Hong Kong people experience moderate to high psychological stress. This article reveals 5 quantum feng shui design secrets to help you create your exclusive healing space at home and eliminate stress instantly!'
+      ),
+      date: '2025-12-29',
+      readTime: '15',
+      image: '/images/blog/healing-bedroom-transformation.jpg',
+      category: t('療癒空間', 'Healing Space'),
+    },
+    {
+      id: 'childrens-room-health-fengshui',
+      title: t('孩子經常生病？可能是兒童房風水與空氣質量出了問題', 'Is Your Child Getting Sick Often? It Might Be Children\'s Room Feng Shui and Air Quality Issues'),
+      excerpt: t(
+        '香港有超過 30% 的兒童患有過敏性鼻炎，15% 的兒童患有哮喘。如果您的孩子經常感冒、咳嗽、流鼻涕，問題可能不僅僅是體質弱，而是兒童房的風水與空氣質量出了問題。',
+        'Over 30% of children in Hong Kong suffer from allergic rhinitis, and 15% have asthma. If your child frequently catches colds, coughs, has a runny nose, the problem might not just be a weak constitution, but issues with the children\'s room feng shui and air quality.'
+      ),
+      date: '2025-12-29',
+      readTime: '12',
+      image: '/images/blog/unhealthy-childrens-room.jpg',
+      category: t('兒童健康', 'Children\'s Health'),
+    },
+    {
+      id: 'insomnia-solution-quantum-fengshui',
+      title: t('失眠救星！量子風水空氣淨化如何讓您一覺到天亮', 'Insomnia Solution! How Quantum Feng Shui Air Purification Helps You Sleep Through the Night'),
+      excerpt: t(
+        '香港失眠率超過30%！深入解析空氣質量與睡眠的科學關聯，量子風水空氣淨化如何通過99.97%過濾、量子調頻技術、臥室風水擺位，幫助您改善睡眠質量、一覺到天亮。',
+        'Over 30% insomnia rate in Hong Kong! Deep dive into the scientific connection between air quality and sleep. How quantum feng shui air purification helps you sleep better through 99.97% filtration, quantum energy tuning, and bedroom feng shui positioning.'
+      ),
+      date: '2025-12-29',
+      readTime: '12',
+      image: '/images/blog/insomnia-struggle.jpg',
+      category: t('睡眠健康', 'Sleep Health'),
     },
   ];
 

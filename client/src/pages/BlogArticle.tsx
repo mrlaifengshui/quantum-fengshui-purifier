@@ -1,12 +1,10 @@
-import React, { useContext } from "react";
-// 重點：用 ../ 指向 src/contexts（而非 ./）
-import { LanguageContext } from "../contexts/LanguageContext";
+import { useLanguage } from "../contexts/LanguageContext";
 // 重點：用 ../ 指向 src/locales（而非 ./）
 import { quantumGuide as zhContent } from "../locales/zh";
 import { quantumGuide as enContent } from "../locales/en";
 
 const BlogArticle = () => {
-  const { language } = useContext(LanguageContext);
+  const { language } = useLanguage();
   const content = language === "en" ? enContent : zhContent;
 
   return (

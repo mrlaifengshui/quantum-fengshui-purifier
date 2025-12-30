@@ -13,6 +13,9 @@ import BrandComparisonArticle from './pages/BrandComparisonArticle';
 import CustomerTestimonialArticle from './pages/CustomerTestimonialArticle';
 import BedroomHarmonyArticle from './pages/BedroomHarmonyArticle';
 import OfficeCareerArticle from './pages/OfficeCareerArticle';
+import HealingSpaceArticle from './pages/HealingSpaceArticle';
+import ChildrensRoomHealthArticle from './pages/ChildrensRoomHealthArticle';
+import InsomniaSolutionArticle from './pages/InsomniaSolutionArticle';
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
 
@@ -37,6 +40,9 @@ export default function App() {
               <Route path="/blog/customer-testimonial-mrs-zhang" component={CustomerTestimonialArticle} />
               <Route path="/blog/bedroom-harmony-feng-shui" component={BedroomHarmonyArticle} />
               <Route path="/blog/office-career-feng-shui" component={OfficeCareerArticle} />
+              <Route path="/blog/healing-space-quantum-fengshui" component={HealingSpaceArticle} />
+              <Route path="/blog/childrens-room-health-fengshui" component={ChildrensRoomHealthArticle} />
+              <Route path="/blog/insomnia-solution-quantum-fengshui" component={InsomniaSolutionArticle} />
               <Route path="/contact" component={Contact} />
               <Route component={NotFound} />
             </Switch>
