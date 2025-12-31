@@ -65,6 +65,19 @@ export default function Home() {
               </span>
             </h2>
           </div>
+
+          {/* Three-in-One Service Overview Image */}
+          <div className="mb-16 rounded-2xl overflow-hidden shadow-2xl max-w-5xl mx-auto">
+            <img 
+              src="/images/three-in-one-service-overview.jpg" 
+              alt={t(
+                '三合一量子風水空氣淨化服務概覽 - 物質清淨、能量調頻、風水擺位三大核心技術',
+                'Three-in-One Quantum Feng Shui Air Purification Service Overview - Material Purity, Energy Tuning, Feng Shui Positioning'
+              )}
+              className="w-full h-auto"
+            />
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center">
             {/* Service 1 */}
             <div className="bg-section-light/50 border border-border rounded-2xl p-8 hover:border-primary hover:shadow-xl hover:shadow-primary/20 transition-all duration-300 transform hover:-translate-y-1 text-center flex flex-col items-center">

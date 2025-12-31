@@ -32,7 +32,7 @@ export default function Technology() {
               <div className="order-1 md:order-1 flex justify-center">
                 <div className="relative w-full max-w-md rounded-2xl overflow-hidden shadow-xl">
                   <img 
-                    src="/images/technology/air-purification.jpg" 
+                    src="/images/technology/air-purification-new.jpg" 
                     alt={t('空氣淨化技術', 'Air Purification Technology')}
                     className="w-full h-full object-cover"
                   />
@@ -154,7 +154,7 @@ export default function Technology() {
               <div className="order-1 md:order-1 flex justify-center">
                 <div className="relative w-full max-w-md rounded-2xl overflow-hidden shadow-xl">
                   <img 
-                    src="/images/technology/feng-shui-positioning.jpg" 
+                    src="/images/technology/feng-shui-positioning-new.jpg" 
                     alt={t('風水擺位技術', 'Feng Shui Positioning Technology')}
                     className="w-full h-full object-cover"
                   />
