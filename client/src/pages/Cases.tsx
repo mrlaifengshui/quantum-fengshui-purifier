@@ -105,7 +105,7 @@ export default function Cases() {
               <div></div>
               <div>
                 <img 
-                  src="/images/cases-banner-new.jpg" 
+                  src="/images/cases-banner-testimonials.jpg" 
                   alt={t('客戶見證案例圖片', 'Cases Banner')}
                   className="w-full rounded-2xl shadow-xl"
                 />
