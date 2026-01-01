@@ -16,8 +16,36 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Construct email body with form data
+    const subject = encodeURIComponent('量子風水空氣淨化服務預約 / Quantum Feng Shui Air Purification Booking');
+    const body = encodeURIComponent(
+      `姓名 / Name: ${formData.name}\n` +
+      `電話 / Phone: ${formData.phone}\n` +
+      `電郵 / Email: ${formData.email}\n` +
+      `品牌偏好 / Brand Preference: ${formData.brand || 'N/A'}\n\n` +
+      `留言 / Message:\n${formData.message || 'N/A'}\n\n` +
+      `---\n` +
+      `此郵件來自網站預約表單 / This email is from the website booking form\n` +
+      `網站 / Website: ${CONTACT_WEBSITE}`
+    );
+    
+    // Open default email client with pre-filled data
+    window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
+    
+    // Show success message
     setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 5000);
+    setTimeout(() => {
+      setSubmitted(false);
+      // Reset form after showing success
+      setFormData({
+        name: '',
+        phone: '',
+        email: '',
+        brand: '',
+        message: '',
+      });
+    }, 5000);
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -52,10 +80,22 @@ export default function Contact() {
               <div className="bg-secondary/20 border border-secondary rounded-lg p-6 text-center">
                 <CheckCircle2 className="w-16 h-16 text-secondary mx-auto mb-4" />
                 <h3 className="text-xl font-bold text-foreground mb-2">
-                  {t('提交成功！', 'Success!')}
+                  {t('郵件已準備好！', 'Email Ready!')}
                 </h3>
-                <p className="text-muted-foreground">
-                  {t('我們會盡快與您聯繫', 'We will contact you soon')}
+                <p className="text-muted-foreground mb-2">
+                  {t(
+                    '您的電郵客戶端應該已經打開，請確認並發送郵件。',
+                    'Your email client should have opened. Please confirm and send the email.'
+                  )}
+                </p>
+                <p className="text-sm text-muted-foreground">
+                  {t(
+                    '如果沒有自動打開，請直接發送郵件至：',
+                    'If it didn\'t open automatically, please email:'
+                  )}{' '}
+                  <a href={`mailto:${CONTACT_EMAIL}`} className="text-accent hover:underline">
+                    {CONTACT_EMAIL}
+                  </a>
                 </p>
               </div>
             ) : (
